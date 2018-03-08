@@ -1,0 +1,40 @@
+html, body {
+	width: 100%;
+    height: 100%;
+	margin: 0;
+	display: block;
+}
+
+
+.flex-container{
+	position: absolute;
+	left:0px; top:0px;
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.test-container {
+	position: absolute;
+	left:0px; top:0px;
+	width: 100%;
+	height: 90vh;
+    overflow:hidden;
+    
+}
+
+.graph-container{
+	
+	flex-grow: 2;
+	overflow:hidden;
+	background-color:#E8EDF2;
+
+}
+.info-container{
+	flex-grow: 0;
+	width: 0%;
+	overflow:hidden;
+	background-color:#ccc;
+
+}
