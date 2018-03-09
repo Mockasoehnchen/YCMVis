@@ -1,14 +1,14 @@
 html, body {
 	width: 100%;
-    height: 100%;
+	height: 100%;
 	margin: 0;
 	display: block;
 }
 
-
-.flex-container{
+.flex-container {
 	position: absolute;
-	left:0px; top:0px;
+	left: 0px;
+	top: 0px;
 	width: 100%;
 	height: 90vh;
 	display: flex;
@@ -17,24 +17,22 @@ html, body {
 
 .test-container {
 	position: absolute;
-	left:0px; top:0px;
+	left: 0px;
+	top: 0px;
 	width: 100%;
 	height: 90vh;
-    overflow:hidden;
-    
+	overflow: hidden;
 }
 
-.graph-container{
-	
+.graph-container {
 	flex-grow: 2;
-	overflow:hidden;
-	background-color:#E8EDF2;
-
+	overflow: hidden;
+	background-color: #E8EDF2;
 }
-.info-container{
+
+.info-container {
 	flex-grow: 0;
 	width: 0%;
-	overflow:hidden;
-	background-color:#ccc;
-
+	overflow: hidden;
+	background-color: #ccc;
 }
