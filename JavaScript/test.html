@@ -1,167 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>First Test</title>
-    <!-- including ECharts file -->
-    <script src="http://echarts.baidu.com/dist/echarts.min.js"></script>
-    <!-- including data file -->
-    <script src="data.js"></script>
-    <!-- include styles -->
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>First Test</title>
+        <!-- including ECharts file -->
+        <script src="http://echarts.baidu.com/dist/echarts.min.js"></script>
+        <!-- including data file -->
+        <script src="data.js"></script>
+        <!-- include styles -->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
 
-<body>
-	<!-- preparing a DOM for ECharts -->
-    <div id='main' class="flex-container">
-    	<div id='graph' class="graph-container"></div>
-    	<div id='info-box' class="info-container">    		
-    	</div>
-    </div>
-    
+    <body>
+        <!-- preparing a DOM for ECharts -->
+        <div id='main' class="flex-container">
+            <div id='graph' class="graph-container"></div>
+            <div id='info-box' class="info-container">    		
+            </div>
+        </div>
 
-    <script type="text/javascript">
-    	var info_box = document.getElementById('info-box');
-    	window.addEventListener('resize', resize, false);
-    	// Resize function
-        function resize() {
+
+        <script type="text/javascript">
+            var info_box = document.getElementById('info-box');
+            window.addEventListener('resize', resize, false);
+            // Resize function
+            function resize() {
             setTimeout(function() {
-                // Resize chart
-                myChart.resize();
+            // Resize chart
+            myChart.resize();
             }, 200);
-        }
-
-        var map = new Map();
-        map['key'] = 'value';
-        map['key2'] = 'value2';
-        info_box.style.width = '33%';
-		info_box.innerHTML = Array.from(map);
-
-		var data = []; //add nodes for closed compartments
-		data.push({name: compartments[0].name, symbol: 'roundRect'});
-		compartments[0].position = 0;
-		data.push({name: compartments[1].name, symbol: 'roundRect'});
-		compartments[1].position = 1;
-		var gra = createVisibleGraph(data);
-		data= gra[0];
-		var links = gra[1];
-		
+            }
 
 
+            //var data = []; //add nodes for closed compartments
+            //data.push({name: 'comp', symbol: 'roundRect'});
+            //data.push({name: 'comp2', symbol: 'roundRect'});
+            addTestData();
 
-    	//based on prepared DOM, initialize echarts instance
-    	var myChart = echarts.init(document.getElementById('graph'));
+            var gra = createVisibleGraph();		
+            var data= gra[0];
+            var links = gra[1];
+            //var links = [{source:'comp',target:'comp2'}]
+            //info_box.style.width = '33%';
+            //info_box.innerHTML = gra;
 
-    	//specific chart configuration item and data
-    	var option = {
-    		title: {
-    			text: 'First javascript and ECharts test'
-    		},
-    		tooltip:{
-    			formatter: '{b}'
-    		},
-    		animation: false,
-    		legend: {},
-    		series: [{
-    			name: 'TestGraph',
-    			type: 'graph',
-    			layout: 'force',
-    			symbolSize: 50,
-    			roam: true,
-    			label: {
-    				normal: {
-    					show: true
-    				}
-    			},
-    			force: {
-                    repulsion: 1000
-                },
-    			edgeSymbol: ['circle','arrow'],
-    			edgeSymbolSize: [4,10],
 
-    			data: data,
-    			links: links
-    		}]
-    	};
+            //based on prepared DOM, initialize echarts instance
+            var myChart = echarts.init(document.getElementById('graph'));
 
-		myChart.setOption(option);
+            //specific chart configuration item and data
+            var option = {
+            title: {
+            text: 'First javascript and ECharts test'
+            },
+            tooltip:{
+            formatter: '{b}'
+            },
+            animation: false,
+            legend: {},
+            series: [{
+            name: 'TestGraph',
+            type: 'graph',
+            layout: 'force',
+            symbolSize: 50,
+            roam: true,
+            label: {
+            normal: {
+            show: true
+            }
+            },
+            force: {
+            repulsion: 1000
+            },
+            edgeSymbol: ['circle','arrow'],
+            edgeSymbolSize: [4,10],
 
-		
-            
-        
-		var current_infoelement = 'none'
-		myChart.on('click',function(params){
-			if (params.componentType === 'series') {
-        		if (params.seriesType === 'graph') {
-            		if (params.dataType === 'edge') {
-                		// clicked on an edge of the graph
-            		}
-            		else {
-                		// clicked on a node of the graph
-                		var comp = getCompartmentIndex(params.data.name); 
-                		if(comp != -1){ //TODO
-                			openCompartment(params,comp);
-                		}
-                		else{
-		            		if(current_infoelement == 'none'){
-		            			show_info(params.data);             			
-		            		}
-		            		else {
-		            			if(current_infoelement != params.data.name){
-		            				show_info(params.data);
+            data: data,
+            links: links
+            }]
+            };
 
-		            			}
-		            			else{
-		            				hide_info();
-		            			}
-		            			
-		            		}
-                		}
-                		myChart.resize();
-                		
-            		}
-        		}
-        	}
-		})
+            myChart.setOption(option);
 
-		function openCompartment(param,index){
-			//TODO: much
-			data.splice(param.dataIndex,1);
-			compartments[index].position = -1;
-			redraw();
-			
-		}
 
-		function closeCompartment(param){
-			//TODO
 
-			redraw();
-		}
 
-		function redraw(){
-			gra = createVisibleGraph(data);
-			data= gra[0];
-			links = gra[1];
+            var current_infoelement = 'none'
+            myChart.on('click',function(params){
+            if (params.componentType === 'series') {
+            if (params.seriesType === 'graph') {
+            if (params.dataType === 'edge') {
+            // clicked on an edge of the graph
+            }
+            else {
+            // clicked on a node of the graph
+            var comp = getCompartmentIndex(params.data.name); 
+            if(comp != -1){ //TODO
+            openCompartment(params,comp);
+            }
+            else{
+            if(current_infoelement == 'none'){
+            show_info(params.data);             			
+            }
+            else {
+            if(current_infoelement != params.data.name){
+            show_info(params.data);
 
-			myChart.setOption({
-				series:[{
-					data: data,
-					links: links,
-				}]
-			})
-		}
+            }
+            else{
+            hide_info();
+            }
 
-		function show_info(param){
-			info_box.style.width = '33%';
-			info_box.innerHTML = param.name; //TODO: show data
-			current_infoelement = param.name;
-		}
-		function hide_info(){
-			info_box.style.width = '0%';
-			info_box.innerHTML = '';
-			current_infoelement = 'none';
-		}
-    </script>
-</body>
+            }
+            }
+            myChart.resize();
+
+            }
+            }
+            }
+            })
+
+            function openCompartment(param,index){
+            //TODO: much
+            data.splice(param.dataIndex,1);
+            compartments[index].position = -1;
+            redraw();
+
+            }
+
+            function closeCompartment(param){
+            //TODO
+
+            redraw();
+            }
+
+            function redraw(){
+            gra = createVisibleGraph(data);
+            data= gra[0];
+            links = gra[1];
+
+            myChart.setOption({
+            series:[{
+            data: data,
+            links: links,
+            }]
+            });
+            }
+
+            function show_info(param){
+            info_box.style.width = '33%';
+            info_box.innerHTML = param.name; //TODO: show data
+            current_infoelement = param.name;
+            }
+            function hide_info(){
+            info_box.style.width = '0%';
+            info_box.innerHTML = '';
+            current_infoelement = 'none';
+            }
+        </script>
+    </body>
 
 </html>

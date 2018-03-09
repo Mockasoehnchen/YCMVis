@@ -8,6 +8,7 @@ Example Compartment:
 	name: compartment name,
 	modules: related modules,
 	reactions: List of included reactions,
+	open: wheter or not the comparment is open
 	other informations?
 }
 
@@ -16,9 +17,15 @@ Example Reactions:
 	name: reaction name,
 	module: related module,
 	//compartment: compartment this reaction is in, ??? is this necessary ???
-	in: list of ingoing species,
-	out: list of outgoing species,
-	reaction information: more information for showing in 
+	reactants: list of ingoing species,
+	products: list of outgoing species,
+	reaction information: displayed information
+}
+Example Species:
+{
+	name: species name,
+	info: displayed info,
+	displayed: true if connected with any shown reaction
 }
 */
 
@@ -26,79 +33,130 @@ function addTestData(){
 	//add species
 	species['Species_1'] = {
 		name: 'Species_1',
-		info: 'test1'
+		info: 'test1',
+		displayed: false
 	};
 	species['Species_2'] = {
 		name:'Species_2',
-		info: 'test2'
+		info: 'test2',
+		displayed: false
 	};
 	species['ATP'] = {
 		name: 'ATP',
-		info: 'ATP test'
-	}
+		info: 'ATP test',
+		displayed: false
+	};
 	species['ADP'] = {
 		name: 'ADP',
-		info: 'ADP test'
-	}
+		info: 'ADP test',
+		displayed: false
+	};
+	species['Species_3'] = {
+		name:'Species_3',
+		info: 'test3',
+		displayed: false
+	};
+	species['Species_4'] = {
+		name:'Species_4',
+		info: 'test4',
+		displayed: false
+	};
 
+	var cmap1 = new Map();
+	cmap1['reaction_1']={
+		name: 'reaction_1',
+		module: 'cytosol',
+		reactants: ['Species_1','ATP'],
+		products: ['Species_2', 'ADP'],
+		info: 'reaction_1 test'
+	};
+	cmap1['reaction_2']={
+		name: 'reaction_2',
+		module: 'intracellular',
+		reactants: ['Species_1','ATP'],
+		products: ['Species_1','ADP'],
+		info: 'reaction_2 test'
+	};
+	
 	compartments['Compartment_1'] = {
 		name: 'Compartment_1',
 		modules: ['cytosol','intracellular'],
-		reactions: new Map([
-			['reaction_1',{
-				name: 'reaction_1',
-				module: 'cytosol',
-				in: ['Species_1','ATP'],
-				out: ['Species_2', 'ADP'],
-				info: 'reaction_1 test'
-			}],
-			['reaction_2',{
-				name: 'reaction_2',
-				module: 'intracellular',
-				in: ['Species_1','ATP'],
-				out: ['Species_1', 'ADP'],
-				info: 'reaction_2 test'
-			}]
-		]),
+		reactions: cmap1,
+		open: true,
 		info: 'compartment_1 info'
-	}
+	};
+
+	var cmap2 = new Map();
+	cmap2['reaction_3']={
+		name: 'reaction_3',
+		module: 'cytosol',
+		reactants: ['Species_3','ATP'],
+		products: ['Species_4', 'ADP'],
+		info: 'reaction_3 test'
+	};
 	compartments['Compartment_2'] = {
 		name: 'Compartment_2',
 		modules: ['cytosol'],
-		reactions: new Map([
-			['reaction_3',{
-				name: 'reaction_3',
-				module: 'cytosol',
-				in: ['Species_3','ATP'],
-				out: ['Species_4', 'ADP'],
-				info: 'reaction_3 test'
-			}]
-		]),
-		info: 'compartment_1 info'
-	}
-}
-[
-
-
-function isCompartment(name){
-	for (i = 0; i<compartments.length;i++){
-		if(compartments[i].name == name){
-			return true;
-		}
-	}
-	return false;
+		reactions: cmap2,
+		open: true,
+		info: 'compartment_2 info'
+	};
 }
 
-function getCompartmentIndex(name){
-	for (i = 0; i<compartments.length;i++){
-		if(compartments[i].name == name){
-			return i;
-		}
+function reset_species_display(){
+	for(var sp in species){
+		if (!species.hasOwnProperty(sp)) { continue;} // avoid parent properties of map
+		sp.displayed = false;
 	}
-	return -1;
+}
+
+function createVisibleGraph(){
+	var data= new Array();
+	var links =new Array();
+	var count = 0;
+	reset_species_display();
+	info_box.style.width = '33%';
+	for (var compartment in compartments) {
+    	if (!compartments.hasOwnProperty(compartment)) { continue;} // avoid parent properties of map
+    	if(compartment.open){ //not working?
+    		count ++;
+    	 	//add all reactions of this compartment and connected species to graph
+    	 	for(var reaction in compartment.reactions){
+    	 		if (!compartment.reactions.hasOwnProperty(reaction)) { continue;} // avoid parent properties of map
+    	 		data.push({
+    	 			name: reaction.name,
+    	 			symbol: 'rect'
+    	 		}); //add reaction node
+    	 		//add all species and links between species and reactions
+    	 		for (var sp in reaction.reactants){
+    	 			if (!species.hasOwnProperty(sp)) { continue;} // avoid parent properties of map
+    	 			if (!sp.displayed) {
+    	 				data.push({
+    	 					name: sp.name,
+    	 					symbol: 'circle'
+    	 				});
+    	 				sp.displayed =true;
+    	 			}
+    	 			links.push({
+    	 				source: sp.name,
+    	 				target: reaction.name
+    	 			});
+    	 		}
+    	 	}
+    	}
+    	else{
+    		//add compartment as a node
+    		//how to determin links from closed compartments?
+    	}
+	}
+	
+	
+	info_box.innerHTML = count;
+	return [data,links];
 }
 
 
+/* old code. to be romoved soon
 function createVisibleGraph(data){
 	var links=[];
 	for(i = 0; i< reactions.length; i++){
@@ -125,7 +183,7 @@ function createVisibleGraph(data){
 			compartment is closed -> all links normally conected to the reaction should now be connected
 			to a compartment if the corresponding species is visible. Problem: visibility for all species
 			isn't known befor we have seen all reactions.
-			*/			
+			*/	/*		
 		}
 
 	}
@@ -148,3 +206,4 @@ function createVisibleGraph(data){
 
 	return [data,links]
 }
+*/
