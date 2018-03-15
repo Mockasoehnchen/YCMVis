@@ -1,5 +1,6 @@
 var reactions = {};//new Map();
 var compartments = {};//new Map();
+var layout;
 /*
  * example compartments
  * compartments[Compartment id] = {
@@ -40,50 +41,104 @@ function reset_species_display() {
 */
 
 function createVisibleGraph() {
-	var data = new Array();
-	var links = new Array();
+	var data = [];
+	var links = [];
 	var count = 0;
+	
 	//reset_species_display();
-	info_box.style.width = '33%';
 	jQuery.each(compartments,function(i,compartment){
 		if(compartment.open){			
 			jQuery.each(compartment.internal, function(j,sp){
 				//TODO: check for sub-compartments
-				if(!sp.display){ //only necessary if species can appear multple times?				
+				if(!sp.display){ //only necessary if species can appear multiple times?				
 					data.push({
 						name : sp.name,
 						symbol : 'circle'
 					});
 					sp.display = true;
+					count++;
 				}
-			})
+			});
 		}
 		
-	})
+	});
+	
+	
+	
+	
+	var count2 = 0;
 	jQuery.each(reactions,function(i,reaction){
 		//TODO: closed compartments
 		data.push({
 			name : i,
-			symbol : 'rect'
+			symbol : 'rect'/*,
+			x: points[count2].X,
+			y: points[count2].Y*/
 		});
+		count2++;
 		jQuery.each(reaction.substrates, function(j,elem){
 			links.push({source: elem ,target: i});
-		})
+		});
 		jQuery.each(reaction.products, function(j,elem){
 			links.push({target: elem ,source: i});
-		})
+		});
 		jQuery.each(reaction.modifiers, function(j,elem){
 			links.push({source: elem ,target: i, symbol: 'circle'});
-		})
+		});
 		
-	})
+	});
+	
+	if(layout == 'simple_double_circ') simple_double_circ(count,count2,data);
+	//TODO: other layouts: GraphViz layout, double circle with connected notes close together
+	
 
+	//info_box.style.width = '33%';
+	//info_box.innerHTML = 'tst';
+	//simple_double_circle();
 	return [ data, links ];
 }
 
+
+/**
+ * use graphviz to get coordinates for graph
+ */
+function grappvizDot(data, links){ //move all this preprocesing to phyton
+	
+}
+
+
+function simple_double_circ(count,count2,data){ //reactions on inner circle, elements on outer circle //TODO: would look better if connected elements where close
+	var points = points_on_circle({x: 0, y: 0},50,count);
+	for (var i = 0;i<count; i++){
+		data[i].x = points[i].X;
+		data[i].y = points[i].Y;			
+	}
+	points =points_on_circle({x: 0, y: 0},30,count2);
+	for (var i = 0;i<count2; i++){
+		data[i+count].x = points[i].X;
+		data[i+count].y = points[i].Y;			
+	}
+}
+
+function points_on_circle(mid,radius, number){
+	//generate a number of points on a circle around a point with a given radius
+	//(x,y)= (x0+r*cos(a), y0+r*sin(a))
+	
+	var points = [];
+	
+	for (var i=0; i< number;i++){
+		var x = mid.x+radius*Math.cos(i*2*Math.PI/number);
+		var y = mid.y+radius*Math.sin(i*2*Math.PI/number);
+		points.push({X: x, Y: y});
+	}
+	return points;
+	
+}
+
+
 function addTestData() {
 	var species = {};
-	species['Glc'] = {
+	species['Glc']= {
 			name: 'Glc',
 			modules: 'MET_CCM',
 			annotaion:'CHEBI:17634',
