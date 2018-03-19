@@ -7,13 +7,24 @@ import os, subprocess, json
 
 nodes = []
 links = []
+compartments = [] #compartments['name']={"Species": [Species], "Open": True }
 
 def data_to_graph():
     for species in dat.modeldict['sp_compartment']:
-        nodes.append({'name':species, 'symbol' : 'circle'})
+        nodes.append({
+            'name':species,
+            'symbol' : 'circle',
+            'compartment': dat.modeldict['sp_compartment'][species],
+            'annotation': dat.modeldict['sp_annotations'][species],
+            'state': dat.modeldict['sp_states'][species],
+            'module': 'test' #TODO: write real module
+        })
     for reaction in dat.reactions:
-        nodes.append({'name':reaction,'symbol': 'rect', 'label':{'show':'false'}
-                    })
+        nodes.append({
+            'name':reaction,
+            'symbol': 'rect',
+            'rate': dat.reactions[reaction]['rate']
+        })
         for source in dat.reactions[reaction]['substrates']:
             links.append({'source': source, 'target': reaction})
         for target in dat.reactions[reaction]['products']:

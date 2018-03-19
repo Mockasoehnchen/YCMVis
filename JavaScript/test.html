@@ -77,7 +77,7 @@
                     normal: {
                         color: 'source',
                         curveness: 0.0,
-                        type: 'dashed',
+                        type: 'solid',
                         width: 3
                     }
                 },
@@ -121,8 +121,7 @@
 
 		function openCompartment(param, index) {
 			//TODO: much
-			data.splice(param.dataIndex, 1);
-			compartments[index].position = -1;
+
 			redraw();
 
 		}
@@ -147,8 +146,32 @@
 		}
 
 		function show_info(param) {
-			info_box.style.width = '33%';
-			info_box.innerHTML = param.name; //TODO: show data
+			info_box.style.width = '40%';
+			var text = param.name + '<br>';
+			if (param.hasOwnProperty('module')) {
+				text += 'Module: '+param.module+'<br>';
+			}
+			if (param.hasOwnProperty('compartment')) {
+				text += 'Compartment: '+param.compartment+'<br>';
+			}
+
+			if (param.hasOwnProperty('state')) {
+				text += 'State: '+param.state+'<br>';
+			}
+			if (param.hasOwnProperty('rate')) {
+				text += 'Rate: '+param.rate+'<br>';
+			}
+			if (param.hasOwnProperty('annotation')) {
+				//text += 'Annotation: '+param.annotation+'<br>';
+				//text += 'Web: ';
+				if(param.annotation.startsWith('CHEBI:')) {
+					var address= 'http://www.ebi.ac.uk/chebi/searchId.do?chebiId='+param.annotation;
+					text+=address+'<br>';
+					text+= "<iframe src="+address+" flex-grow: 1 weidth= 100% height= 100%></iframe>"
+					//document.getElementById('inner_info').innerHTML = "";
+				}
+			}
+			info_box.innerHTML = text; //TODO: show data
 			current_infoelement = param.name;
 		}
 		function hide_info() {
