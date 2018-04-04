@@ -36,9 +36,24 @@
 		//based on prepared DOM, initialize echarts instance
 		var myChart = echarts.init(document.getElementById('graph'));
 
-		function prepare(){ //adjust reaction display
+
+		//get node in data by name //TODO: there will later be multiple nodes with the same name; function not used
+		function get_node(name){
+			for(var i = 0; i < data.length; i++) {
+				if (data[i].name == name) {
+					return data[i];
+				}
+			}
+		}
+
+
+		var hidden_op = 0.3; //opacity of elements with reduced visibility
+		var hidden_nodes= ['ATP','ADP']; //nodes to be reduced in visibility
+		function prepare(){
 		    jQuery.each( data,function(j,sp){
-		        if(sp['symbol']=='rect'){
+		    	
+		    	//remove labels from reactions
+		        if(sp['symbol']=='rect'){ 
 		            sp['label']={
 		                normal: {
 		                    show: false
@@ -46,31 +61,74 @@
 		            };
 		            sp['symbolSize']=20;
 		        }
+		        //reduce visibility of certain nodes
+		        if(hidden_nodes.indexOf(sp['name'])>-1){ 
+					sp['itemStyle']= {
+						normal: {
+							opacity: hidden_op
+						},
+						emphasis:{
+							opacity: 1
+						}
+					};
+		        }
+
 		    })
+		    //reduce visibility of links connected to certain nodes
+		    jQuery.each( links,function(j,link){ 
+					if(hidden_nodes.indexOf(link['source'])>-1||hidden_nodes.indexOf(link['target'])>-1){
+						link['lineStyle']={
+							normal: {
+								opacity: hidden_op // get_node(link['source']).itemStyle.normal.opacity
+							},
+							emphasis: {
+								opacity: 1
+							}
+						}
+					}
+		    })
+		    //create compartment nodes
+		    /*
+		    jQuery.each( compartments,function(name,compartment){
+		    	data.push({
+		    		'name': name,
+		    		'symbol': 'roundRect',
+		    		//'symbolSize': compartment.symbolSize , 
+		    		'module': compartment.module,
+		    		'x': compartment.x,
+		    		'y': compartment.y,
+		    		'open': 0
+		    	})
+		    }) */
+		    
 		}
         prepare();
-
 		//specific chart configuration item and data
 		var option = {
 			title : {
 				text : 'First javascript and ECharts test'
 			},
 			tooltip : {
-				formatter : '{b}'
+				show: false
 			},
-			animation : true,
-			legend : {},
+
 			series : [ {
 				name : 'TestGraph',
 				type : 'graph',
 				layout : 'none',//'circular',//'force',
-				symbolSize : 30,
+				symbolSize : get_symbolSize,
 				roam : true,
-				label : {
-					normal : {
-						show : true
+				label: {
+					normal: {
+						show: true,
+						formatter: function(data){
+							var s = data.data['name_alt'];
+							return s
+						}
 					}
+					
 				},
+				//focusNodeAdjacency: true, //TODO: implement own version to avoid weird labels
 				edgeSymbol : [ 'circle', 'arrow' ],
 				edgeSymbolSize : [ 4, 10 ],
                 lineStyle: {
@@ -78,16 +136,42 @@
                         color: 'source',
                         curveness: 0.0,
                         type: 'solid',
-                        width: 3
+                        width: 3,
+                        opacity: 0.6
+                    },
+                    emphasis: { //not working
+                        color: 'source',
+                        curveness: 0.0,
+                        type: 'solid',
+                        width: 4,
+                        opacity: 0.9
                     }
                 },
 				data : data,
 				links : links
-			} ]
+			}]
 		};
 
 		myChart.setOption(option);
 
+		//higlighting rework TODO
+		myChart.on('mouseover', function(params) {
+			if (params.componentType === 'series') {
+				if (params.seriesType === 'graph') {
+					if (params.dataType === 'edge') {
+						//  over an edge of the graph
+						//myChart.dispatchAction({type: 'highlight'}) //TODO
+
+					} else {
+						// over a node of the graph
+						//myChart.dispatchAction({type: 'focusNodeAdjacency', seriesIndex: params.seriesIndex, dataIndex: params.dataIndex});
+					}
+				}
+			}
+		});
+
+
+		//mouse click eventhandling
 		var current_infoelement = 'none';
 		myChart.on('click', function(params) {
 			if (params.componentType === 'series') {
@@ -97,8 +181,13 @@
 					} else {
 						// clicked on a node of the graph
 						
-						if (false) { //TODO
-							openCompartment(params);
+						if (params.data.hasOwnProperty('open')) { //compartment
+							if(params.data.open == 0){
+								openCompartment(params);
+							}
+							else{
+								closeCompartment(params)
+							}
 						} else {
 							if (current_infoelement == 'none') {
 								show_info(params.data);
@@ -119,7 +208,7 @@
 			}
 		});
 
-		function openCompartment(param, index) {
+		function openCompartment(param) {
 			//TODO: much
 
 			redraw();
@@ -133,9 +222,6 @@
 		}
 
 		function redraw() {
-			gra = createVisibleGraph(data);
-			data = gra[0];
-			links = gra[1];
 
 			myChart.setOption({
 				series : [ {
@@ -147,7 +233,7 @@
 
 		function show_info(param) {
 			info_box.style.width = '40%';
-			var text = param.name + '<br>';
+			var text = param.name_alt + '<br>';
 			if (param.hasOwnProperty('module')) {
 				text += 'Module: '+param.module+'<br>';
 			}
@@ -162,22 +248,37 @@
 				text += 'Rate: '+param.rate+'<br>';
 			}
 			if (param.hasOwnProperty('annotation')) {
-				//text += 'Annotation: '+param.annotation+'<br>';
-				//text += 'Web: ';
+				text += 'Annotation: <a href= ';
+
+				var address= '';
 				if(param.annotation.startsWith('CHEBI:')) {
-					var address= 'http://www.ebi.ac.uk/chebi/searchId.do?chebiId='+param.annotation;
-					text+=address+'<br>';
+					address= 'http://www.ebi.ac.uk/chebi/searchId.do?chebiId='+param.annotation;
+					text+=address+'>'+param.annotation+'</a><br>';
 					text+= "<iframe src="+address+" flex-grow: 1 weidth= 100% height= 100%></iframe>"
-					//document.getElementById('inner_info').innerHTML = "";
 				}
+				else if(param.annotation.startsWith('SBO:')){
+					address= 'http://www.ebi.ac.uk/sbo/main/'+param.annotation;
+					text+=address+'>'+param.annotation+'</a><br>';
+					text+= "<iframe src="+address+" flex-grow: 1 weidth= 100% height= 100%></iframe>"
+				}
+				else if(param.annotation.startsWith('YCM:')){
+					//TODO: YCM databank does not exist yet and may become obsolete
+					text+='>'+param.annotation+'</a><br>';
+				}
+				
 			}
-			info_box.innerHTML = text; //TODO: show data
+			info_box.innerHTML = text;
 			current_infoelement = param.name;
 		}
 		function hide_info() {
 			info_box.style.width = '0%';
 			info_box.innerHTML = '';
 			current_infoelement = 'none';
+		}
+
+
+		function get_symbolSize(value,params) {
+			return 30; //todo: used later when integrating information from simulations
 		}
 	</script>
 </body>

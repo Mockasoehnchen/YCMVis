@@ -274,3 +274,5 @@ modeldict['sp_states'] = {'Glc': '0',
                           'O2_check': '0',
                           'HexP_check': '-2',
                           'glycerol': '0'}
+modeldict['reactions'] = reactions
+modeldict['name'] = 'MET_CCM'
