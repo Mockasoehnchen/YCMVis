@@ -1,5 +1,5 @@
 from math import *
-import tools.GenerateODEsFromReactions as YCM_tools
+import GenerateODEsFromReactions as YCM_tools
 import math
 
 

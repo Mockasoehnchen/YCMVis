@@ -37,20 +37,51 @@
 		var myChart = echarts.init(document.getElementById('graph'));
 
 
-		//get node in data by name //TODO: there will later be multiple nodes with the same name; function not used
-		function get_node(name){
-			for(var i = 0; i < data.length; i++) {
-				if (data[i].name == name) {
-					return data[i];
-				}
-			}
-		}
-
-
-		var hidden_op = 0.3; //opacity of elements with reduced visibility
+		var hidden_alpha = 1; 
 		var hidden_nodes= ['ATP','ADP']; //nodes to be reduced in visibility
 		function prepare(){
 		    jQuery.each( data,function(j,sp){
+		    	var to_color = { //TODO: do based on modules
+		    		'cytosol': get_disitnct_color_kelly(0),
+		    		'intracellular': get_disitnct_color_kelly(1),
+		    		'nucleus': get_disitnct_color_kelly(2),
+		    		'vacuole': get_disitnct_color_kelly(3),
+		    		'parameter_compartment': get_disitnct_color_kelly(4),
+		    		'plasma_membrane': get_disitnct_color_kelly(5),
+		    		'cell_wall': get_disitnct_color_kelly(6),
+		    		'extracellular': get_disitnct_color_kelly(7)
+		    	}
+		    	itemStyle = {
+		    		'normal': {},
+		    		'emphasis': {}
+		    	};
+		    	//add colours to nodes		    	
+	    		itemStyle.normal.color = to_color[sp['compartment']]; //TODO: only based on compartments for testing. use modules later
+	    		if(! sp['compartment'] in to_color) {
+	    			itemStyle.normal.color = 'black';
+	    		}
+	    		if('compartments' in sp){
+	    			if(sp['compartments'].length==1) {
+	    				itemStyle.normal.color = to_color[sp['compartments'][0]];
+	    			}
+	    			else{
+	    				itemStyle.normal.color = {
+						    type: 'linear',
+						    x: 0,
+						    y: 0,
+						    x2: 0,
+						    y2: 1,
+						    colorStops: [{
+						        offset: 0, color: to_color[sp['compartments'][0]] // color at 0% position
+						    }, {
+						        offset: 1, color: to_color[sp['compartments'][1]] // color at 100% position
+						    }],
+						    globalCoord: false // false by default
+						}
+	    			}
+
+	    		} 
+	    		
 		    	
 		    	//remove labels from reactions
 		        if(sp['symbol']=='rect'){ 
@@ -59,47 +90,59 @@
 		                    show: false
 		                }
 		            };
-		            sp['symbolSize']=20;
+		            sp['symbolSize']=10;
 		        }
+
 		        //reduce visibility of certain nodes
-		        if(hidden_nodes.indexOf(sp['name'])>-1){ 
-					sp['itemStyle']= {
-						normal: {
-							opacity: hidden_op
-						},
-						emphasis:{
-							opacity: 1
-						}
-					};
+		        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
+		        	var color = to_color[sp['compartment']];
+					//color = 'rgba'+color.split('rgb')[1].split(')')[0]+', '+String(hidden_alpha)+')';
+					//color = 
+					//TODO
+					itemStyle.normal.color = color;
+					itemStyle.emphasis.color = to_color[sp['compartment']];
 		        }
+		        sp['itemStyle'] =itemStyle;
 
 		    })
 		    //reduce visibility of links connected to certain nodes
 		    jQuery.each( links,function(j,link){ 
-					if(hidden_nodes.indexOf(link['source'])>-1||hidden_nodes.indexOf(link['target'])>-1){
-						link['lineStyle']={
-							normal: {
-								opacity: hidden_op // get_node(link['source']).itemStyle.normal.opacity
-							},
-							emphasis: {
-								opacity: 1
-							}
+					if(hidden_nodes.indexOf(link['target_alt'])>-1){ //hidden_nodes.indexOf(link['source'])>-1
+						/*
+						link['lineStyle']= {
+							//todo
 						}
+						*/
 					}
 		    })
 		    //create compartment nodes
-		    /*
+		    
 		    jQuery.each( compartments,function(name,compartment){
-		    	data.push({
-		    		'name': name,
-		    		'symbol': 'roundRect',
+		    	data.push({ 
+		    		name: name,
+		    		symbol: 'roundRect',
 		    		//'symbolSize': compartment.symbolSize , 
-		    		'module': compartment.module,
-		    		'x': compartment.x,
-		    		'y': compartment.y,
-		    		'open': 0
+		    		module: compartment.module,
+		    		x: 0, //todo
+		    		y: 0,
+		    		open: 0
 		    	})
-		    }) */
+		    	//create invisible links to all nodes in the compartment
+		    	
+		    	jQuery.each(compartment.species,function(index, value){
+		    		links.push({
+		    			target: value,
+		    			source: name,
+		    			target_alt: value,
+		    			source_alt: name,
+		    			lineStyle: {
+		    				opacity: 0
+		    			}
+		    			
+		    		})
+		    	})
+		    	
+		    }) 
 		    
 		}
         prepare();
@@ -112,15 +155,25 @@
 				show: false
 			},
 
-			series : [ {
-				name : 'TestGraph',
+			series : [{
+				name : 'YCM',
 				type : 'graph',
-				layout : 'none',//'circular',//'force',
-				symbolSize : get_symbolSize,
+				layout : 'force',//'circular',//'force',
+				symbolSize : 10,//get_symbolSize,
 				roam : true,
+				draggable: true,
+				toolbox: {
+					feature:{
+						saveAsImage:{
+							show: true,
+							name: 'altered_graph.txt'
+						}
+					}
+				},
 				label: {
-					normal: {
-						show: true,
+					
+					normal: { //TODO: only show label if node big enough, otherwise show tooltip with name
+						show: false,
 						formatter: function(data){
 							var s = data.data['name_alt'];
 							return s
@@ -128,24 +181,16 @@
 					}
 					
 				},
-				//focusNodeAdjacency: true, //TODO: implement own version to avoid weird labels
+				focusNodeAdjacency: true, //TODO: implement own version to avoid weird labels
 				edgeSymbol : [ 'circle', 'arrow' ],
 				edgeSymbolSize : [ 4, 10 ],
-                lineStyle: {
+                lineStyle: { 
                     normal: {
                         color: 'source',
                         curveness: 0.0,
                         type: 'solid',
-                        width: 3,
-                        opacity: 0.6
-                    },
-                    emphasis: { //not working
-                        color: 'source',
-                        curveness: 0.0,
-                        type: 'solid',
-                        width: 4,
-                        opacity: 0.9
-                    }
+                        width: 3
+                    } 
                 },
 				data : data,
 				links : links
@@ -154,6 +199,8 @@
 
 		myChart.setOption(option);
 
+
+		/*
 		//higlighting rework TODO
 		myChart.on('mouseover', function(params) {
 			if (params.componentType === 'series') {
@@ -169,6 +216,7 @@
 				}
 			}
 		});
+		*/
 
 
 		//mouse click eventhandling
@@ -210,7 +258,7 @@
 
 		function openCompartment(param) {
 			//TODO: much
-
+			
 			redraw();
 
 		}
@@ -239,6 +287,9 @@
 			}
 			if (param.hasOwnProperty('compartment')) {
 				text += 'Compartment: '+param.compartment+'<br>';
+			}
+			if (param.hasOwnProperty('compartments')) {
+				text += 'Compartments: '+param.compartments+'<br>';
 			}
 
 			if (param.hasOwnProperty('state')) {
@@ -278,8 +329,41 @@
 
 
 		function get_symbolSize(value,params) {
-			return 30; //todo: used later when integrating information from simulations
+			return 10; //todo: used later when integrating information from simulations
 		}
+
+		function get_disitnct_color_kelly(number){
+			var kelly_colors = [
+					//white //already background
+					'rgb(0 , 0, 0)',//black
+					'rgb(255, 179, 0)', //vivid_yellow
+                    'rgb(128, 62, 117)', //strong_purple
+                    'rgb(255, 104, 0)', //vivid_orange
+                    'rgb(166, 189, 215)',// very_light_blue
+                    'rgb(193, 0, 32)', //vivid_red
+                    'rgb(206, 162, 98)', //grayish_yellow
+                    'rgb(129, 112, 102)', //medium_gray
+
+                    // these aren't good for people with defective color vision:
+                    'rgb(0, 125, 52)', //vivid_green
+                    'rgb(246, 118, 142)', //strong_purplish_pink
+                    'rgb(0, 83, 138)', //strong_blue
+                    'rgb(255, 122, 92)', //strong_yellowish_pink
+                    'rgb(83, 55, 122)', //strong_violet
+                    'rgb(255, 142, 0)', //vivid_orange_yellow
+                    'rgb(179, 40, 81)', //strong_purplish_red
+                    'rgb(244, 200, 0)', //vivid_greenish_yellow
+                    'rgb(127, 24, 13)', //strong_reddish_brown
+                    'rgb(147, 170, 0)', //vivid_yellowish_green
+                    'rgb(89, 51, 21)', //deep_yellowish_brown
+                    'rgb(241, 58, 19)',//vivid_reddish_orange
+                    'rgb(35, 44, 22))' //dark_olive_green
+				];
+			return kelly_colors[number];
+
+
+		}
+
 	</script>
 </body>
 
