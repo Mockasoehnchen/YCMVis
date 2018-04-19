@@ -38,25 +38,26 @@
 
 
 		var hidden_alpha = 1; 
-		var hidden_nodes= ['ATP','ADP']; //nodes to be reduced in visibility
+		var hidden_nodes= ['ATP','ADP']; //nodes to be reduced in visibility //TODO
 		function prepare(){
 		    jQuery.each( data,function(j,sp){
-		    	var to_color = { //TODO: do based on modules
-		    		'cytosol': get_disitnct_color_kelly(0),
-		    		'intracellular': get_disitnct_color_kelly(1),
-		    		'nucleus': get_disitnct_color_kelly(2),
-		    		'vacuole': get_disitnct_color_kelly(3),
-		    		'parameter_compartment': get_disitnct_color_kelly(4),
-		    		'plasma_membrane': get_disitnct_color_kelly(5),
-		    		'cell_wall': get_disitnct_color_kelly(6),
-		    		'extracellular': get_disitnct_color_kelly(7)
-		    	}
+		    	var to_color = { }
+		    	i=0
+		    	jQuery.each(compartments, function(com,dat) {
+		    		to_color[com]= get_disitnct_color_kelly(i);
+		    		i+=1;
+		    	})
+		    	modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
+		    	jQuery.each(modulelist, function(index,elem) {
+		    		to_color[elem]= get_disitnct_color_kelly(index);
+		    	})
 		    	itemStyle = {
 		    		'normal': {},
 		    		'emphasis': {}
 		    	};
 		    	//add colours to nodes		    	
-	    		itemStyle.normal.color = to_color[sp['compartment']]; //TODO: only based on compartments for testing. use modules later
+	    		itemStyle.normal.color = to_color[sp['module'][0]] //sp['compartment']]; //TODO: only based on compartments for testing. use modules later
+	    		/*
 	    		if(! sp['compartment'] in to_color) {
 	    			itemStyle.normal.color = 'black';
 	    		}
@@ -64,43 +65,28 @@
 	    			if(sp['compartments'].length==1) {
 	    				itemStyle.normal.color = to_color[sp['compartments'][0]];
 	    			}
-	    			else{
-	    				itemStyle.normal.color = {
-						    type: 'linear',
-						    x: 0,
-						    y: 0,
-						    x2: 0,
-						    y2: 1,
-						    colorStops: [{
-						        offset: 0, color: to_color[sp['compartments'][0]] // color at 0% position
-						    }, {
-						        offset: 1, color: to_color[sp['compartments'][1]] // color at 100% position
-						    }],
-						    globalCoord: false // false by default
-						}
-	    			}
 
-	    		} 
+	    		} */
 	    		
 		    	
 		    	//remove labels from reactions
-		        if(sp['symbol']=='rect'){ 
+		        if(sp['symbol']=='rect'||sp['symbol']=='triangle'){ 
 		            sp['label']={
 		                normal: {
 		                    show: false
 		                }
 		            };
-		            sp['symbolSize']=10;
+		            
 		        }
 
 		        //reduce visibility of certain nodes
 		        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
-		        	var color = to_color[sp['compartment']];
+		        	//var color = to_color[sp['compartment']];
 					//color = 'rgba'+color.split('rgb')[1].split(')')[0]+', '+String(hidden_alpha)+')';
 					//color = 
 					//TODO
-					itemStyle.normal.color = color;
-					itemStyle.emphasis.color = to_color[sp['compartment']];
+					//itemStyle.normal.color = color;
+					//itemStyle.emphasis.color = to_color[sp['compartment']];
 		        }
 		        sp['itemStyle'] =itemStyle;
 
@@ -127,8 +113,8 @@
 		    		y: 0,
 		    		open: 0
 		    	})
-		    	//create invisible links to all nodes in the compartment
-		    	
+		    	//create invisible links to all nodes in the compartment //only used for force layout?
+		    	/*
 		    	jQuery.each(compartment.species,function(index, value){
 		    		links.push({
 		    			target: value,
@@ -141,8 +127,44 @@
 		    			
 		    		})
 		    	})
+		    	*/
 		    	
 		    }) 
+		    /*
+		    data.push({ 
+		    		name: 'testnode1',
+		    		symbol: 'roundRect',
+		    		//'symbolSize': compartment.symbolSize , 
+		    		module: 'any',
+		    		x: 100, //todo
+		    		y: 100
+		    })
+		    data.push({ 
+		    		name: 'testnode2',
+		    		symbol: 'roundRect',
+		    		//'symbolSize': compartment.symbolSize , 
+		    		module: 'any',
+		    		x: 200, //todo
+		    		y: 100
+		    })
+		    data.push({ 
+		    		name: 'testnode3',
+		    		symbol: 'roundRect',
+		    		//'symbolSize': compartment.symbolSize , 
+		    		module: 'any',
+		    		x: 100, //todo
+		    		y: 200
+		    })
+		    links.push({
+		    			targets: ['testnode1','testnode2'] ,
+		    			source: 'testnode3',
+		    			target_alt:'testnode1' ,
+		    			source_alt: 'testnode3',
+		    			lineStyle: {
+		    				opacity: 1
+		    			}
+		    			
+		    })*/
 		    
 		}
         prepare();
@@ -158,18 +180,11 @@
 			series : [{
 				name : 'YCM',
 				type : 'graph',
-				layout : 'force',//'circular',//'force',
-				symbolSize : 10,//get_symbolSize,
+				layout : 'none',//'circular',//'force',
+				symbolSize : get_symbolSize(),
 				roam : true,
 				draggable: true,
-				toolbox: {
-					feature:{
-						saveAsImage:{
-							show: true,
-							name: 'altered_graph.txt'
-						}
-					}
-				},
+				
 				label: {
 					
 					normal: { //TODO: only show label if node big enough, otherwise show tooltip with name
@@ -181,15 +196,15 @@
 					}
 					
 				},
-				focusNodeAdjacency: true, //TODO: implement own version to avoid weird labels
-				edgeSymbol : [ 'circle', 'arrow' ],
-				edgeSymbolSize : [ 4, 10 ],
+				//focusNodeAdjacency: true, //TODO: implement own version to avoid weird labels
+				edgeSymbol : [ 'none', 'arrow' ],
+				edgeSymbolSize : get_symbolSize(),
                 lineStyle: { 
                     normal: {
                         color: 'source',
                         curveness: 0.0,
                         type: 'solid',
-                        width: 3
+                        width: 2
                     } 
                 },
 				data : data,
@@ -200,7 +215,7 @@
 		myChart.setOption(option);
 
 
-		/*
+		
 		//higlighting rework TODO
 		myChart.on('mouseover', function(params) {
 			if (params.componentType === 'series') {
@@ -211,12 +226,26 @@
 
 					} else {
 						// over a node of the graph
-						//myChart.dispatchAction({type: 'focusNodeAdjacency', seriesIndex: params.seriesIndex, dataIndex: params.dataIndex});
+						myChart.dispatchAction({type: 'focusNodeAdjacency', seriesIndex: params.seriesIndex, dataIndex: params.dataIndex});
 					}
 				}
 			}
 		});
-		*/
+		myChart.on('mouseout', function(params) {
+			if (params.componentType === 'series') {
+				if (params.seriesType === 'graph') {
+					if (params.dataType === 'edge') {
+						//  over an edge of the graph
+						//myChart.dispatchAction({type: 'highlight'}) //TODO
+
+					} else {
+						// over a node of the graph
+						myChart.dispatchAction({type: 'unfocusNodeAdjacency', seriesIndex: params.seriesIndex, dataIndex: params.dataIndex});
+					}
+				}
+			}
+		});
+		
 
 
 		//mouse click eventhandling
@@ -298,6 +327,9 @@
 			if (param.hasOwnProperty('rate')) {
 				text += 'Rate: '+param.rate+'<br>';
 			}
+			if (param.hasOwnProperty('equation')) {
+				text += 'Equation: '+param.equation+'<br>';
+			}
 			if (param.hasOwnProperty('annotation')) {
 				text += 'Annotation: <a href= ';
 
@@ -329,7 +361,7 @@
 
 
 		function get_symbolSize(value,params) {
-			return 10; //todo: used later when integrating information from simulations
+			return 5; //todo: used later when integrating information from simulations
 		}
 
 		function get_disitnct_color_kelly(number){

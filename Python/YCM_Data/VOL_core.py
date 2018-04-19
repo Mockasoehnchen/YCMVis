@@ -345,7 +345,7 @@ def VOL_core():
     #                                                           modeldict['sp_annotations'], modeldict['units'],
     #                                                           modeldict['com_annotations'])
 
-    modeldict['odes'].update(odes)
+    #modeldict['odes'].update(odes)
 
     modeldict['info'] = info
     modeldict['type'] = 'ODE'
