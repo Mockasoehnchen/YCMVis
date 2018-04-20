@@ -325,29 +325,47 @@
 				text += 'State: '+param.state+'<br>';
 			}
 			if (param.hasOwnProperty('rate')) {
+				//TODO: autoconvert to MathML???
 				text += 'Rate: '+param.rate+'<br>';
 			}
 			if (param.hasOwnProperty('equation')) {
 				text += 'Equation: '+param.equation+'<br>';
 			}
 			if (param.hasOwnProperty('annotation')) {
-				text += 'Annotation: <a href= ';
-
+				var annoList =  param.annotation.split('_');
+				text += 'Annotation: ';
 				var address= '';
-				if(param.annotation.startsWith('CHEBI:')) {
-					address= 'http://www.ebi.ac.uk/chebi/searchId.do?chebiId='+param.annotation;
-					text+=address+'>'+param.annotation+'</a><br>';
+				jQuery.each(annoList,function(index,anno){
+					
+					address= '';
+					if(anno.startsWith('CHEBI:')) {
+						text += '<a href= ';
+						address= 'http://www.ebi.ac.uk/chebi/searchId.do?chebiId='+anno;
+						text+=address+'>'+anno+'</a><br>';
+					}
+					else if(anno.startsWith('SBO:')){
+						text += '<a href= ';
+						address= 'http://www.ebi.ac.uk/sbo/main/'+anno;
+						text+=address+'>'+anno+'</a><br>';
+						
+					}
+					else if(anno.startsWith('SGD:')){
+						text += '<a href= ';
+						address= 'https://www.yeastgenome.org/locus/'+anno.slice(4,anno.length-1);
+						if (anno.endsWith('p')){
+							address+='/protein';
+						}
+						text+=address+'>'+anno+'</a><br>';
+					}
+					else {
+						text+= anno+'<br>';
+					}
+
+				})
+				if (address !=''){
 					text+= "<iframe src="+address+" flex-grow: 1 weidth= 100% height= 100%></iframe>"
 				}
-				else if(param.annotation.startsWith('SBO:')){
-					address= 'http://www.ebi.ac.uk/sbo/main/'+param.annotation;
-					text+=address+'>'+param.annotation+'</a><br>';
-					text+= "<iframe src="+address+" flex-grow: 1 weidth= 100% height= 100%></iframe>"
-				}
-				else if(param.annotation.startsWith('YCM:')){
-					//TODO: YCM databank does not exist yet and may become obsolete
-					text+='>'+param.annotation+'</a><br>';
-				}
+				
 				
 			}
 			info_box.innerHTML = text;

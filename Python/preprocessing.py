@@ -10,7 +10,7 @@ from operator import itemgetter
 nodes = []
 nodes_to_int_ids = {}
 links = []
-compartments = {}  # compartments['name']={id,[species_ids],x,y}
+compartments = {}
 
 
 def data_to_graph():
@@ -37,7 +37,8 @@ def data_to_graph():
                     'symbol': 'circle',
                     'compartment': modeldict['sp_compartment'][species],
                     'module': [modeldict['name']],
-                    'num_link': 0
+                    'links_to': [],
+                    'is_ode': True
                 }
                 if species in modeldict['sp_annotations']:
                     new_node['annotation'] = modeldict['sp_annotations'][species]
@@ -47,13 +48,13 @@ def data_to_graph():
                 nodes_to_int_ids[true_id] = str(counter)  # for checking for duplicates
                 nodes_to_int_ids[species + modeldict['name']] = str(counter)  # for creating links
                 counter += 1
-                if not modeldict['sp_compartment'][species] in compartments:
+                if not modeldict['sp_compartment'][species] in compartments: #add new compartments to list of known compartments
                     compartments[modeldict['sp_compartment'][species]] = {
                         'module': [modeldict['name']],
                         'species': [str(counter - 1)]
                     }
 
-                else:
+                else: #add species to compartment
                     compartments[modeldict['sp_compartment'][species]]['species'].append(str(counter - 1))
             else:  # species already seen
                 nodes[int(nodes_to_int_ids[true_id])]['module'].append(modeldict['name'])
@@ -61,6 +62,7 @@ def data_to_graph():
                 # print('duplicate found: '+nodes[int(nodes_to_int_ids[true_id])]['name_alt']+' in '+" ".join(nodes[int(nodes_to_int_ids[true_id])]['module']))
 
         for reaction in modeldict['reactions']:
+            #add nodes for reactions
             new_node = {
                 'name': str(counter),
                 'name_alt': reaction,
@@ -68,52 +70,56 @@ def data_to_graph():
                 'rate': modeldict['reactions'][reaction]['rate'],
                 'module': [modeldict['name']],
                 'compartments': [],
-                'num_link': 0
+                'links_to': [],
+                'is_ode': False #reaction can never be ode-species
             }
             # nodes_to_int_ids[reaction+modeldict['name']]=str(counter) #not used?
             reaList = re.findall(r'\w+|\W', modeldict['reactions'][reaction]['rate'])
 
-
+            #add links gained from substrates, produkts and modifiers of reactions
+            #reaction is considered to be in all compartments one of its neighbors is in
             for source in modeldict['reactions'][reaction]['substrates']:
                 links.append({'source_alt': source, 'target_alt': reaction,'source': nodes_to_int_ids[source+modeldict['name']], 'target': str(counter)})
                 #check for compartment the source of this link is in
                 if not nodes[int(nodes_to_int_ids[source + modeldict['name']])]['compartment'] in new_node['compartments']:
                     new_node['compartments'].append(nodes[int(nodes_to_int_ids[source+modeldict['name']])]['compartment'])
-                #increase link count
-                new_node['num_link']+=1
-                nodes[int(nodes_to_int_ids[source + modeldict['name']])]['num_link']+=1
+
+                new_node['links_to'].append(nodes_to_int_ids[source+modeldict['name']])
+                nodes[int(nodes_to_int_ids[source + modeldict['name']])]['links_to'].append(str(counter))
+                #source node can no longe be ode-species
+                nodes[int(nodes_to_int_ids[source + modeldict['name']])]['is_ode']= False
+
             for target in modeldict['reactions'][reaction]['products']:
                 links.append({'source_alt': reaction, 'target_alt': target,'source': str(counter), 'target': nodes_to_int_ids[target+modeldict['name']]})
                 if not 'compartment' in nodes[int(nodes_to_int_ids[target+modeldict['name']])]:
                     print('problem: '+target+modeldict['name']+' '+ str(counter) )
                 if not nodes[int(nodes_to_int_ids[target+modeldict['name']])]['compartment'] in new_node['compartments']:
                     new_node['compartments'].append(nodes[int(nodes_to_int_ids[target + modeldict['name']])]['compartment'])
-                # increase link count
-                new_node['num_link'] += 1
-                nodes[int(nodes_to_int_ids[target + modeldict['name']])]['num_link'] += 1
+
+                new_node['links_to'].append(nodes_to_int_ids[target + modeldict['name']])
+                nodes[int(nodes_to_int_ids[target + modeldict['name']])]['links_to'].append(str(counter))
+                # target node can no longe be ode-species
+                nodes[int(nodes_to_int_ids[target + modeldict['name']])]['is_ode'] = False
+
             for source in modeldict['reactions'][reaction]['modifiers']:
                 links.append({'source_alt': source, 'target_alt': reaction,'source': nodes_to_int_ids[source+modeldict['name']], 'target': str(counter),'symbol': 'circle'})
                 if not nodes[int(nodes_to_int_ids[source+modeldict['name']])]['compartment'] in new_node['compartments']:
                     new_node['compartments'].append(nodes[int(nodes_to_int_ids[source + modeldict['name']])]['compartment'])
-                # increase link count
-                new_node['num_link'] += 1
-                nodes[int(nodes_to_int_ids[source + modeldict['name']])]['num_link'] += 1
 
+                new_node['links_to'].append(nodes_to_int_ids[source + modeldict['name']])
+                nodes[int(nodes_to_int_ids[source + modeldict['name']])]['links_to'].append(str(counter))
+                #modifiers can be ode-species
             for i in range(0, len(new_node['compartments'])):
                 compartments[new_node['compartments'][i]]['species'].append(new_node['name'])
             nodes.append(new_node)
             counter += 1
 
-        for algebraic in modeldict['alg_eqs']:
-            new_node = {  # node for the equation?
-                'name': str(counter),
-                'name_alt': algebraic,
-                'symbol': 'triangle',
-                'equation': modeldict['alg_eqs'][algebraic],
-                'module': [modeldict['name']],
-                'compartments': [],
-                'num_link': 0
-            }
+        for algebraic in modeldict['alg_eqs']: #gather algebraic-species
+            if not algebraic+modeldict['name'] in nodes_to_int_ids:
+                print('Error: '+algebraic)
+            nodes[int(nodes_to_int_ids[algebraic+modeldict['name']])]['symbol']='triangle'
+            nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['is_ode'] = False #algebraic-species can never be ode-species
+            nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['equation'] = modeldict['alg_eqs'][algebraic]
             algList = re.findall(r'\w+|\W', modeldict['alg_eqs'][algebraic])
             for alg in algList:
                 algid = alg + modeldict['name']  # algebraic species should be unique to a module
@@ -122,17 +128,27 @@ def data_to_graph():
                     links.append({'source_alt': alg,
                                   'target_alt': algebraic,
                                   'source': nodes_to_int_ids[algid],
-                                  'target': str(counter),
-                                  'symbol': 'circle'})  # TODO
-                    if not nodes[int(nodes_to_int_ids[algid])]['compartment'] in new_node['compartments']:
-                        new_node['compartments'].append(nodes[int(nodes_to_int_ids[algid])]['compartment'])
-                    # increase link count
-                    new_node['num_link'] += 1
-                    nodes[int(nodes_to_int_ids[algid])]['num_link'] += 1
-            for i in range(0, len(new_node['compartments'])):
-                compartments[new_node['compartments'][i]]['species'].append(new_node['name'])
-            nodes.append(new_node)
-            counter += 1
+                                  'target': nodes_to_int_ids[algebraic+modeldict['name']],
+                                  'symbol': 'circle'})  # TODO: change symbol
+
+                    nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['links_to'].append(nodes_to_int_ids[algid])
+                    nodes[int(nodes_to_int_ids[algid])]['links_to'].append(nodes_to_int_ids[algebraic+modeldict['name']])
+
+        for ode in modeldict['odes']: #gather ode-species
+            ode_id= ode+modeldict['name'] #this species should already be introduce in this module
+            if nodes[int(nodes_to_int_ids[ode_id])]['is_ode']:
+                ode_list = re.findall(r'\w+|\W', modeldict['odes'][ode])
+                for elem in ode_list:
+                    if elem+modeldict['name'] in nodes_to_int_ids:
+                        links.append({'source_alt': ode,
+                                      'target_alt': elem,
+                                      'source': nodes_to_int_ids[ode_id],
+                                      'target': nodes_to_int_ids[elem+modeldict['name']],
+                                      'symbol': 'none'})
+                        nodes[int(nodes_to_int_ids[ode_id])]['links_to'].append(nodes_to_int_ids[elem+modeldict['name']])
+                        nodes[int(nodes_to_int_ids[elem+modeldict['name']])]['links_to'].append(
+                            nodes_to_int_ids[ode_id])
+
 
 
 def use_dot():
@@ -180,6 +196,59 @@ def use_dot():
         #    compartments[compartment]['symbolSize'] = [float(textlist[4]),float(textlist[5])]
         # os.remove("testfile.gv") #Graph file no longer needed
 
+def new_dot():
+    "use GraphViz's dot to get x and y for nodes of the graph"
+
+    clustering = {}
+    #build compartment-based culstering
+    for node in nodes:
+        cluster = ""
+        if 'compartment' in node:
+            cluster = node['compartment']
+            if not cluster in clustering:
+                clustering[cluster]=[]
+            clustering[cluster].append(node['name'])
+        else:
+            cluster = '_'.join(sorted(node['compartments']))
+            if not cluster in clustering:
+                clustering[cluster] =[]
+                for comp in sorted(node['compartments']):
+                    clustering[cluster].append('cluster_'+comp)
+            clustering[cluster].append(node['name'])
+    # Build digraph for GraphViz and write to file
+    text = 'digraph {' + os.linesep
+    for node in nodes:
+        text = text + node[
+            'name'] + ';' + os.linesep  # not needed for dot beacuse all species are in a compartment but provides order used later
+    for cluster in clustering:
+        text = text + 'subgraph cluster_' + cluster + '{' + os.linesep
+        for sp in clustering[cluster]:
+            text = text + sp + ';' + os.linesep
+        text = text + '}' + os.linesep
+    for link in links:
+        text = text + link['source'] + ' -> ' + link['target'] + ';' + os.linesep
+
+    text = text + '}'
+    file = open("testfile.gv", "w")
+    file.write(text)
+    file.close()
+    # call GraphViz
+    process = subprocess.Popen(['dot', '-Tplain', 'testfile.gv'], stdout=subprocess.PIPE)
+    text = process.communicate("n\n")[0].decode().split(os.linesep)
+    file = open("graph.txt", "w")
+    file.write('\n'.join(text))
+    file.close()
+    i = 1  # line 0 is not a node
+
+    for node in nodes:
+        textlist = text[i].split(" ")
+        i += 1
+        if textlist[0] != 'node':
+            print ("Not a node")
+        if textlist[1] != node['name']:
+            print ("Order Changed Error: " + textlist[1] + " != " + node['name'])
+        node['x'] = textlist[2]
+        node['y'] = textlist[3]
 
 def write_graph_to_file():
     # write file for JavaScript
@@ -193,11 +262,11 @@ def write_graph_to_file():
 
 
 def circle_mania():
-    "all nodes of a compartment are placed on 2 circles. outer for species, inner for reactions"
+    "all nodes of a compartment are placed on 3 circles. outer for species, middle for reactions, inner for species with many links"
     # could look good if reactions and species where placed on circles in such a fashion, that connected nodes are close
-    # maybe place highly connected cirles on a 3rd circle in the middle and reactions in multple compartments between them
+    # maybe place highly connected cirles on a 3rd circle in the middle and reactions that are in multple compartments between them
 
-    # Possible: place reactions first and then place knotes on outer ring at the closest point to their reactions
+    # Possible: place reactions first and then place nodes on outer ring at the closest point to their reactions
     # also: place reactions that are in multiple compartments between the compartments instead on one of the rings
 
     compartment_center_x = 0
@@ -222,9 +291,9 @@ def circle_mania():
         re = []
         for node in compartments[compartment]['species']:
             if 'rate' in nodes[int(node)]:
-                re.append((node, nodes[int(node)]['num_link']))
+                re.append((node, len(nodes[int(node)]['links_to'])))
             else:
-                sp.append((node, nodes[int(node)]['num_link']))
+                sp.append((node, len(nodes[int(node)]['links_to'])))
 
         sp.sort(key=itemgetter(1), reverse=True)
 
@@ -254,7 +323,7 @@ def circle_mania():
 
 
 data_to_graph()
-use_dot()
+new_dot()
 # circle_mania()
 write_graph_to_file()
 # print nodes
