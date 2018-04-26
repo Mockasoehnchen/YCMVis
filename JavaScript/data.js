@@ -13944,6 +13944,12 @@ var links =[
 ]
 var compartments ={
     "parameter_compartment": {
+        "spread": [
+            104.75, 
+            94.639, 
+            56.472, 
+            53.472
+        ], 
         "species": [
             "340", 
             "342", 
@@ -13976,6 +13982,12 @@ var compartments ={
         ]
     }, 
     "cytosol": {
+        "spread": [
+            103.46, 
+            92.458, 
+            57.472, 
+            57.472
+        ], 
         "species": [
             "142", 
             "339", 
@@ -14011,6 +14023,12 @@ var compartments ={
         ]
     }, 
     "intracellular": {
+        "spread": [
+            68.597, 
+            4.7639, 
+            59.472, 
+            0.47222
+        ], 
         "species": [
             "0", 
             "1", 
@@ -14354,6 +14372,12 @@ var compartments ={
         ]
     }, 
     "vacuole": {
+        "spread": [
+            102.46, 
+            97.458, 
+            59.472, 
+            59.472
+        ], 
         "species": [
             "345", 
             "355", 
@@ -14373,6 +14397,12 @@ var compartments ={
         ]
     }, 
     "plasma_membrane": {
+        "spread": [
+            104.64, 
+            103.64, 
+            59.472, 
+            59.472
+        ], 
         "species": [
             "329", 
             "404"
@@ -14382,6 +14412,12 @@ var compartments ={
         ]
     }, 
     "cell_wall": {
+        "spread": [
+            85.236, 
+            81.236, 
+            13.472, 
+            12.472
+        ], 
         "species": [
             "327", 
             "328", 
@@ -14399,6 +14435,12 @@ var compartments ={
         ]
     }, 
     "nucleus": {
+        "spread": [
+            3.6806, 
+            1.6806, 
+            26.472, 
+            25.472
+        ], 
         "species": [
             "37", 
             "321", 
@@ -14412,6 +14454,12 @@ var compartments ={
         ]
     }, 
     "extracellular": {
+        "spread": [
+            83.681, 
+            69.681, 
+            57.472, 
+            57.472
+        ], 
         "species": [
             "15", 
             "346", 

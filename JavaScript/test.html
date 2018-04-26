@@ -10,6 +10,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- including data file -->
 <script src="data.js"></script>
+<!-- including function files file -->
+<script src="compartment_functions.js"></script>
 <!-- include styles -->
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
@@ -24,49 +26,43 @@
 
 	<script type="text/javascript">
 		var info_box = document.getElementById('info-box');
-		window.addEventListener('resize', resize, false);
+		window.addEventListener('resize', resize, false); //TODO: not called on zoom and drag!!!
 		// Resize function
-		function resize() {
-			setTimeout(function() {
+		function resize() {	
 				// Resize chart
+				/*
+				prepare_comp();
+			    myChart.setOption({
+			    	graphic: graphicList
+			    })*/
 				myChart.resize();
-			}, 200);
+				update_comp_pos_2();
 		}
 
 		//based on prepared DOM, initialize echarts instance
 		var myChart = echarts.init(document.getElementById('graph'));
 
-
 		var hidden_alpha = 1; 
 		var hidden_nodes= ['ATP','ADP']; //nodes to be reduced in visibility //TODO
 		function prepare(){
+			var to_color = { }
+			i=0
+	    	jQuery.each(compartments, function(com,dat) {
+	    		to_color[com]= get_disitnct_color_kelly(i);
+	    		i+=1;
+	    	})
+	    	modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
+	    	jQuery.each(modulelist, function(index,elem) {
+	    		to_color[elem]= get_disitnct_color_kelly(index);
+		    })
 		    jQuery.each( data,function(j,sp){
-		    	var to_color = { }
-		    	i=0
-		    	jQuery.each(compartments, function(com,dat) {
-		    		to_color[com]= get_disitnct_color_kelly(i);
-		    		i+=1;
-		    	})
-		    	modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
-		    	jQuery.each(modulelist, function(index,elem) {
-		    		to_color[elem]= get_disitnct_color_kelly(index);
-		    	})
+		    	    	
 		    	itemStyle = {
 		    		'normal': {},
 		    		'emphasis': {}
 		    	};
 		    	//add colours to nodes		    	
-	    		itemStyle.normal.color = to_color[sp['module'][0]] //sp['compartment']]; //TODO: only based on compartments for testing. use modules later
-	    		/*
-	    		if(! sp['compartment'] in to_color) {
-	    			itemStyle.normal.color = 'black';
-	    		}
-	    		if('compartments' in sp){
-	    			if(sp['compartments'].length==1) {
-	    				itemStyle.normal.color = to_color[sp['compartments'][0]];
-	    			}
-
-	    		} */
+	    		itemStyle.normal.color = to_color[sp['module'][0]] 
 	    		
 		    	
 		    	//remove labels from reactions
@@ -81,12 +77,7 @@
 
 		        //reduce visibility of certain nodes
 		        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
-		        	//var color = to_color[sp['compartment']];
-					//color = 'rgba'+color.split('rgb')[1].split(')')[0]+', '+String(hidden_alpha)+')';
-					//color = 
-					//TODO
-					//itemStyle.normal.color = color;
-					//itemStyle.emphasis.color = to_color[sp['compartment']];
+		        	
 		        }
 		        sp['itemStyle'] =itemStyle;
 
@@ -101,70 +92,14 @@
 						*/
 					}
 		    })
-		    //create compartment nodes
-		    
+
+		    //create compartment nodes #TODO: do this as graphic not as node
 		    jQuery.each( compartments,function(name,compartment){
-		    	data.push({ 
-		    		name: name,
-		    		symbol: 'roundRect',
-		    		//'symbolSize': compartment.symbolSize , 
-		    		module: compartment.module,
-		    		x: 0, //todo
-		    		y: 0,
-		    		open: 0
-		    	})
-		    	//create invisible links to all nodes in the compartment //only used for force layout?
-		    	/*
-		    	jQuery.each(compartment.species,function(index, value){
-		    		links.push({
-		    			target: value,
-		    			source: name,
-		    			target_alt: value,
-		    			source_alt: name,
-		    			lineStyle: {
-		    				opacity: 0
-		    			}
-		    			
-		    		})
-		    	})
-		    	*/
+		    	
+		    	
 		    	
 		    }) 
-		    /*
-		    data.push({ 
-		    		name: 'testnode1',
-		    		symbol: 'roundRect',
-		    		//'symbolSize': compartment.symbolSize , 
-		    		module: 'any',
-		    		x: 100, //todo
-		    		y: 100
-		    })
-		    data.push({ 
-		    		name: 'testnode2',
-		    		symbol: 'roundRect',
-		    		//'symbolSize': compartment.symbolSize , 
-		    		module: 'any',
-		    		x: 200, //todo
-		    		y: 100
-		    })
-		    data.push({ 
-		    		name: 'testnode3',
-		    		symbol: 'roundRect',
-		    		//'symbolSize': compartment.symbolSize , 
-		    		module: 'any',
-		    		x: 100, //todo
-		    		y: 200
-		    })
-		    links.push({
-		    			targets: ['testnode1','testnode2'] ,
-		    			source: 'testnode3',
-		    			target_alt:'testnode1' ,
-		    			source_alt: 'testnode3',
-		    			lineStyle: {
-		    				opacity: 1
-		    			}
-		    			
-		    })*/
+		    
 		    
 		}
         prepare();
@@ -176,15 +111,13 @@
 			tooltip : {
 				show: false
 			},
-
+			//graphic: graphicList,
 			series : [{
 				name : 'YCM',
 				type : 'graph',
 				layout : 'none',//'circular',//'force',
 				symbolSize : get_symbolSize(),
 				roam : true,
-				draggable: true,
-				
 				label: {
 					
 					normal: { //TODO: only show label if node big enough, otherwise show tooltip with name
@@ -214,6 +147,10 @@
 
 		myChart.setOption(option);
 
+		
+		prepare_comp();
+		
+
 
 		
 		//higlighting rework TODO
@@ -222,7 +159,6 @@
 				if (params.seriesType === 'graph') {
 					if (params.dataType === 'edge') {
 						//  over an edge of the graph
-						//myChart.dispatchAction({type: 'highlight'}) //TODO
 
 					} else {
 						// over a node of the graph
@@ -236,7 +172,6 @@
 				if (params.seriesType === 'graph') {
 					if (params.dataType === 'edge') {
 						//  over an edge of the graph
-						//myChart.dispatchAction({type: 'highlight'}) //TODO
 
 					} else {
 						// over a node of the graph
@@ -257,46 +192,27 @@
 						// clicked on an edge of the graph
 					} else {
 						// clicked on a node of the graph
-						
-						if (params.data.hasOwnProperty('open')) { //compartment
-							if(params.data.open == 0){
-								openCompartment(params);
-							}
-							else{
-								closeCompartment(params)
-							}
+						if (current_infoelement == 'none') {
+							show_info(params.data);
 						} else {
-							if (current_infoelement == 'none') {
+							if (current_infoelement != params.data.name) {
 								show_info(params.data);
+
 							} else {
-								if (current_infoelement != params.data.name) {
-									show_info(params.data);
-
-								} else {
-									hide_info();
-								}
-
+								hide_info();
 							}
-						}
-						myChart.resize();
 
+						
+						}
+						resize();
 					}
 				}
 			}
+
 		});
 
-		function openCompartment(param) {
-			//TODO: much
-			
-			redraw();
+		
 
-		}
-
-		function closeCompartment(param) {
-			//TODO
-
-			redraw();
-		}
 
 		function redraw() {
 

@@ -208,7 +208,7 @@ def new_dot():
             if not cluster in clustering:
                 clustering[cluster]=[]
             clustering[cluster].append(node['name'])
-        else:
+        else: # reactions are in no compartment but get assigned to one or more based on connected nodes
             cluster = '_'.join(sorted(node['compartments']))
             if not cluster in clustering:
                 clustering[cluster] =[]
@@ -249,6 +249,30 @@ def new_dot():
             print ("Order Changed Error: " + textlist[1] + " != " + node['name'])
         node['x'] = textlist[2]
         node['y'] = textlist[3]
+
+    #compute midpoint, high and widths for each compartment
+    for cluster in clustering:
+        if cluster in compartments:
+            max_x = -10000 #arbitrary max initialization, needs testing
+            max_y = -10000 #arbitrary max initialization, needs testing
+            min_x = 10000
+            min_y = 10000
+            for node in clustering[cluster]:
+                x = float(nodes[int(node)]['x'])
+                y = float(nodes[int(node)]['y'])
+                if x < min_x:
+                    min_x= x
+                if x > max_x:
+                    max_x= x
+                if y < min_y:
+                    min_y= y
+                if y > max_y:
+                    max_y= y
+            if max_x==-10000 or max_y == -10000 or min_x==10000 or min_y == 10000:
+                print('Error: Wrong initialization of min or max in new_dot: '+max_x+','+max_y+','+min_x+','+min_y)
+            compartments[cluster]['spread']=[max_x,min_x,max_y,min_y]
+
+
 
 def write_graph_to_file():
     # write file for JavaScript
