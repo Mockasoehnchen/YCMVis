@@ -30,11 +30,6 @@
 		// Resize function
 		function resize() {	
 				// Resize chart
-				/*
-				prepare_comp();
-			    myChart.setOption({
-			    	graphic: graphicList
-			    })*/
 				myChart.resize();
 				update_comp_pos_2();
 		}
@@ -103,21 +98,25 @@
 		    
 		}
         prepare();
+        var testdata = [{
+        			coords: [[121.4648,31.2891],[113.8953,22.901]]
+        		}];
 		//specific chart configuration item and data
 		var option = {
+			backgroundColor: 'white',
 			title : {
-				text : 'First javascript and ECharts test'
+				text : 'YCM'
 			},
 			tooltip : {
 				show: false
 			},
-			//graphic: graphicList,
 			series : [{
 				name : 'YCM',
 				type : 'graph',
 				layout : 'none',//'circular',//'force',
+				zlevel: 0,
 				symbolSize : get_symbolSize(),
-				roam : true,
+				roam : false,
 				label: {
 					
 					normal: { //TODO: only show label if node big enough, otherwise show tooltip with name
@@ -142,7 +141,24 @@
                 },
 				data : data,
 				links : links
-			}]
+			}/*,
+			{
+				type: 'lines',
+            	coordinateSystem: 'geo',
+				zlevel: 2,
+				data: testdata,
+				symbol: ['none', 'arrow'],
+        		symbolSize: 10,
+        		lineStyle: {
+		            normal: {
+		            	color: '#fff',
+		                width: 1,
+		                opacity: 0.6,
+		                curveness: 0.2
+		            }
+		        }
+        		
+			}*/]
 		};
 
 		myChart.setOption(option);
@@ -211,18 +227,6 @@
 
 		});
 
-		
-
-
-		function redraw() {
-
-			myChart.setOption({
-				series : [ {
-					data : data,
-					links : links,
-				} ]
-			});
-		}
 
 		function show_info(param) {
 			info_box.style.width = '40%';
