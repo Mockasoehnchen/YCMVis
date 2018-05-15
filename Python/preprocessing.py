@@ -203,30 +203,50 @@ def new_dot():
     #build compartment-based culstering
     for node in nodes:
         cluster = ""
-        if 'compartment' in node:
+        if 'compartment' in node: #species
             cluster = node['compartment']
             if not cluster in clustering:
                 clustering[cluster]=[]
             clustering[cluster].append(node['name'])
         else: # reactions are in no compartment but get assigned to one or more based on connected nodes
-            cluster = '_'.join(sorted(node['compartments']))
+            cluster = '8'.join(sorted(node['compartments'])) # '_' is used in normal compartment names and other signs have meaning in Graphvis
             if not cluster in clustering:
                 clustering[cluster] =[]
                 for comp in sorted(node['compartments']):
-                    clustering[cluster].append('cluster_'+comp)
+                    clustering[cluster].append(comp)
             clustering[cluster].append(node['name'])
+
+    # introduce extra edges to improve layout
+    pseudoLinks = []
+    for cluster in clustering:
+        if len(clustering[cluster])<20 and not '8' in cluster:
+            for node in clustering[cluster]:
+                for node2 in clustering[cluster]:
+                    if not (len(nodes[int(node)]['links_to'])==0 or len(nodes[int(node2)]['links_to'])==0):
+                        link = node2+ ' -> '+ node+';' + os.linesep;
+                        pseudoLinks.append(link);
+    #pseudoLinks = []
+
     # Build digraph for GraphViz and write to file
     text = 'digraph {' + os.linesep
     for node in nodes:
         text = text + node[
             'name'] + ';' + os.linesep  # not needed for dot beacuse all species are in a compartment but provides order used later
     for cluster in clustering:
-        text = text + 'subgraph cluster_' + cluster + '{' + os.linesep
-        for sp in clustering[cluster]:
-            text = text + sp + ';' + os.linesep
-        text = text + '}' + os.linesep
+        if '8' in cluster:
+            text = text + 'subgraph ' + cluster + '{' + os.linesep
+            for sp in clustering[cluster]:
+                text = text + sp + ';' + os.linesep
+            text = text + '}' + os.linesep
+        else:
+            text = text + 'subgraph cluster_' + cluster + '{' + os.linesep
+            for sp in clustering[cluster]:
+                text = text + sp + ';' + os.linesep
+            text = text + '}' + os.linesep
     for link in links:
         text = text + link['source'] + ' -> ' + link['target'] + ';' + os.linesep
+    for link in pseudoLinks:
+        text += link
 
     text = text + '}'
     file = open("testfile.gv", "w")

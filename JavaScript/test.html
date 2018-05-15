@@ -8,10 +8,14 @@
 <script src="echarts.min.js"></script>
 <!-- including jQuery file -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- including panzoom file -->
+<script src="https://cdn.rawgit.com/anvaka/panzoom/v4.4.0/dist/panzoom.min.js"></script>
+
 <!-- including data file -->
 <script src="data.js"></script>
-<!-- including function files file -->
+<!-- including compartment function file file -->
 <script src="compartment_functions.js"></script>
+
 <!-- include styles -->
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
@@ -33,6 +37,7 @@
 				myChart.resize();
 				update_comp_pos_2();
 		}
+		//panzoom(graph); //zoom and pan but very bad
 
 		//based on prepared DOM, initialize echarts instance
 		var myChart = echarts.init(document.getElementById('graph'));
@@ -99,7 +104,11 @@
 		}
         prepare();
         var testdata = [{
-        			coords: [[121.4648,31.2891],[113.8953,22.901]]
+        			coords: [[0,0],[1,1]]
+        		},{
+        			coords: [[1,0],[1,1]]
+        		},{
+        			coords: [[0,1],[1,0]]
         		}];
 		//specific chart configuration item and data
 		var option = {
@@ -109,14 +118,41 @@
 			},
 			tooltip : {
 				show: false
-			},
+			}, 
+			/*
+			xAxis : [
+		        {
+		            type : 'value',
+		            show : false,
+		            silent: true
+		           
+		        }
+		    ],
+		    yAxis : [
+		        {
+		            type : 'value',
+		            show : false,
+		            silent: true
+		        }
+		    ], */
+		    /*
+		    dataZoom: [
+		        {   // This dataZoom component controls x-axis by dafault
+		            type: 'slider', // this dataZoom component is dataZoom component of slider
+		            //realtime: true,
+		            start: 10,      // the left is located at 10%
+		            end: 60         // the right is located at 60%
+		        }
+		    ], */
 			series : [{
 				name : 'YCM',
 				type : 'graph',
 				layout : 'none',//'circular',//'force',
 				zlevel: 0,
+            	//coordinateSystem: 'polar',
 				symbolSize : get_symbolSize(),
-				roam : false,
+			    
+				roam : true,
 				label: {
 					
 					normal: { //TODO: only show label if node big enough, otherwise show tooltip with name
@@ -136,6 +172,7 @@
                         color: 'source',
                         curveness: 0.0,
                         type: 'solid',
+                        opacity: 0.3,
                         width: 2
                     } 
                 },
@@ -144,14 +181,13 @@
 			}/*,
 			{
 				type: 'lines',
-            	coordinateSystem: 'geo',
-				zlevel: 2,
 				data: testdata,
+				coordinateSystem: 'cartesian2d',
 				symbol: ['none', 'arrow'],
         		symbolSize: 10,
         		lineStyle: {
 		            normal: {
-		            	color: '#fff',
+		            	color: 'pink',
 		                width: 1,
 		                opacity: 0.6,
 		                curveness: 0.2
@@ -196,7 +232,7 @@
 				}
 			}
 		});
-		
+
 
 
 		//mouse click eventhandling
@@ -218,9 +254,8 @@
 								hide_info();
 							}
 
-						
+
 						}
-						resize();
 					}
 				}
 			}
@@ -228,9 +263,11 @@
 		});
 
 
+
 		function show_info(param) {
 			info_box.style.width = '40%';
-			var text = param.name_alt + '<br>';
+			var text = '<button class="close-button" onclick="hide_info()">Close</button>' 
+			text += param.name_alt + '<br>';
 			if (param.hasOwnProperty('module')) {
 				text += 'Module: '+param.module+'<br>';
 			}
@@ -290,11 +327,13 @@
 			}
 			info_box.innerHTML = text;
 			current_infoelement = param.name;
+			resize();
 		}
 		function hide_info() {
 			info_box.style.width = '0%';
 			info_box.innerHTML = '';
 			current_infoelement = 'none';
+			resize();
 		}
 
 
@@ -333,6 +372,100 @@
 
 
 		}
+
+		
+
+		//add mouse event listeners	for pan and zoom
+		
+		//$(document).on('wheel', MouseMoveHandler);
+		if (graph.addEventListener) {
+			// Firefox,IE9, Chrome, Safari, Opera
+			//graph.addEventListener("mousewheel", MouseWheelHandler, false); //old
+			graph.addEventListener("wheel", MouseWheelHandler, false);
+			
+			//graph.addEventListener("mousedown", MouseDownHandler, false);
+
+			graph.addEventListener("mouseup", MouseUpHandler, false);
+
+			//graph.addEventListener("mousemove", MouseMoveHandler, false); //does not fire while mouse down???
+
+			// old Firefox
+    		graph.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+    		
+		}
+		// IE 6/7/8
+		else {
+			graph.attachEvent("onmousewheel", MouseWheelHandler);
+			
+			//graph.attachEvent("onmousedown", MouseDownHandler);
+			graph.attachEvent("onmouseup", MouseUpHandler);
+			//graph.attachEvent("onmousemove", MouseMoveHandler);
+
+		}
+
+		//only fire if you move over an element of the graph not the background
+		/*
+		myChart.on('mousedown',	function(params) { 
+		});
+		
+		myChart.on('mouseup', function(params) {
+		});
+
+		myChart.on('mousemove', function(params) {
+
+		});*/
+			
+		//myChart.on('mousemove', MouseMoveHandler(params));
+		
+		
+		function MouseWheelHandler (e){
+			clearTimeout($.data(this, 'timer'));
+			$.data(this, 'timer', setTimeout(function() {
+			    
+				update_comp_pos_2();
+			    //do something
+			
+			}, 10));
+			
+		}
+
+		//pan implementation
+		/*
+		var clicking = 0;
+		var interval = 0;
+		var previousX = 0;
+		var previousY = 0;
+		function MouseDownHandler(e){
+			clicking = 1;
+			
+			//info_box.innerHTML = '';
+			//interval = setInterval(update_comp_pos_2(),10);
+			//does not fire when over actual graph, probably naped by echarts
+			//previousX = e.clientX;
+			//previousY = e.clientY;
+			//start continous graph update
+			//update_comp_pos_2();
+		}
+		*/
+		function MouseUpHandler(e){
+			//clicking = 0;
+			
+			//$(document).off('mousemove');
+			//info_box.innerHTML = '';
+			//clearInterval(interval);
+			//end continous graph update
+			update_comp_pos_2();
+			
+			
+		}
+		function MouseMoveHandler(e){
+			//do graph update
+			update_comp_pos_2();
+				  
+		    
+
+		}
+		
 
 	</script>
 </body>

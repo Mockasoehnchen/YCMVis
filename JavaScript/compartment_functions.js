@@ -32,7 +32,6 @@ function prepare_comp(){
         //index+=1;
         //palce text in the middle of compartment
         var pos_2 = [pos[0]+w/2,pos[1]+h/2]
-
         graphicList.push({
             id: name.concat('_grt'),
             type: 'text',
@@ -41,8 +40,9 @@ function prepare_comp(){
             z: -99,
             style:{
                 text: name,
-                font: '12px "Fira Sans", sans-serif',
-                textAlign: 'center'
+                font: getFont(name.length,h,w),
+                textAlign: 'center',
+                textVerticalAlign: 'middle'
             },
             onclick: echarts.util.curry(handle_compartment,index)
         });
@@ -55,6 +55,7 @@ function prepare_comp(){
         graphic: graphicList
     })
 }
+
 /*
 function update_comp_pos(){ //this function is to slow because of frequent use of setOption
     jQuery.each( compartments,function(name,compartment){
@@ -89,13 +90,16 @@ function update_comp_pos_2(){
         if (elem.id.endsWith('t')){
             pos[0]+=w/2
             pos[1]+=h/2
+            elem.style.font = getFont(elem.id.length-3,h,w)
         }
-
+        else {
+            elem.shape = {
+                width: w,
+                height: h
+            };
+        }
         elem.position= pos;
-        elem.shape = {
-            width: w,
-            height: h
-        };
+        
 
     })
     myChart.setOption({
@@ -128,10 +132,39 @@ function openCompartment(index) {
 }
 
 function closeCompartment(index) {
+    // z values may need to be selected more complex when compartment inside a different compartme
     graphicList[index]['z']=100;
     graphicList[index]['open']= 1;
     graphicList[index+1]['z']=101;
     myChart.setOption({
         graphic: graphicList
     });
+}
+
+
+
+function getFont(len,h,w){
+    return textSize(len,h,w)+' "Fira Sans", sans-serif';
+}
+
+/*
+    compute size of text based on a given max heigth and width
+    this problem is usually solved by brute force algorithms
+    this is not a perfect solution and will probably cause issues for certain len, h and w values 
+*/
+function textSize(len,h,w){
+    var hv = pixel_to_vh(h);
+    var wv = pixel_to_vw(w);
+    wv = wv/(len); //based on try and error, better solution required
+    var result = hv+'vh'
+    if(wv < hv) result = wv+'vw';
+    //if (hv < 1) result = 0+'vw'; //if font gets to small we do not want to see it at all, there will be a tooltip instead
+    return result;
+}
+
+function pixel_to_vw(p){
+    return p*100/graph.clientWidth
+}
+function pixel_to_vh(p){
+    return p*100/graph.clientHeight
 }
