@@ -38,6 +38,7 @@ def data_to_graph():
                     'compartment': modeldict['sp_compartment'][species],
                     'module': [modeldict['name']],
                     'links_to': [],
+                    'links_from': [],
                     'is_ode': True
                 }
                 if species in modeldict['sp_annotations']:
@@ -71,6 +72,7 @@ def data_to_graph():
                 'module': [modeldict['name']],
                 'compartments': [],
                 'links_to': [],
+                'links_from': [],
                 'is_ode': False #reaction can never be ode-species
             }
             # nodes_to_int_ids[reaction+modeldict['name']]=str(counter) #not used?
@@ -84,7 +86,7 @@ def data_to_graph():
                 if not nodes[int(nodes_to_int_ids[source + modeldict['name']])]['compartment'] in new_node['compartments']:
                     new_node['compartments'].append(nodes[int(nodes_to_int_ids[source+modeldict['name']])]['compartment'])
 
-                new_node['links_to'].append(nodes_to_int_ids[source+modeldict['name']])
+                new_node['links_from'].append(nodes_to_int_ids[source+modeldict['name']])
                 nodes[int(nodes_to_int_ids[source + modeldict['name']])]['links_to'].append(str(counter))
                 #source node can no longe be ode-species
                 nodes[int(nodes_to_int_ids[source + modeldict['name']])]['is_ode']= False
@@ -97,7 +99,7 @@ def data_to_graph():
                     new_node['compartments'].append(nodes[int(nodes_to_int_ids[target + modeldict['name']])]['compartment'])
 
                 new_node['links_to'].append(nodes_to_int_ids[target + modeldict['name']])
-                nodes[int(nodes_to_int_ids[target + modeldict['name']])]['links_to'].append(str(counter))
+                nodes[int(nodes_to_int_ids[target + modeldict['name']])]['links_from'].append(str(counter))
                 # target node can no longe be ode-species
                 nodes[int(nodes_to_int_ids[target + modeldict['name']])]['is_ode'] = False
 
@@ -106,7 +108,7 @@ def data_to_graph():
                 if not nodes[int(nodes_to_int_ids[source+modeldict['name']])]['compartment'] in new_node['compartments']:
                     new_node['compartments'].append(nodes[int(nodes_to_int_ids[source + modeldict['name']])]['compartment'])
 
-                new_node['links_to'].append(nodes_to_int_ids[source + modeldict['name']])
+                new_node['links_from'].append(nodes_to_int_ids[source + modeldict['name']])
                 nodes[int(nodes_to_int_ids[source + modeldict['name']])]['links_to'].append(str(counter))
                 #modifiers can be ode-species
             for i in range(0, len(new_node['compartments'])):
@@ -131,7 +133,7 @@ def data_to_graph():
                                   'target': nodes_to_int_ids[algebraic+modeldict['name']],
                                   'symbol': 'circle'})  # TODO: change symbol
 
-                    nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['links_to'].append(nodes_to_int_ids[algid])
+                    nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['links_from'].append(nodes_to_int_ids[algid])
                     nodes[int(nodes_to_int_ids[algid])]['links_to'].append(nodes_to_int_ids[algebraic+modeldict['name']])
 
         for ode in modeldict['odes']: #gather ode-species
@@ -146,9 +148,34 @@ def data_to_graph():
                                       'target': nodes_to_int_ids[elem+modeldict['name']],
                                       'symbol': 'none'})
                         nodes[int(nodes_to_int_ids[ode_id])]['links_to'].append(nodes_to_int_ids[elem+modeldict['name']])
-                        nodes[int(nodes_to_int_ids[elem+modeldict['name']])]['links_to'].append(
+                        nodes[int(nodes_to_int_ids[elem+modeldict['name']])]['links_from'].append(
                             nodes_to_int_ids[ode_id])
 
+def same_edge_collection():
+    "collect information on which nodes have similar edges. This could be used for edge collapse"
+    numbers = {}
+    all_same =[]
+    for i in range(0,len(nodes)):
+        for j in range(i+1,len(nodes)):
+            same_to = [val for val in nodes[i]['links_to'] if val in nodes[j]['links_to']]
+            same_from = [val for val in nodes[i]['links_from'] if val in nodes[j]['links_from']]
+            same = len(same_to) + len(same_from)
+            if same in numbers:
+                numbers[same]+=1
+            else:
+                numbers[same] = 1
+            if same!=0 and same == len(nodes[i]['links_to']) + len(nodes[i]['links_from']) and same == len(nodes[j]['links_to']) + len(
+                    nodes[j]['links_from']):
+                if 'all' in numbers:
+                    numbers['all'] += 1
+                else:
+                    numbers['all'] = 1
+                all_same.append(nodes[i]['name_alt']+'+'+nodes[j]['name_alt']+': '+str(same))
+            if(same==42):
+                print(nodes[i]['name_alt']+'+'+nodes[j]['name_alt']+': '+str(same))
+    for i in numbers:
+        print i, numbers[i]
+    print(all_same)
 
 
 def use_dot():
@@ -222,7 +249,7 @@ def new_dot():
         if len(clustering[cluster])<20 and not '8' in cluster:
             for node in clustering[cluster]:
                 for node2 in clustering[cluster]:
-                    if not (len(nodes[int(node)]['links_to'])==0 or len(nodes[int(node2)]['links_to'])==0):
+                    if (not (len(nodes[int(node)]['links_to'])==0 and len(nodes[int(node)]['links_from'])==0)) or(not (len(nodes[int(node2)]['links_to'])==0 and len(nodes[int(node2)]['links_from'])==0)):
                         link = node2+ ' -> '+ node+';' + os.linesep;
                         pseudoLinks.append(link);
     #pseudoLinks = []
@@ -368,6 +395,7 @@ def circle_mania():
 
 data_to_graph()
 new_dot()
+same_edge_collection()
 # circle_mania()
 write_graph_to_file()
 # print nodes

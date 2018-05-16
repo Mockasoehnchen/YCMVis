@@ -42,7 +42,8 @@ function prepare_comp(){
                 text: name,
                 font: getFont(name.length,h,w),
                 textAlign: 'center',
-                textVerticalAlign: 'middle'
+                textVerticalAlign: 'middle',
+                fill: 'rgb(0,51,102)'
             },
             onclick: echarts.util.curry(handle_compartment,index)
         });

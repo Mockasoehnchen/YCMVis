@@ -1,42 +1,44 @@
 var data =[
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "VOL_core_growth_single_vol"
+        ], 
+        "y": "53.472", 
+        "annotation": "YCM:r_os_flux", 
+        "name_alt": "dr_os", 
+        "name": "0", 
+        "equation": "(- Lp * (pi_t + pi_e - pi_i))", 
+        "state": "0", 
+        "links_from": [
             "6", 
             "15", 
             "8"
         ], 
+        "x": "108.71", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "name_alt": "dr_os", 
-        "equation": "(- Lp * (pi_t + pi_e - pi_i))", 
+        "y": "55.472", 
+        "annotation": "SBO:0000467", 
+        "name_alt": "G", 
+        "name": "1", 
+        "equation": "(4. * pi * r**2.)", 
         "state": "0", 
-        "y": "53.472", 
-        "x": "95.28", 
-        "annotation": "YCM:r_os_flux", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "0"
-    }, 
-    {
-        "links_to": [
+        "links_from": [
             "9", 
             "2"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "VOL_core_growth_single_vol"
-        ], 
-        "name_alt": "G", 
-        "equation": "(4. * pi * r**2.)", 
-        "state": "0", 
-        "y": "55.472", 
-        "x": "95.835", 
-        "annotation": "SBO:0000467", 
+        "x": "106.6", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "1"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -48,36 +50,37 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "name_alt": "c_i", 
-        "state": "0", 
         "y": "56.472", 
-        "x": "96.391", 
         "annotation": "YCM:internal_osmolarity", 
+        "name_alt": "c_i", 
+        "name": "2", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "105.32", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "2"
+        "is_ode": true
     }, 
     {
-        "links_to": [
-            "10"
-        ], 
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "VOL_core_growth_single_vol"
         ], 
+        "y": "54.472", 
+        "annotation": "YCM:r_b_flux", 
         "name_alt": "dr_b", 
+        "name": "3", 
         "equation": "(0.2 * dR_ref)", 
         "state": "0", 
-        "y": "54.472", 
-        "x": "97.835", 
-        "annotation": "YCM:r_b_flux", 
+        "links_from": [
+            "10"
+        ], 
+        "x": "107.71", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "3"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "11", 
             "259"
         ], 
         "symbol": "triangle", 
@@ -91,15 +94,18 @@ var data =[
             "MET_DNA", 
             "MET_CWS"
         ], 
+        "y": "54.472", 
+        "annotation": "SBO:0000468", 
         "name_alt": "int_vol", 
+        "name": "4", 
         "equation": "(0.8 * V)", 
         "state": "0", 
-        "y": "54.472", 
-        "x": "87.474", 
-        "annotation": "SBO:0000468", 
+        "links_from": [
+            "11"
+        ], 
+        "x": "56.319", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "4"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -112,25 +118,23 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "name_alt": "r_os", 
-        "state": "osmotic", 
         "y": "59.472", 
-        "x": "94.794", 
         "annotation": "SBO:0000466", 
+        "name_alt": "r_os", 
+        "name": "5", 
+        "state": "osmotic", 
+        "links_from": [], 
+        "x": "106.04", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "5"
+        "is_ode": true
     }, 
     {
         "links_to": [
             "10", 
             "0", 
             "14", 
-            "5", 
             "12", 
             "9", 
-            "6", 
-            "6", 
             "6", 
             "6", 
             "15", 
@@ -139,84 +143,104 @@ var data =[
             "12", 
             "9", 
             "6", 
-            "6", 
             "12", 
             "9", 
             "12", 
             "9", 
-            "6", 
-            "6", 
             "6", 
             "6", 
             "15", 
             "8", 
             "9", 
-            "6", 
-            "6", 
-            "12"
+            "6"
         ], 
         "symbol": "circle", 
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "name_alt": "pi_t", 
-        "state": "turgor", 
         "y": "58.472", 
-        "x": "95.391", 
         "annotation": "SBO:0000279", 
+        "name_alt": "pi_t", 
+        "name": "6", 
+        "state": "turgor", 
+        "links_from": [
+            "5", 
+            "6", 
+            "6", 
+            "6", 
+            "6", 
+            "6", 
+            "6", 
+            "12"
+        ], 
+        "x": "106.35", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "6"
+        "is_ode": true
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "VOL_core_growth_single_vol"
+        ], 
+        "y": "56.472", 
+        "annotation": "SBO:0000468", 
+        "name_alt": "V_ref", 
+        "name": "7", 
+        "equation": "(4. / 3. * pi * 10**(-15) * R_ref**3.)", 
+        "state": "relaxed", 
+        "links_from": [
+            "12"
+        ], 
+        "x": "107.88", 
+        "compartment": "intracellular", 
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "12"
+            "0", 
+            "14"
         ], 
         "symbol": "triangle", 
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "name_alt": "V_ref", 
-        "equation": "(4. / 3. * pi * 10**(-15) * R_ref**3.)", 
-        "state": "relaxed", 
-        "y": "56.472", 
-        "x": "95.391", 
-        "annotation": "SBO:0000468", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "7"
-    }, 
-    {
-        "links_to": [
+        "y": "54.472", 
+        "annotation": "SBO:0000279", 
+        "name_alt": "pi_i", 
+        "name": "8", 
+        "equation": "(c_i /V * R * T)", 
+        "state": "0", 
+        "links_from": [
             "2", 
             "11", 
-            "0", 
-            "14", 
             "5", 
             "6", 
             "6"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "VOL_core_growth_single_vol"
-        ], 
-        "name_alt": "pi_i", 
-        "equation": "(c_i /V * R * T)", 
-        "state": "0", 
-        "y": "54.472", 
-        "x": "95.197", 
-        "annotation": "SBO:0000279", 
+        "x": "108.71", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "8"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "10", 
             "1", 
+            "11"
+        ], 
+        "symbol": "triangle", 
+        "module": [
+            "VOL_core_growth_single_vol"
+        ], 
+        "y": "56.472", 
+        "annotation": "SBO:0000466", 
+        "name_alt": "r", 
+        "name": "9", 
+        "equation": "(r_os + r_b)", 
+        "state": "0", 
+        "links_from": [
             "5", 
             "13", 
-            "11", 
             "6", 
             "6", 
             "6", 
@@ -225,73 +249,62 @@ var data =[
             "6", 
             "12"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "VOL_core_growth_single_vol"
-        ], 
-        "name_alt": "r", 
-        "equation": "(r_os + r_b)", 
-        "state": "0", 
-        "y": "56.472", 
-        "x": "97.669", 
-        "annotation": "SBO:0000466", 
+        "x": "106.32", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "9"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "12", 
-            "9", 
-            "6", 
             "3", 
-            "14", 
-            "13"
+            "14"
         ], 
         "symbol": "triangle", 
         "module": [
             "VOL_core_growth_single_vol"
         ], 
+        "y": "55.472", 
+        "annotation": "YCM:R_ref_flux", 
         "name_alt": "dR_ref", 
+        "name": "10", 
         "equation": "(phi * R_ref * r / (2.0 * d) * maximum(pi_t - pi_c, 0.0))", 
         "state": "0", 
-        "y": "55.472", 
-        "x": "97.835", 
-        "annotation": "YCM:R_ref_flux", 
+        "links_from": [
+            "12", 
+            "9", 
+            "6", 
+            "13"
+        ], 
+        "x": "107.6", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "10"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "4", 
-            "8", 
-            "9", 
-            "2"
+            "8"
         ], 
         "symbol": "triangle", 
         "module": [
             "VOL_core_growth_single_vol"
         ], 
+        "y": "55.472", 
+        "annotation": "SBO:0000468", 
         "name_alt": "V", 
+        "name": "11", 
         "equation": "(4. / 3. * pi * 10**(-15) * r**3.)", 
         "state": "total", 
-        "y": "55.472", 
-        "x": "96.835", 
-        "annotation": "SBO:0000468", 
+        "links_from": [
+            "9", 
+            "2"
+        ], 
+        "x": "105.32", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "11"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "10", 
             "7", 
-            "6", 
-            "6", 
-            "6", 
-            "6", 
-            "12", 
             "12", 
             "9", 
             "6"
@@ -300,14 +313,21 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "name_alt": "R_ref", 
-        "state": "0", 
         "y": "57.472", 
-        "x": "95.391", 
         "annotation": "YCM:radius_relaxed_volume", 
+        "name_alt": "R_ref", 
+        "name": "12", 
+        "state": "0", 
+        "links_from": [
+            "6", 
+            "6", 
+            "6", 
+            "6", 
+            "12"
+        ], 
+        "x": "107.62", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "12"
+        "is_ode": true
     }, 
     {
         "links_to": [
@@ -318,84 +338,88 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "name_alt": "r_b", 
-        "state": "nonosmotic", 
         "y": "57.472", 
-        "x": "98.169", 
         "annotation": "SBO:0000466", 
+        "name_alt": "r_b", 
+        "name": "13", 
+        "state": "nonosmotic", 
+        "links_from": [], 
+        "x": "106.62", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "13"
+        "is_ode": true
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "VOL_core_growth_single_vol"
+        ], 
+        "y": "53.472", 
+        "annotation": "YCM:r_flux", 
+        "name_alt": "dr", 
+        "name": "14", 
+        "equation": "(0.2 * dR_ref - Lp * (pi_t + pi_e - pi_i))", 
+        "state": "0", 
+        "links_from": [
             "10", 
             "6", 
             "15", 
             "8"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "VOL_core_growth_single_vol"
-        ], 
-        "name_alt": "dr", 
-        "equation": "(0.2 * dR_ref - Lp * (pi_t + pi_e - pi_i))", 
-        "state": "0", 
-        "y": "53.472", 
-        "x": "96.516", 
-        "annotation": "YCM:r_flux", 
+        "x": "107.29", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "14"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "0", 
-            "14", 
-            "5", 
-            "6", 
-            "6"
+            "14"
         ], 
         "symbol": "triangle", 
         "module": [
             "VOL_core_growth_single_vol"
         ], 
+        "y": "58.472", 
+        "annotation": "SBO:0000279", 
         "name_alt": "pi_e", 
+        "name": "15", 
         "equation": "(c_e * R * T)", 
         "state": "0", 
-        "y": "57.472", 
-        "x": "31.308", 
-        "annotation": "SBO:0000279", 
+        "links_from": [
+            "5", 
+            "6", 
+            "6"
+        ], 
+        "x": "41.167", 
         "compartment": "extracellular", 
-        "is_ode": false, 
-        "name": "15"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "72", 
             "82", 
             "89", 
-            "91", 
             "121"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Swe1_cyt", 
-        "state": "0", 
         "y": "58.472", 
-        "x": "93.28", 
         "annotation": "SGD:S000003723p", 
+        "name_alt": "Swe1_cyt", 
+        "name": "16", 
+        "state": "0", 
+        "links_from": [
+            "91"
+        ], 
+        "x": "103.28", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "16"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "67", 
-            "97", 
-            "109", 
             "113", 
             "118", 
             "119"
@@ -404,110 +428,120 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Swi5_nuc", 
-        "state": "0", 
         "y": "42.472", 
-        "x": "88.03", 
         "annotation": "SGD:S000002553p", 
+        "name_alt": "Swi5_nuc", 
+        "name": "17", 
+        "state": "0", 
+        "links_from": [
+            "97", 
+            "109"
+        ], 
+        "x": "106.9", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "17"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "62", 
             "70"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "SBF_p_cyt", 
-        "state": "P", 
         "y": "36.472", 
-        "x": "87.877", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
+        "name_alt": "SBF_p_cyt", 
+        "name": "18", 
+        "state": "P", 
+        "links_from": [
+            "62"
+        ], 
+        "x": "99.153", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "18"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "55", 
             "61", 
-            "76", 
-            "78", 
             "117"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Far1_cyt", 
-        "state": "0", 
         "y": "30.472", 
-        "x": "90.419", 
         "annotation": "SGD:S000003693p", 
+        "name_alt": "Far1_cyt", 
+        "name": "19", 
+        "state": "0", 
+        "links_from": [
+            "76", 
+            "78"
+        ], 
+        "x": "103.71", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "19"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "77", 
             "80", 
             "86", 
             "90", 
             "99", 
             "123", 
             "124", 
-            "135", 
-            "136"
-        ], 
-        "symbol": "circle", 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "APC_cyt", 
-        "state": "0", 
-        "y": "42.472", 
-        "x": "91.53", 
-        "annotation": "SGD:S000002971p", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "20"
-    }, 
-    {
-        "links_to": [
-            "64", 
-            "64", 
-            "70", 
-            "77", 
-            "92", 
-            "97", 
-            "102", 
-            "130", 
             "135"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Cdc14_p_cyt", 
-        "state": "P", 
-        "y": "40.472", 
-        "x": "86.641", 
-        "annotation": "SGD:S000001924p", 
+        "y": "42.472", 
+        "annotation": "SGD:S000002971p", 
+        "name_alt": "APC_cyt", 
+        "name": "20", 
+        "state": "0", 
+        "links_from": [
+            "77", 
+            "136"
+        ], 
+        "x": "103.56", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "21"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "87", 
+            "64", 
+            "70", 
+            "77", 
+            "92", 
+            "97", 
+            "130"
+        ], 
+        "symbol": "circle", 
+        "module": [
+            "CDC_core"
+        ], 
+        "y": "40.472", 
+        "annotation": "SGD:S000001924p", 
+        "name_alt": "Cdc14_p_cyt", 
+        "name": "21", 
+        "state": "P", 
+        "links_from": [
+            "64", 
+            "102", 
+            "135"
+        ], 
+        "x": "102.12", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
             "93", 
             "108", 
-            "110", 
             "128", 
             "134"
         ], 
@@ -515,19 +549,21 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb5_Sic1_cyt", 
-        "state": "0", 
         "y": "28.472", 
-        "x": "94.96", 
         "annotation": "SGD:S000006324p_SGD:S000004069p", 
+        "name_alt": "Clb5_Sic1_cyt", 
+        "name": "22", 
+        "state": "0", 
+        "links_from": [
+            "87", 
+            "110"
+        ], 
+        "x": "109.04", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "22"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "59", 
-            "74", 
             "81", 
             "130"
         ], 
@@ -535,19 +571,22 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Whi5_p_cyt", 
-        "state": "P", 
         "y": "26.472", 
-        "x": "84.294", 
         "annotation": "SGD:S000005609p", 
+        "name_alt": "Whi5_p_cyt", 
+        "name": "23", 
+        "state": "P", 
+        "links_from": [
+            "59", 
+            "74"
+        ], 
+        "x": "96.958", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "23"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "64", 
-            "92", 
             "102", 
             "135"
         ], 
@@ -555,14 +594,17 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Cdc14_cyt", 
-        "state": "0", 
         "y": "38.472", 
-        "x": "86.641", 
         "annotation": "SGD:S000001924p", 
+        "name_alt": "Cdc14_cyt", 
+        "name": "24", 
+        "state": "0", 
+        "links_from": [
+            "92"
+        ], 
+        "x": "102.12", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "24"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -577,38 +619,40 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Hog1_PP_cyt", 
-        "state": "PP", 
         "y": "44.472", 
-        "x": "96.058", 
         "annotation": "SGD:S000004103p", 
+        "name_alt": "Hog1_PP_cyt", 
+        "name": "25", 
+        "state": "PP", 
+        "links_from": [], 
+        "x": "108.79", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "25"
+        "is_ode": true
     }, 
     {
         "links_to": [
             "71", 
-            "96", 
-            "132"
+            "96"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb3_Sic1_cyt", 
-        "state": "0", 
         "y": "48.472", 
-        "x": "93.308", 
         "annotation": "SGD:S000002314p_SGD:S000004069p", 
+        "name_alt": "Clb3_Sic1_cyt", 
+        "name": "26", 
+        "state": "0", 
+        "links_from": [
+            "132"
+        ], 
+        "x": "110.35", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "26"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "58", 
-            "66", 
             "85", 
             "94"
         ], 
@@ -616,206 +660,227 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Cln2_Far1_p_cyt", 
-        "state": "P", 
         "y": "34.472", 
-        "x": "90.363", 
         "annotation": "SGD:S000006177p_SGD:S000003693p", 
+        "name_alt": "Cln2_Far1_p_cyt", 
+        "name": "27", 
+        "state": "P", 
+        "links_from": [
+            "66"
+        ], 
+        "x": "102.07", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "27"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "72", 
-            "82", 
             "120"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Swe1_p_cyt", 
-        "state": "P", 
         "y": "42.472", 
-        "x": "98.697", 
         "annotation": "SGD:S000003723p", 
+        "name_alt": "Swe1_p_cyt", 
+        "name": "28", 
+        "state": "P", 
+        "links_from": [
+            "72", 
+            "82"
+        ], 
+        "x": "108.12", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "28"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "63", 
-            "75", 
-            "79", 
             "87", 
             "90", 
             "98", 
             "101", 
-            "108", 
             "118", 
             "122", 
-            "124", 
-            "134"
+            "124"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb5_cyt", 
-        "state": "0", 
         "y": "32.472", 
-        "x": "93.669", 
         "annotation": "SGD:S000006324p", 
+        "name_alt": "Clb5_cyt", 
+        "name": "29", 
+        "state": "0", 
+        "links_from": [
+            "75", 
+            "79", 
+            "108", 
+            "134"
+        ], 
+        "x": "106.82", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "29"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "60", 
             "74", 
-            "127", 
+            "127"
+        ], 
+        "symbol": "circle", 
+        "module": [
+            "CDC_core"
+        ], 
+        "y": "24.472", 
+        "annotation": "SGD:S000005609p", 
+        "name_alt": "Whi5_cyt", 
+        "name": "30", 
+        "state": "0", 
+        "links_from": [
             "130", 
             "131"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "Whi5_cyt", 
-        "state": "0", 
-        "y": "24.472", 
-        "x": "81.266", 
-        "annotation": "SGD:S000005609p", 
+        "x": "95.639", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "30"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "69", 
-            "101", 
-            "108"
+            "69"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Sic1_p_cyt", 
-        "state": "P", 
         "y": "26.472", 
-        "x": "96.335", 
         "annotation": "SGD:S000004069p", 
+        "name_alt": "Sic1_p_cyt", 
+        "name": "31", 
+        "state": "P", 
+        "links_from": [
+            "101", 
+            "108"
+        ], 
+        "x": "109.92", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "31"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "59", 
-            "68", 
             "74", 
             "107", 
-            "115", 
-            "138", 
-            "140"
+            "138"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Cln3_cyt", 
-        "state": "0", 
         "y": "28.472", 
-        "x": "86.641", 
         "annotation": "SGD:S000000038p", 
+        "name_alt": "Cln3_cyt", 
+        "name": "32", 
+        "state": "0", 
+        "links_from": [
+            "68", 
+            "115", 
+            "140"
+        ], 
+        "x": "98.375", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "32"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "63", 
             "79", 
-            "110", 
-            "128"
+            "110"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb5_Sic1_Hp_cyt", 
-        "state": "HP", 
         "y": "30.472", 
-        "x": "94.308", 
         "annotation": "SGD:S000006324p_SGD:S000004069p", 
+        "name_alt": "Clb5_Sic1_Hp_cyt", 
+        "name": "33", 
+        "state": "HP", 
+        "links_from": [
+            "63", 
+            "128"
+        ], 
+        "x": "107.49", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "33"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "53", 
-            "133", 
-            "137"
+            "133"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Mih1_cyt", 
-        "state": "0", 
         "y": "56.472", 
-        "x": "90.516", 
         "annotation": "SGD:S000004639p", 
+        "name_alt": "Mih1_cyt", 
+        "name": "34", 
+        "state": "0", 
+        "links_from": [
+            "137"
+        ], 
+        "x": "100.53", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "34"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "54", 
             "66", 
-            "68", 
             "78", 
             "88", 
-            "94", 
-            "107", 
-            "117"
+            "107"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Far1_p_cyt", 
-        "state": "P", 
         "y": "32.472", 
-        "x": "84.447", 
         "annotation": "SGD:S000003693p", 
+        "name_alt": "Far1_p_cyt", 
+        "name": "35", 
+        "state": "P", 
+        "links_from": [
+            "68", 
+            "94", 
+            "117"
+        ], 
+        "x": "100.21", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "35"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "53", 
-            "106", 
-            "121"
+            "106"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb2_p_cyt", 
-        "state": "P", 
         "y": "56.472", 
-        "x": "92.002", 
         "annotation": "SGD:S000006323p", 
+        "name_alt": "Clb2_p_cyt", 
+        "name": "36", 
+        "state": "P", 
+        "links_from": [
+            "121"
+        ], 
+        "x": "102.03", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "36"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -827,70 +892,75 @@ var data =[
             "GEX_TRL", 
             "MET_DNA"
         ], 
-        "name_alt": "nuc_vol", 
-        "state": "0", 
-        "y": "26.472", 
-        "x": "101.31", 
+        "y": "27.472", 
         "annotation": "SBO:0000468", 
+        "name_alt": "nuc_vol", 
+        "name": "37", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "114.43", 
         "compartment": "nucleus", 
-        "is_ode": true, 
-        "name": "37"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "53", 
             "57", 
             "62", 
             "72", 
             "80", 
-            "95", 
             "102", 
             "103", 
             "119", 
             "121", 
             "123", 
-            "125", 
             "129"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb2_cyt", 
-        "state": "0", 
         "y": "54.472", 
-        "x": "91.53", 
         "annotation": "SGD:S000006323p", 
+        "name_alt": "Clb2_cyt", 
+        "name": "38", 
+        "state": "0", 
+        "links_from": [
+            "53", 
+            "95", 
+            "125"
+        ], 
+        "x": "102.49", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "38"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "57", 
             "65", 
-            "67", 
-            "71", 
-            "84", 
             "87", 
-            "95", 
             "100", 
             "101", 
-            "132", 
-            "134"
+            "132"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Sic1_cyt", 
-        "state": "0", 
         "y": "50.472", 
-        "x": "93.544", 
         "annotation": "SGD:S000004069p", 
+        "name_alt": "Sic1_cyt", 
+        "name": "39", 
+        "state": "0", 
+        "links_from": [
+            "67", 
+            "71", 
+            "84", 
+            "95", 
+            "134"
+        ], 
+        "x": "109.43", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "39"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -901,18 +971,18 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Fus3_cyt", 
-        "state": "0", 
         "y": "32.472", 
-        "x": "89.197", 
         "annotation": "SGD:S000000112p", 
+        "name_alt": "Fus3_cyt", 
+        "name": "40", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "104.1", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "40"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "57", 
             "83", 
             "95"
         ], 
@@ -920,60 +990,65 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb2_Sic1_cyt", 
-        "state": "0", 
         "y": "52.472", 
-        "x": "92.419", 
         "annotation": "SGD:S000006323p_SGD:S000004069p", 
+        "name_alt": "Clb2_Sic1_cyt", 
+        "name": "41", 
+        "state": "0", 
+        "links_from": [
+            "57"
+        ], 
+        "x": "106.01", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "41"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "59", 
-            "60", 
             "139"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "SBF_Whi5_nuc", 
-        "state": "0", 
         "y": "28.472", 
-        "x": "82.585", 
         "annotation": "SGD:S000000913p_SGD:S000004172p_SGD:S000005609p", 
+        "name_alt": "SBF_Whi5_nuc", 
+        "name": "42", 
+        "state": "0", 
+        "links_from": [
+            "60"
+        ], 
+        "x": "95.819", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "42"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "77", 
-            "105", 
-            "123", 
-            "124"
+            "105"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "APC_p_cyt", 
-        "state": "P", 
         "y": "30.472", 
-        "x": "84.363", 
         "annotation": "SGD:S000002971p", 
+        "name_alt": "APC_p_cyt", 
+        "name": "43", 
+        "state": "P", 
+        "links_from": [
+            "123", 
+            "124"
+        ], 
+        "x": "94.653", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "43"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "56", 
-            "103", 
             "109", 
-            "116", 
             "125", 
             "136"
         ], 
@@ -981,36 +1056,42 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Mcm1_nuc", 
-        "state": "0", 
         "y": "44.472", 
-        "x": "91.113", 
         "annotation": "SGD:S000004646p", 
+        "name_alt": "Mcm1_nuc", 
+        "name": "44", 
+        "state": "0", 
+        "links_from": [
+            "103", 
+            "116"
+        ], 
+        "x": "104.83", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "44"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "71", 
             "86", 
             "104", 
             "116", 
-            "122", 
             "132"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Clb3_cyt", 
-        "state": "0", 
         "y": "46.472", 
-        "x": "92.766", 
         "annotation": "SGD:S000002314p", 
+        "name_alt": "Clb3_cyt", 
+        "name": "45", 
+        "state": "0", 
+        "links_from": [
+            "71", 
+            "122"
+        ], 
+        "x": "110.75", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "45"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -1019,12 +1100,9 @@ var data =[
             "59", 
             "66", 
             "74", 
-            "85", 
             "88", 
-            "94", 
             "101", 
             "108", 
-            "111", 
             "114", 
             "115"
         ], 
@@ -1032,60 +1110,68 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Cln2_cyt", 
-        "state": "0", 
         "y": "36.472", 
-        "x": "91.697", 
         "annotation": "SGD:S000006177p", 
+        "name_alt": "Cln2_cyt", 
+        "name": "46", 
+        "state": "0", 
+        "links_from": [
+            "85", 
+            "94", 
+            "111"
+        ], 
+        "x": "102.93", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "46"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "73", 
-            "97", 
-            "118", 
-            "119"
+            "97"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Swi5_p_cyt", 
-        "state": "P", 
         "y": "30.472", 
-        "x": "81.141", 
         "annotation": "SGD:S000002553p", 
+        "name_alt": "Swi5_p_cyt", 
+        "name": "47", 
+        "state": "P", 
+        "links_from": [
+            "118", 
+            "119"
+        ], 
+        "x": "101.88", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "47"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "59", 
             "60", 
             "62", 
-            "70", 
             "111"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "SBF_nuc", 
-        "state": "0", 
         "y": "38.472", 
-        "x": "89.294", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
+        "name_alt": "SBF_nuc", 
+        "name": "48", 
+        "state": "0", 
+        "links_from": [
+            "59", 
+            "70"
+        ], 
+        "x": "100.01", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "48"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "68", 
-            "107", 
             "112", 
             "115"
         ], 
@@ -1093,18 +1179,20 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Cln3_Far1_p_cyt", 
-        "state": "P", 
         "y": "30.472", 
-        "x": "87.085", 
         "annotation": "SGD:S000000038p_SGD:S000003693p", 
+        "name_alt": "Cln3_Far1_p_cyt", 
+        "name": "49", 
+        "state": "P", 
+        "links_from": [
+            "107"
+        ], 
+        "x": "98.875", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "49"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "52", 
             "75", 
             "126"
         ], 
@@ -1112,1757 +1200,1906 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "MBF_nuc", 
-        "state": "0", 
         "y": "34.472", 
-        "x": "93.03", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
+        "name_alt": "MBF_nuc", 
+        "name": "50", 
+        "state": "0", 
+        "links_from": [
+            "52"
+        ], 
+        "x": "103.93", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "50"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "63", 
-            "79", 
-            "84", 
-            "100"
+            "84"
         ], 
         "symbol": "circle", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "Sic1_Hp_cyt", 
-        "state": "HP", 
         "y": "28.472", 
-        "x": "96.141", 
         "annotation": "SGD:S000004069p", 
+        "name_alt": "Sic1_Hp_cyt", 
+        "name": "51", 
+        "state": "HP", 
+        "links_from": [
+            "79", 
+            "100"
+        ], 
+        "x": "106.71", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "51"
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *    ( ( kp_MBF  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( K_MBF  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   )", 
-        "name": "52", 
-        "x": "93.03", 
-        "y": "35.472", 
         "links_to": [
-            "50", 
-            "46"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_MBF_akt"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kdp_Clb2  *  Clb2_p_cyt )  *  Mih1_cyt )  )", 
-        "name": "53", 
-        "x": "91.03", 
-        "y": "55.472", 
-        "links_to": [
-            "36", 
-            "38", 
-            "34"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb2_dp"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Far1p  *  Far1_p_cyt )  )", 
-        "name": "54", 
-        "x": "83.808", 
-        "y": "31.472", 
-        "links_to": [
-            "35"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Far1p_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kdd_Far1  *  Far1_cyt )  *  Cln2_cyt )  )", 
-        "name": "55", 
-        "x": "92.419", 
-        "y": "29.472", 
-        "links_to": [
-            "19", 
-            "46"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Far1_dd"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Mcm1  *  Mcm1_nuc )  )", 
-        "name": "56", 
-        "x": "90.585", 
-        "y": "43.472", 
-        "links_to": [
-            "44"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Mcm1_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( (   kcf_Clb2_Sic1 )  *  Clb2_cyt )  *  Sic1_cyt )", 
-        "name": "57", 
-        "x": "90.891", 
-        "y": "53.472", 
-        "links_to": [
-            "38", 
-            "39", 
-            "41"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb2_ass_Sic1"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Cln2_Far1p  *  Cln2_Far1_p_cyt )  )", 
-        "name": "58", 
-        "x": "90.363", 
-        "y": "33.472", 
-        "links_to": [
-            "27"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln2_Far1p_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( SBF_Whi5_nuc  *  (  ( ( kppa_Cln3_Whi5  *  Cln3_cyt )  /  ( Kpp_Cln3_Whi5  + Cln3_cyt ) )   +  ( ( kppa_Cln2_Whi5  *  ( (Cln2_cyt)  **  n_SBF ) )  /  ( ( Kpp_Cln2_Whi5  **  n_SBF )  + ( (Cln2_cyt)  **  n_SBF ) ) )  ) )  )", 
-        "name": "59", 
-        "x": "84.294", 
-        "y": "27.472", 
-        "links_to": [
-            "42", 
-            "23", 
-            "48", 
-            "46", 
-            "32"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_SBF_akt"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kcf_SBF_Whi5  *  SBF_nuc )  *  Whi5_cyt )  )", 
-        "name": "60", 
-        "x": "82.585", 
-        "y": "29.472", 
-        "links_to": [
-            "48", 
-            "30", 
-            "42"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_SBF_ass_Whi5"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Far1  *  Far1_cyt )  )", 
-        "name": "61", 
-        "x": "91.419", 
-        "y": "29.472", 
-        "links_to": [
-            "19"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Far1_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_SBF_Clb2  *  SBF_nuc )  *  Clb2_cyt )  )", 
-        "name": "62", 
-        "x": "88.197", 
-        "y": "37.472", 
-        "links_to": [
-            "48", 
-            "18", 
-            "38"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_SBF_inakt_Clb2"
-    }, 
-    {
-        "rate": "( int_vol *   ( (   kcf_Clb5_Sic1_Hp )  *  Clb5_cyt )  *  Sic1_Hp_cyt )", 
-        "name": "63", 
-        "x": "94.585", 
-        "y": "31.472", 
-        "links_to": [
-            "51", 
-            "29", 
-            "33"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_ass_Sic1_Hp"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Cdc14_MEN  *  Cdc14_cyt )  *  Cdc14_p_cyt )  )", 
-        "name": "64", 
-        "x": "86.919", 
-        "y": "37.472", 
-        "links_to": [
-            "24", 
-            "21", 
-            "21"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cdc14_akt_MEN_fb"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Sic1  *  Sic1_cyt )  )", 
-        "name": "65", 
-        "x": "91.419", 
-        "y": "49.472", 
-        "links_to": [
-            "39"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Sic1_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kcf_Cln2_Far1p  *  Cln2_cyt )  *  Far1_p_cyt )  )", 
-        "name": "66", 
-        "x": "90.641", 
-        "y": "35.472", 
-        "links_to": [
-            "46", 
-            "35", 
-            "27"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln2_ass_Far1p"
-    }, 
-    {
-        "rate": "( int_vol *    ( ( kp_Sic1  *  Swi5_nuc )  /  ( Kp_Sic1  + Swi5_nuc ) )   )", 
-        "name": "67", 
-        "x": "85.697", 
-        "y": "41.472", 
-        "links_to": [
-            "39", 
-            "17"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Sic1_p"
-    }, 
-    {
-        "rate": "( int_vol *   ( kcd_Cln3_Far1p  *  Cln3_Far1_p_cyt )  )", 
-        "name": "68", 
-        "x": "87.141", 
-        "y": "29.472", 
-        "links_to": [
-            "49", 
-            "32", 
-            "35"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln3_diss_Far1p"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Sic1p  *  Sic1_p_cyt )  )", 
-        "name": "69", 
-        "x": "96.335", 
-        "y": "25.472", 
-        "links_to": [
-            "31"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Sic1_p_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kdp_SBF  *  SBF_p_cyt )  *  Cdc14_p_cyt )  )", 
-        "name": "70", 
-        "x": "88.197", 
-        "y": "39.472", 
-        "links_to": [
-            "18", 
-            "48", 
-            "21"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_SBF_dp"
-    }, 
-    {
-        "rate": "( int_vol * ( kcd_Clb3_Sic1  *  Clb3_Sic1_cyt )  )", 
-        "name": "71", 
-        "x": "92.308", 
-        "y": "47.472", 
-        "links_to": [
-            "26", 
-            "45", 
-            "39"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb3_diss_Sic1"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Swe1_Clb2  *  Swe1_cyt )  *  Clb2_cyt )  )", 
-        "name": "72", 
-        "x": "94.28", 
-        "y": "53.472", 
-        "links_to": [
-            "16", 
-            "28", 
-            "38"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Swe1_pp"
-    }, 
-    {
-        "rate": "( int_vol * ( kd_Swi5_p  *  Swi5_p_cyt )  )", 
-        "name": "73", 
-        "x": "81.585", 
-        "y": "29.472", 
-        "links_to": [
-            "47"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Swi5_p_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( Whi5_cyt  *  ( ( kpp_Cln2_Whi5  *  Cln2_cyt )  + ( kpp_Cln3_Whi5  *  Cln3_cyt ) ) )  )", 
-        "name": "74", 
-        "x": "86.141", 
-        "y": "23.472", 
-        "links_to": [
-            "30", 
-            "23", 
-            "46", 
-            "32"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Whi5_pp"
-    }, 
-    {
-        "rate": "( int_vol *    (  ( ( kp_Clb5  *  MBF_nuc )  /  ( Kp_Clb5  + MBF_nuc ) )   /  ( 1.0  + ( kI_Clb5_Hog1  *  Hog1_PP_cyt ) ) )   )", 
-        "name": "75", 
-        "x": "94.308", 
-        "y": "33.472", 
-        "links_to": [
-            "29", 
-            "25", 
             "50"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Clb5_p"
+        "links_from": [
+            "46"
+        ], 
+        "rate": "( int_vol *    ( ( kp_MBF  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( K_MBF  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   )", 
+        "name_alt": "v_MBF_akt", 
+        "name": "52", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "35.472", 
+        "x": "103.75", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( ( kp_Far1  *  Fus3_cyt )  + kp_basal_Far1 )  )", 
-        "name": "76", 
-        "x": "89.197", 
-        "y": "31.472", 
         "links_to": [
+            "38"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "36", 
+            "34"
+        ], 
+        "rate": "( int_vol *   ( ( kdp_Clb2  *  Clb2_p_cyt )  *  Mih1_cyt )  )", 
+        "name_alt": "v_Clb2_dp", 
+        "name": "53", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "55.472", 
+        "x": "101.03", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "35"
+        ], 
+        "rate": "( int_vol *   ( kd_Far1p  *  Far1_p_cyt )  )", 
+        "name_alt": "v_Far1p_d", 
+        "name": "54", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "99.875", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
             "19", 
-            "40"
+            "46"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( ( kdd_Far1  *  Far1_cyt )  *  Cln2_cyt )  )", 
+        "name_alt": "v_Far1_dd", 
+        "name": "55", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Far1_p"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( ka_APC_Cdc14  *  APC_p_cyt )  *  Cdc14_p_cyt )  )", 
-        "name": "77", 
-        "x": "83.863", 
         "y": "29.472", 
-        "links_to": [
-            "43", 
-            "20", 
-            "21"
-        ], 
+        "x": "103.93", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_APC_akt_Cdc14"
-    }, 
-    {
-        "rate": "( int_vol *   ( kdp_Far1p  *  Far1_p_cyt )  )", 
-        "name": "78", 
-        "x": "82.808", 
-        "y": "31.472", 
-        "links_to": [
-            "35", 
-            "19"
+        "links_from": [
+            "44"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( kd_Mcm1  *  Mcm1_nuc )  )", 
+        "name_alt": "v_Mcm1_d", 
+        "name": "56", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Far1p_dp"
-    }, 
-    {
-        "rate": "( int_vol * ( kcd_Clb5_Sic1_Hp  *  Clb5_Sic1_Hp_cyt )  )", 
-        "name": "79", 
-        "x": "95.585", 
-        "y": "29.472", 
-        "links_to": [
-            "33", 
-            "51", 
-            "29"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_diss_Sic1_Hp"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kd_Clb2_APC  *  Clb2_cyt )  *  APC_cyt )  )", 
-        "name": "80", 
-        "x": "88.252", 
-        "y": "41.472", 
-        "links_to": [
-            "38", 
-            "20"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb2_d_APC"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Whi5p  *  Whi5_p_cyt )  )", 
-        "name": "81", 
-        "x": "84.294", 
-        "y": "25.472", 
-        "links_to": [
-            "23"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Whi5_p_d"
-    }, 
-    {
-        "rate": "( int_vol *    ( ( kpp_Swe1_Hls1  *  Swe1_cyt )  /  ( 1.0  + ( kI_Swe1_Hog1  *  Hog1_PP_cyt ) ) )   )", 
-        "name": "82", 
-        "x": "98.252", 
         "y": "43.472", 
-        "links_to": [
-            "16", 
-            "28", 
-            "25"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Swe1_Hog1"
+        "x": "105.83", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( kd_Clb2_Sic1  *  Clb2_Sic1_cyt )  )", 
-        "name": "83", 
-        "x": "92.419", 
-        "y": "51.472", 
         "links_to": [
             "41"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Clb2_Sic1_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( kdp_Sic1_Hp  *  Sic1_Hp_cyt )  )", 
-        "name": "84", 
-        "x": "98.238", 
-        "y": "27.472", 
-        "links_to": [
-            "51", 
-            "39"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Sic1_Hp_dp"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Cln2_Far1p  *  Cln2_Far1_p_cyt )  *  Cln2_cyt )  )", 
-        "name": "85", 
-        "x": "89.363", 
-        "y": "33.472", 
-        "links_to": [
-            "27", 
-            "46"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln2_rel"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kd_Clb3_APC  *  Clb3_cyt )  *  APC_cyt )  )", 
-        "name": "86", 
-        "x": "93.085", 
-        "y": "41.472", 
-        "links_to": [
-            "45", 
-            "20"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb3_d_APC"
-    }, 
-    {
-        "rate": "( int_vol *   ( (   kcf_Clb5_Sic1 )  *  Clb5_cyt )  *  Sic1_cyt )", 
-        "name": "87", 
-        "x": "96.863", 
-        "y": "31.472", 
-        "links_to": [
-            "39", 
-            "29", 
-            "22"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_ass_Sic1"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kdd_Far1p  *  Far1_p_cyt )  *  Cln2_cyt )  )", 
-        "name": "88", 
-        "x": "86.363", 
-        "y": "31.472", 
-        "links_to": [
-            "35", 
-            "46"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Far1_p_dd"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Swe1  *  Swe1_cyt )  )", 
-        "name": "89", 
-        "x": "93.002", 
-        "y": "57.472", 
-        "links_to": [
-            "16"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Swe1_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kd_Clb5_APC  *  Clb5_cyt )  *  APC_cyt )  )", 
-        "name": "90", 
-        "x": "90.197", 
-        "y": "31.472", 
-        "links_to": [
-            "29", 
-            "20"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_d_APC"
-    }, 
-    {
-        "rate": "( int_vol *   kp_Swe1  )", 
-        "name": "91", 
-        "x": "93.28", 
-        "y": "59.472", 
-        "links_to": [
-            "16"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Swe1_p"
-    }, 
-    {
-        "rate": "( int_vol *   ( ki_Cdc14  *  Cdc14_p_cyt )  )", 
-        "name": "92", 
-        "x": "86.641", 
-        "y": "39.472", 
-        "links_to": [
-            "21", 
-            "24"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cdc14_inakt"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Clb5_Sic1  *  Clb5_Sic1_cyt )  )", 
-        "name": "93", 
-        "x": "94.738", 
-        "y": "27.472", 
-        "links_to": [
-            "22"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_Sic1_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( kcd_Cln2_Far1p  *  Cln2_Far1_p_cyt )  )", 
-        "name": "94", 
-        "x": "88.363", 
-        "y": "33.472", 
-        "links_to": [
-            "27", 
-            "46", 
-            "35"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln2_diss_Far1p"
-    }, 
-    {
-        "rate": "( int_vol * ( kcd_Clb2_Sic1  *  Clb2_Sic1_cyt )  )", 
-        "name": "95", 
-        "x": "93.419", 
-        "y": "51.472", 
-        "links_to": [
-            "41", 
+        "links_from": [
             "38", 
             "39"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( (   kcf_Clb2_Sic1 )  *  Clb2_cyt )  *  Sic1_cyt )", 
+        "name_alt": "v_Clb2_ass_Sic1", 
+        "name": "57", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "53.472", 
+        "x": "105.74", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Clb2_diss_Sic1"
+        "links_from": [
+            "27"
+        ], 
+        "rate": "( int_vol *   ( kd_Cln2_Far1p  *  Cln2_Far1_p_cyt )  )", 
+        "name_alt": "v_Cln2_Far1p_d", 
+        "name": "58", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "33.472", 
+        "x": "101.93", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( kd_Clb3_Sic1  *  Clb3_Sic1_cyt )  )", 
-        "name": "96", 
-        "x": "93.308", 
-        "y": "47.472", 
         "links_to": [
-            "26"
+            "23", 
+            "48"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Clb3_Sic1_d"
+        "links_from": [
+            "42", 
+            "46", 
+            "32"
+        ], 
+        "rate": "( int_vol *   ( SBF_Whi5_nuc  *  (  ( ( kppa_Cln3_Whi5  *  Cln3_cyt )  /  ( Kpp_Cln3_Whi5  + Cln3_cyt ) )   +  ( ( kppa_Cln2_Whi5  *  ( (Cln2_cyt)  **  n_SBF ) )  /  ( ( Kpp_Cln2_Whi5  **  n_SBF )  + ( (Cln2_cyt)  **  n_SBF ) ) )  ) )  )", 
+        "name_alt": "v_SBF_akt", 
+        "name": "59", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "96.778", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( ( kdp_Swi5_Cdc14  *  Swi5_p_cyt )  *  Cdc14_p_cyt )  )", 
-        "name": "97", 
-        "x": "80.585", 
+        "links_to": [
+            "42"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "48", 
+            "30"
+        ], 
+        "rate": "( int_vol *   ( ( kcf_SBF_Whi5  *  SBF_nuc )  *  Whi5_cyt )  )", 
+        "name_alt": "v_SBF_ass_Whi5", 
+        "name": "60", 
+        "compartments": [
+            "intracellular"
+        ], 
         "y": "29.472", 
+        "x": "95.819", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "19"
+        ], 
+        "rate": "( int_vol *   ( kd_Far1  *  Far1_cyt )  )", 
+        "name_alt": "v_Far1_d", 
+        "name": "61", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "104.93", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
-            "47", 
-            "17", 
+            "18"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "48", 
+            "38"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_SBF_Clb2  *  SBF_nuc )  *  Clb2_cyt )  )", 
+        "name_alt": "v_SBF_inakt_Clb2", 
+        "name": "62", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "37.472", 
+        "x": "99.014", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "33"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "51", 
+            "29"
+        ], 
+        "rate": "( int_vol *   ( (   kcf_Clb5_Sic1_Hp )  *  Clb5_cyt )  *  Sic1_Hp_cyt )", 
+        "name_alt": "v_Clb5_ass_Sic1_Hp", 
+        "name": "63", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "106.54", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
             "21"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Swi5_dp"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Clb5  *  Clb5_cyt )  )", 
-        "name": "98", 
-        "x": "93.03", 
-        "y": "31.472", 
-        "links_to": [
-            "29"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_APC  *  APC_cyt )  )", 
-        "name": "99", 
-        "x": "91.53", 
-        "y": "41.472", 
-        "links_to": [
-            "20"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_APC_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Sic1_Hog1  *  Hog1_PP_cyt )  *  Sic1_cyt )  )", 
-        "name": "100", 
-        "x": "97.252", 
-        "y": "43.472", 
-        "links_to": [
-            "39", 
-            "51", 
-            "25"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Sic1_pp_Hog1"
-    }, 
-    {
-        "rate": "( int_vol *   ( Sic1_cyt  *  (  ( ( kpp_Cln2_Sic1  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( Kpp_Cln2_Sic1  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   +  ( ( kpp_Clb5_Sic1  *  ( (Clb5_cyt)  **  n1 ) )  /  ( ( Kpp_Clb5_Sic1  **  n1 )  + ( (Clb5_cyt)  **  n1 ) ) )  ) )  )", 
-        "name": "101", 
-        "x": "97.863", 
-        "y": "31.472", 
-        "links_to": [
-            "39", 
-            "31", 
-            "46", 
-            "29"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Sic1_pp"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Cdc14_Clb2  *  Cdc14_cyt )  *  Clb2_cyt )  )", 
-        "name": "102", 
-        "x": "84.808", 
-        "y": "37.472", 
-        "links_to": [
+        "links_from": [
             "24", 
-            "21", 
-            "38"
+            "21"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( ( kpp_Cdc14_MEN  *  Cdc14_cyt )  *  Cdc14_p_cyt )  )", 
+        "name_alt": "v_Cdc14_akt_MEN_fb", 
+        "name": "64", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cdc14_akt_Clb2"
-    }, 
-    {
-        "rate": "( int_vol *    ( ( kp_Mcm1  *  ( (Clb2_cyt)  **  n_Mcm1 ) )  /  ( ( Kp_Mcm1  **  n_Mcm1 )  + ( (Clb2_cyt)  **  n_Mcm1 ) ) )   )", 
-        "name": "103", 
-        "x": "90.585", 
-        "y": "52.472", 
-        "links_to": [
-            "44", 
-            "38"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Mcm1_p_Clb2_fb"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Clb3  *  Clb3_cyt )  )", 
-        "name": "104", 
-        "x": "92.447", 
-        "y": "45.472", 
-        "links_to": [
-            "45"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb3_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_APC_p  *  APC_p_cyt )  )", 
-        "name": "105", 
-        "x": "84.863", 
-        "y": "29.472", 
-        "links_to": [
-            "43"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_APC_p_d"
-    }, 
-    {
-        "rate": "( int_vol * ( kd_Clb2_p  *  Clb2_p_cyt )  )", 
-        "name": "106", 
-        "x": "92.03", 
-        "y": "55.472", 
-        "links_to": [
-            "36"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb2_p_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kcf_Cln3_Far1p  *  Cln3_cyt )  *  Far1_p_cyt )  )", 
-        "name": "107", 
-        "x": "85.085", 
-        "y": "31.472", 
-        "links_to": [
-            "32", 
-            "35", 
-            "49"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln3_ass_Far1p"
-    }, 
-    {
-        "rate": "( int_vol *   ( Clb5_Sic1_cyt  *  (  ( ( kpp_Cln2_Sic1  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( Kpp_Cln2_Sic1  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   +  ( ( kpp_Clb5_Sic1  *  ( (Clb5_cyt)  **  n1 ) )  /  ( ( Kpp_Clb5_Sic1  **  n1 )  + ( (Clb5_cyt)  **  n1 ) ) )  ) )  )", 
-        "name": "108", 
-        "x": "93.697", 
-        "y": "27.472", 
-        "links_to": [
-            "22", 
-            "31", 
-            "29", 
-            "46"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_rel"
-    }, 
-    {
-        "rate": "( int_vol *    ( ( kp_Swi5  *  Mcm1_nuc )  /  ( Kp_Swi5  + Mcm1_nuc ) )   )", 
-        "name": "109", 
-        "x": "89.308", 
-        "y": "43.472", 
-        "links_to": [
-            "17", 
-            "44"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Swi5_p"
-    }, 
-    {
-        "rate": "( int_vol *   ( kdp_Clb5_Sic1_Hp  *  Clb5_Sic1_Hp_cyt )  )", 
-        "name": "110", 
-        "x": "94.585", 
-        "y": "29.472", 
-        "links_to": [
-            "33", 
-            "22"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_Sic1_Hp_dp"
-    }, 
-    {
-        "rate": "( int_vol *    (  ( ( kp_Cln2  *  SBF_nuc )  /  ( Kp_Cln2  + SBF_nuc ) )   /  ( 1.0  + ( kI_Cln2_Hog1  *  Hog1_PP_cyt ) ) )   )", 
-        "name": "111", 
-        "x": "91.697", 
         "y": "37.472", 
+        "x": "102.4", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "39"
+        ], 
+        "rate": "( int_vol *   ( kd_Sic1  *  Sic1_cyt )  )", 
+        "name_alt": "v_Sic1_d", 
+        "name": "65", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "49.472", 
+        "x": "108.79", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
+            "27"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
             "46", 
-            "48", 
-            "25"
+            "35"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( ( kcf_Cln2_Far1p  *  Cln2_cyt )  *  Far1_p_cyt )  )", 
+        "name_alt": "v_Cln2_ass_Far1p", 
+        "name": "66", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln2_p"
+        "y": "35.472", 
+        "x": "102.21", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( kd_Cln3_Far1p  *  Cln3_Far1_p_cyt )  )", 
-        "name": "112", 
-        "x": "88.141", 
-        "y": "29.472", 
         "links_to": [
-            "49"
+            "39"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Cln3_Far1p_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Swi5  *  Swi5_nuc )  )", 
-        "name": "113", 
-        "x": "86.974", 
-        "y": "41.472", 
-        "links_to": [
+        "links_from": [
             "17"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *    ( ( kp_Sic1  *  Swi5_nuc )  /  ( Kp_Sic1  + Swi5_nuc ) )   )", 
+        "name_alt": "v_Sic1_p", 
+        "name": "67", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Swi5_d"
+        "y": "41.472", 
+        "x": "106.4", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( kd_Cln2  *  Cln2_cyt )  )", 
-        "name": "114", 
-        "x": "88.808", 
-        "y": "35.472", 
         "links_to": [
-            "46"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Cln2_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Cln2_Far1p  *  Cln3_Far1_p_cyt )  *  Cln2_cyt )  )", 
-        "name": "115", 
-        "x": "89.419", 
-        "y": "29.472", 
-        "links_to": [
-            "49", 
             "32", 
-            "46"
+            "35"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Cln3_rel"
-    }, 
-    {
-        "rate": "( int_vol *    ( ( v0_Mcm1  *  ( (Clb3_cyt)  **  n_Mcm1 ) )  /  ( ( V0_Mcm1  **  n_Mcm1 )  + ( (Clb3_cyt)  **  n_Mcm1 ) ) )   )", 
-        "name": "116", 
-        "x": "91.433", 
-        "y": "45.472", 
-        "links_to": [
-            "44", 
-            "45"
+        "links_from": [
+            "49"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( kcd_Cln3_Far1p  *  Cln3_Far1_p_cyt )  )", 
+        "name_alt": "v_Cln3_diss_Far1p", 
+        "name": "68", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Mcm1_p_basal"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Far1  *  Far1_cyt )  *  Fus3_cyt )  )", 
-        "name": "117", 
-        "x": "90.419", 
         "y": "29.472", 
-        "links_to": [
-            "19", 
-            "35", 
-            "40"
-        ], 
+        "x": "99.375", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Far1_pp"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Swi5_Clb5  *  Swi5_nuc )  *  Clb5_cyt )  )", 
-        "name": "118", 
-        "x": "87.363", 
-        "y": "31.472", 
-        "links_to": [
-            "17", 
-            "47", 
-            "29"
+        "links_from": [
+            "31"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( kd_Sic1p  *  Sic1_p_cyt )  )", 
+        "name_alt": "v_Sic1_p_d", 
+        "name": "69", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "25.472", 
+        "x": "109.92", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "48"
+        ], 
+        "symbol": "rect", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Swi5_pp_Clb5"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Swi5_Clb2  *  Swi5_nuc )  *  Clb2_cyt )  )", 
-        "name": "119", 
-        "x": "84.697", 
-        "y": "41.472", 
-        "links_to": [
-            "17", 
-            "47", 
-            "38"
+        "links_from": [
+            "18", 
+            "21"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( ( kdp_SBF  *  SBF_p_cyt )  *  Cdc14_p_cyt )  )", 
+        "name_alt": "v_SBF_dp", 
+        "name": "70", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "39.472", 
+        "x": "100.01", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "45", 
+            "39"
+        ], 
+        "symbol": "rect", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Swi5_pp_Clb2"
+        "links_from": [
+            "26"
+        ], 
+        "rate": "( int_vol * ( kcd_Clb3_Sic1  *  Clb3_Sic1_cyt )  )", 
+        "name_alt": "v_Clb3_diss_Sic1", 
+        "name": "71", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "47.472", 
+        "x": "111.35", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( kd_Swe1_p  *  Swe1_p_cyt )  )", 
-        "name": "120", 
-        "x": "98.697", 
-        "y": "41.472", 
         "links_to": [
             "28"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Swe1_p_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_Clb2  *  Clb2_cyt )  *  Swe1_cyt )  )", 
-        "name": "121", 
-        "x": "92.002", 
-        "y": "57.472", 
-        "links_to": [
-            "38", 
-            "36", 
-            "16"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb2_pp"
-    }, 
-    {
-        "rate": "( int_vol *    ( ( kp_Clb3  *  ( (Clb5_cyt)  **  n_Clb3 ) )  /  ( ( Kp_Clb3  **  n_Clb3 )  + ( (Clb5_cyt)  **  n_Clb3 ) ) )   )", 
-        "name": "122", 
-        "x": "95.863", 
-        "y": "31.472", 
-        "links_to": [
-            "45", 
-            "29"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb3_p_Clb5"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( kpp_APC_Clb2  *  APC_cyt )  *  Clb2_cyt )  )", 
-        "name": "123", 
-        "x": "89.252", 
-        "y": "41.472", 
-        "links_to": [
-            "20", 
-            "43", 
+        "links_from": [
+            "16", 
             "38"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( ( kpp_Swe1_Clb2  *  Swe1_cyt )  *  Clb2_cyt )  )", 
+        "name_alt": "v_Swe1_pp", 
+        "name": "72", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "53.472", 
+        "x": "104.46", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_APC_inakt_Clb2"
+        "links_from": [
+            "47"
+        ], 
+        "rate": "( int_vol * ( kd_Swi5_p  *  Swi5_p_cyt )  )", 
+        "name_alt": "v_Swi5_p_d", 
+        "name": "73", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "101.93", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( ( kpp_APC_Clb5  *  APC_cyt )  *  Clb5_cyt )  )", 
-        "name": "124", 
-        "x": "91.197", 
-        "y": "31.472", 
         "links_to": [
-            "20", 
-            "43", 
+            "23"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "30", 
+            "46", 
+            "32"
+        ], 
+        "rate": "( int_vol *   ( Whi5_cyt  *  ( ( kpp_Cln2_Whi5  *  Cln2_cyt )  + ( kpp_Cln3_Whi5  *  Cln3_cyt ) ) )  )", 
+        "name_alt": "v_Whi5_pp", 
+        "name": "74", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "23.472", 
+        "x": "97.917", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
             "29"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_APC_inakt_Clb5"
-    }, 
-    {
-        "rate": "( int_vol *    (  ( ( kp_Clb2  *  Mcm1_nuc )  /  ( Kp_Clb2  + Mcm1_nuc ) )   /  ( 1.0  + ( kI_Clb2_Hog1  *  Hog1_PP_cyt ) ) )   )", 
-        "name": "125", 
-        "x": "95.419", 
-        "y": "43.472", 
-        "links_to": [
-            "38", 
+        "links_from": [
             "25", 
-            "44"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb2_p"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_MBF  *  MBF_nuc )  )", 
-        "name": "126", 
-        "x": "93.03", 
-        "y": "33.472", 
-        "links_to": [
             "50"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *    (  ( ( kp_Clb5  *  MBF_nuc )  /  ( Kp_Clb5  + MBF_nuc ) )   /  ( 1.0  + ( kI_Clb5_Hog1  *  Hog1_PP_cyt ) ) )   )", 
+        "name_alt": "v_Clb5_p", 
+        "name": "75", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "33.472", 
+        "x": "106.82", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "19"
+        ], 
+        "symbol": "rect", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_MBF_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Whi5  *  Whi5_cyt )  )", 
-        "name": "127", 
-        "x": "81.266", 
-        "y": "23.472", 
-        "links_to": [
-            "30"
+        "links_from": [
+            "40"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( ( kp_Far1  *  Fus3_cyt )  + kp_basal_Far1 )  )", 
+        "name_alt": "v_Far1_p", 
+        "name": "76", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Whi5_d"
+        "y": "31.472", 
+        "x": "103.71", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( ( kpp_Clb5_Sic1_Hog1  *  Hog1_PP_cyt )  *  Clb5_Sic1_cyt)  )", 
-        "name": "128", 
-        "x": "95.738", 
-        "y": "27.472", 
         "links_to": [
-            "22", 
-            "33", 
-            "25"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_Sic1_pp_Hog1"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Clb2  *  Clb2_cyt )  )", 
-        "name": "129", 
-        "x": "92.447", 
-        "y": "53.472", 
-        "links_to": [
-            "38"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb2_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( Whi5_p_cyt  *  kdp_Whi5 )  *  Cdc14_p_cyt )  )", 
-        "name": "130", 
-        "x": "81.585", 
-        "y": "25.472", 
-        "links_to": [
-            "23", 
-            "30", 
-            "21"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Whi5p_dp"
-    }, 
-    {
-        "rate": "( int_vol *   kp_Whi5  )", 
-        "name": "131", 
-        "x": "80.308", 
-        "y": "25.472", 
-        "links_to": [
-            "30"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Whi5_p"
-    }, 
-    {
-        "rate": "( int_vol *   ( (   kcf_Clb3_Sic1 )  *  Clb3_cyt )  *  Sic1_cyt )", 
-        "name": "132", 
-        "x": "93.544", 
-        "y": "49.472", 
-        "links_to": [
-            "45", 
-            "39", 
-            "26"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb3_ass_Sic1"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Mih1  *  Mih1_cyt )  )", 
-        "name": "133", 
-        "x": "90.03", 
-        "y": "55.472", 
-        "links_to": [
-            "34"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Mih1_d"
-    }, 
-    {
-        "rate": "( int_vol * ( kcd_Clb5_Sic1  *  Clb5_Sic1_cyt )  )", 
-        "name": "134", 
-        "x": "96.78", 
-        "y": "27.472", 
-        "links_to": [
-            "22", 
-            "39", 
-            "29"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Clb5_diss_Sic1"
-    }, 
-    {
-        "rate": "( int_vol *   ( ( ka_Cdc14_APC  *  Cdc14_cyt )  *  APC_cyt )  )", 
-        "name": "135", 
-        "x": "90.53", 
-        "y": "41.472", 
-        "links_to": [
-            "24", 
-            "21", 
             "20"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Cdc14_akt_APC"
+        "links_from": [
+            "43", 
+            "21"
+        ], 
+        "rate": "( int_vol *   ( ( ka_APC_Cdc14  *  APC_p_cyt )  *  Cdc14_p_cyt )  )", 
+        "name_alt": "v_APC_akt_Cdc14", 
+        "name": "77", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "93.819", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *    ( ( kp_APC  *  Mcm1_nuc )  /  ( Kp_APC  + Mcm1_nuc ) )   )", 
-        "name": "136", 
-        "x": "91.585", 
-        "y": "43.472", 
         "links_to": [
-            "20", 
+            "19"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "35"
+        ], 
+        "rate": "( int_vol *   ( kdp_Far1p  *  Far1_p_cyt )  )", 
+        "name_alt": "v_Far1p_dp", 
+        "name": "78", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "100.88", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "51", 
+            "29"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "33"
+        ], 
+        "rate": "( int_vol * ( kcd_Clb5_Sic1_Hp  *  Clb5_Sic1_Hp_cyt )  )", 
+        "name_alt": "v_Clb5_diss_Sic1_Hp", 
+        "name": "79", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "107.49", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "38", 
+            "20"
+        ], 
+        "rate": "( int_vol *   ( ( kd_Clb2_APC  *  Clb2_cyt )  *  APC_cyt )  )", 
+        "name_alt": "v_Clb2_d_APC", 
+        "name": "80", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "101.29", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "23"
+        ], 
+        "rate": "( int_vol *   ( kd_Whi5p  *  Whi5_p_cyt )  )", 
+        "name_alt": "v_Whi5_p_d", 
+        "name": "81", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "25.472", 
+        "x": "97.139", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "28"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "16", 
+            "25"
+        ], 
+        "rate": "( int_vol *    ( ( kpp_Swe1_Hls1  *  Swe1_cyt )  /  ( 1.0  + ( kI_Swe1_Hog1  *  Hog1_PP_cyt ) ) )   )", 
+        "name_alt": "v_Swe1_Hog1", 
+        "name": "82", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "108.12", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "41"
+        ], 
+        "rate": "( int_vol *   ( kd_Clb2_Sic1  *  Clb2_Sic1_cyt )  )", 
+        "name_alt": "v_Clb2_Sic1_d", 
+        "name": "83", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "51.472", 
+        "x": "106.01", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "39"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "51"
+        ], 
+        "rate": "( int_vol *   ( kdp_Sic1_Hp  *  Sic1_Hp_cyt )  )", 
+        "name_alt": "v_Sic1_Hp_dp", 
+        "name": "84", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "104.07", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "46"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "27"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Cln2_Far1p  *  Cln2_Far1_p_cyt )  *  Cln2_cyt )  )", 
+        "name_alt": "v_Cln2_rel", 
+        "name": "85", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "33.472", 
+        "x": "102.93", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "45", 
+            "20"
+        ], 
+        "rate": "( int_vol *   ( ( kd_Clb3_APC  *  Clb3_cyt )  *  APC_cyt )  )", 
+        "name_alt": "v_Clb3_d_APC", 
+        "name": "86", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "110.24", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "22"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "39", 
+            "29"
+        ], 
+        "rate": "( int_vol *   ( (   kcf_Clb5_Sic1 )  *  Clb5_cyt )  *  Sic1_cyt )", 
+        "name_alt": "v_Clb5_ass_Sic1", 
+        "name": "87", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "110.38", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "35", 
+            "46"
+        ], 
+        "rate": "( int_vol *   ( ( kdd_Far1p  *  Far1_p_cyt )  *  Cln2_cyt )  )", 
+        "name_alt": "v_Far1_p_dd", 
+        "name": "88", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "98.875", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "16"
+        ], 
+        "rate": "( int_vol *   ( kd_Swe1  *  Swe1_cyt )  )", 
+        "name_alt": "v_Swe1_d", 
+        "name": "89", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "57.472", 
+        "x": "103.76", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "29", 
+            "20"
+        ], 
+        "rate": "( int_vol *   ( ( kd_Clb5_APC  *  Clb5_cyt )  *  APC_cyt )  )", 
+        "name_alt": "v_Clb5_d_APC", 
+        "name": "90", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "108.38", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "16"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [], 
+        "rate": "( int_vol *   kp_Swe1  )", 
+        "name_alt": "v_Swe1_p", 
+        "name": "91", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "59.472", 
+        "x": "103.28", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "24"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "21"
+        ], 
+        "rate": "( int_vol *   ( ki_Cdc14  *  Cdc14_p_cyt )  )", 
+        "name_alt": "v_Cdc14_inakt", 
+        "name": "92", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "39.472", 
+        "x": "102.12", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "22"
+        ], 
+        "rate": "( int_vol *   ( kd_Clb5_Sic1  *  Clb5_Sic1_cyt )  )", 
+        "name_alt": "v_Clb5_Sic1_d", 
+        "name": "93", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "109.1", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "46", 
+            "35"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "27"
+        ], 
+        "rate": "( int_vol *   ( kcd_Cln2_Far1p  *  Cln2_Far1_p_cyt )  )", 
+        "name_alt": "v_Cln2_diss_Far1p", 
+        "name": "94", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "33.472", 
+        "x": "100.93", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "38", 
+            "39"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "41"
+        ], 
+        "rate": "( int_vol * ( kcd_Clb2_Sic1  *  Clb2_Sic1_cyt )  )", 
+        "name_alt": "v_Clb2_diss_Sic1", 
+        "name": "95", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "51.472", 
+        "x": "107.01", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "26"
+        ], 
+        "rate": "( int_vol *   ( kd_Clb3_Sic1  *  Clb3_Sic1_cyt )  )", 
+        "name_alt": "v_Clb3_Sic1_d", 
+        "name": "96", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "47.472", 
+        "x": "110.35", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "17"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "47", 
+            "21"
+        ], 
+        "rate": "( int_vol *   ( ( kdp_Swi5_Cdc14  *  Swi5_p_cyt )  *  Cdc14_p_cyt )  )", 
+        "name_alt": "v_Swi5_dp", 
+        "name": "97", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "102.93", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "29"
+        ], 
+        "rate": "( int_vol *   ( kd_Clb5  *  Clb5_cyt )  )", 
+        "name_alt": "v_Clb5_d", 
+        "name": "98", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "105.26", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "20"
+        ], 
+        "rate": "( int_vol *   ( kd_APC  *  APC_cyt )  )", 
+        "name_alt": "v_APC_d", 
+        "name": "99", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "105.12", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "51"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "39", 
+            "25"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Sic1_Hog1  *  Hog1_PP_cyt )  *  Sic1_cyt )  )", 
+        "name_alt": "v_Sic1_pp_Hog1", 
+        "name": "100", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "110.19", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "31"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "39", 
+            "46", 
+            "29"
+        ], 
+        "rate": "( int_vol *   ( Sic1_cyt  *  (  ( ( kpp_Cln2_Sic1  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( Kpp_Cln2_Sic1  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   +  ( ( kpp_Clb5_Sic1  *  ( (Clb5_cyt)  **  n1 ) )  /  ( ( Kpp_Clb5_Sic1  **  n1 )  + ( (Clb5_cyt)  **  n1 ) ) )  ) )  )", 
+        "name_alt": "v_Sic1_pp", 
+        "name": "101", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "111.38", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "21"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "24", 
+            "38"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Cdc14_Clb2  *  Cdc14_cyt )  *  Clb2_cyt )  )", 
+        "name_alt": "v_Cdc14_akt_Clb2", 
+        "name": "102", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "37.472", 
+        "x": "101.4", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
             "44"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_APC_akt_p_Mcm1"
+        "links_from": [
+            "38"
+        ], 
+        "rate": "( int_vol *    ( ( kp_Mcm1  *  ( (Clb2_cyt)  **  n_Mcm1 ) )  /  ( ( Kp_Mcm1  **  n_Mcm1 )  + ( (Clb2_cyt)  **  n_Mcm1 ) ) )   )", 
+        "name_alt": "v_Mcm1_p_Clb2_fb", 
+        "name": "103", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "52.472", 
+        "x": "103.18", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   kp_Mih1  )", 
-        "name": "137", 
-        "x": "90.516", 
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "45"
+        ], 
+        "rate": "( int_vol *   ( kd_Clb3  *  Clb3_cyt )  )", 
+        "name_alt": "v_Clb3_d", 
+        "name": "104", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "45.472", 
+        "x": "111.07", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "43"
+        ], 
+        "rate": "( int_vol *   ( kd_APC_p  *  APC_p_cyt )  )", 
+        "name_alt": "v_APC_p_d", 
+        "name": "105", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "94.819", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "36"
+        ], 
+        "rate": "( int_vol * ( kd_Clb2_p  *  Clb2_p_cyt )  )", 
+        "name_alt": "v_Clb2_p_d", 
+        "name": "106", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "55.472", 
+        "x": "102.03", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "49"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "32", 
+            "35"
+        ], 
+        "rate": "( int_vol *   ( ( kcf_Cln3_Far1p  *  Cln3_cyt )  *  Far1_p_cyt )  )", 
+        "name_alt": "v_Cln3_ass_Far1p", 
+        "name": "107", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "97.042", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "31", 
+            "29"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "22", 
+            "46"
+        ], 
+        "rate": "( int_vol *   ( Clb5_Sic1_cyt  *  (  ( ( kpp_Cln2_Sic1  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( Kpp_Cln2_Sic1  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   +  ( ( kpp_Clb5_Sic1  *  ( (Clb5_cyt)  **  n1 ) )  /  ( ( Kpp_Clb5_Sic1  **  n1 )  + ( (Clb5_cyt)  **  n1 ) ) )  ) )  )", 
+        "name_alt": "v_Clb5_rel", 
+        "name": "108", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "108.1", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "17"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "44"
+        ], 
+        "rate": "( int_vol *    ( ( kp_Swi5  *  Mcm1_nuc )  /  ( Kp_Swi5  + Mcm1_nuc ) )   )", 
+        "name_alt": "v_Swi5_p", 
+        "name": "109", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "104.83", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "22"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "33"
+        ], 
+        "rate": "( int_vol *   ( kdp_Clb5_Sic1_Hp  *  Clb5_Sic1_Hp_cyt )  )", 
+        "name_alt": "v_Clb5_Sic1_Hp_dp", 
+        "name": "110", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "109.04", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "46"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "48", 
+            "25"
+        ], 
+        "rate": "( int_vol *    (  ( ( kp_Cln2  *  SBF_nuc )  /  ( Kp_Cln2  + SBF_nuc ) )   /  ( 1.0  + ( kI_Cln2_Hog1  *  Hog1_PP_cyt ) ) )   )", 
+        "name_alt": "v_Cln2_p", 
+        "name": "111", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "37.472", 
+        "x": "103.96", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "49"
+        ], 
+        "rate": "( int_vol *   ( kd_Cln3_Far1p  *  Cln3_Far1_p_cyt )  )", 
+        "name_alt": "v_Cln3_Far1p_d", 
+        "name": "112", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "100.38", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "17"
+        ], 
+        "rate": "( int_vol *   ( kd_Swi5  *  Swi5_nuc )  )", 
+        "name_alt": "v_Swi5_d", 
+        "name": "113", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "107.96", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "46"
+        ], 
+        "rate": "( int_vol *   ( kd_Cln2  *  Cln2_cyt )  )", 
+        "name_alt": "v_Cln2_d", 
+        "name": "114", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "35.472", 
+        "x": "100.93", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "32"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "49", 
+            "46"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Cln2_Far1p  *  Cln3_Far1_p_cyt )  *  Cln2_cyt )  )", 
+        "name_alt": "v_Cln3_rel", 
+        "name": "115", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "98.375", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "44"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "45"
+        ], 
+        "rate": "( int_vol *    ( ( v0_Mcm1  *  ( (Clb3_cyt)  **  n_Mcm1 ) )  /  ( ( V0_Mcm1  **  n_Mcm1 )  + ( (Clb3_cyt)  **  n_Mcm1 ) ) )   )", 
+        "name_alt": "v_Mcm1_p_basal", 
+        "name": "116", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "45.472", 
+        "x": "105.44", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "35"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "19", 
+            "40"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Far1  *  Far1_cyt )  *  Fus3_cyt )  )", 
+        "name_alt": "v_Far1_pp", 
+        "name": "117", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "105.93", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "47"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "17", 
+            "29"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Swi5_Clb5  *  Swi5_nuc )  *  Clb5_cyt )  )", 
+        "name_alt": "v_Swi5_pp_Clb5", 
+        "name": "118", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "102.15", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "47"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "17", 
+            "38"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Swi5_Clb2  *  Swi5_nuc )  *  Clb2_cyt )  )", 
+        "name_alt": "v_Swi5_pp_Clb2", 
+        "name": "119", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "102.85", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "28"
+        ], 
+        "rate": "( int_vol *   ( kd_Swe1_p  *  Swe1_p_cyt )  )", 
+        "name_alt": "v_Swe1_p_d", 
+        "name": "120", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "108.96", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "36"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "38", 
+            "16"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Clb2  *  Clb2_cyt )  *  Swe1_cyt )  )", 
+        "name_alt": "v_Clb2_pp", 
+        "name": "121", 
+        "compartments": [
+            "intracellular"
+        ], 
         "y": "57.472", 
+        "x": "102.49", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "45"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "29"
+        ], 
+        "rate": "( int_vol *    ( ( kp_Clb3  *  ( (Clb5_cyt)  **  n_Clb3 ) )  /  ( ( Kp_Clb3  **  n_Clb3 )  + ( (Clb5_cyt)  **  n_Clb3 ) ) )   )", 
+        "name_alt": "v_Clb3_p_Clb5", 
+        "name": "122", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "109.38", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "43"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "20", 
+            "38"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_APC_Clb2  *  APC_cyt )  *  Clb2_cyt )  )", 
+        "name_alt": "v_APC_inakt_Clb2", 
+        "name": "123", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "99.736", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "43"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "20", 
+            "29"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_APC_Clb5  *  APC_cyt )  *  Clb5_cyt )  )", 
+        "name_alt": "v_APC_inakt_Clb5", 
+        "name": "124", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "94.653", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "38"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "25", 
+            "44"
+        ], 
+        "rate": "( int_vol *    (  ( ( kp_Clb2  *  Mcm1_nuc )  /  ( Kp_Clb2  + Mcm1_nuc ) )   /  ( 1.0  + ( kI_Clb2_Hog1  *  Hog1_PP_cyt ) ) )   )", 
+        "name_alt": "v_Clb2_p", 
+        "name": "125", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "106.83", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "50"
+        ], 
+        "rate": "( int_vol *   ( kd_MBF  *  MBF_nuc )  )", 
+        "name_alt": "v_MBF_d", 
+        "name": "126", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "33.472", 
+        "x": "103.93", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "30"
+        ], 
+        "rate": "( int_vol *   ( kd_Whi5  *  Whi5_cyt )  )", 
+        "name_alt": "v_Whi5_d", 
+        "name": "127", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "23.472", 
+        "x": "95.639", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "33"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "22", 
+            "25"
+        ], 
+        "rate": "( int_vol *   ( ( kpp_Clb5_Sic1_Hog1  *  Hog1_PP_cyt )  *  Clb5_Sic1_cyt)  )", 
+        "name_alt": "v_Clb5_Sic1_pp_Hog1", 
+        "name": "128", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "110.1", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "38"
+        ], 
+        "rate": "( int_vol *   ( kd_Clb2  *  Clb2_cyt )  )", 
+        "name_alt": "v_Clb2_d", 
+        "name": "129", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "102.9", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "30"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "23", 
+            "21"
+        ], 
+        "rate": "( int_vol *   ( ( Whi5_p_cyt  *  kdp_Whi5 )  *  Cdc14_p_cyt )  )", 
+        "name_alt": "v_Whi5p_dp", 
+        "name": "130", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "25.472", 
+        "x": "95.139", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "30"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [], 
+        "rate": "( int_vol *   kp_Whi5  )", 
+        "name_alt": "v_Whi5_p", 
+        "name": "131", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "25.472", 
+        "x": "96.139", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "26"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "45", 
+            "39"
+        ], 
+        "rate": "( int_vol *   ( (   kcf_Clb3_Sic1 )  *  Clb3_cyt )  *  Sic1_cyt )", 
+        "name_alt": "v_Clb3_ass_Sic1", 
+        "name": "132", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "49.472", 
+        "x": "110.07", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "34"
+        ], 
+        "rate": "( int_vol *   ( kd_Mih1  *  Mih1_cyt )  )", 
+        "name_alt": "v_Mih1_d", 
+        "name": "133", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "55.472", 
+        "x": "100.03", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "39", 
+            "29"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "22"
+        ], 
+        "rate": "( int_vol * ( kcd_Clb5_Sic1  *  Clb5_Sic1_cyt )  )", 
+        "name_alt": "v_Clb5_diss_Sic1", 
+        "name": "134", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "111.1", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "21"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "24", 
+            "20"
+        ], 
+        "rate": "( int_vol *   ( ( ka_Cdc14_APC  *  Cdc14_cyt )  *  APC_cyt )  )", 
+        "name_alt": "v_Cdc14_akt_APC", 
+        "name": "135", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "104.12", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "20"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
+            "44"
+        ], 
+        "rate": "( int_vol *    ( ( kp_APC  *  Mcm1_nuc )  /  ( Kp_APC  + Mcm1_nuc ) )   )", 
+        "name_alt": "v_APC_akt_p_Mcm1", 
+        "name": "136", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "103.56", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
             "34"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Mih1_p"
+        "links_from": [], 
+        "rate": "( int_vol *   kp_Mih1  )", 
+        "name_alt": "v_Mih1_p", 
+        "name": "137", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "57.472", 
+        "x": "100.53", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   ( kd_Cln3  *  Cln3_cyt )  )", 
-        "name": "138", 
-        "x": "86.002", 
-        "y": "27.472", 
-        "links_to": [
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "CDC_core"
+        ], 
+        "links_from": [
             "32"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( kd_Cln3  *  Cln3_cyt )  )", 
+        "name_alt": "v_Cln3_d", 
+        "name": "138", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "27.472", 
+        "x": "98.694", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Cln3_d"
-    }, 
-    {
-        "rate": "( int_vol *   ( kd_Whi5_SBF  *  SBF_Whi5_nuc )  )", 
-        "name": "139", 
-        "x": "82.585", 
-        "y": "27.472", 
-        "links_to": [
+        "links_from": [
             "42"
         ], 
-        "symbol": "rect", 
+        "rate": "( int_vol *   ( kd_Whi5_SBF  *  SBF_Whi5_nuc )  )", 
+        "name_alt": "v_Whi5_SBF_d", 
+        "name": "139", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "CDC_core"
-        ], 
-        "name_alt": "v_Whi5_SBF_d"
+        "y": "27.472", 
+        "x": "95.778", 
+        "is_ode": false
     }, 
     {
-        "rate": "( int_vol *   kp_Cln3  )", 
-        "name": "140", 
-        "x": "86.141", 
-        "y": "29.472", 
         "links_to": [
             "32"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "CDC_core"
         ], 
-        "name_alt": "v_Cln3_p"
+        "links_from": [], 
+        "rate": "( int_vol *   kp_Cln3  )", 
+        "name_alt": "v_Cln3_p", 
+        "name": "140", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "97.375", 
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "145", 
             "146"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_APC"
         ], 
-        "name_alt": "rRNA", 
-        "state": "0", 
         "y": "54.472", 
-        "x": "84.363", 
         "annotation": "YCM:rRNA", 
+        "name_alt": "rRNA", 
+        "name": "141", 
+        "state": "0", 
+        "links_from": [
+            "145"
+        ], 
+        "x": "58.597", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "141"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -2871,20 +3108,19 @@ var data =[
             "GEX_APC", 
             "GEX_TRL"
         ], 
-        "name_alt": "cyt_vol", 
-        "state": "0", 
-        "y": "54.472", 
-        "x": "15.919", 
+        "y": "52.472", 
         "annotation": "SBO:0000468", 
+        "name_alt": "cyt_vol", 
+        "name": "142", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "10.347", 
         "compartment": "cytosol", 
-        "is_ode": true, 
-        "name": "142"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "145", 
             "146", 
-            "272", 
             "273"
         ], 
         "symbol": "circle", 
@@ -2892,25 +3128,25 @@ var data =[
             "GEX_APC", 
             "GEX_TRL"
         ], 
-        "name_alt": "B_Protein_R", 
-        "state": "0", 
         "y": "54.472", 
-        "x": "83.363", 
         "annotation": "YCM:B_Protein_R", 
+        "name_alt": "B_Protein_R", 
+        "name": "143", 
+        "state": "0", 
+        "links_from": [
+            "145", 
+            "272"
+        ], 
+        "x": "59.597", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "143"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "145", 
-            "146", 
             "269", 
             "271", 
-            "274", 
-            "276", 
             "277", 
-            "278", 
             "259"
         ], 
         "symbol": "circle", 
@@ -2918,58 +3154,67 @@ var data =[
             "GEX_APC", 
             "GEX_TRL"
         ], 
-        "name_alt": "Ribosome", 
-        "state": "0", 
         "y": "56.472", 
-        "x": "85.641", 
         "annotation": "YCM:ribosome", 
+        "name_alt": "Ribosome", 
+        "name": "144", 
+        "state": "0", 
+        "links_from": [
+            "146", 
+            "274", 
+            "276", 
+            "278"
+        ], 
+        "x": "55.681", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "144"
+        "is_ode": false
     }, 
     {
-        "rate": "(k_DIS_Ribosome * Ribosome)*int_vol", 
-        "name": "145", 
-        "x": "84.363", 
-        "y": "55.472", 
         "links_to": [
-            "144", 
             "143", 
             "141"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_APC"
         ], 
-        "name_alt": "v_DIS_Ribosome"
+        "links_from": [
+            "144"
+        ], 
+        "rate": "(k_DIS_Ribosome * Ribosome)*int_vol", 
+        "name_alt": "v_DIS_Ribosome", 
+        "name": "145", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "55.472", 
+        "x": "58.597", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_ASS_Ribosome * rRNA * B_Protein_R)*int_vol", 
-        "name": "146", 
-        "x": "84.641", 
-        "y": "53.472", 
         "links_to": [
-            "143", 
-            "141", 
             "144"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_APC"
         ], 
-        "name_alt": "v_ASS_Ribosome"
+        "links_from": [
+            "143", 
+            "141"
+        ], 
+        "rate": "(k_ASS_Ribosome * rRNA * B_Protein_R)*int_vol", 
+        "name_alt": "v_ASS_Ribosome", 
+        "name": "146", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "57.319", 
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "190", 
             "193", 
             "230"
         ], 
@@ -2977,37 +3222,41 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mWhi5", 
-        "state": "mRNA", 
         "y": "42.472", 
-        "x": "53.752", 
         "annotation": "SGD:S000005609p", 
+        "name_alt": "mWhi5", 
+        "name": "147", 
+        "state": "mRNA", 
+        "links_from": [
+            "190"
+        ], 
+        "x": "74.958", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "147"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "217", 
-            "224", 
-            "231"
+            "224"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mMBF", 
-        "state": "mRNA", 
         "y": "34.472", 
-        "x": "45.919", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
+        "name_alt": "mMBF", 
+        "name": "148", 
+        "state": "mRNA", 
+        "links_from": [
+            "231"
+        ], 
+        "x": "84.653", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "148"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "189", 
             "195", 
             "222"
         ], 
@@ -3015,18 +3264,20 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mCln3", 
-        "state": "mRNA", 
         "y": "46.472", 
-        "x": "53.474", 
         "annotation": "SGD:S000000038p", 
+        "name_alt": "mCln3", 
+        "name": "149", 
+        "state": "mRNA", 
+        "links_from": [
+            "189"
+        ], 
+        "x": "72.361", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "149"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "212", 
             "243", 
             "248"
         ], 
@@ -3034,51 +3285,58 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mCln2", 
-        "state": "mRNA", 
         "y": "38.472", 
-        "x": "41.863", 
         "annotation": "SGD:S000006177p", 
+        "name_alt": "mCln2", 
+        "name": "150", 
+        "state": "mRNA", 
+        "links_from": [
+            "212"
+        ], 
+        "x": "67.069", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "150"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "191", 
             "202"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Cdc14", 
-        "state": "0", 
         "y": "50.472", 
-        "x": "67.974", 
         "annotation": "SGD:S000001924p", 
+        "name_alt": "Cdc14", 
+        "name": "151", 
+        "state": "0", 
+        "links_from": [
+            "191"
+        ], 
+        "x": "66.222", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "151"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "249", 
-            "250", 
             "258"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mSwi5", 
-        "state": "mRNA", 
         "y": "18.472", 
-        "x": "59.419", 
         "annotation": "SGD:S000002553p", 
+        "name_alt": "mSwi5", 
+        "name": "152", 
+        "state": "mRNA", 
+        "links_from": [
+            "250"
+        ], 
+        "x": "71.764", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "152"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -3086,32 +3344,16 @@ var data =[
             "190", 
             "192", 
             "197", 
-            "203", 
             "204", 
-            "205", 
             "208", 
             "209", 
-            "211", 
             "212", 
             "214", 
-            "215", 
             "216", 
-            "217", 
             "221", 
-            "222", 
-            "225", 
-            "229", 
-            "230", 
             "231", 
-            "235", 
-            "236", 
             "238", 
-            "241", 
-            "242", 
-            "243", 
-            "245", 
             "247", 
-            "249", 
             "250", 
             "255"
         ], 
@@ -3119,93 +3361,118 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "NA", 
-        "state": "0", 
         "y": "44.472", 
-        "x": "49.613", 
         "annotation": "YCM:NA", 
+        "name_alt": "NA", 
+        "name": "153", 
+        "state": "0", 
+        "links_from": [
+            "203", 
+            "205", 
+            "211", 
+            "215", 
+            "217", 
+            "222", 
+            "225", 
+            "229", 
+            "230", 
+            "235", 
+            "236", 
+            "241", 
+            "242", 
+            "243", 
+            "245", 
+            "249"
+        ], 
+        "x": "75.708", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "153"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "205", 
-            "221", 
             "246"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mClb3", 
-        "state": "mRNA", 
         "y": "26.472", 
-        "x": "59.835", 
         "annotation": "SGD:S000002314p", 
+        "name_alt": "mClb3", 
+        "name": "154", 
+        "state": "mRNA", 
+        "links_from": [
+            "221"
+        ], 
+        "x": "78.486", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "154"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "227", 
-            "242", 
-            "247"
+            "242"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mClb2", 
-        "state": "mRNA", 
         "y": "18.472", 
-        "x": "64.974", 
         "annotation": "SGD:S000006323p", 
+        "name_alt": "mClb2", 
+        "name": "155", 
+        "state": "mRNA", 
+        "links_from": [
+            "247"
+        ], 
+        "x": "66.069", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "155"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "210", 
-            "254"
+            "210"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Mih1", 
-        "state": "0", 
         "y": "40.472", 
-        "x": "45.085", 
         "annotation": "SGD:S000004639p", 
+        "name_alt": "Mih1", 
+        "name": "156", 
+        "state": "0", 
+        "links_from": [
+            "254"
+        ], 
+        "x": "70.958", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "156"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "215", 
-            "216", 
             "257"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mClb5", 
-        "state": "mRNA", 
         "y": "30.472", 
-        "x": "54.585", 
         "annotation": "SGD:S000006324p", 
+        "name_alt": "mClb5", 
+        "name": "157", 
+        "state": "mRNA", 
+        "links_from": [
+            "216"
+        ], 
+        "x": "79.597", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "157"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "208", 
             "213", 
             "241"
         ], 
@@ -3213,18 +3480,20 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mSwe1", 
-        "state": "mRNA", 
         "y": "42.472", 
-        "x": "54.752", 
         "annotation": "SGD:S000003723p", 
+        "name_alt": "mSwe1", 
+        "name": "158", 
+        "state": "mRNA", 
+        "links_from": [
+            "208"
+        ], 
+        "x": "68.125", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "158"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "234", 
             "239", 
             "252"
         ], 
@@ -3232,17 +3501,38 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Far1", 
-        "state": "0", 
         "y": "40.472", 
-        "x": "70.363", 
         "annotation": "SGD:S000003693p", 
+        "name_alt": "Far1", 
+        "name": "159", 
+        "state": "0", 
+        "links_from": [
+            "234"
+        ], 
+        "x": "71.958", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "159"
+        "is_ode": false
     }, 
     {
         "links_to": [
+            "307", 
+            "310", 
+            "315", 
+            "318"
+        ], 
+        "symbol": "circle", 
+        "module": [
+            "GEX_GRN", 
+            "GEX_TRL", 
+            "MET_CCM", 
+            "TRP_NUT"
+        ], 
+        "y": "50.472", 
+        "annotation": "CHEBI:456216", 
+        "name_alt": "ADP", 
+        "name": "160", 
+        "state": "-3", 
+        "links_from": [
             "189", 
             "190", 
             "191", 
@@ -3281,95 +3571,84 @@ var data =[
             "304", 
             "305", 
             "306", 
-            "307", 
             "309", 
-            "310", 
             "311", 
             "313", 
             "314", 
-            "315", 
             "316", 
             "317", 
-            "318", 
             "320"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "GEX_GRN", 
-            "GEX_TRL", 
-            "MET_CCM", 
-            "TRP_NUT"
-        ], 
-        "name_alt": "ADP", 
-        "state": "-3", 
-        "y": "50.472", 
-        "x": "59.002", 
-        "annotation": "CHEBI:456216", 
+        "x": "76.347", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "160"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "234", 
-            "238", 
             "245"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mFar1", 
-        "state": "mRNA", 
         "y": "42.472", 
-        "x": "66.308", 
         "annotation": "SGD:S000003693p", 
+        "name_alt": "mFar1", 
+        "name": "161", 
+        "state": "mRNA", 
+        "links_from": [
+            "238"
+        ], 
+        "x": "88.236", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "161"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "198", 
             "253"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Sic1", 
-        "state": "0", 
         "y": "12.472", 
-        "x": "73.266", 
         "annotation": "SGD:S000004069p", 
+        "name_alt": "Sic1", 
+        "name": "162", 
+        "state": "0", 
+        "links_from": [
+            "198"
+        ], 
+        "x": "56.597", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "162"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "194", 
             "209", 
-            "226", 
-            "246"
+            "226"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Clb3", 
-        "state": "0", 
         "y": "24.472", 
-        "x": "64.085", 
         "annotation": "SGD:S000002314p", 
+        "name_alt": "Clb3", 
+        "name": "163", 
+        "state": "0", 
+        "links_from": [
+            "246"
+        ], 
+        "x": "74.153", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "163"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "209", 
-            "227", 
             "233", 
             "237"
         ], 
@@ -3377,40 +3656,44 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Clb2", 
-        "state": "0", 
         "y": "16.472", 
-        "x": "67.099", 
         "annotation": "SGD:S000006323p", 
+        "name_alt": "Clb2", 
+        "name": "164", 
+        "state": "0", 
+        "links_from": [
+            "227"
+        ], 
+        "x": "62.833", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "164"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "203", 
-            "254", 
-            "255"
+            "254"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mMih1", 
-        "state": "mRNA", 
         "y": "42.472", 
-        "x": "44.808", 
         "annotation": "SGD:S000004639p", 
+        "name_alt": "mMih1", 
+        "name": "165", 
+        "state": "mRNA", 
+        "links_from": [
+            "255"
+        ], 
+        "x": "83.347", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "165"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "221", 
             "228", 
             "244", 
-            "257", 
             "326"
         ], 
         "symbol": "circle", 
@@ -3418,14 +3701,17 @@ var data =[
             "GEX_GRN", 
             "MET_DNA"
         ], 
-        "name_alt": "Clb5", 
-        "state": "0", 
         "y": "28.472", 
-        "x": "61.669", 
         "annotation": "SGD:S000006324p", 
+        "name_alt": "Clb5", 
+        "name": "166", 
+        "state": "0", 
+        "links_from": [
+            "257"
+        ], 
+        "x": "80.042", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "166"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -3435,57 +3721,61 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Fus3", 
-        "state": "0", 
         "y": "44.472", 
-        "x": "66.585", 
         "annotation": "SGD:S000000112p", 
+        "name_alt": "Fus3", 
+        "name": "167", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "89.625", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "167"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "195", 
             "219"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Cln3", 
-        "state": "0", 
         "y": "44.472", 
-        "x": "60.03", 
         "annotation": "SGD:S000000038p", 
+        "name_alt": "Cln3", 
+        "name": "168", 
+        "state": "0", 
+        "links_from": [
+            "195"
+        ], 
+        "x": "61.958", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "168"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "196", 
             "231", 
-            "248", 
             "252"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Cln2", 
-        "state": "0", 
         "y": "36.472", 
-        "x": "47.474", 
         "annotation": "SGD:S000006177p", 
+        "name_alt": "Cln2", 
+        "name": "169", 
+        "state": "0", 
+        "links_from": [
+            "248"
+        ], 
+        "x": "67.069", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "169"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "194", 
-            "199", 
             "200", 
             "233", 
             "244"
@@ -3494,18 +3784,20 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "APC", 
-        "state": "0", 
         "y": "16.472", 
-        "x": "62.974", 
         "annotation": "SGD:S000002971p", 
+        "name_alt": "APC", 
+        "name": "170", 
+        "state": "0", 
+        "links_from": [
+            "199"
+        ], 
+        "x": "69.181", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "170"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "209", 
             "236", 
             "240"
         ], 
@@ -3513,14 +3805,17 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mMcm1", 
-        "state": "mRNA", 
         "y": "22.472", 
-        "x": "63.085", 
         "annotation": "SGD:S000004646p", 
+        "name_alt": "mMcm1", 
+        "name": "171", 
+        "state": "mRNA", 
+        "links_from": [
+            "209"
+        ], 
+        "x": "74.431", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "171"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -3562,15 +3857,12 @@ var data =[
             "304", 
             "305", 
             "306", 
-            "307", 
             "309", 
             "311", 
             "313", 
             "314", 
-            "315", 
             "316", 
             "317", 
-            "318", 
             "320"
         ], 
         "symbol": "circle", 
@@ -3580,14 +3872,19 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "name_alt": "ATP", 
-        "state": "-4", 
         "y": "48.472", 
-        "x": "62.335", 
         "annotation": "CHEBI:30616", 
+        "name_alt": "ATP", 
+        "name": "172", 
+        "state": "-4", 
+        "links_from": [
+            "307", 
+            "315", 
+            "318"
+        ], 
+        "x": "82.958", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "172"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -3597,19 +3894,19 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Cdc14_p", 
-        "state": "P", 
         "y": "54.472", 
-        "x": "77.141", 
         "annotation": "SGD:S000001924p", 
+        "name_alt": "Cdc14_p", 
+        "name": "173", 
+        "state": "P", 
+        "links_from": [], 
+        "x": "61.597", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "173"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "204", 
-            "240", 
             "247", 
             "250", 
             "256"
@@ -3618,17 +3915,37 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Mcm1", 
-        "state": "0", 
         "y": "20.472", 
-        "x": "64.78", 
         "annotation": "SGD:S000004646p", 
+        "name_alt": "Mcm1", 
+        "name": "174", 
+        "state": "0", 
+        "links_from": [
+            "240"
+        ], 
+        "x": "73.875", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "174"
+        "is_ode": false
     }, 
     {
         "links_to": [
+            "307", 
+            "315", 
+            "316", 
+            "318"
+        ], 
+        "symbol": "circle", 
+        "module": [
+            "GEX_GRN", 
+            "MET_CCM", 
+            "TRP_NUT"
+        ], 
+        "y": "12.472", 
+        "annotation": "CHEBI:43474", 
+        "name_alt": "Pi", 
+        "name": "175", 
+        "state": "-2", 
+        "links_from": [
             "189", 
             "190", 
             "191", 
@@ -3666,30 +3983,15 @@ var data =[
             "304", 
             "305", 
             "306", 
-            "307", 
             "308", 
             "309", 
             "311", 
             "313", 
-            "315", 
-            "316", 
-            "317", 
-            "318"
+            "317"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "GEX_GRN", 
-            "MET_CCM", 
-            "TRP_NUT"
-        ], 
-        "name_alt": "Pi", 
-        "state": "-2", 
-        "y": "12.472", 
-        "x": "58.085", 
-        "annotation": "CHEBI:43474", 
+        "x": "80.597", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "175"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -3699,14 +4001,15 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "SBF_p", 
-        "state": "P", 
         "y": "54.472", 
-        "x": "58.405", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
+        "name_alt": "SBF_p", 
+        "name": "176", 
+        "state": "P", 
+        "links_from": [], 
+        "x": "57.319", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "176"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -3731,99 +4034,78 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "ribosome", 
-        "state": "0", 
         "y": "52.472", 
-        "x": "43.419", 
         "annotation": "YCM:ribosome", 
+        "name_alt": "ribosome", 
+        "name": "177", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "91.181", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "177"
+        "is_ode": true
     }, 
     {
         "links_to": [
             "207", 
-            "212", 
-            "223"
+            "212"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "SBF", 
-        "state": "0", 
         "y": "40.472", 
-        "x": "41.863", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
+        "name_alt": "SBF", 
+        "name": "178", 
+        "state": "0", 
+        "links_from": [
+            "223"
+        ], 
+        "x": "66.903", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "178"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "193", 
             "218"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Whi5", 
-        "state": "0", 
         "y": "40.472", 
-        "x": "57.03", 
         "annotation": "SGD:S000005609p", 
+        "name_alt": "Whi5", 
+        "name": "179", 
+        "state": "0", 
+        "links_from": [
+            "193"
+        ], 
+        "x": "62.292", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "179"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "191", 
             "193", 
-            "194", 
             "195", 
-            "196", 
             "198", 
             "199", 
-            "200", 
-            "201", 
-            "202", 
-            "206", 
-            "207", 
-            "210", 
             "213", 
-            "218", 
-            "219", 
-            "220", 
             "223", 
             "224", 
-            "226", 
             "227", 
-            "228", 
-            "232", 
-            "233", 
             "234", 
-            "237", 
-            "239", 
             "240", 
-            "244", 
             "246", 
             "248", 
-            "251", 
-            "252", 
-            "253", 
             "254", 
-            "256", 
             "257", 
             "258", 
-            "270", 
             "272", 
-            "273", 
-            "275", 
             "279", 
             "280", 
-            "304", 
             "310"
         ], 
         "symbol": "circle", 
@@ -3833,37 +4115,66 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "name_alt": "AA", 
-        "state": "0", 
         "y": "52.472", 
-        "x": "73.752", 
         "annotation": "YCM:AA", 
+        "name_alt": "AA", 
+        "name": "180", 
+        "state": "0", 
+        "links_from": [
+            "194", 
+            "196", 
+            "200", 
+            "201", 
+            "202", 
+            "206", 
+            "207", 
+            "210", 
+            "218", 
+            "219", 
+            "220", 
+            "226", 
+            "228", 
+            "232", 
+            "233", 
+            "237", 
+            "239", 
+            "244", 
+            "251", 
+            "252", 
+            "253", 
+            "256", 
+            "270", 
+            "273", 
+            "275", 
+            "304"
+        ], 
+        "x": "60.028", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "180"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "199", 
-            "204", 
             "225"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mAPC", 
-        "state": "mRNA", 
         "y": "18.472", 
-        "x": "52.947", 
         "annotation": "SGD:S000002971p", 
+        "name_alt": "mAPC", 
+        "name": "181", 
+        "state": "mRNA", 
+        "links_from": [
+            "204"
+        ], 
+        "x": "73.042", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "181"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "214", 
             "223", 
             "229"
         ], 
@@ -3871,55 +4182,61 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mSBF", 
-        "state": "mRNA", 
         "y": "42.472", 
-        "x": "41.863", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
+        "name_alt": "mSBF", 
+        "name": "182", 
+        "state": "mRNA", 
+        "links_from": [
+            "214"
+        ], 
+        "x": "79.292", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "182"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "191", 
-            "192", 
             "211"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mCdc14", 
-        "state": "mRNA", 
         "y": "42.472", 
-        "x": "46.085", 
         "annotation": "SGD:S000001924p", 
+        "name_alt": "mCdc14", 
+        "name": "183", 
+        "state": "mRNA", 
+        "links_from": [
+            "192"
+        ], 
+        "x": "66.847", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "183"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "213", 
             "232"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Swe1", 
-        "state": "0", 
         "y": "40.472", 
-        "x": "64.252", 
         "annotation": "SGD:S000003723p", 
+        "name_alt": "Swe1", 
+        "name": "184", 
+        "state": "0", 
+        "links_from": [
+            "213"
+        ], 
+        "x": "59.625", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "184"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "197", 
             "198", 
             "235"
         ], 
@@ -3927,14 +4244,17 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "mSic1", 
-        "state": "mRNA", 
         "y": "14.472", 
-        "x": "59.141", 
         "annotation": "SGD:S000004069p", 
+        "name_alt": "mSic1", 
+        "name": "185", 
+        "state": "mRNA", 
+        "links_from": [
+            "197"
+        ], 
+        "x": "59.569", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "185"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -3942,1644 +4262,1798 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "HOG1", 
-        "state": "PP", 
         "y": "59.472", 
-        "x": "96.669", 
         "annotation": "SGD:S000004103p", 
+        "name_alt": "HOG1", 
+        "name": "186", 
+        "state": "PP", 
+        "links_from": [], 
+        "x": "110.21", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "186"
+        "is_ode": true
     }, 
     {
         "links_to": [
             "197", 
-            "206", 
-            "258"
+            "206"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "Swi5", 
-        "state": "0", 
         "y": "16.472", 
-        "x": "64.697", 
         "annotation": "SGD:S000002553p", 
+        "name_alt": "Swi5", 
+        "name": "187", 
+        "state": "0", 
+        "links_from": [
+            "258"
+        ], 
+        "x": "59.125", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "187"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "201", 
-            "216", 
-            "224"
+            "216"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "MBF", 
-        "state": "0", 
         "y": "32.472", 
-        "x": "49.308", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
+        "name_alt": "MBF", 
+        "name": "188", 
+        "state": "0", 
+        "links_from": [
+            "224"
+        ], 
+        "x": "81.708", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "188"
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Cln3_TRSC * vmax_TRSC_Cln3 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
-        "name": "189", 
-        "x": "52.405", 
-        "y": "47.472", 
         "links_to": [
-            "153", 
-            "172", 
             "175", 
             "149", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mCln3_TRSC"
+        "links_from": [
+            "153", 
+            "172"
+        ], 
+        "rate": "corr_Cln3_TRSC * vmax_TRSC_Cln3 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
+        "name_alt": "v_mCln3_TRSC", 
+        "name": "189", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "47.472", 
+        "x": "72.361", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Whi5_TRSC * vmax_TRSC_Whi5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
-        "name": "190", 
-        "x": "54.308", 
-        "y": "43.472", 
         "links_to": [
-            "153", 
-            "172", 
             "147", 
             "175", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mWhi5_TRSC"
+        "links_from": [
+            "153", 
+            "172"
+        ], 
+        "rate": "corr_Whi5_TRSC * vmax_TRSC_Whi5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
+        "name_alt": "v_mWhi5_TRSC", 
+        "name": "190", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "80.236", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Cdc14_TRSL * vmax_TRSL_Cdc14 * mCdc14 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "191", 
-        "x": "66.863", 
-        "y": "51.472", 
         "links_to": [
-            "180", 
-            "172", 
             "175", 
             "160", 
-            "151", 
+            "151"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
             "183", 
             "177"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Cdc14_TRSL * vmax_TRSL_Cdc14 * mCdc14 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mCdc14_TRSL", 
+        "name": "191", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mCdc14_TRSL"
+        "y": "51.472", 
+        "x": "67.278", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Cdc14_TRSC * vmax_TRSC_Cdc14 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
-        "name": "192", 
-        "x": "45.919", 
-        "y": "43.472", 
         "links_to": [
-            "153", 
-            "172", 
             "183", 
             "175", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mCdc14_TRSC"
+        "links_from": [
+            "153", 
+            "172"
+        ], 
+        "rate": "corr_Cdc14_TRSC * vmax_TRSC_Cdc14 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
+        "name_alt": "v_mCdc14_TRSC", 
+        "name": "192", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "68.236", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Whi5_TRSL * vmax_TRSL_Whi5 * mWhi5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "193", 
-        "x": "56.141", 
-        "y": "41.472", 
         "links_to": [
-            "180", 
-            "172", 
             "179", 
             "175", 
-            "160", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
             "177", 
             "147"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Whi5_TRSL * vmax_TRSL_Whi5 * mWhi5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mWhi5_TRSL", 
+        "name": "193", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "41.472", 
+        "x": "62.569", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mWhi5_TRSL"
-    }, 
-    {
-        "rate": "(kd_Clb3_APC * Clb3 * APC)*int_vol", 
-        "name": "194", 
-        "x": "63.974", 
-        "y": "15.472", 
-        "links_to": [
+        "links_from": [
             "163", 
-            "180", 
             "170"
         ], 
-        "symbol": "rect", 
+        "rate": "(kd_Clb3_APC * Clb3 * APC)*int_vol", 
+        "name_alt": "v_Clb3_deg_APC", 
+        "name": "194", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "15.472", 
+        "x": "69.194", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "175", 
+            "168", 
+            "160"
+        ], 
+        "symbol": "rect", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_Clb3_deg_APC"
-    }, 
-    {
-        "rate": "corr_Cln3_TRSL * vmax_TRSL_Cln3 * mCln3 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "195", 
-        "x": "59.085", 
-        "y": "45.472", 
-        "links_to": [
+        "links_from": [
             "180", 
             "172", 
-            "175", 
-            "168", 
-            "160", 
             "177", 
             "149"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Cln3_TRSL * vmax_TRSL_Cln3 * mCln3 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mCln3_TRSL", 
+        "name": "195", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mCln3_TRSL"
+        "y": "45.472", 
+        "x": "64.458", 
+        "is_ode": false
     }, 
     {
-        "rate": "(kd_Cln2 * Cln2)*int_vol", 
-        "name": "196", 
-        "x": "47.474", 
-        "y": "35.472", 
         "links_to": [
-            "169", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_Cln2_deg"
+        "links_from": [
+            "169"
+        ], 
+        "rate": "(kd_Cln2 * Cln2)*int_vol", 
+        "name_alt": "v_Cln2_deg", 
+        "name": "196", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "35.472", 
+        "x": "66.792", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Sic1_TRSC * vmax_TRSC_Sic1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Swi5/(Kp_Sic1 + Swi5)*int_vol", 
-        "name": "197", 
-        "x": "59.002", 
-        "y": "15.472", 
         "links_to": [
-            "153", 
-            "172", 
             "185", 
             "175", 
-            "160", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "153", 
+            "172", 
             "187"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Sic1_TRSC * vmax_TRSC_Sic1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Swi5/(Kp_Sic1 + Swi5)*int_vol", 
+        "name_alt": "v_mSic1_TRSC", 
+        "name": "197", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "15.472", 
+        "x": "59.667", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "175", 
+            "162", 
+            "160"
+        ], 
+        "symbol": "rect", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mSic1_TRSC"
-    }, 
-    {
-        "rate": "corr_Sic1_TRSL * kp_Sic1 * mSic1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "198", 
-        "x": "72.71", 
-        "y": "13.472", 
-        "links_to": [
+        "links_from": [
             "180", 
             "172", 
-            "175", 
-            "162", 
-            "160", 
             "185", 
             "177"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Sic1_TRSL * kp_Sic1 * mSic1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mSic1_TRSL", 
+        "name": "198", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "13.472", 
+        "x": "56.736", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "170", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mSic1_TRSL"
-    }, 
-    {
-        "rate": "corr_APC_TRSL * kp_APC * mAPC * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "199", 
-        "x": "55.03", 
-        "y": "17.472", 
-        "links_to": [
+        "links_from": [
             "180", 
             "172", 
-            "170", 
-            "175", 
-            "160", 
             "181", 
             "177"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_APC_TRSL * kp_APC * mAPC * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mAPC_TRSL", 
+        "name": "199", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "17.472", 
+        "x": "73.958", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mAPC_TRSL"
-    }, 
-    {
+        "links_from": [
+            "170"
+        ], 
         "rate": "(kd_APC * APC)*int_vol", 
+        "name_alt": "v_APC_deg", 
         "name": "200", 
-        "x": "62.974", 
+        "compartments": [
+            "intracellular"
+        ], 
         "y": "15.472", 
+        "x": "62.403", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
-            "170", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_APC_deg"
-    }, 
-    {
+        "links_from": [
+            "188"
+        ], 
         "rate": "(kd_MBF * MBF)*int_vol", 
+        "name_alt": "v_MBF_deg", 
         "name": "201", 
-        "x": "54.197", 
+        "compartments": [
+            "intracellular"
+        ], 
         "y": "31.472", 
+        "x": "79.597", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
-            "188", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_MBF_deg"
-    }, 
-    {
+        "links_from": [
+            "151"
+        ], 
         "rate": "(k_Cdc14_deg * Cdc14)*int_vol", 
+        "name_alt": "v_Cdc14_deg", 
         "name": "202", 
-        "x": "68.252", 
-        "y": "49.472", 
-        "links_to": [
-            "151", 
-            "180"
-        ], 
-        "symbol": "rect", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Cdc14_deg"
+        "y": "49.472", 
+        "x": "64.972", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_mMih1_deg * mMih1)*int_vol", 
-        "name": "203", 
-        "x": "45.641", 
-        "y": "41.472", 
         "links_to": [
-            "165", 
             "153"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mMih1_deg"
+        "links_from": [
+            "165"
+        ], 
+        "rate": "(k_mMih1_deg * mMih1)*int_vol", 
+        "name_alt": "v_mMih1_deg", 
+        "name": "203", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "81.569", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_APC_TRSC * vmax_TRSC_APC * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_APC + Mcm1)*int_vol", 
-        "name": "204", 
-        "x": "53.349", 
-        "y": "19.472", 
         "links_to": [
-            "153", 
-            "172", 
             "181", 
             "175", 
-            "160", 
-            "174"
+            "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mAPC_TRSC"
+        "links_from": [
+            "153", 
+            "172", 
+            "174"
+        ], 
+        "rate": "corr_APC_TRSC * vmax_TRSC_APC * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_APC + Mcm1)*int_vol", 
+        "name_alt": "v_mAPC_TRSC", 
+        "name": "204", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "19.472", 
+        "x": "76.403", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_mClb3_deg * mClb3)*int_vol", 
-        "name": "205", 
-        "x": "58.641", 
-        "y": "25.472", 
         "links_to": [
-            "154", 
             "153"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mClb3_deg"
+        "links_from": [
+            "154"
+        ], 
+        "rate": "(k_mClb3_deg * mClb3)*int_vol", 
+        "name_alt": "v_mClb3_deg", 
+        "name": "205", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "25.472", 
+        "x": "76.819", 
+        "is_ode": false
     }, 
     {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "187"
+        ], 
         "rate": "(kd_Swi5 * Swi5)*int_vol", 
+        "name_alt": "v_Swi5_deg", 
         "name": "206", 
-        "x": "67.808", 
+        "compartments": [
+            "intracellular"
+        ], 
         "y": "15.472", 
+        "x": "58.292", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
-            "187", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_Swi5_deg"
-    }, 
-    {
+        "links_from": [
+            "178"
+        ], 
         "rate": "(k_SBF_deg * SBF)*int_vol", 
+        "name_alt": "v_SBF_deg", 
         "name": "207", 
-        "x": "59.835", 
-        "y": "39.472", 
-        "links_to": [
-            "178", 
-            "180"
-        ], 
-        "symbol": "rect", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_SBF_deg"
+        "y": "39.472", 
+        "x": "64.681", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Swe1_TRSC * vmax_TRSC_Swe1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
-        "name": "208", 
-        "x": "53.308", 
-        "y": "43.472", 
         "links_to": [
-            "153", 
-            "172", 
             "158", 
             "175", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mSwe1_TRSC"
+        "links_from": [
+            "153", 
+            "172"
+        ], 
+        "rate": "corr_Swe1_TRSC * vmax_TRSC_Swe1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
+        "name_alt": "v_mSwe1_TRSC", 
+        "name": "208", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "69.514", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Mcm1_TRSC * vmax_TRSC_Mcm1 * (Clb2**n_Mcm1/(Kp_Mcm1**n_Mcm1 + Clb2**n_Mcm1) + (v0_Mcm1/kp_Mcm1) * Clb3**n_Mcm1/(V0_Mcm1**n_Mcm1 + Clb3**n_Mcm1)) * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
-        "name": "209", 
-        "x": "62.53", 
-        "y": "23.472", 
         "links_to": [
-            "153", 
-            "172", 
             "171", 
             "175", 
-            "160", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "153", 
+            "172", 
             "163", 
             "164"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Mcm1_TRSC * vmax_TRSC_Mcm1 * (Clb2**n_Mcm1/(Kp_Mcm1**n_Mcm1 + Clb2**n_Mcm1) + (v0_Mcm1/kp_Mcm1) * Clb3**n_Mcm1/(V0_Mcm1**n_Mcm1 + Clb3**n_Mcm1)) * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
+        "name_alt": "v_mMcm1_TRSC", 
+        "name": "209", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mMcm1_TRSC"
+        "y": "23.472", 
+        "x": "67.069", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_Mih1_deg * Mih1)*int_vol", 
-        "name": "210", 
-        "x": "49.585", 
-        "y": "39.472", 
         "links_to": [
-            "156", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_Mih1_deg"
+        "links_from": [
+            "156"
+        ], 
+        "rate": "(k_Mih1_deg * Mih1)*int_vol", 
+        "name_alt": "v_Mih1_deg", 
+        "name": "210", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "39.472", 
+        "x": "69.014", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_mCdc14_deg * mCdc14)*int_vol", 
-        "name": "211", 
-        "x": "46.641", 
-        "y": "41.472", 
         "links_to": [
-            "183", 
             "153"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mCdc14_deg"
+        "links_from": [
+            "183"
+        ], 
+        "rate": "(k_mCdc14_deg * mCdc14)*int_vol", 
+        "name_alt": "v_mCdc14_deg", 
+        "name": "211", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "68.792", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Cln2_TRSC * vmax_TRSC_Cln2 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * SBF/(Kp_Cln2 + SBF)*int_vol", 
-        "name": "212", 
-        "x": "41.863", 
-        "y": "39.472", 
         "links_to": [
-            "153", 
-            "172", 
             "175", 
             "150", 
-            "160", 
-            "178"
+            "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mCln2_TRSC"
+        "links_from": [
+            "153", 
+            "172", 
+            "178"
+        ], 
+        "rate": "corr_Cln2_TRSC * vmax_TRSC_Cln2 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * SBF/(Kp_Cln2 + SBF)*int_vol", 
+        "name_alt": "v_mCln2_TRSC", 
+        "name": "212", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "39.472", 
+        "x": "67.181", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Swe1_TRSL * vmax_TRSL_Swe1 * mSwe1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "213", 
-        "x": "57.974", 
-        "y": "41.472", 
         "links_to": [
-            "180", 
-            "172", 
             "184", 
             "175", 
-            "160", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
             "158", 
             "177"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Swe1_TRSL * vmax_TRSL_Swe1 * mSwe1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mSwe1_TRSL", 
+        "name": "213", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSwe1_TRSL"
+        "y": "41.472", 
+        "x": "61.569", 
+        "is_ode": false
     }, 
     {
-        "rate": "vmax_TRSC_SBF * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
-        "name": "214", 
-        "x": "42.252", 
-        "y": "43.472", 
         "links_to": [
-            "153", 
-            "172", 
             "182", 
             "175", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mSBF_TRSC"
+        "links_from": [
+            "153", 
+            "172"
+        ], 
+        "rate": "vmax_TRSC_SBF * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
+        "name_alt": "v_mSBF_TRSC", 
+        "name": "214", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "84.292", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_mClb5_deg * mClb5)*int_vol", 
-        "name": "215", 
-        "x": "54.835", 
-        "y": "29.472", 
         "links_to": [
-            "157", 
             "153"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mClb5_deg"
+        "links_from": [
+            "157"
+        ], 
+        "rate": "(k_mClb5_deg * mClb5)*int_vol", 
+        "name_alt": "v_mClb5_deg", 
+        "name": "215", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "29.472", 
+        "x": "79.042", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Clb5_TRSC * vmax_TRSC_Clb5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * MBF/(Kp_Clb5 + MBF)*int_vol", 
-        "name": "216", 
-        "x": "49.863", 
-        "y": "31.472", 
         "links_to": [
-            "153", 
-            "172", 
             "175", 
             "160", 
-            "157", 
-            "188"
+            "157"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mClb5_TRSC"
+        "links_from": [
+            "153", 
+            "172", 
+            "188"
+        ], 
+        "rate": "corr_Clb5_TRSC * vmax_TRSC_Clb5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * MBF/(Kp_Clb5 + MBF)*int_vol", 
+        "name_alt": "v_mClb5_TRSC", 
+        "name": "216", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "31.472", 
+        "x": "81.708", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_mMBF_deg * mMBF)*int_vol", 
-        "name": "217", 
-        "x": "46.447", 
-        "y": "33.472", 
         "links_to": [
-            "148", 
             "153"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mMBF_deg"
+        "links_from": [
+            "148"
+        ], 
+        "rate": "(k_mMBF_deg * mMBF)*int_vol", 
+        "name_alt": "v_mMBF_deg", 
+        "name": "217", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "33.472", 
+        "x": "82.278", 
+        "is_ode": false
     }, 
     {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "179"
+        ], 
         "rate": "(k_Whi5_deg * Whi5)*int_vol", 
+        "name_alt": "v_Whi5_deg", 
         "name": "218", 
-        "x": "64.752", 
+        "compartments": [
+            "intracellular"
+        ], 
         "y": "39.472", 
+        "x": "59.069", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
-            "179", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_Whi5_deg"
-    }, 
-    {
+        "links_from": [
+            "168"
+        ], 
         "rate": "(k_Cln3_deg * Cln3)*int_vol", 
+        "name_alt": "v_Cln3_deg", 
         "name": "219", 
-        "x": "60.863", 
-        "y": "43.472", 
-        "links_to": [
-            "168", 
-            "180"
-        ], 
-        "symbol": "rect", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Cln3_deg"
+        "y": "43.472", 
+        "x": "59.736", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_Cdc14_p_deg * Cdc14_p)*int_vol", 
-        "name": "220", 
-        "x": "77.141", 
-        "y": "53.472", 
         "links_to": [
-            "173", 
             "180", 
             "175"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_Cdc14_p_deg"
+        "links_from": [
+            "173"
+        ], 
+        "rate": "(k_Cdc14_p_deg * Cdc14_p)*int_vol", 
+        "name_alt": "v_Cdc14_p_deg", 
+        "name": "220", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "61.5", 
+        "is_ode": false
     }, 
     {
-        "rate": "corr_Clb3_TRSC * vmax_TRSC_Clb3 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * (Clb5**n_Clb3/(Kp_Clb3**n_Clb3 + Clb5**n_Clb3))*int_vol", 
-        "name": "221", 
-        "x": "59.724", 
-        "y": "27.472", 
         "links_to": [
+            "154", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
             "153", 
             "172", 
+            "166"
+        ], 
+        "rate": "corr_Clb3_TRSC * vmax_TRSC_Clb3 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * (Clb5**n_Clb3/(Kp_Clb3**n_Clb3 + Clb5**n_Clb3))*int_vol", 
+        "name_alt": "v_mClb3_TRSC", 
+        "name": "221", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "80.597", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "149"
+        ], 
+        "rate": "(k_mCln3_deg * mCln3)*int_vol", 
+        "name_alt": "v_mCln3_deg", 
+        "name": "222", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "45.472", 
+        "x": "73.472", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "175", 
+            "178", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
+            "182", 
+            "177"
+        ], 
+        "rate": "vmax_TRSL_SBF * mSBF * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mSBF_TRSL", 
+        "name": "223", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "79.736", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "188", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
+            "177", 
+            "148"
+        ], 
+        "rate": "corr_MBF_TRSL * kp_MBF * mMBF * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mMBF_TRSL", 
+        "name": "224", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "33.472", 
+        "x": "85.847", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "181"
+        ], 
+        "rate": "(k_mAPC_deg * mAPC)*int_vol", 
+        "name_alt": "v_mAPC_deg", 
+        "name": "225", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "17.472", 
+        "x": "72.792", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "163"
+        ], 
+        "rate": "(kd_Clb3 * Clb3)*int_vol", 
+        "name_alt": "v_Clb3_deg", 
+        "name": "226", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "23.472", 
+        "x": "73.875", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "164", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
+            "155", 
+            "177"
+        ], 
+        "rate": "corr_Clb2_TRSL * kp_Clb2 * mClb2 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mClb2_TRSL", 
+        "name": "227", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "17.472", 
+        "x": "62.264", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "166"
+        ], 
+        "rate": "(kd_Clb5 * Clb5)*int_vol", 
+        "name_alt": "v_Clb5_deg", 
+        "name": "228", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "27.472", 
+        "x": "79.319", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "182"
+        ], 
+        "rate": "(k_mSBF_deg * mSBF)*int_vol", 
+        "name_alt": "v_mSBF_deg", 
+        "name": "229", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "78.736", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "147"
+        ], 
+        "rate": "(k_mWhi5_deg * mWhi5)*int_vol", 
+        "name_alt": "v_mWhi5_deg", 
+        "name": "230", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "75.028", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "175", 
+            "160", 
+            "148"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "153", 
+            "172", 
+            "169"
+        ], 
+        "rate": "corr_MBF_TRSC * vmax_TRSC_MBF * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Cln2**n1/(K_MBF**n1 + Cln2**n1)*int_vol", 
+        "name_alt": "v_mMBF_TRSC", 
+        "name": "231", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "35.472", 
+        "x": "84.653", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "184"
+        ], 
+        "rate": "(k_Swe1_deg * Swe1)*int_vol", 
+        "name_alt": "v_Swe1_deg", 
+        "name": "232", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "39.472", 
+        "x": "60.069", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "164", 
+            "170"
+        ], 
+        "rate": "(kd_Clb2_APC * Clb2 * APC)*int_vol", 
+        "name_alt": "v_Clb2_deg_APC", 
+        "name": "233", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "15.472", 
+        "x": "63.403", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "175", 
+            "159", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
+            "161", 
+            "177"
+        ], 
+        "rate": "corr_Far1_TRSL * kp_basal_Far1 * mFar1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mFar1_TRSL", 
+        "name": "234", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "87.347", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "185"
+        ], 
+        "rate": "(k_mSic1_deg * mSic1)*int_vol", 
+        "name_alt": "v_mSic1_deg", 
+        "name": "235", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "13.472", 
+        "x": "59.569", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "171"
+        ], 
+        "rate": "(k_mMcm1_deg * mMcm1)*int_vol", 
+        "name_alt": "v_mMcm1_deg", 
+        "name": "236", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "21.472", 
+        "x": "74.639", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "164"
+        ], 
+        "rate": "(kd_Clb2 * Clb2)*int_vol", 
+        "name_alt": "v_Clb2_deg", 
+        "name": "237", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "15.472", 
+        "x": "61.403", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "161", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "153", 
+            "172", 
+            "167"
+        ], 
+        "rate": "corr_Far1_TRSC * vmax_TRSC_Far1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * ( ((kp_Far1/kp_basal_Far1) * Fus3) + 1 )*int_vol", 
+        "name_alt": "v_mFar1_TRSC", 
+        "name": "238", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "89.625", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "159"
+        ], 
+        "rate": "(kd_Far1 * Far1)*int_vol", 
+        "name_alt": "v_Far1_deg", 
+        "name": "239", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "39.472", 
+        "x": "70.014", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "175", 
+            "160", 
+            "174"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
+            "171", 
+            "177"
+        ], 
+        "rate": "corr_Mcm1_TRSL * kp_Mcm1 * mMcm1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mMcm1_TRSL", 
+        "name": "240", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "21.472", 
+        "x": "84.931", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "158"
+        ], 
+        "rate": "(k_mSwe1_deg * mSwe1)*int_vol", 
+        "name_alt": "v_mSwe1_deg", 
+        "name": "241", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "69.792", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "155"
+        ], 
+        "rate": "(k_mClb2_deg * mClb2)*int_vol", 
+        "name_alt": "v_mClb2_deg", 
+        "name": "242", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "17.472", 
+        "x": "66.208", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "150"
+        ], 
+        "rate": "(k_mCln2_deg * mCln2)*int_vol", 
+        "name_alt": "v_mCln2_deg", 
+        "name": "243", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "37.472", 
+        "x": "67.069", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "166", 
+            "170"
+        ], 
+        "rate": "(kd_Clb5_APC * Clb5 * APC)*int_vol", 
+        "name_alt": "v_Clb5_deg_APC", 
+        "name": "244", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "15.472", 
+        "x": "70.194", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "161"
+        ], 
+        "rate": "(k_mFar1_deg * mFar1)*int_vol", 
+        "name_alt": "v_mFar1_deg", 
+        "name": "245", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "85.514", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "163", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
             "154", 
+            "177"
+        ], 
+        "rate": "corr_Clb3_TRSL * kp_Clb3 * mClb3 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mClb3_TRSL", 
+        "name": "246", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "25.472", 
+        "x": "77.819", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "155", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "153", 
+            "172", 
+            "174"
+        ], 
+        "rate": "corr_Clb2_TRSC * vmax_TRSC_Clb2 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_Clb2 + Mcm1)*int_vol", 
+        "name_alt": "v_mClb2_TRSC", 
+        "name": "247", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "19.472", 
+        "x": "71.167", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "175", 
+            "169", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
+            "177", 
+            "150"
+        ], 
+        "rate": "corr_Cln2_TRSL * kp_Cln2 * mCln2 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mCln2_TRSL", 
+        "name": "248", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "37.472", 
+        "x": "64.403", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "153"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "152"
+        ], 
+        "rate": "(k_mSwi5_deg * mSwi5)*int_vol", 
+        "name_alt": "v_mSwi5_deg", 
+        "name": "249", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "17.472", 
+        "x": "71.625", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "152", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "153", 
+            "172", 
+            "174"
+        ], 
+        "rate": "corr_Swi5_TRSC * vmax_TRSC_Swi5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_Swi5 + Mcm1)*int_vol", 
+        "name_alt": "v_mSwi5_TRSC", 
+        "name": "250", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "19.472", 
+        "x": "74.653", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180", 
+            "175"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "176"
+        ], 
+        "rate": "(k_SBF_p_deg * SBF_p)*int_vol", 
+        "name_alt": "v_SBF_p_deg", 
+        "name": "251", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "56.319", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "159", 
+            "169"
+        ], 
+        "rate": "(kdd_Far1 * Far1 * Cln2)*int_vol", 
+        "name_alt": "v_Far1_deg_Cln2", 
+        "name": "252", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "35.472", 
+        "x": "69.181", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "162"
+        ], 
+        "rate": "(kd_Sic1 * Sic1)*int_vol", 
+        "name_alt": "v_Sic1_deg", 
+        "name": "253", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "11.472", 
+        "x": "56.514", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "156", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "180", 
+            "172", 
+            "177", 
+            "165"
+        ], 
+        "rate": "corr_Mih1_TRSL * vmax_TRSL_Mih1 * mMih1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mMih1_TRSL", 
+        "name": "254", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "41.472", 
+        "x": "83.403", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "165", 
+            "175", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "153", 
+            "172"
+        ], 
+        "rate": "corr_Mih1_TRSC * vmax_TRSC_Mih1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
+        "name_alt": "v_mMih1_TRSC", 
+        "name": "255", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "43.472", 
+        "x": "85.847", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "180"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "GEX_GRN"
+        ], 
+        "links_from": [
+            "174"
+        ], 
+        "rate": "(kd_Mcm1 * Mcm1)*int_vol", 
+        "name_alt": "v_Mcm1_deg", 
+        "name": "256", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "19.472", 
+        "x": "69.181", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
             "175", 
             "160", 
             "166"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mClb3_TRSC"
-    }, 
-    {
-        "rate": "(k_mCln3_deg * mCln3)*int_vol", 
-        "name": "222", 
-        "x": "51.933", 
-        "y": "45.472", 
-        "links_to": [
-            "149", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mCln3_deg"
-    }, 
-    {
-        "rate": "vmax_TRSL_SBF * mSBF * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "223", 
-        "x": "40.752", 
-        "y": "41.472", 
-        "links_to": [
+        "links_from": [
             "180", 
             "172", 
-            "175", 
-            "178", 
-            "160", 
-            "182", 
-            "177"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSBF_TRSL"
-    }, 
-    {
-        "rate": "corr_MBF_TRSL * kp_MBF * mMBF * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "224", 
-        "x": "44.933", 
-        "y": "33.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "188", 
-            "175", 
-            "160", 
             "177", 
-            "148"
+            "157"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Clb5_TRSL * kp_Clb5 * mClb5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mClb5_TRSL", 
+        "name": "257", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mMBF_TRSL"
+        "y": "29.472", 
+        "x": "80.042", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_mAPC_deg * mAPC)*int_vol", 
-        "name": "225", 
-        "x": "52.905", 
-        "y": "17.472", 
         "links_to": [
-            "181", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mAPC_deg"
-    }, 
-    {
-        "rate": "(kd_Clb3 * Clb3)*int_vol", 
-        "name": "226", 
-        "x": "64.363", 
-        "y": "23.472", 
-        "links_to": [
-            "163", 
-            "180"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Clb3_deg"
-    }, 
-    {
-        "rate": "corr_Clb2_TRSL * kp_Clb2 * mClb2 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "227", 
-        "x": "67.641", 
-        "y": "17.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "164", 
-            "175", 
-            "160", 
-            "155", 
-            "177"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mClb2_TRSL"
-    }, 
-    {
-        "rate": "(kd_Clb5 * Clb5)*int_vol", 
-        "name": "228", 
-        "x": "62.53", 
-        "y": "27.472", 
-        "links_to": [
-            "166", 
-            "180"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Clb5_deg"
-    }, 
-    {
-        "rate": "(k_mSBF_deg * mSBF)*int_vol", 
-        "name": "229", 
-        "x": "42.322", 
-        "y": "41.472", 
-        "links_to": [
-            "182", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSBF_deg"
-    }, 
-    {
-        "rate": "(k_mWhi5_deg * mWhi5)*int_vol", 
-        "name": "230", 
-        "x": "53.308", 
-        "y": "41.472", 
-        "links_to": [
-            "147", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mWhi5_deg"
-    }, 
-    {
-        "rate": "corr_MBF_TRSC * vmax_TRSC_MBF * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Cln2**n1/(K_MBF**n1 + Cln2**n1)*int_vol", 
-        "name": "231", 
-        "x": "45.919", 
-        "y": "35.472", 
-        "links_to": [
-            "153", 
-            "172", 
-            "175", 
-            "160", 
-            "148", 
-            "169"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mMBF_TRSC"
-    }, 
-    {
-        "rate": "(k_Swe1_deg * Swe1)*int_vol", 
-        "name": "232", 
-        "x": "67.141", 
-        "y": "39.472", 
-        "links_to": [
-            "184", 
-            "180"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Swe1_deg"
-    }, 
-    {
-        "rate": "(kd_Clb2_APC * Clb2 * APC)*int_vol", 
-        "name": "233", 
-        "x": "66.808", 
-        "y": "15.472", 
-        "links_to": [
-            "164", 
-            "180", 
-            "170"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Clb2_deg_APC"
-    }, 
-    {
-        "rate": "corr_Far1_TRSL * kp_basal_Far1 * mFar1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "234", 
-        "x": "69.724", 
-        "y": "41.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "175", 
-            "159", 
-            "160", 
-            "161", 
-            "177"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mFar1_TRSL"
-    }, 
-    {
-        "rate": "(k_mSic1_deg * mSic1)*int_vol", 
-        "name": "235", 
-        "x": "59.141", 
-        "y": "13.472", 
-        "links_to": [
-            "185", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSic1_deg"
-    }, 
-    {
-        "rate": "(k_mMcm1_deg * mMcm1)*int_vol", 
-        "name": "236", 
-        "x": "60.697", 
-        "y": "21.472", 
-        "links_to": [
-            "171", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mMcm1_deg"
-    }, 
-    {
-        "rate": "(kd_Clb2 * Clb2)*int_vol", 
-        "name": "237", 
-        "x": "69.363", 
-        "y": "15.472", 
-        "links_to": [
-            "164", 
-            "180"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Clb2_deg"
-    }, 
-    {
-        "rate": "corr_Far1_TRSC * vmax_TRSC_Far1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * ( ((kp_Far1/kp_basal_Far1) * Fus3) + 1 )*int_vol", 
-        "name": "238", 
-        "x": "66.308", 
-        "y": "43.472", 
-        "links_to": [
-            "153", 
-            "172", 
-            "161", 
-            "175", 
-            "160", 
-            "167"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mFar1_TRSC"
-    }, 
-    {
-        "rate": "(kd_Far1 * Far1)*int_vol", 
-        "name": "239", 
-        "x": "70.363", 
-        "y": "39.472", 
-        "links_to": [
-            "159", 
-            "180"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Far1_deg"
-    }, 
-    {
-        "rate": "corr_Mcm1_TRSL * kp_Mcm1 * mMcm1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "240", 
-        "x": "65.391", 
-        "y": "21.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "175", 
-            "160", 
-            "174", 
-            "171", 
-            "177"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mMcm1_TRSL"
-    }, 
-    {
-        "rate": "(k_mSwe1_deg * mSwe1)*int_vol", 
-        "name": "241", 
-        "x": "54.308", 
-        "y": "41.472", 
-        "links_to": [
-            "158", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSwe1_deg"
-    }, 
-    {
-        "rate": "(k_mClb2_deg * mClb2)*int_vol", 
-        "name": "242", 
-        "x": "63.947", 
-        "y": "17.472", 
-        "links_to": [
-            "155", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mClb2_deg"
-    }, 
-    {
-        "rate": "(k_mCln2_deg * mCln2)*int_vol", 
-        "name": "243", 
-        "x": "42.863", 
-        "y": "37.472", 
-        "links_to": [
-            "150", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mCln2_deg"
-    }, 
-    {
-        "rate": "(kd_Clb5_APC * Clb5 * APC)*int_vol", 
-        "name": "244", 
-        "x": "61.974", 
-        "y": "15.472", 
-        "links_to": [
-            "166", 
-            "180", 
-            "170"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Clb5_deg_APC"
-    }, 
-    {
-        "rate": "(k_mFar1_deg * mFar1)*int_vol", 
-        "name": "245", 
-        "x": "63.697", 
-        "y": "41.472", 
-        "links_to": [
-            "161", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mFar1_deg"
-    }, 
-    {
-        "rate": "corr_Clb3_TRSL * kp_Clb3 * mClb3 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "246", 
-        "x": "63.808", 
-        "y": "25.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "163", 
-            "175", 
-            "160", 
-            "154", 
-            "177"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mClb3_TRSL"
-    }, 
-    {
-        "rate": "corr_Clb2_TRSC * vmax_TRSC_Clb2 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_Clb2 + Mcm1)*int_vol", 
-        "name": "247", 
-        "x": "64.974", 
-        "y": "19.472", 
-        "links_to": [
-            "153", 
-            "172", 
-            "155", 
-            "175", 
-            "160", 
-            "174"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mClb2_TRSC"
-    }, 
-    {
-        "rate": "corr_Cln2_TRSL * kp_Cln2 * mCln2 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "248", 
-        "x": "41.03", 
-        "y": "37.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "175", 
-            "169", 
-            "160", 
-            "177", 
-            "150"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mCln2_TRSL"
-    }, 
-    {
-        "rate": "(k_mSwi5_deg * mSwi5)*int_vol", 
-        "name": "249", 
-        "x": "59.419", 
-        "y": "17.472", 
-        "links_to": [
-            "152", 
-            "153"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSwi5_deg"
-    }, 
-    {
-        "rate": "corr_Swi5_TRSC * vmax_TRSC_Swi5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_Swi5 + Mcm1)*int_vol", 
-        "name": "250", 
-        "x": "59.322", 
-        "y": "19.472", 
-        "links_to": [
-            "153", 
-            "172", 
-            "152", 
-            "175", 
-            "160", 
-            "174"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSwi5_TRSC"
-    }, 
-    {
-        "rate": "(k_SBF_p_deg * SBF_p)*int_vol", 
-        "name": "251", 
-        "x": "58.405", 
-        "y": "53.472", 
-        "links_to": [
-            "176", 
-            "180", 
-            "175"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_SBF_p_deg"
-    }, 
-    {
-        "rate": "(kdd_Far1 * Far1 * Cln2)*int_vol", 
-        "name": "252", 
-        "x": "69.808", 
-        "y": "35.472", 
-        "links_to": [
-            "159", 
-            "180", 
-            "169"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Far1_deg_Cln2"
-    }, 
-    {
-        "rate": "(kd_Sic1 * Sic1)*int_vol", 
-        "name": "253", 
-        "x": "73.266", 
-        "y": "11.472", 
-        "links_to": [
-            "162", 
-            "180"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Sic1_deg"
-    }, 
-    {
-        "rate": "corr_Mih1_TRSL * vmax_TRSL_Mih1 * mMih1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "254", 
-        "x": "43.335", 
-        "y": "41.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "156", 
-            "175", 
-            "160", 
-            "177", 
-            "165"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mMih1_TRSL"
-    }, 
-    {
-        "rate": "corr_Mih1_TRSC * vmax_TRSC_Mih1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
-        "name": "255", 
-        "x": "44.641", 
-        "y": "43.472", 
-        "links_to": [
-            "153", 
-            "172", 
-            "165", 
+            "187", 
             "175", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_GRN"
         ], 
-        "name_alt": "v_mMih1_TRSC"
-    }, 
-    {
-        "rate": "(kd_Mcm1 * Mcm1)*int_vol", 
-        "name": "256", 
-        "x": "65.974", 
-        "y": "19.472", 
-        "links_to": [
-            "174", 
-            "180"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_Mcm1_deg"
-    }, 
-    {
-        "rate": "corr_Clb5_TRSL * kp_Clb5 * mClb5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "257", 
-        "x": "57.447", 
-        "y": "29.472", 
-        "links_to": [
+        "links_from": [
             "180", 
             "172", 
-            "175", 
-            "160", 
-            "166", 
-            "177", 
-            "157"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mClb5_TRSL"
-    }, 
-    {
-        "rate": "corr_Swi5_TRSL * kp_Swi5 * mSwi5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
-        "name": "258", 
-        "x": "64.947", 
-        "y": "17.472", 
-        "links_to": [
-            "180", 
-            "172", 
-            "187", 
-            "175", 
-            "160", 
             "152", 
             "177"
         ], 
-        "symbol": "rect", 
+        "rate": "corr_Swi5_TRSL * kp_Swi5 * mSwi5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
+        "name_alt": "v_mSwi5_TRSL", 
+        "name": "258", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "GEX_GRN"
-        ], 
-        "name_alt": "v_mSwi5_TRSL"
+        "y": "17.472", 
+        "x": "68.097", 
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "GEX_TRL"
+        ], 
+        "y": "53.472", 
+        "annotation": "YCM:ribosomes_check", 
+        "name_alt": "total_ribosomes", 
+        "name": "259", 
+        "equation": "(Ribosome +  9.4336 * mRNA_R_Ribosome +  9.4336 * mRNA_met_Ribosome +  9.4336 * mRNA_other_Ribosome) * 1e-3 * 6.022e23 * int_vol", 
+        "state": "0", 
+        "links_from": [
             "144", 
             "266", 
             "268", 
             "265", 
             "4"
         ], 
-        "symbol": "triangle", 
+        "x": "55.319", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "circle", 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "total_ribosomes", 
-        "equation": "(Ribosome +  9.4336 * mRNA_R_Ribosome +  9.4336 * mRNA_met_Ribosome +  9.4336 * mRNA_other_Ribosome) * 1e-3 * 6.022e23 * int_vol", 
-        "state": "0", 
-        "y": "53.472", 
-        "x": "87.197", 
-        "annotation": "YCM:ribosomes_check", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "259"
-    }, 
-    {
-        "links_to": [
+        "y": "46.472", 
+        "annotation": "CHEBI:43474", 
+        "name_alt": "P_i", 
+        "name": "260", 
+        "state": "-2", 
+        "links_from": [
             "272", 
             "279", 
             "280"
         ], 
+        "x": "55.625", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "271"
+        ], 
         "symbol": "circle", 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "P_i", 
-        "state": "-2", 
-        "y": "46.472", 
-        "x": "84.863", 
-        "annotation": "CHEBI:43474", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "260"
-    }, 
-    {
-        "links_to": [
-            "271", 
+        "y": "52.472", 
+        "annotation": "YCM:mRNA_metabolic", 
+        "name_alt": "mRNA_met", 
+        "name": "261", 
+        "state": "0", 
+        "links_from": [
             "274"
         ], 
+        "x": "52.208", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "269"
+        ], 
         "symbol": "circle", 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "mRNA_met", 
-        "state": "0", 
         "y": "52.472", 
-        "x": "88.308", 
-        "annotation": "YCM:mRNA_metabolic", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "261"
-    }, 
-    {
-        "links_to": [
-            "269", 
+        "annotation": "YCM:mRNA_other", 
+        "name_alt": "mRNA_other", 
+        "name": "262", 
+        "state": "0", 
+        "links_from": [
             "276"
         ], 
+        "x": "98.236", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "277"
+        ], 
         "symbol": "circle", 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "mRNA_other", 
-        "state": "0", 
         "y": "52.472", 
-        "x": "84.363", 
-        "annotation": "YCM:mRNA_other", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "262"
-    }, 
-    {
-        "links_to": [
-            "277", 
+        "annotation": "YCM:mRNA_R", 
+        "name_alt": "mRNA_R", 
+        "name": "263", 
+        "state": "0", 
+        "links_from": [
             "278"
         ], 
+        "x": "53.486", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "270"
+        ], 
         "symbol": "circle", 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "mRNA_R", 
+        "y": "46.472", 
+        "annotation": "YCM:B_Protein_metabolic", 
+        "name_alt": "B_Protein_met", 
+        "name": "264", 
         "state": "0", 
-        "y": "52.472", 
-        "x": "85.919", 
-        "annotation": "YCM:mRNA_R", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "263"
-    }, 
-    {
-        "links_to": [
-            "270", 
+        "links_from": [
             "280"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "GEX_TRL"
-        ], 
-        "name_alt": "B_Protein_met", 
-        "state": "0", 
-        "y": "46.472", 
-        "x": "85.863", 
-        "annotation": "YCM:B_Protein_metabolic", 
+        "x": "54.625", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "264"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "269", 
             "276", 
             "279", 
             "259"
@@ -5588,19 +6062,21 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "mRNA_other_Ribosome", 
-        "state": "0", 
         "y": "54.472", 
-        "x": "82.363", 
         "annotation": "YCM:mRNA_other_Ribosome", 
+        "name_alt": "mRNA_other_Ribosome", 
+        "name": "265", 
+        "state": "0", 
+        "links_from": [
+            "269"
+        ], 
+        "x": "60.597", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "265"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "272", 
-            "277", 
             "278", 
             "259"
         ], 
@@ -5608,36 +6084,40 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "mRNA_R_Ribosome", 
-        "state": "0", 
         "y": "54.472", 
-        "x": "86.197", 
         "annotation": "YCM:mRNA_R_Ribosome", 
+        "name_alt": "mRNA_R_Ribosome", 
+        "name": "266", 
+        "state": "0", 
+        "links_from": [
+            "277"
+        ], 
+        "x": "55.042", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "266"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "275", 
-            "279"
+            "275"
         ], 
         "symbol": "circle", 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "B_Protein_other", 
-        "state": "0", 
         "y": "46.472", 
-        "x": "83.863", 
         "annotation": "YCM:B_Protein_other", 
+        "name_alt": "B_Protein_other", 
+        "name": "267", 
+        "state": "0", 
+        "links_from": [
+            "279"
+        ], 
+        "x": "56.625", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "267"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "271", 
             "274", 
             "280", 
             "259"
@@ -5646,286 +6126,314 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "mRNA_met_Ribosome", 
-        "state": "0", 
         "y": "54.472", 
-        "x": "88.474", 
         "annotation": "YCM:mRNA_met_Ribosome", 
+        "name_alt": "mRNA_met_Ribosome", 
+        "name": "268", 
+        "state": "0", 
+        "links_from": [
+            "271"
+        ], 
+        "x": "53.486", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "268"
+        "is_ode": false
     }, 
     {
-        "rate": "(k_ASS_Ribosome_mRNA_other * Ribosome * mRNA_other)*int_vol", 
-        "name": "269", 
-        "x": "82.363", 
-        "y": "55.472", 
         "links_to": [
-            "144", 
-            "262", 
             "265"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_ASS_Ribosome_mRNA_other"
+        "links_from": [
+            "144", 
+            "262"
+        ], 
+        "rate": "(k_ASS_Ribosome_mRNA_other * Ribosome * mRNA_other)*int_vol", 
+        "name_alt": "v_ASS_Ribosome_mRNA_other", 
+        "name": "269", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "55.472", 
+        "x": "60.597", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_DEG_B_Protein_met * B_Protein_met)*int_vol", 
-        "name": "270", 
-        "x": "85.863", 
-        "y": "45.472", 
         "links_to": [
-            "264", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_DEG_B_Protein_met"
+        "links_from": [
+            "264"
+        ], 
+        "rate": "(k_DEG_B_Protein_met * B_Protein_met)*int_vol", 
+        "name_alt": "v_DEG_B_Protein_met", 
+        "name": "270", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "45.472", 
+        "x": "54.486", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_ASS_Ribosome_mRNA_met * Ribosome * mRNA_met)*int_vol", 
-        "name": "271", 
-        "x": "88.474", 
-        "y": "55.472", 
         "links_to": [
-            "261", 
-            "144", 
             "268"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_ASS_Ribosome_mRNA_met"
+        "links_from": [
+            "261", 
+            "144"
+        ], 
+        "rate": "(k_ASS_Ribosome_mRNA_met * Ribosome * mRNA_met)*int_vol", 
+        "name_alt": "v_ASS_Ribosome_mRNA_met", 
+        "name": "271", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "55.472", 
+        "x": "53.486", 
+        "is_ode": false
     }, 
     {
-        "rate": "(vmax_TRSL_mRNA_R * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_R_Ribosome/(k_TRSL_mRNA_R + mRNA_R_Ribosome)))*int_vol", 
-        "name": "272", 
-        "x": "84.863", 
-        "y": "47.472", 
         "links_to": [
-            "180", 
-            "172", 
             "143", 
             "160", 
-            "260", 
-            "266"
+            "260"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_TRSL_mRNA_R"
+        "links_from": [
+            "180", 
+            "172", 
+            "266"
+        ], 
+        "rate": "(vmax_TRSL_mRNA_R * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_R_Ribosome/(k_TRSL_mRNA_R + mRNA_R_Ribosome)))*int_vol", 
+        "name_alt": "v_TRSL_mRNA_R", 
+        "name": "272", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "47.472", 
+        "x": "55.625", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_DEG_B_Protein_R * B_Protein_R)*int_vol", 
-        "name": "273", 
-        "x": "83.363", 
-        "y": "53.472", 
         "links_to": [
-            "143", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_DEG_B_Protein_R"
+        "links_from": [
+            "143"
+        ], 
+        "rate": "(k_DEG_B_Protein_R * B_Protein_R)*int_vol", 
+        "name_alt": "v_DEG_B_Protein_R", 
+        "name": "273", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "59.806", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_DIS_Ribosome_mRNA_met * mRNA_met_Ribosome)*int_vol", 
-        "name": "274", 
-        "x": "88.752", 
-        "y": "53.472", 
         "links_to": [
-            "268", 
             "261", 
             "144"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_DIS_Ribosome_mRNA_met"
+        "links_from": [
+            "268"
+        ], 
+        "rate": "(k_DIS_Ribosome_mRNA_met * mRNA_met_Ribosome)*int_vol", 
+        "name_alt": "v_DIS_Ribosome_mRNA_met", 
+        "name": "274", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "52.208", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_DEG_B_Protein_other * B_Protein_other)*int_vol", 
-        "name": "275", 
-        "x": "83.724", 
-        "y": "45.472", 
         "links_to": [
-            "267", 
             "180"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_DEG_B_Protein_other"
+        "links_from": [
+            "267"
+        ], 
+        "rate": "(k_DEG_B_Protein_other * B_Protein_other)*int_vol", 
+        "name_alt": "v_DEG_B_Protein_other", 
+        "name": "275", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "45.472", 
+        "x": "56.236", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_DIS_Ribosome_mRNA_other * mRNA_other_Ribosome)*int_vol", 
-        "name": "276", 
-        "x": "82.085", 
-        "y": "53.472", 
         "links_to": [
-            "265", 
             "144", 
             "262"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_DIS_Ribosome_mRNA_other"
+        "links_from": [
+            "265"
+        ], 
+        "rate": "(k_DIS_Ribosome_mRNA_other * mRNA_other_Ribosome)*int_vol", 
+        "name_alt": "v_DIS_Ribosome_mRNA_other", 
+        "name": "276", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "62.5", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_ASS_Ribosome_mRNA_R * Ribosome * mRNA_R)*int_vol", 
-        "name": "277", 
-        "x": "85.641", 
-        "y": "55.472", 
         "links_to": [
-            "144", 
-            "263", 
             "266"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_ASS_Ribosome_mRNA_R"
+        "links_from": [
+            "144", 
+            "263"
+        ], 
+        "rate": "(k_ASS_Ribosome_mRNA_R * Ribosome * mRNA_R)*int_vol", 
+        "name_alt": "v_ASS_Ribosome_mRNA_R", 
+        "name": "277", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "55.472", 
+        "x": "55.042", 
+        "is_ode": false
     }, 
     {
-        "rate": "(k_DIS_Ribosome_mRNA_R * mRNA_R_Ribosome)*int_vol", 
-        "name": "278", 
-        "x": "85.919", 
-        "y": "53.472", 
         "links_to": [
-            "266", 
             "144", 
             "263"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_DIS_Ribosome_mRNA_R"
+        "links_from": [
+            "266"
+        ], 
+        "rate": "(k_DIS_Ribosome_mRNA_R * mRNA_R_Ribosome)*int_vol", 
+        "name_alt": "v_DIS_Ribosome_mRNA_R", 
+        "name": "278", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "53.472", 
+        "x": "53.764", 
+        "is_ode": false
     }, 
     {
-        "rate": "(vmax_TRSL_mRNA_other * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_other_Ribosome/(k_TRSL_mRNA_other + mRNA_other_Ribosome)))*int_vol", 
-        "name": "279", 
-        "x": "83.863", 
-        "y": "47.472", 
         "links_to": [
-            "180", 
-            "172", 
             "267", 
             "160", 
-            "260", 
-            "265"
+            "260"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_TRSL_mRNA_other"
-    }, 
-    {
-        "rate": "(vmax_TRSL_mRNA_met * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_met_Ribosome/(k_TRSL_mRNA_met + mRNA_met_Ribosome)))*int_vol", 
-        "name": "280", 
-        "x": "85.863", 
-        "y": "47.472", 
-        "links_to": [
+        "links_from": [
             "180", 
             "172", 
-            "264", 
-            "160", 
-            "260", 
-            "268"
+            "265"
         ], 
-        "symbol": "rect", 
+        "rate": "(vmax_TRSL_mRNA_other * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_other_Ribosome/(k_TRSL_mRNA_other + mRNA_other_Ribosome)))*int_vol", 
+        "name_alt": "v_TRSL_mRNA_other", 
+        "name": "279", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "47.472", 
+        "x": "56.625", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "264", 
+            "160", 
+            "260"
+        ], 
+        "symbol": "rect", 
         "module": [
             "GEX_TRL"
         ], 
-        "name_alt": "v_TRSL_mRNA_met"
+        "links_from": [
+            "180", 
+            "172", 
+            "268"
+        ], 
+        "rate": "(vmax_TRSL_mRNA_met * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_met_Ribosome/(k_TRSL_mRNA_met + mRNA_met_Ribosome)))*int_vol", 
+        "name_alt": "v_TRSL_mRNA_met", 
+        "name": "280", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "47.472", 
+        "x": "54.625", 
+        "is_ode": false
     }, 
     {
         "links_to": [
             "307", 
             "308", 
             "310", 
-            "315", 
-            "318", 
             "319"
         ], 
         "symbol": "circle", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "NADH", 
-        "state": "-2", 
         "y": "10.472", 
-        "x": "75.377", 
         "annotation": "CHEBI:57945", 
+        "name_alt": "NADH", 
+        "name": "281", 
+        "state": "-2", 
+        "links_from": [
+            "315", 
+            "318"
+        ], 
+        "x": "88.403", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "281"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "317", 
             "336"
         ], 
         "symbol": "circle", 
@@ -5933,57 +6441,62 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "name_alt": "mannan", 
-        "state": "0", 
         "y": "12.472", 
-        "x": "78.766", 
         "annotation": "CHEBI:28808", 
+        "name_alt": "mannan", 
+        "name": "282", 
+        "state": "0", 
+        "links_from": [
+            "317"
+        ], 
+        "x": "92.653", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "282"
+        "is_ode": false
     }, 
     {
         "links_to": [
+            "315", 
+            "318"
+        ], 
+        "symbol": "circle", 
+        "module": [
+            "MET_CCM"
+        ], 
+        "y": "8.4722", 
+        "annotation": "CHEBI:57540", 
+        "name_alt": "NAD", 
+        "name": "283", 
+        "state": "-1", 
+        "links_from": [
             "307", 
             "308", 
             "310", 
-            "315", 
-            "318", 
             "319"
         ], 
+        "x": "89.125", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "NAD", 
+        "y": "6.4722", 
+        "annotation": "YCM:pyr_check", 
+        "name_alt": "pyr_check", 
+        "name": "284", 
         "state": "-1", 
-        "y": "8.4722", 
-        "x": "76.933", 
-        "annotation": "CHEBI:57540", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "283"
-    }, 
-    {
-        "links_to": [
+        "links_from": [
             "315"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "MET_CCM"
-        ], 
-        "name_alt": "pyr_check", 
-        "state": "-1", 
-        "y": "6.4722", 
-        "x": "69.599", 
-        "annotation": "YCM:pyr_check", 
+        "x": "83.931", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "284"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "309", 
             "312", 
             "316"
         ], 
@@ -5991,52 +6504,56 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "NA_RNA", 
-        "state": "0", 
         "y": "2.4722", 
-        "x": "56.252", 
         "annotation": "YCM:NA_RNA", 
+        "name_alt": "NA_RNA", 
+        "name": "285", 
+        "state": "0", 
+        "links_from": [
+            "309"
+        ], 
+        "x": "80.681", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "285"
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "circle", 
+        "module": [
+            "MET_CCM"
+        ], 
+        "y": "12.472", 
+        "annotation": "YCM:TriP_check", 
+        "name_alt": "TriP_check", 
+        "name": "286", 
+        "state": "-2", 
+        "links_from": [
             "320"
         ], 
+        "x": "89.542", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "TriP_check", 
-        "state": "-2", 
-        "y": "12.472", 
-        "x": "70.433", 
-        "annotation": "YCM:TriP_check", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "286"
-    }, 
-    {
-        "links_to": [
+        "y": "8.4722", 
+        "annotation": "YCM:EtOH_check", 
+        "name_alt": "EtOH_check", 
+        "name": "287", 
+        "state": "0", 
+        "links_from": [
             "319"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "MET_CCM"
-        ], 
-        "name_alt": "EtOH_check", 
-        "state": "0", 
-        "y": "8.4722", 
-        "x": "73.822", 
-        "annotation": "YCM:EtOH_check", 
+        "x": "87.125", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "287"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "319", 
             "419"
         ], 
         "symbol": "circle", 
@@ -6044,14 +6561,17 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "name_alt": "EtOH", 
-        "state": "0", 
         "y": "8.4722", 
-        "x": "74.822", 
         "annotation": "CHEBI:16236", 
+        "name_alt": "EtOH", 
+        "name": "288", 
+        "state": "0", 
+        "links_from": [
+            "319"
+        ], 
+        "x": "88.125", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "288"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -6060,7 +6580,6 @@ var data =[
             "306", 
             "309", 
             "313", 
-            "314", 
             "317", 
             "320"
         ], 
@@ -6068,14 +6587,17 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "HexP", 
-        "state": "-2", 
         "y": "14.472", 
-        "x": "74.405", 
         "annotation": "CHEBI:58225", 
+        "name_alt": "HexP", 
+        "name": "289", 
+        "state": "-2", 
+        "links_from": [
+            "314"
+        ], 
+        "x": "87.236", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "289"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -6085,60 +6607,62 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "O2_check", 
-        "state": "0", 
         "y": "50.472", 
-        "x": "81.085", 
         "annotation": "YCM:O2_check", 
+        "name_alt": "O2_check", 
+        "name": "290", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "98.236", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "290"
+        "is_ode": false
     }, 
     {
-        "links_to": [
-            "313"
-        ], 
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "name_alt": "lipid", 
-        "state": "0", 
         "y": "4.4722", 
-        "x": "57.169", 
         "annotation": "YCM:lipid", 
+        "name_alt": "lipid", 
+        "name": "291", 
+        "state": "0", 
+        "links_from": [
+            "313"
+        ], 
+        "x": "79.403", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "291"
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "circle", 
+        "module": [
+            "MET_CCM"
+        ], 
+        "y": "0.47222", 
+        "annotation": "CHEBI:24636", 
+        "name_alt": "H", 
+        "name": "292", 
+        "state": "+1", 
+        "links_from": [
             "304", 
             "305", 
             "309", 
             "312", 
             "313"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "MET_CCM"
-        ], 
-        "name_alt": "H", 
-        "state": "+1", 
-        "y": "0.47222", 
-        "x": "57.849", 
-        "annotation": "CHEBI:24636", 
+        "x": "80.042", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "292"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "304", 
             "309", 
             "313", 
-            "315", 
             "318", 
             "319"
         ], 
@@ -6146,14 +6670,17 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "pyr", 
-        "state": "-1", 
         "y": "6.4722", 
-        "x": "70.877", 
         "annotation": "CHEBI:15361", 
+        "name_alt": "pyr", 
+        "name": "293", 
+        "state": "-1", 
+        "links_from": [
+            "315"
+        ], 
+        "x": "84.931", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "293"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -6163,36 +6690,37 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "Glc", 
-        "state": "0", 
         "y": "48.472", 
-        "x": "76.474", 
         "annotation": "CHEBI:17634", 
+        "name_alt": "Glc", 
+        "name": "294", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "91.236", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "294"
+        "is_ode": false
     }, 
     {
-        "links_to": [
-            "318", 
-            "319"
-        ], 
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "CO2_check", 
-        "state": "0", 
         "y": "8.4722", 
-        "x": "70.71", 
         "annotation": "YCM:CO2_check", 
+        "name_alt": "CO2_check", 
+        "name": "295", 
+        "state": "0", 
+        "links_from": [
+            "318", 
+            "319"
+        ], 
+        "x": "85.847", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "295"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "305", 
             "338"
         ], 
         "symbol": "circle", 
@@ -6200,14 +6728,17 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "name_alt": "chitin", 
-        "state": "0", 
         "y": "12.472", 
-        "x": "77.488", 
         "annotation": "CHEBI:17029", 
+        "name_alt": "chitin", 
+        "name": "296", 
+        "state": "0", 
+        "links_from": [
+            "305"
+        ], 
+        "x": "88.542", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "296"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -6222,35 +6753,36 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "name_alt": "NH4", 
-        "state": "+1", 
         "y": "14.472", 
-        "x": "38.516", 
         "annotation": "CHEBI:28938", 
+        "name_alt": "NH4", 
+        "name": "297", 
+        "state": "+1", 
+        "links_from": [], 
+        "x": "53.792", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "297"
+        "is_ode": false
     }, 
     {
-        "links_to": [
-            "308"
-        ], 
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "glycerol", 
-        "state": "0", 
         "y": "2.4722", 
-        "x": "74.224", 
         "annotation": "CHEBI:17754", 
+        "name_alt": "glycerol", 
+        "name": "298", 
+        "state": "0", 
+        "links_from": [
+            "308"
+        ], 
+        "x": "89.625", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "298"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "306", 
             "337"
         ], 
         "symbol": "circle", 
@@ -6258,41 +6790,44 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "name_alt": "glucan", 
-        "state": "0", 
         "y": "12.472", 
-        "x": "75.377", 
         "annotation": "CHEBI:37671", 
+        "name_alt": "glucan", 
+        "name": "299", 
+        "state": "0", 
+        "links_from": [
+            "306"
+        ], 
+        "x": "91.653", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "299"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "304", 
             "308", 
             "309", 
-            "313", 
-            "315", 
-            "320"
+            "315"
         ], 
         "symbol": "circle", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "TriP", 
-        "state": "-2", 
         "y": "4.4722", 
-        "x": "69.072", 
         "annotation": "CHEBI:58027", 
+        "name_alt": "TriP", 
+        "name": "300", 
+        "state": "-2", 
+        "links_from": [
+            "304", 
+            "313", 
+            "320"
+        ], 
+        "x": "85.222", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "300"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "318", 
-            "319", 
             "421"
         ], 
         "symbol": "circle", 
@@ -6300,59 +6835,57 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "name_alt": "CO2", 
-        "state": "0", 
         "y": "8.4722", 
-        "x": "71.71", 
         "annotation": "CHEBI:16526", 
+        "name_alt": "CO2", 
+        "name": "301", 
+        "state": "0", 
+        "links_from": [
+            "318", 
+            "319"
+        ], 
+        "x": "90.403", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "301"
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "circle", 
+        "module": [
+            "MET_CCM"
+        ], 
+        "y": "46.472", 
+        "annotation": "YCM:HexP_check", 
+        "name_alt": "HexP_check", 
+        "name": "302", 
+        "state": "-2", 
+        "links_from": [
             "314"
         ], 
+        "x": "91.514", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "HexP_check", 
-        "state": "-2", 
-        "y": "46.472", 
-        "x": "76.752", 
-        "annotation": "YCM:HexP_check", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "302"
-    }, 
-    {
-        "links_to": [
+        "y": "0.47222", 
+        "annotation": "YCM:NA_DNA", 
+        "name_alt": "NA_DNA", 
+        "name": "303", 
+        "state": "0", 
+        "links_from": [
             "312"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "MET_CCM"
-        ], 
-        "name_alt": "NA_DNA", 
-        "state": "0", 
-        "y": "0.47222", 
-        "x": "56.252", 
-        "annotation": "YCM:NA_DNA", 
+        "x": "78.125", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "303"
+        "is_ode": false
     }, 
     {
-        "rate": "(E_v_AA_f * ((kf_v_AA_f * (NH4/Km_v_AA_f_NH4) * (HexP/Km_v_AA_f_HexP) * (pyr/Km_v_AA_f_pyr) * (ATP/Km_v_AA_f_ATP) - kr_v_AA_f * (AA/Km_v_AA_f_AA) * (Pi/Km_v_AA_f_Pi) * (ADP/Km_v_AA_f_ADP) * (TriP/Km_v_AA_f_TriP))/((1+(NH4/Km_v_AA_f_NH4))*(1+(HexP/Km_v_AA_f_HexP))*(1+(pyr/Km_v_AA_f_pyr))*(1+(ATP/Km_v_AA_f_ATP)) + (1+(AA/Km_v_AA_f_AA))*(1+(Pi/Km_v_AA_f_Pi))*(1+(ADP/Km_v_AA_f_ADP))*(1+(TriP/Km_v_AA_f_TriP)) - 1)) * int_vol)", 
-        "name": "304", 
-        "x": "71.155", 
-        "y": "5.4722", 
         "links_to": [
-            "289", 
-            "293", 
-            "172", 
-            "297", 
             "180", 
             "292", 
             "175", 
@@ -6360,204 +6893,222 @@ var data =[
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_AA_f"
+        "links_from": [
+            "289", 
+            "293", 
+            "172", 
+            "297"
+        ], 
+        "rate": "(E_v_AA_f * ((kf_v_AA_f * (NH4/Km_v_AA_f_NH4) * (HexP/Km_v_AA_f_HexP) * (pyr/Km_v_AA_f_pyr) * (ATP/Km_v_AA_f_ATP) - kr_v_AA_f * (AA/Km_v_AA_f_AA) * (Pi/Km_v_AA_f_Pi) * (ADP/Km_v_AA_f_ADP) * (TriP/Km_v_AA_f_TriP))/((1+(NH4/Km_v_AA_f_NH4))*(1+(HexP/Km_v_AA_f_HexP))*(1+(pyr/Km_v_AA_f_pyr))*(1+(ATP/Km_v_AA_f_ATP)) + (1+(AA/Km_v_AA_f_AA))*(1+(Pi/Km_v_AA_f_Pi))*(1+(ADP/Km_v_AA_f_ADP))*(1+(TriP/Km_v_AA_f_TriP)) - 1)) * int_vol)", 
+        "name_alt": "v_AA_f", 
+        "name": "304", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "5.4722", 
+        "x": "83.014", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_v_chitin_f * ((kf_v_chitin_f * (NH4/Km_v_chitin_f_NH4) * (HexP/Km_v_chitin_f_HexP) * (ATP/Km_v_chitin_f_ATP) - kr_v_chitin_f * (Pi/Km_v_chitin_f_Pi) * (chitin/Km_v_chitin_f_chitin) * (ADP/Km_v_chitin_f_ADP))/((1+(NH4/Km_v_chitin_f_NH4))*(1+(HexP/Km_v_chitin_f_HexP))*(1+(ATP/Km_v_chitin_f_ATP)) + (1+(Pi/Km_v_chitin_f_Pi))*(1+(chitin/Km_v_chitin_f_chitin))*(1+(ADP/Km_v_chitin_f_ADP)) - 1)) * int_vol)", 
-        "name": "305", 
-        "x": "75.822", 
-        "y": "13.472", 
         "links_to": [
-            "289", 
-            "172", 
-            "297", 
             "292", 
             "175", 
             "296", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_chitin_f"
-    }, 
-    {
-        "rate": "(E_glucan * ((kf_glucan * (HexP/Km_glucan_HexP)*(ATP/Km_glucan_ATP) - kr_glucan * (glucan/Km_glucan_glucan)*(ADP/Km_glucan_ADP)*(Pi/Km_glucan_Pi))/((1+(HexP/Km_glucan_HexP))*(1+(ATP/Km_glucan_ATP)) + (1+(glucan/Km_glucan_glucan))*(1+(ADP/Km_glucan_ADP))*(1+(Pi/Km_glucan_Pi)) - 1)) * int_vol)", 
-        "name": "306", 
-        "x": "74.544", 
-        "y": "13.472", 
-        "links_to": [
+        "links_from": [
             "289", 
             "172", 
+            "297"
+        ], 
+        "rate": "(E_v_chitin_f * ((kf_v_chitin_f * (NH4/Km_v_chitin_f_NH4) * (HexP/Km_v_chitin_f_HexP) * (ATP/Km_v_chitin_f_ATP) - kr_v_chitin_f * (Pi/Km_v_chitin_f_Pi) * (chitin/Km_v_chitin_f_chitin) * (ADP/Km_v_chitin_f_ADP))/((1+(NH4/Km_v_chitin_f_NH4))*(1+(HexP/Km_v_chitin_f_HexP))*(1+(ATP/Km_v_chitin_f_ATP)) + (1+(Pi/Km_v_chitin_f_Pi))*(1+(chitin/Km_v_chitin_f_chitin))*(1+(ADP/Km_v_chitin_f_ADP)) - 1)) * int_vol)", 
+        "name_alt": "v_chitin_f", 
+        "name": "305", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "13.472", 
+        "x": "86.319", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
             "175", 
             "160", 
             "299"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_glucan_f"
+        "links_from": [
+            "289", 
+            "172"
+        ], 
+        "rate": "(E_glucan * ((kf_glucan * (HexP/Km_glucan_HexP)*(ATP/Km_glucan_ATP) - kr_glucan * (glucan/Km_glucan_glucan)*(ADP/Km_glucan_ADP)*(Pi/Km_glucan_Pi))/((1+(HexP/Km_glucan_HexP))*(1+(ATP/Km_glucan_ATP)) + (1+(glucan/Km_glucan_glucan))*(1+(ADP/Km_glucan_ADP))*(1+(Pi/Km_glucan_Pi)) - 1)) * int_vol)", 
+        "name_alt": "v_glucan_f", 
+        "name": "306", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "13.472", 
+        "x": "90.819", 
+        "is_ode": false
     }, 
     {
-        "rate": "(((1./(1.+ exp(k1_resp*(ATP - ATPcrit)))) * kf_resp * NADH * ADP * Pi) * int_vol)", 
-        "name": "307", 
-        "x": "81.085", 
-        "y": "49.472", 
         "links_to": [
-            "281", 
-            "290", 
-            "175", 
-            "160", 
             "283", 
             "172"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_resp"
+        "links_from": [
+            "281", 
+            "290", 
+            "175", 
+            "160"
+        ], 
+        "rate": "(((1./(1.+ exp(k1_resp*(ATP - ATPcrit)))) * kf_resp * NADH * ADP * Pi) * int_vol)", 
+        "name_alt": "v_resp", 
+        "name": "307", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "49.472", 
+        "x": "98.236", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_v_glycerol_syn * ((kf_v_glycerol_syn * (NADH/Km_v_glycerol_syn_NADH) * (TriP/Km_v_glycerol_syn_TriP) - kr_v_glycerol_syn * (Pi/Km_v_glycerol_syn_Pi) * (glycerol/Km_v_glycerol_syn_glycerol) * (NAD/Km_v_glycerol_syn_NAD))/((1+(NADH/Km_v_glycerol_syn_NADH))*(1+(TriP/Km_v_glycerol_syn_TriP)) + (1+(Pi/Km_v_glycerol_syn_Pi))*(1+(glycerol/Km_v_glycerol_syn_glycerol))*(1+(NAD/Km_v_glycerol_syn_NAD)) - 1)) * int_vol)", 
-        "name": "308", 
-        "x": "74.224", 
-        "y": "3.4722", 
         "links_to": [
-            "281", 
-            "300", 
             "175", 
             "298", 
             "283"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_glycerol_syn"
+        "links_from": [
+            "281", 
+            "300"
+        ], 
+        "rate": "(E_v_glycerol_syn * ((kf_v_glycerol_syn * (NADH/Km_v_glycerol_syn_NADH) * (TriP/Km_v_glycerol_syn_TriP) - kr_v_glycerol_syn * (Pi/Km_v_glycerol_syn_Pi) * (glycerol/Km_v_glycerol_syn_glycerol) * (NAD/Km_v_glycerol_syn_NAD))/((1+(NADH/Km_v_glycerol_syn_NADH))*(1+(TriP/Km_v_glycerol_syn_TriP)) + (1+(Pi/Km_v_glycerol_syn_Pi))*(1+(glycerol/Km_v_glycerol_syn_glycerol))*(1+(NAD/Km_v_glycerol_syn_NAD)) - 1)) * int_vol)", 
+        "name_alt": "v_glycerol_syn", 
+        "name": "308", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "3.4722", 
+        "x": "89.625", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_v_NA_RNA_f * ((kf_v_NA_RNA_f * (NH4/Km_v_NA_RNA_f_NH4) * (HexP/Km_v_NA_RNA_f_HexP) * (pyr/Km_v_NA_RNA_f_pyr) * (ATP/Km_v_NA_RNA_f_ATP) * (TriP/Km_v_NA_RNA_f_TriP) - kr_v_NA_RNA_f * (Pi/Km_v_NA_RNA_f_Pi) * (NA_RNA/Km_v_NA_RNA_f_NA_RNA) * (ADP/Km_v_NA_RNA_f_ADP))/((1+(NH4/Km_v_NA_RNA_f_NH4))*(1+(HexP/Km_v_NA_RNA_f_HexP))*(1+(pyr/Km_v_NA_RNA_f_pyr))*(1+(ATP/Km_v_NA_RNA_f_ATP))*(1+(TriP/Km_v_NA_RNA_f_TriP)) + (1+(Pi/Km_v_NA_RNA_f_Pi))*(1+(NA_RNA/Km_v_NA_RNA_f_NA_RNA))*(1+(ADP/Km_v_NA_RNA_f_ADP)) - 1)) * int_vol)", 
-        "name": "309", 
-        "x": "57.849", 
-        "y": "3.4722", 
         "links_to": [
+            "292", 
+            "175", 
+            "285", 
+            "160"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "MET_CCM"
+        ], 
+        "links_from": [
             "289", 
             "293", 
             "300", 
             "172", 
-            "297", 
-            "292", 
-            "175", 
-            "285", 
-            "160"
+            "297"
         ], 
-        "symbol": "rect", 
+        "rate": "(E_v_NA_RNA_f * ((kf_v_NA_RNA_f * (NH4/Km_v_NA_RNA_f_NH4) * (HexP/Km_v_NA_RNA_f_HexP) * (pyr/Km_v_NA_RNA_f_pyr) * (ATP/Km_v_NA_RNA_f_ATP) * (TriP/Km_v_NA_RNA_f_TriP) - kr_v_NA_RNA_f * (Pi/Km_v_NA_RNA_f_Pi) * (NA_RNA/Km_v_NA_RNA_f_NA_RNA) * (ADP/Km_v_NA_RNA_f_ADP))/((1+(NH4/Km_v_NA_RNA_f_NH4))*(1+(HexP/Km_v_NA_RNA_f_HexP))*(1+(pyr/Km_v_NA_RNA_f_pyr))*(1+(ATP/Km_v_NA_RNA_f_ATP))*(1+(TriP/Km_v_NA_RNA_f_TriP)) + (1+(Pi/Km_v_NA_RNA_f_Pi))*(1+(NA_RNA/Km_v_NA_RNA_f_NA_RNA))*(1+(ADP/Km_v_NA_RNA_f_ADP)) - 1)) * int_vol)", 
+        "name_alt": "v_NA_RNA_f", 
+        "name": "309", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
+        "y": "3.4722", 
+        "x": "80.681", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "283"
+        ], 
+        "symbol": "rect", 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_NA_RNA_f"
-    }, 
-    {
-        "rate": "(((1./(1.+ exp(k1_NAD_syn*((NAD+NADH) - NADNADHcrit)))) * kf_NAD_syn * AA * ADP) * int_vol)", 
-        "name": "310", 
-        "x": "76.933", 
-        "y": "9.4722", 
-        "links_to": [
+        "links_from": [
             "180", 
             "160", 
-            "283", 
             "281"
         ], 
-        "symbol": "rect", 
+        "rate": "(((1./(1.+ exp(k1_NAD_syn*((NAD+NADH) - NADNADHcrit)))) * kf_NAD_syn * AA * ADP) * int_vol)", 
+        "name_alt": "v_NAD_syn", 
+        "name": "310", 
         "compartments": [
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "MET_CCM"
-        ], 
-        "name_alt": "v_NAD_syn"
+        "y": "9.4722", 
+        "x": "90.819", 
+        "is_ode": false
     }, 
     {
-        "rate": "((0.5 * ATP) * int_vol)", 
-        "name": "311", 
-        "x": "77.308", 
-        "y": "47.472", 
         "links_to": [
-            "172", 
             "175", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_ATP_con"
+        "links_from": [
+            "172"
+        ], 
+        "rate": "((0.5 * ATP) * int_vol)", 
+        "name_alt": "v_ATP_con", 
+        "name": "311", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "47.472", 
+        "x": "94.181", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_v_NA_DNA_syn * ((kf_v_NA_DNA_syn * (NH4/Km_v_NA_DNA_syn_NH4) * (NA_RNA/Km_v_NA_DNA_syn_NA_RNA) - kr_v_NA_DNA_syn * (NA_DNA/Km_v_NA_DNA_syn_NA_DNA))/((1+(NH4/Km_v_NA_DNA_syn_NH4))*(1+(NA_RNA/Km_v_NA_DNA_syn_NA_RNA)) + (1+(NA_DNA/Km_v_NA_DNA_syn_NA_DNA)) - 1)) * int_vol)", 
-        "name": "312", 
-        "x": "56.252", 
-        "y": "1.4722", 
         "links_to": [
-            "297", 
-            "285", 
             "292", 
             "303"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_NA_DNA_syn"
+        "links_from": [
+            "297", 
+            "285"
+        ], 
+        "rate": "(E_v_NA_DNA_syn * ((kf_v_NA_DNA_syn * (NH4/Km_v_NA_DNA_syn_NH4) * (NA_RNA/Km_v_NA_DNA_syn_NA_RNA) - kr_v_NA_DNA_syn * (NA_DNA/Km_v_NA_DNA_syn_NA_DNA))/((1+(NH4/Km_v_NA_DNA_syn_NH4))*(1+(NA_RNA/Km_v_NA_DNA_syn_NA_RNA)) + (1+(NA_DNA/Km_v_NA_DNA_syn_NA_DNA)) - 1)) * int_vol)", 
+        "name_alt": "v_NA_DNA_syn", 
+        "name": "312", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "1.4722", 
+        "x": "78.125", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_v_lipid_f * ((kf_v_lipid_f * (NH4/Km_v_lipid_f_NH4) * (HexP/Km_v_lipid_f_HexP) * (pyr/Km_v_lipid_f_pyr) * (ATP/Km_v_lipid_f_ATP) - kr_v_lipid_f * (Pi/Km_v_lipid_f_Pi) * (lipid/Km_v_lipid_f_lipid) * (ADP/Km_v_lipid_f_ADP) * (TriP/Km_v_lipid_f_TriP))/((1+(NH4/Km_v_lipid_f_NH4))*(1+(HexP/Km_v_lipid_f_HexP))*(1+(pyr/Km_v_lipid_f_pyr))*(1+(ATP/Km_v_lipid_f_ATP)) + (1+(Pi/Km_v_lipid_f_Pi))*(1+(lipid/Km_v_lipid_f_lipid))*(1+(ADP/Km_v_lipid_f_ADP))*(1+(TriP/Km_v_lipid_f_TriP)) - 1)) * int_vol)", 
-        "name": "313", 
-        "x": "57.169", 
-        "y": "5.4722", 
         "links_to": [
-            "289", 
-            "293", 
-            "172", 
-            "297", 
             "292", 
             "175", 
             "291", 
@@ -6565,138 +7116,152 @@ var data =[
             "300"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_lipid_f"
+        "links_from": [
+            "289", 
+            "293", 
+            "172", 
+            "297"
+        ], 
+        "rate": "(E_v_lipid_f * ((kf_v_lipid_f * (NH4/Km_v_lipid_f_NH4) * (HexP/Km_v_lipid_f_HexP) * (pyr/Km_v_lipid_f_pyr) * (ATP/Km_v_lipid_f_ATP) - kr_v_lipid_f * (Pi/Km_v_lipid_f_Pi) * (lipid/Km_v_lipid_f_lipid) * (ADP/Km_v_lipid_f_ADP) * (TriP/Km_v_lipid_f_TriP))/((1+(NH4/Km_v_lipid_f_NH4))*(1+(HexP/Km_v_lipid_f_HexP))*(1+(pyr/Km_v_lipid_f_pyr))*(1+(ATP/Km_v_lipid_f_ATP)) + (1+(Pi/Km_v_lipid_f_Pi))*(1+(lipid/Km_v_lipid_f_lipid))*(1+(ADP/Km_v_lipid_f_ADP))*(1+(TriP/Km_v_lipid_f_TriP)) - 1)) * int_vol)", 
+        "name_alt": "v_lipid_f", 
+        "name": "313", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "5.4722", 
+        "x": "79.403", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_v_HK * ((kf_v_HK * (Glc/Km_v_HK_Glc) * (ATP/Km_v_HK_ATP) - kr_v_HK * (HexP/Km_v_HK_HexP) * (ADP/Km_v_HK_ADP))/((1+(Glc/Km_v_HK_Glc))*(1+(ATP/Km_v_HK_ATP)) + (1+(HexP/Km_v_HK_HexP))*(1+(ADP/Km_v_HK_ADP)) - 1)) * int_vol)", 
-        "name": "314", 
-        "x": "76.308", 
-        "y": "47.472", 
         "links_to": [
-            "294", 
-            "172", 
             "289", 
             "302", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_HK"
+        "links_from": [
+            "294", 
+            "172"
+        ], 
+        "rate": "(E_v_HK * ((kf_v_HK * (Glc/Km_v_HK_Glc) * (ATP/Km_v_HK_ATP) - kr_v_HK * (HexP/Km_v_HK_HexP) * (ADP/Km_v_HK_ADP))/((1+(Glc/Km_v_HK_Glc))*(1+(ATP/Km_v_HK_ATP)) + (1+(HexP/Km_v_HK_HexP))*(1+(ADP/Km_v_HK_ADP)) - 1)) * int_vol)", 
+        "name_alt": "v_HK", 
+        "name": "314", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "47.472", 
+        "x": "91.514", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_pyr * ((kf_pyr * (Pi/Km_pyr_Pi) * (NAD/Km_pyr_NAD) * (ADP/Km_pyr_ADP)**2.0 * (TriP/Km_pyr_TriP) - kr_pyr * (pyr/Km_pyr_pyr) * (NADH/Km_pyr_NADH) * (ATP/Km_pyr_ATP)**2.0)/((1+(Pi/Km_pyr_Pi))*(1+(NAD/Km_pyr_NAD))*(1+(ADP/Km_pyr_ADP)**1+(ADP/Km_pyr_ADP)**2)*(1+(TriP/Km_pyr_TriP)) + (1+(pyr/Km_pyr_pyr))*(1+(NADH/Km_pyr_NADH))*(1+(ATP/Km_pyr_ATP)**1+(ATP/Km_pyr_ATP)**2) - 1)) * int_vol)", 
-        "name": "315", 
-        "x": "69.794", 
-        "y": "7.4722", 
         "links_to": [
-            "283", 
-            "175", 
-            "300", 
-            "160", 
             "293", 
             "281", 
             "284", 
             "172"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_pyr"
+        "links_from": [
+            "283", 
+            "175", 
+            "300", 
+            "160"
+        ], 
+        "rate": "(E_pyr * ((kf_pyr * (Pi/Km_pyr_Pi) * (NAD/Km_pyr_NAD) * (ADP/Km_pyr_ADP)**2.0 * (TriP/Km_pyr_TriP) - kr_pyr * (pyr/Km_pyr_pyr) * (NADH/Km_pyr_NADH) * (ATP/Km_pyr_ATP)**2.0)/((1+(Pi/Km_pyr_Pi))*(1+(NAD/Km_pyr_NAD))*(1+(ADP/Km_pyr_ADP)**1+(ADP/Km_pyr_ADP)**2)*(1+(TriP/Km_pyr_TriP)) + (1+(pyr/Km_pyr_pyr))*(1+(NADH/Km_pyr_NADH))*(1+(ATP/Km_pyr_ATP)**1+(ATP/Km_pyr_ATP)**2) - 1)) * int_vol)", 
+        "name_alt": "v_pyr", 
+        "name": "315", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "7.4722", 
+        "x": "84.014", 
+        "is_ode": false
     }, 
     {
-        "rate": "(((1./(1.+ exp(k1_ADP_syn*((ATP+ADP) - ATPADPcrit)))) * kf_ADP_syn * NA_RNA * Pi**2) * int_vol)", 
-        "name": "316", 
-        "x": "46.085", 
-        "y": "1.4722", 
         "links_to": [
-            "175", 
-            "285", 
-            "160", 
-            "172"
+            "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_ADP_syn"
+        "links_from": [
+            "175", 
+            "285", 
+            "172"
+        ], 
+        "rate": "(((1./(1.+ exp(k1_ADP_syn*((ATP+ADP) - ATPADPcrit)))) * kf_ADP_syn * NA_RNA * Pi**2) * int_vol)", 
+        "name_alt": "v_ADP_syn", 
+        "name": "316", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "1.4722", 
+        "x": "90.528", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_mannan * ((kf_mannan * (HexP/Km_mannan_HexP)*(ATP/Km_mannan_ATP) - kr_mannan * (mannan/Km_mannan_mannan)*(ADP/Km_mannan_ADP)*(Pi/Km_mannan_Pi))/((1+(HexP/Km_mannan_HexP))*(1+(ATP/Km_mannan_ATP)) + (1+(mannan/Km_mannan_mannan))*(1+(ADP/Km_mannan_ADP))*(1+(Pi/Km_mannan_Pi)) - 1)) * int_vol)", 
-        "name": "317", 
-        "x": "76.822", 
-        "y": "13.472", 
         "links_to": [
-            "289", 
-            "172", 
             "175", 
             "282", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_mannan_f"
+        "links_from": [
+            "289", 
+            "172"
+        ], 
+        "rate": "(E_mannan * ((kf_mannan * (HexP/Km_mannan_HexP)*(ATP/Km_mannan_ATP) - kr_mannan * (mannan/Km_mannan_mannan)*(ADP/Km_mannan_ADP)*(Pi/Km_mannan_Pi))/((1+(HexP/Km_mannan_HexP))*(1+(ATP/Km_mannan_ATP)) + (1+(mannan/Km_mannan_mannan))*(1+(ADP/Km_mannan_ADP))*(1+(Pi/Km_mannan_Pi)) - 1)) * int_vol)", 
+        "name_alt": "v_mannan_f", 
+        "name": "317", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "13.472", 
+        "x": "91.819", 
+        "is_ode": false
     }, 
     {
-        "rate": "((kf_TCA * pyr * NAD * ADP * Pi) * int_vol)", 
-        "name": "318", 
-        "x": "71.71", 
-        "y": "11.472", 
         "links_to": [
-            "293", 
-            "175", 
-            "160", 
-            "283", 
             "281", 
             "295", 
             "301", 
             "172"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_TCA"
+        "links_from": [
+            "293", 
+            "175", 
+            "160", 
+            "283"
+        ], 
+        "rate": "((kf_TCA * pyr * NAD * ADP * Pi) * int_vol)", 
+        "name_alt": "v_TCA", 
+        "name": "318", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "11.472", 
+        "x": "87.264", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_ferm * ((kf_ferm * (pyr/Km_ferm_pyr) * (NADH/Km_ferm_NADH) - kr_ferm * (CO2/Km_ferm_CO2) * (NAD/Km_ferm_NAD) * (EtOH/Km_ferm_EtOH))/((1+(pyr/Km_ferm_pyr))*(1+(NADH/Km_ferm_NADH)) + (1+(CO2/Km_ferm_CO2))*(1+(NAD/Km_ferm_NAD))*(1+(EtOH/Km_ferm_EtOH)) - 1)) * int_vol)", 
-        "name": "319", 
-        "x": "74.822", 
-        "y": "9.4722", 
         "links_to": [
-            "293", 
-            "281", 
             "283", 
             "301", 
             "295", 
@@ -6704,186 +7269,210 @@ var data =[
             "288"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_ferm"
+        "links_from": [
+            "293", 
+            "281"
+        ], 
+        "rate": "(E_ferm * ((kf_ferm * (pyr/Km_ferm_pyr) * (NADH/Km_ferm_NADH) - kr_ferm * (CO2/Km_ferm_CO2) * (NAD/Km_ferm_NAD) * (EtOH/Km_ferm_EtOH))/((1+(pyr/Km_ferm_pyr))*(1+(NADH/Km_ferm_NADH)) + (1+(CO2/Km_ferm_CO2))*(1+(NAD/Km_ferm_NAD))*(1+(EtOH/Km_ferm_EtOH)) - 1)) * int_vol)", 
+        "name_alt": "v_ferm", 
+        "name": "319", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "9.4722", 
+        "x": "87.125", 
+        "is_ode": false
     }, 
     {
-        "rate": "(E_TriP * ((kf_TriP * (HexP/Km_TriP_HexP) * (ATP/Km_TriP_ATP) - kr_TriP * (ADP/Km_TriP_ADP) * (TriP/Km_TriP_TriP)**2.0)/((1+(HexP/Km_TriP_HexP))*(1+(ATP/Km_TriP_ATP)) + (1+(ADP/Km_TriP_ADP))*(1+(TriP/Km_TriP_TriP)**1+(TriP/Km_TriP_TriP)**2) - 1)) * int_vol)", 
-        "name": "320", 
-        "x": "71.155", 
-        "y": "13.472", 
         "links_to": [
-            "289", 
-            "172", 
             "286", 
             "300", 
             "160"
         ], 
         "symbol": "rect", 
-        "compartments": [
-            "intracellular"
-        ], 
-        "is_ode": false, 
         "module": [
             "MET_CCM"
         ], 
-        "name_alt": "v_TriP"
+        "links_from": [
+            "289", 
+            "172"
+        ], 
+        "rate": "(E_TriP * ((kf_TriP * (HexP/Km_TriP_HexP) * (ATP/Km_TriP_ATP) - kr_TriP * (ADP/Km_TriP_ADP) * (TriP/Km_TriP_TriP)**2.0)/((1+(HexP/Km_TriP_HexP))*(1+(ATP/Km_TriP_ATP)) + (1+(ADP/Km_TriP_ADP))*(1+(TriP/Km_TriP_TriP)**1+(TriP/Km_TriP_TriP)**2) - 1)) * int_vol)", 
+        "name_alt": "v_TriP", 
+        "name": "320", 
+        "compartments": [
+            "intracellular"
+        ], 
+        "y": "13.472", 
+        "x": "89.542", 
+        "is_ode": false
     }, 
     {
         "links_to": [
             "324", 
-            "325", 
+            "325"
+        ], 
+        "symbol": "circle", 
+        "module": [
+            "MET_DNA"
+        ], 
+        "y": "26.472", 
+        "annotation": "YCM:A", 
+        "name_alt": "A", 
+        "name": "321", 
+        "state": "0", 
+        "links_from": [
             "326"
         ], 
-        "symbol": "circle", 
-        "module": [
-            "MET_DNA"
-        ], 
-        "name_alt": "A", 
-        "state": "0", 
-        "y": "26.472", 
-        "x": "100.06", 
-        "annotation": "YCM:A", 
+        "x": "114.43", 
         "compartment": "nucleus", 
-        "is_ode": false, 
-        "name": "321"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "324", 
-            "325"
+            "324"
         ], 
         "symbol": "circle", 
         "module": [
             "MET_DNA"
         ], 
-        "name_alt": "DNA", 
-        "state": "0", 
-        "y": "25.472", 
-        "x": "100.7", 
-        "annotation": "YCM:DNA", 
-        "compartment": "nucleus", 
-        "is_ode": false, 
-        "name": "322"
-    }, 
-    {
-        "links_to": [
-            "325"
-        ], 
-        "symbol": "circle", 
-        "module": [
-            "MET_DNA"
-        ], 
-        "name_alt": "NA_DNA_cyt", 
-        "state": "0", 
-        "y": "59.472", 
-        "x": "97.974", 
-        "annotation": "YCM:NA_DNA", 
-        "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "323"
-    }, 
-    {
-        "rate": "(((1./(1.+ exp(-k1_A_con*(DNA - (DNA_crit*16.0e-15/int_vol))))) * kf_A_con * A) * nuc_vol)", 
-        "name": "324", 
-        "x": "100.38", 
         "y": "24.472", 
+        "annotation": "YCM:DNA", 
+        "name_alt": "DNA", 
+        "name": "322", 
+        "state": "0", 
+        "links_from": [
+            "325"
+        ], 
+        "x": "114.43", 
+        "compartment": "nucleus", 
+        "is_ode": false
+    }, 
+    {
         "links_to": [
+            "325"
+        ], 
+        "symbol": "circle", 
+        "module": [
+            "MET_DNA"
+        ], 
+        "y": "59.472", 
+        "annotation": "YCM:NA_DNA", 
+        "name_alt": "NA_DNA_cyt", 
+        "name": "323", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "109.21", 
+        "compartment": "intracellular", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "MET_DNA"
+        ], 
+        "links_from": [
             "321", 
             "322"
         ], 
-        "symbol": "rect", 
+        "rate": "(((1./(1.+ exp(-k1_A_con*(DNA - (DNA_crit*16.0e-15/int_vol))))) * kf_A_con * A) * nuc_vol)", 
+        "name_alt": "v_A_con", 
+        "name": "324", 
         "compartments": [
             "nucleus"
         ], 
-        "is_ode": false, 
+        "y": "25.472", 
+        "x": "114.71", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "322"
+        ], 
+        "symbol": "rect", 
         "module": [
             "MET_DNA"
         ], 
-        "name_alt": "v_A_con"
-    }, 
-    {
-        "rate": "(((1./(1.+ exp(-k1_DNA_syn*(A - (A_crit*16.0e-15/int_vol))))) * kf_DNA_syn * 0.147) * nuc_vol)", 
-        "name": "325", 
-        "x": "102.31", 
-        "y": "26.472", 
-        "links_to": [
+        "links_from": [
             "323", 
-            "322", 
             "321"
         ], 
-        "symbol": "rect", 
+        "rate": "(((1./(1.+ exp(-k1_DNA_syn*(A - (A_crit*16.0e-15/int_vol))))) * kf_DNA_syn * 0.147) * nuc_vol)", 
+        "name_alt": "v_DNA_syn", 
+        "name": "325", 
         "compartments": [
             "intracellular", 
             "nucleus"
         ], 
-        "is_ode": false, 
+        "y": "25.472", 
+        "x": "115.96", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "321"
+        ], 
+        "symbol": "rect", 
         "module": [
             "MET_DNA"
         ], 
-        "name_alt": "v_DNA_syn"
-    }, 
-    {
-        "rate": "((  (1./(1.+ exp(-k1_A_syn*(Clb5/1.65801328396e-05 - (Clb5_crit*16.0e-15/int_vol)/1.65801328396e-05)))) * kf_A_syn  ) * nuc_vol)", 
-        "name": "326", 
-        "x": "100.02", 
-        "y": "27.472", 
-        "links_to": [
-            "321", 
+        "links_from": [
             "166"
         ], 
-        "symbol": "rect", 
+        "rate": "((  (1./(1.+ exp(-k1_A_syn*(Clb5/1.65801328396e-05 - (Clb5_crit*16.0e-15/int_vol)/1.65801328396e-05)))) * kf_A_syn  ) * nuc_vol)", 
+        "name_alt": "v_A_syn", 
+        "name": "326", 
         "compartments": [
             "nucleus", 
             "intracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "MET_DNA"
-        ], 
-        "name_alt": "v_A_syn"
+        "y": "27.472", 
+        "x": "113.18", 
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "335", 
             "332"
         ], 
         "symbol": "circle", 
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "proteins_cw", 
-        "state": "0", 
         "y": "16.472", 
-        "x": "102.75", 
         "annotation": "YCM:B_Protein_other", 
+        "name_alt": "proteins_cw", 
+        "name": "327", 
+        "state": "0", 
+        "links_from": [
+            "335"
+        ], 
+        "x": "121.82", 
         "compartment": "cell_wall", 
-        "is_ode": false, 
-        "name": "327"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "336", 
             "332"
         ], 
         "symbol": "circle", 
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "mannan_cw", 
-        "state": "0", 
         "y": "15.472", 
-        "x": "102.75", 
         "annotation": "CHEBI:28808", 
+        "name_alt": "mannan_cw", 
+        "name": "328", 
+        "state": "0", 
+        "links_from": [
+            "336"
+        ], 
+        "x": "121.82", 
         "compartment": "cell_wall", 
-        "is_ode": false, 
-        "name": "328"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -6891,14 +7480,15 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "pm_vol", 
-        "state": "0", 
         "y": "59.472", 
-        "x": "102.45", 
         "annotation": "SBO:0000468", 
+        "name_alt": "pm_vol", 
+        "name": "329", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "118.6", 
         "compartment": "plasma_membrane", 
-        "is_ode": true, 
-        "name": "329"
+        "is_ode": true
     }, 
     {
         "links_to": [
@@ -6908,14 +7498,15 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "proteins", 
-        "state": "0", 
         "y": "59.472", 
-        "x": "98.974", 
         "annotation": "YCM:B_Protein_other", 
+        "name_alt": "proteins", 
+        "name": "330", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "111.21", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "330"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -6928,21 +7519,34 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "V_cw", 
-        "state": "0", 
         "y": "11.472", 
-        "x": "103.36", 
         "annotation": "SBO:0000468", 
+        "name_alt": "V_cw", 
+        "name": "331", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "122.43", 
         "compartment": "cell_wall", 
-        "is_ode": true, 
-        "name": "331"
+        "is_ode": true
     }, 
     {
         "links_to": [
             "335", 
             "336", 
             "337", 
-            "338", 
+            "338"
+        ], 
+        "symbol": "triangle", 
+        "module": [
+            "MET_CWS"
+        ], 
+        "y": "12.472", 
+        "annotation": "SBO:0000504", 
+        "name_alt": "m_cw", 
+        "name": "332", 
+        "equation": "(((glucan_cw*V_cw)*1e-3)*glucan_mass + ((chitin_cw*V_cw)*1e-3)*chitin_mass + ((mannan_cw*V_cw)*1e-3)*mannan_mass + ((proteins_cw*V_cw)*1e-3)*average_protein_mass)*1e12", 
+        "state": "0", 
+        "links_from": [
             "333", 
             "331", 
             "334", 
@@ -6952,146 +7556,146 @@ var data =[
             "327", 
             "331"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "MET_CWS"
-        ], 
-        "name_alt": "m_cw", 
-        "equation": "(((glucan_cw*V_cw)*1e-3)*glucan_mass + ((chitin_cw*V_cw)*1e-3)*chitin_mass + ((mannan_cw*V_cw)*1e-3)*mannan_mass + ((proteins_cw*V_cw)*1e-3)*average_protein_mass)*1e12", 
-        "state": "0", 
-        "y": "12.472", 
-        "x": "102.47", 
-        "annotation": "SBO:0000504", 
+        "x": "121.54", 
         "compartment": "cell_wall", 
-        "is_ode": false, 
-        "name": "332"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "337", 
             "332"
         ], 
         "symbol": "circle", 
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "glucan_cw", 
-        "state": "0", 
         "y": "13.472", 
-        "x": "102.47", 
         "annotation": "CHEBI:37671", 
+        "name_alt": "glucan_cw", 
+        "name": "333", 
+        "state": "0", 
+        "links_from": [
+            "337"
+        ], 
+        "x": "121.54", 
         "compartment": "cell_wall", 
-        "is_ode": false, 
-        "name": "333"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "338", 
             "332"
         ], 
         "symbol": "circle", 
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "chitin_cw", 
-        "state": "0", 
         "y": "14.472", 
-        "x": "103.03", 
         "annotation": "CHEBI:17029", 
+        "name_alt": "chitin_cw", 
+        "name": "334", 
+        "state": "0", 
+        "links_from": [
+            "338"
+        ], 
+        "x": "122.1", 
         "compartment": "cell_wall", 
-        "is_ode": false, 
-        "name": "334"
+        "is_ode": false
     }, 
     {
-        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(proteins)*int_vol", 
-        "name": "335", 
-        "x": "102.75", 
-        "y": "17.472", 
         "links_to": [
+            "327"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "MET_CWS"
+        ], 
+        "links_from": [
             "330", 
-            "327", 
             "332"
         ], 
-        "symbol": "rect", 
+        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(proteins)*int_vol", 
+        "name_alt": "CW_proteins", 
+        "name": "335", 
         "compartments": [
             "intracellular", 
             "cell_wall"
         ], 
-        "is_ode": false, 
+        "y": "17.472", 
+        "x": "121.82", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "328"
+        ], 
+        "symbol": "rect", 
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "CW_proteins"
-    }, 
-    {
-        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(mannan)*int_vol", 
-        "name": "336", 
-        "x": "104.81", 
-        "y": "11.472", 
-        "links_to": [
+        "links_from": [
             "282", 
-            "328", 
             "332"
         ], 
-        "symbol": "rect", 
+        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(mannan)*int_vol", 
+        "name_alt": "CW_mannan", 
+        "name": "336", 
         "compartments": [
             "intracellular", 
             "cell_wall"
         ], 
-        "is_ode": false, 
+        "y": "11.472", 
+        "x": "120.01", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "333"
+        ], 
+        "symbol": "rect", 
         "module": [
             "MET_CWS"
         ], 
-        "name_alt": "CW_mannan"
-    }, 
-    {
-        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(glucan)*int_vol", 
-        "name": "337", 
-        "x": "99.947", 
-        "y": "11.472", 
-        "links_to": [
+        "links_from": [
             "299", 
-            "333", 
             "332"
         ], 
-        "symbol": "rect", 
+        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(glucan)*int_vol", 
+        "name_alt": "CW_glucan", 
+        "name": "337", 
         "compartments": [
             "intracellular", 
             "cell_wall"
         ], 
-        "is_ode": false, 
-        "module": [
-            "MET_CWS"
-        ], 
-        "name_alt": "CW_glucan"
+        "y": "11.472", 
+        "x": "119.01", 
+        "is_ode": false
     }, 
     {
-        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(chitin)*int_vol", 
-        "name": "338", 
-        "x": "100.95", 
-        "y": "11.472", 
         "links_to": [
-            "296", 
-            "334", 
-            "332"
+            "334"
         ], 
         "symbol": "rect", 
+        "module": [
+            "MET_CWS"
+        ], 
+        "links_from": [
+            "296", 
+            "332"
+        ], 
+        "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(chitin)*int_vol", 
+        "name_alt": "CW_chitin", 
+        "name": "338", 
         "compartments": [
             "intracellular", 
             "cell_wall"
         ], 
-        "is_ode": false, 
-        "module": [
-            "MET_CWS"
-        ], 
-        "name_alt": "CW_chitin"
+        "y": "11.472", 
+        "x": "118.01", 
+        "is_ode": false
     }, 
     {
         "links_to": [
             "387", 
-            "391", 
             "392", 
-            "397", 
             "398", 
             "370", 
             "342", 
@@ -7103,14 +7707,18 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "h_cyt", 
-        "state": "0", 
-        "y": "54.472", 
-        "x": "13.947", 
+        "y": "51.472", 
         "annotation": "CHEBI:24636", 
+        "name_alt": "h_cyt", 
+        "name": "339", 
+        "state": "0", 
+        "links_from": [
+            "391", 
+            "397"
+        ], 
+        "x": "10.347", 
         "compartment": "cytosol", 
-        "is_ode": false, 
-        "name": "339"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -7118,14 +7726,15 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "v_v", 
-        "state": "0", 
-        "y": "48.472", 
-        "x": "9.0716", 
+        "y": "44.472", 
         "annotation": "SBML_IMPORT_ANNOTATION:8", 
+        "name_alt": "v_v", 
+        "name": "340", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "24.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": true, 
-        "name": "340"
+        "is_ode": true
     }, 
     {
         "links_to": [
@@ -7137,35 +7746,38 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "atp_cyt", 
-        "state": "-4", 
-        "y": "53.472", 
-        "x": "13.28", 
+        "y": "41.472", 
         "annotation": "CHEBI:30616", 
+        "name_alt": "atp_cyt", 
+        "name": "341", 
+        "state": "-4", 
+        "links_from": [], 
+        "x": "8.3333", 
         "compartment": "cytosol", 
-        "is_ode": true, 
-        "name": "341"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "346", 
-            "339", 
-            "379", 
             "384"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "43.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:13", 
         "name_alt": "E_pma1", 
+        "name": "342", 
         "equation": "(  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_ext  /  h_cyt ) ) )   +  ( D_G_ATP  /  F )  )", 
         "state": "0", 
-        "y": "47.472", 
-        "x": "3.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:13", 
+        "links_from": [
+            "346", 
+            "339", 
+            "379"
+        ], 
+        "x": "23.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "342"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7176,14 +7788,15 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "cytosol", 
-        "state": "0", 
-        "y": "46.472", 
-        "x": "14.141", 
+        "y": "42.472", 
         "annotation": "SBO:0000468", 
+        "name_alt": "cytosol", 
+        "name": "343", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "8.3333", 
         "compartment": "cytosol", 
-        "is_ode": true, 
-        "name": "343"
+        "is_ode": true
     }, 
     {
         "links_to": [
@@ -7204,14 +7817,15 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "v_m", 
-        "state": "0", 
-        "y": "47.472", 
-        "x": "7.7243", 
+        "y": "43.472", 
         "annotation": "SBML_IMPORT_ANNOTATION:7", 
+        "name_alt": "v_m", 
+        "name": "344", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "20.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": true, 
-        "name": "344"
+        "is_ode": true
     }, 
     {
         "links_to": [
@@ -7223,14 +7837,15 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "h_vac", 
-        "state": "0", 
-        "y": "55.472", 
-        "x": "21.752", 
+        "y": "51.472", 
         "annotation": "CHEBI:24636", 
+        "name_alt": "h_vac", 
+        "name": "345", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "2.2639", 
         "compartment": "vacuole", 
-        "is_ode": false, 
-        "name": "345"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7245,52 +7860,57 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "h_ext", 
-        "state": "+1", 
-        "y": "56.472", 
-        "x": "28.002", 
+        "y": "57.472", 
         "annotation": "CHEBI:24636", 
+        "name_alt": "h_ext", 
+        "name": "346", 
+        "state": "+1", 
+        "links_from": [], 
+        "x": "44.708", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "346"
+        "is_ode": true
     }, 
     {
         "links_to": [
             "393", 
-            "400", 
             "351"
         ], 
         "symbol": "circle", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "cl_cyt", 
-        "state": "0", 
-        "y": "47.472", 
-        "x": "14.974", 
+        "y": "43.472", 
         "annotation": "CHEBI:17996", 
+        "name_alt": "cl_cyt", 
+        "name": "347", 
+        "state": "0", 
+        "links_from": [
+            "400"
+        ], 
+        "x": "9.125", 
         "compartment": "cytosol", 
-        "is_ode": false, 
-        "name": "347"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "352", 
-            "344"
+            "352"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:11", 
         "name_alt": "gp_trk12", 
+        "name": "348", 
         "equation": " ( gp_trk12_0  /  ( 1.  + exp((  (  ( ( d_trk12  *  F )  /  R )   /  T )   *  ( v_m  - v_trk12_halfmax ) )) ) ) ", 
         "state": "0", 
-        "y": "46.472", 
-        "x": "5.1688", 
-        "annotation": "SBML_IMPORT_ANNOTATION:11", 
+        "links_from": [
+            "344"
+        ], 
+        "x": "24.125", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "348"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7305,21 +7925,20 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
+        "y": "44.472", 
+        "annotation": "CHEBI:29101", 
         "name_alt": "na_ext", 
+        "name": "349", 
         "state": "0", 
-        "y": "48.472", 
-        "x": "26.502", 
-        "annotation": "CHEBI:29101", 
+        "links_from": [], 
+        "x": "39.681", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "349"
+        "is_ode": true
     }, 
     {
         "links_to": [
             "388", 
-            "398", 
             "401", 
-            "402", 
             "364", 
             "370", 
             "361"
@@ -7328,97 +7947,106 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "na_cyt", 
-        "state": "0", 
-        "y": "48.472", 
-        "x": "14.141", 
+        "y": "44.472", 
         "annotation": "CHEBI:29101", 
+        "name_alt": "na_cyt", 
+        "name": "350", 
+        "state": "0", 
+        "links_from": [
+            "398", 
+            "402"
+        ], 
+        "x": "10.875", 
         "compartment": "cytosol", 
-        "is_ode": false, 
-        "name": "350"
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:20", 
+        "name_alt": "my_J_Cl", 
+        "name": "351", 
+        "equation": "( ( (  ( surface  /  ( -1.  *  F ) )   *  gp_cl )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_ext  /  cl_cyt ) ) )  ) ) )", 
+        "state": "0", 
+        "links_from": [
             "368", 
             "344", 
             "383", 
             "347"
         ], 
+        "x": "17.569", 
+        "compartment": "parameter_compartment", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "my_J_Cl", 
-        "equation": "( ( (  ( surface  /  ( -1.  *  F ) )   *  gp_cl )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_ext  /  cl_cyt ) ) )  ) ) )", 
+        "y": "41.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:26", 
+        "name_alt": "my_J_trk12", 
+        "name": "352", 
+        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_trk12 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) )", 
         "state": "0", 
-        "y": "46.472", 
-        "x": "10.724", 
-        "annotation": "SBML_IMPORT_ANNOTATION:20", 
-        "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "351"
-    }, 
-    {
-        "links_to": [
+        "links_from": [
             "368", 
             "348", 
             "344", 
             "363", 
             "366"
         ], 
+        "x": "24.167", 
+        "compartment": "parameter_compartment", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "my_J_trk12", 
-        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_trk12 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) )", 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:21", 
+        "name_alt": "my_J_Ca", 
+        "name": "353", 
+        "equation": "( ( (  ( surface  /  ( 2.  *  F ) )   *  gp_ca )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_ext  /  ca_cyt ) ) )  ) ) )", 
         "state": "0", 
-        "y": "45.472", 
-        "x": "5.1688", 
-        "annotation": "SBML_IMPORT_ANNOTATION:26", 
-        "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "352"
-    }, 
-    {
-        "links_to": [
+        "links_from": [
             "368", 
             "344", 
             "367", 
             "354"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "my_J_Ca", 
-        "equation": "( ( (  ( surface  /  ( 2.  *  F ) )   *  gp_ca )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_ext  /  ca_cyt ) ) )  ) ) )", 
-        "state": "0", 
-        "y": "46.472", 
-        "x": "7.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:21", 
+        "x": "19.569", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "353"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "390", 
-            "399", 
             "353"
         ], 
         "symbol": "circle", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "ca_cyt", 
-        "state": "0", 
-        "y": "49.472", 
-        "x": "15.28", 
+        "y": "45.472", 
         "annotation": "CHEBI:29108", 
+        "name_alt": "ca_cyt", 
+        "name": "354", 
+        "state": "0", 
+        "links_from": [
+            "399"
+        ], 
+        "x": "9.0694", 
         "compartment": "cytosol", 
-        "is_ode": false, 
-        "name": "354"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7428,34 +8056,36 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "cl_vac", 
-        "state": "0", 
-        "y": "54.472", 
-        "x": "22.585", 
+        "y": "50.472", 
         "annotation": "CHEBI:17996", 
+        "name_alt": "cl_vac", 
+        "name": "355", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "1.7083", 
         "compartment": "vacuole", 
-        "is_ode": false, 
-        "name": "355"
+        "is_ode": false
     }, 
     {
-        "links_to": [
-            "368", 
-            "344", 
-            "364"
-        ], 
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:24", 
         "name_alt": "my_J_ena1", 
+        "name": "356", 
         "equation": "(( (  ( surface  /  F )   *  I_MAX_ENA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_ena1 ) )) ))", 
         "state": "0", 
-        "y": "46.472", 
-        "x": "4.1688", 
-        "annotation": "SBML_IMPORT_ANNOTATION:24", 
+        "links_from": [
+            "368", 
+            "344", 
+            "364"
+        ], 
+        "x": "16.014", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "356"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -7463,51 +8093,55 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "extracellular", 
-        "state": "0", 
-        "y": "57.472", 
-        "x": "30.308", 
+        "y": "45.472", 
         "annotation": "SBO:0000468", 
+        "name_alt": "extracellular", 
+        "name": "357", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "41.889", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "357"
+        "is_ode": true
     }, 
     {
-        "links_to": [
-            "339"
-        ], 
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "44.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:9", 
         "name_alt": "myph", 
+        "name": "358", 
         "equation": "( - log((( h_cyt  *  0.001 )),(10.)) )", 
         "state": "0", 
-        "y": "48.472", 
-        "x": "4.0716", 
-        "annotation": "SBML_IMPORT_ANNOTATION:9", 
+        "links_from": [
+            "339"
+        ], 
+        "x": "23.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "358"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "368", 
-            "343"
+            "368"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "44.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:3", 
         "name_alt": "r", 
+        "name": "359", 
         "equation": "(  (  ( ( ( cytosol  *  liter_2_fl )  *  3. )  /  4. )   /  3.14159265359 )   **  0.333333333333 )", 
         "state": "0", 
-        "y": "48.472", 
-        "x": "8.0716", 
-        "annotation": "SBML_IMPORT_ANNOTATION:3", 
+        "links_from": [
+            "343"
+        ], 
+        "x": "17.472", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "359"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7517,35 +8151,37 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "na_vac", 
-        "state": "0", 
-        "y": "50.472", 
-        "x": "23.419", 
+        "y": "46.472", 
         "annotation": "CHEBI:29101", 
+        "name_alt": "na_vac", 
+        "name": "360", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "0.79167", 
         "compartment": "vacuole", 
-        "is_ode": false, 
-        "name": "360"
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:19", 
+        "name_alt": "my_J_Na", 
+        "name": "361", 
+        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_na )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_ext  /  na_cyt ) ) )  ) ) )", 
+        "state": "0", 
+        "links_from": [
             "368", 
             "344", 
             "349", 
             "350"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "my_J_Na", 
-        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_na )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_ext  /  na_cyt ) ) )  ) ) )", 
-        "state": "0", 
-        "y": "46.472", 
-        "x": "9.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:19", 
+        "x": "18.569", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "361"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7555,14 +8191,15 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "ca_vac", 
-        "state": "0", 
-        "y": "51.472", 
-        "x": "22.585", 
+        "y": "47.472", 
         "annotation": "CHEBI:29108", 
+        "name_alt": "ca_vac", 
+        "name": "362", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "1.4306", 
         "compartment": "vacuole", 
-        "is_ode": false, 
-        "name": "362"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7577,59 +8214,62 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "k_ext", 
-        "state": "0", 
-        "y": "49.472", 
-        "x": "27.78", 
+        "y": "46.472", 
         "annotation": "CHEBI:29103", 
+        "name_alt": "k_ext", 
+        "name": "363", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "38.792", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "363"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "349", 
-            "350", 
-            "379", 
             "356"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "43.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:15", 
         "name_alt": "E_ena1", 
+        "name": "364", 
         "equation": "(  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_ext  /  na_cyt ) ) )   +  ( D_G_ATP  /  F )  )", 
         "state": "0", 
-        "y": "47.472", 
-        "x": "6.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:15", 
+        "links_from": [
+            "349", 
+            "350", 
+            "379"
+        ], 
+        "x": "17.625", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "364"
+        "is_ode": false
     }, 
     {
-        "links_to": [
-            "372"
-        ], 
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "43.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:6", 
         "name_alt": "surface_vac", 
+        "name": "365", 
         "equation": "( ( 4.  *  3.14159265359 )  *  ( r_vac  **  2. ) )", 
         "state": "0", 
-        "y": "47.472", 
-        "x": "4.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:6", 
+        "links_from": [
+            "372"
+        ], 
+        "x": "21.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "365"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "389", 
             "394", 
-            "395", 
             "396", 
             "373", 
             "352", 
@@ -7639,14 +8279,17 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "k_cyt", 
-        "state": "0", 
-        "y": "50.472", 
-        "x": "16.391", 
+        "y": "46.472", 
         "annotation": "CHEBI:29103", 
+        "name_alt": "k_cyt", 
+        "name": "366", 
+        "state": "0", 
+        "links_from": [
+            "395"
+        ], 
+        "x": "12.542", 
         "compartment": "cytosol", 
-        "is_ode": false, 
-        "name": "366"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7657,18 +8300,18 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "ca_ext", 
-        "state": "0", 
-        "y": "50.472", 
-        "x": "28.127", 
+        "y": "47.472", 
         "annotation": "CHEBI:29108", 
+        "name_alt": "ca_ext", 
+        "name": "367", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "42.625", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "367"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "359", 
             "373", 
             "352", 
             "351", 
@@ -7684,15 +8327,18 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
+        "y": "43.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:4", 
         "name_alt": "surface", 
+        "name": "368", 
         "equation": "( ( 4.  *  3.14159265359 )  *  ( r  **  2. ) )", 
         "state": "0", 
-        "y": "47.472", 
-        "x": "5.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:4", 
+        "links_from": [
+            "359"
+        ], 
+        "x": "18.625", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "368"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -7700,36 +8346,39 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "par_vol", 
-        "state": "0", 
-        "y": "48.472", 
-        "x": "6.0716", 
+        "y": "44.472", 
         "annotation": "SBO:0000468", 
+        "name_alt": "par_vol", 
+        "name": "369", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "21.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": true, 
-        "name": "369"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "346", 
-            "350", 
-            "339", 
-            "349", 
             "385"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "43.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:14", 
         "name_alt": "E_nha1", 
+        "name": "370", 
         "equation": "(  ( ( R  *  T )  /  F )   *  log( ( ( ( h_ext  **  2. )  *  na_cyt )  /  ( ( h_cyt  **  2. )  *  na_ext ) ) ) )", 
         "state": "0", 
-        "y": "47.472", 
-        "x": "2.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:14", 
+        "links_from": [
+            "346", 
+            "350", 
+            "339", 
+            "349"
+        ], 
+        "x": "24.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "370"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7741,94 +8390,101 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "adp_cyt", 
-        "state": "-3", 
-        "y": "51.472", 
-        "x": "14.169", 
+        "y": "47.472", 
         "annotation": "CHEBI:456216", 
+        "name_alt": "adp_cyt", 
+        "name": "371", 
+        "state": "-3", 
+        "links_from": [], 
+        "x": "10.875", 
         "compartment": "cytosol", 
-        "is_ode": true, 
-        "name": "371"
+        "is_ode": true
     }, 
     {
         "links_to": [
-            "365", 
-            "375"
+            "365"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "44.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:5", 
         "name_alt": "r_vac", 
+        "name": "372", 
         "equation": "(  (  ( ( ( vacuole  *  liter_2_fl )  *  3. )  /  4. )   /  3.14159265359 )   **  0.333333333333 )", 
         "state": "0", 
-        "y": "48.472", 
-        "x": "7.0716", 
-        "annotation": "SBML_IMPORT_ANNOTATION:5", 
+        "links_from": [
+            "375"
+        ], 
+        "x": "22.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "372"
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "y": "41.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:25", 
+        "name_alt": "my_J_tok1", 
+        "name": "373", 
+        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_tok1 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) )", 
+        "state": "0", 
+        "links_from": [
             "368", 
             "386", 
             "344", 
             "363", 
             "366"
         ], 
+        "x": "23.167", 
+        "compartment": "parameter_compartment", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "my_J_tok1", 
-        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_tok1 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) )", 
+        "y": "43.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:16", 
+        "name_alt": "E_vma1", 
+        "name": "374", 
+        "equation": "(  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_cyt  /  h_vac ) ) )   +  ( D_G_ATP  /  F )  )", 
         "state": "0", 
-        "y": "45.472", 
-        "x": "6.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:25", 
-        "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "373"
-    }, 
-    {
-        "links_to": [
+        "links_from": [
             "339", 
             "345", 
             "379"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "E_vma1", 
-        "equation": "(  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_cyt  /  h_vac ) ) )   +  ( D_G_ATP  /  F )  )", 
-        "state": "0", 
-        "y": "47.472", 
-        "x": "1.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:16", 
+        "x": "22.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "374"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "372", 
-            "343"
+            "372"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "48.472", 
+        "annotation": "SBO:0000468", 
         "name_alt": "vacuole", 
+        "name": "375", 
         "equation": "( 0.2  *  cytosol )", 
         "state": "0", 
-        "y": "52.472", 
-        "x": "21.752", 
-        "annotation": "SBO:0000468", 
+        "links_from": [
+            "343"
+        ], 
+        "x": "1.9861", 
         "compartment": "vacuole", 
-        "is_ode": false, 
-        "name": "375"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7840,14 +8496,15 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "pi_cyt", 
-        "state": "-2", 
-        "y": "52.472", 
-        "x": "15.058", 
+        "y": "49.472", 
         "annotation": "CHEBI:43474", 
+        "name_alt": "pi_cyt", 
+        "name": "376", 
+        "state": "-2", 
+        "links_from": [], 
+        "x": "11.153", 
         "compartment": "cytosol", 
-        "is_ode": true, 
-        "name": "376"
+        "is_ode": true
     }, 
     {
         "links_to": [], 
@@ -7855,14 +8512,15 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "acid_cytosol_h", 
-        "state": "0", 
-        "y": "54.472", 
-        "x": "12.947", 
+        "y": "48.472", 
         "annotation": "SBML_IMPORT_ANNOTATION:1", 
+        "name_alt": "acid_cytosol_h", 
+        "name": "377", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "8.9306", 
         "compartment": "cytosol", 
-        "is_ode": true, 
-        "name": "377"
+        "is_ode": true
     }, 
     {
         "links_to": [
@@ -7872,37 +8530,40 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "k_vac", 
-        "state": "0", 
-        "y": "53.472", 
-        "x": "22.585", 
+        "y": "49.472", 
         "annotation": "CHEBI:29103", 
+        "name_alt": "k_vac", 
+        "name": "378", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "1.1528", 
         "compartment": "vacuole", 
-        "is_ode": false, 
-        "name": "378"
+        "is_ode": false
     }, 
     {
         "links_to": [
             "364", 
             "342", 
-            "374", 
-            "341", 
-            "371", 
-            "376"
+            "374"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "44.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:12", 
         "name_alt": "D_G_ATP", 
+        "name": "379", 
         "equation": "( D_G_ATP_0  - ( ( R  *  T )  *  log( ( atp_cyt  /  ( adp_cyt  *  pi_cyt ) ) ) ) )", 
         "state": "0", 
-        "y": "48.472", 
-        "x": "5.0716", 
-        "annotation": "SBML_IMPORT_ANNOTATION:12", 
+        "links_from": [
+            "341", 
+            "371", 
+            "376"
+        ], 
+        "x": "20.514", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "379"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -7910,56 +8571,59 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "acid_cytosol", 
-        "state": "0", 
-        "y": "54.472", 
-        "x": "11.947", 
+        "y": "50.472", 
         "annotation": "SBML_IMPORT_ANNOTATION:2", 
+        "name_alt": "acid_cytosol", 
+        "name": "380", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "9.5972", 
         "compartment": "cytosol", 
-        "is_ode": true, 
-        "name": "380"
+        "is_ode": true
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:18", 
+        "name_alt": "my_J_K", 
+        "name": "381", 
+        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_k )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) )", 
+        "state": "0", 
+        "links_from": [
             "368", 
             "344", 
             "363", 
             "366"
         ], 
+        "x": "25.125", 
+        "compartment": "parameter_compartment", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "my_J_K", 
-        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_k )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) )", 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:17", 
+        "name_alt": "my_J_H", 
+        "name": "382", 
+        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_h )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_ext  /  h_cyt ) ) )  ) ) )", 
         "state": "0", 
-        "y": "46.472", 
-        "x": "8.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:18", 
-        "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "381"
-    }, 
-    {
-        "links_to": [
+        "links_from": [
             "368", 
             "344", 
             "346", 
             "339"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "my_J_H", 
-        "equation": "( ( (  ( surface  /  ( 1.  *  F ) )   *  gp_h )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_ext  /  h_cyt ) ) )  ) ) )", 
-        "state": "0", 
-        "y": "46.472", 
-        "x": "3.1688", 
-        "annotation": "SBML_IMPORT_ANNOTATION:17", 
+        "x": "26.125", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "382"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -7970,401 +8634,429 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "cl_ext", 
-        "state": "0", 
-        "y": "51.472", 
-        "x": "29.641", 
+        "y": "48.472", 
         "annotation": "CHEBI:17996", 
+        "name_alt": "cl_ext", 
+        "name": "383", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "39.431", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "383"
+        "is_ode": true
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:22", 
+        "name_alt": "my_J_pma1", 
+        "name": "384", 
+        "equation": "(( (  ( surface  /  F )   *  I_MAX_PMA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_pma1 ) )) ))", 
+        "state": "0", 
+        "links_from": [
             "368", 
             "344", 
             "342"
         ], 
+        "x": "20.569", 
+        "compartment": "parameter_compartment", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "my_J_pma1", 
-        "equation": "(( (  ( surface  /  F )   *  I_MAX_PMA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_pma1 ) )) ))", 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:23", 
+        "name_alt": "my_J_nha1", 
+        "name": "385", 
+        "equation": "(( (  ( surface  /  F )   *  G_NHA1 )  *  ( v_m  - E_nha1 ) ))", 
         "state": "0", 
-        "y": "46.472", 
-        "x": "1.6132", 
-        "annotation": "SBML_IMPORT_ANNOTATION:22", 
-        "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "384"
-    }, 
-    {
-        "links_to": [
+        "links_from": [
             "368", 
             "344", 
             "370"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "my_J_nha1", 
-        "equation": "(( (  ( surface  /  F )   *  G_NHA1 )  *  ( v_m  - E_nha1 ) ))", 
-        "state": "0", 
-        "y": "46.472", 
-        "x": "0.61323", 
-        "annotation": "SBML_IMPORT_ANNOTATION:23", 
+        "x": "21.569", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "385"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "373", 
-            "344"
+            "373"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_ION"
         ], 
+        "y": "42.472", 
+        "annotation": "SBML_IMPORT_ANNOTATION:10", 
         "name_alt": "gp_tok1", 
+        "name": "386", 
         "equation": " ( gp_tok1_0  /  ( 1.  + exp((  (  ( ( d_tok1  *  F )  /  R )   /  T )   *  ( v_m  - v_tok1_halfmax ) )) ) ) ", 
         "state": "0", 
-        "y": "46.472", 
-        "x": "6.7243", 
-        "annotation": "SBML_IMPORT_ANNOTATION:10", 
+        "links_from": [
+            "344"
+        ], 
+        "x": "22.569", 
         "compartment": "parameter_compartment", 
-        "is_ode": false, 
-        "name": "386"
+        "is_ode": false
     }, 
     {
-        "rate": "( (  ( surface  /  F )   *  I_MAX_PMA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_pma1 ) )) )", 
-        "name": "387", 
-        "x": "9.3632", 
-        "y": "50.472", 
-        "links_to": [
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "links_from": [
             "339", 
             "346", 
             "341", 
             "371", 
             "376"
         ], 
-        "symbol": "rect", 
+        "rate": "( (  ( surface  /  F )   *  I_MAX_PMA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_pma1 ) )) )", 
+        "name_alt": "J_pma1", 
+        "name": "387", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
+        "y": "40.472", 
+        "x": "29", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_pma1"
-    }, 
-    {
-        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_na )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_ext  /  na_cyt ) ) )  ) ) ", 
-        "name": "388", 
-        "x": "23.947", 
-        "y": "47.472", 
-        "links_to": [
+        "links_from": [
             "350", 
             "349"
         ], 
-        "symbol": "rect", 
+        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_na )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_ext  /  na_cyt ) ) )  ) ) ", 
+        "name_alt": "J_na", 
+        "name": "388", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
+        "y": "43.472", 
+        "x": "14.042", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_na"
-    }, 
-    {
-        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_trk12 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
-        "name": "389", 
-        "x": "23.335", 
-        "y": "48.472", 
-        "links_to": [
+        "links_from": [
             "366", 
             "363"
         ], 
-        "symbol": "rect", 
+        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_trk12 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
+        "name_alt": "J_trk12", 
+        "name": "389", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
+        "y": "45.472", 
+        "x": "21.514", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_trk12"
-    }, 
-    {
-        "rate": " ( (  ( surface  /  ( 2.  *  F ) )   *  gp_ca )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_ext  /  ca_cyt ) ) )  ) ) ", 
-        "name": "390", 
-        "x": "18.419", 
-        "y": "48.472", 
-        "links_to": [
+        "links_from": [
             "354", 
             "367"
         ], 
-        "symbol": "rect", 
+        "rate": " ( (  ( surface  /  ( 2.  *  F ) )   *  gp_ca )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_ext  /  ca_cyt ) ) )  ) ) ", 
+        "name_alt": "J_ca", 
+        "name": "390", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "J_ca"
+        "y": "44.472", 
+        "x": "15.042", 
+        "is_ode": false
     }, 
     {
-        "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_h )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_cyt  /  h_vac ) ) )  ) ) ", 
-        "name": "391", 
-        "x": "16.085", 
-        "y": "55.472", 
         "links_to": [
-            "345", 
             "339"
         ], 
         "symbol": "rect", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "links_from": [
+            "345"
+        ], 
+        "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_h )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_cyt  /  h_vac ) ) )  ) ) ", 
+        "name_alt": "J_vac_h", 
+        "name": "391", 
         "compartments": [
             "vacuole", 
             "cytosol"
         ], 
-        "is_ode": false, 
+        "y": "52.472", 
+        "x": "2.8889", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_vac_h"
-    }, 
-    {
-        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_h )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_ext  /  h_cyt ) ) )  ) ) ", 
-        "name": "392", 
-        "x": "18.877", 
-        "y": "53.472", 
-        "links_to": [
+        "links_from": [
             "339", 
             "346"
         ], 
-        "symbol": "rect", 
+        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_h )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_ext  /  h_cyt ) ) )  ) ) ", 
+        "name_alt": "J_h", 
+        "name": "392", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
+        "y": "50.472", 
+        "x": "33.958", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_h"
-    }, 
-    {
-        "rate": " ( (  ( surface  /  ( -1.  *  F ) )   *  gp_cl )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_ext  /  cl_cyt ) ) )  ) ) ", 
-        "name": "393", 
-        "x": "22.447", 
-        "y": "46.472", 
-        "links_to": [
+        "links_from": [
             "347", 
             "383"
         ], 
-        "symbol": "rect", 
+        "rate": " ( (  ( surface  /  ( -1.  *  F ) )   *  gp_cl )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_ext  /  cl_cyt ) ) )  ) ) ", 
+        "name_alt": "J_cl", 
+        "name": "393", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
+        "y": "42.472", 
+        "x": "14.264", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_cl"
-    }, 
-    {
-        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_k )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
-        "name": "394", 
-        "x": "24.335", 
-        "y": "48.472", 
-        "links_to": [
+        "links_from": [
             "366", 
             "363"
         ], 
-        "symbol": "rect", 
+        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_k )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
+        "name_alt": "J_k", 
+        "name": "394", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "J_k"
+        "y": "45.472", 
+        "x": "22.514", 
+        "is_ode": false
     }, 
     {
-        "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_k )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_cyt  /  k_vac ) ) )  ) ) ", 
-        "name": "395", 
-        "x": "20.752", 
-        "y": "52.472", 
         "links_to": [
-            "378", 
             "366"
         ], 
         "symbol": "rect", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "links_from": [
+            "378"
+        ], 
+        "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_k )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_cyt  /  k_vac ) ) )  ) ) ", 
+        "name_alt": "J_vac_k", 
+        "name": "395", 
         "compartments": [
             "vacuole", 
             "cytosol"
         ], 
-        "is_ode": false, 
+        "y": "48.472", 
+        "x": "19.819", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_vac_k"
-    }, 
-    {
-        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_tok1 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
-        "name": "396", 
-        "x": "25.335", 
-        "y": "48.472", 
-        "links_to": [
+        "links_from": [
             "366", 
             "363"
         ], 
-        "symbol": "rect", 
+        "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_tok1 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
+        "name_alt": "J_tok1", 
+        "name": "396", 
         "compartments": [
             "cytosol", 
             "extracellular"
         ], 
-        "is_ode": false, 
+        "y": "45.472", 
+        "x": "23.514", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "339"
+        ], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_tok1"
-    }, 
-    {
-        "rate": "( (  ( surface_vac  /  F )   *  I_MAX_VMA_1 )  *  tanh( ( ( v_v  - E_vma1 )  /  ( ( 2.  *  R )  *  T ) ) ) )", 
-        "name": "397", 
-        "x": "17.613", 
-        "y": "51.472", 
-        "links_to": [
+        "links_from": [
             "345", 
-            "339", 
             "341", 
             "371", 
             "376"
         ], 
-        "symbol": "rect", 
+        "rate": "( (  ( surface_vac  /  F )   *  I_MAX_VMA_1 )  *  tanh( ( ( v_v  - E_vma1 )  /  ( ( 2.  *  R )  *  T ) ) ) )", 
+        "name_alt": "J_vma1", 
+        "name": "397", 
         "compartments": [
             "vacuole", 
             "cytosol"
         ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "J_vma1"
+        "y": "46.472", 
+        "x": "27.681", 
+        "is_ode": false
     }, 
     {
-        "rate": "( (  ( surface  /  F )   *  G_NHA1 )  *  ( v_m  - E_nha1 ) )", 
-        "name": "398", 
-        "x": "20.224", 
-        "y": "49.472", 
         "links_to": [
-            "339", 
-            "350", 
-            "346", 
-            "349"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "cytosol", 
-            "extracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "J_nha1"
-    }, 
-    {
-        "rate": " ( (  ( surface_vac  /  ( 2.  *  F ) )   *  gv_ca )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_cyt  /  ca_vac ) ) )  ) ) ", 
-        "name": "399", 
-        "x": "20.78", 
-        "y": "50.472", 
-        "links_to": [
-            "362", 
-            "354"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "vacuole", 
-            "cytosol"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "J_vac_ca"
-    }, 
-    {
-        "rate": " ( (  ( surface_vac  /  ( -1.  *  F ) )   *  gv_cl )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_cyt  /  cl_vac ) ) )  ) ) ", 
-        "name": "400", 
-        "x": "24.669", 
-        "y": "53.472", 
-        "links_to": [
-            "355", 
-            "347"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "vacuole", 
-            "cytosol"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "J_vac_cl"
-    }, 
-    {
-        "rate": "( (  ( surface  /  F )   *  I_MAX_ENA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_ena1 ) )) )", 
-        "name": "401", 
-        "x": "19.724", 
-        "y": "47.472", 
-        "links_to": [
-            "350", 
-            "349"
-        ], 
-        "symbol": "rect", 
-        "compartments": [
-            "cytosol", 
-            "extracellular"
-        ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_ION"
-        ], 
-        "name_alt": "J_ena1"
-    }, 
-    {
-        "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_na )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_cyt  /  na_vac ) ) )  ) ) ", 
-        "name": "402", 
-        "x": "19.224", 
-        "y": "49.472", 
-        "links_to": [
-            "360", 
             "350"
         ], 
         "symbol": "rect", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "links_from": [
+            "339", 
+            "346", 
+            "349"
+        ], 
+        "rate": "( (  ( surface  /  F )   *  G_NHA1 )  *  ( v_m  - E_nha1 ) )", 
+        "name_alt": "J_nha1", 
+        "name": "398", 
+        "compartments": [
+            "cytosol", 
+            "extracellular"
+        ], 
+        "y": "45.472", 
+        "x": "33.431", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "354"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "links_from": [
+            "362"
+        ], 
+        "rate": " ( (  ( surface_vac  /  ( 2.  *  F ) )   *  gv_ca )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_cyt  /  ca_vac ) ) )  ) ) ", 
+        "name_alt": "J_vac_ca", 
+        "name": "399", 
         "compartments": [
             "vacuole", 
             "cytosol"
         ], 
-        "is_ode": false, 
+        "y": "46.472", 
+        "x": "3.4861", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "347"
+        ], 
+        "symbol": "rect", 
         "module": [
             "TRP_ION"
         ], 
-        "name_alt": "J_vac_na"
+        "links_from": [
+            "355"
+        ], 
+        "rate": " ( (  ( surface_vac  /  ( -1.  *  F ) )   *  gv_cl )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_cyt  /  cl_vac ) ) )  ) ) ", 
+        "name_alt": "J_vac_cl", 
+        "name": "400", 
+        "compartments": [
+            "vacuole", 
+            "cytosol"
+        ], 
+        "y": "49.472", 
+        "x": "20.875", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "rect", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "links_from": [
+            "350", 
+            "349"
+        ], 
+        "rate": "( (  ( surface  /  F )   *  I_MAX_ENA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_ena1 ) )) )", 
+        "name_alt": "J_ena1", 
+        "name": "401", 
+        "compartments": [
+            "cytosol", 
+            "extracellular"
+        ], 
+        "y": "43.472", 
+        "x": "15.042", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "350"
+        ], 
+        "symbol": "rect", 
+        "module": [
+            "TRP_ION"
+        ], 
+        "links_from": [
+            "360"
+        ], 
+        "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_na )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_cyt  /  na_vac ) ) )  ) ) ", 
+        "name_alt": "J_vac_na", 
+        "name": "402", 
+        "compartments": [
+            "vacuole", 
+            "cytosol"
+        ], 
+        "y": "45.472", 
+        "x": "2.1528", 
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -8375,14 +9067,15 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
+        "y": "59.472", 
+        "annotation": "SBO:0000468", 
         "name_alt": "VOLUME", 
+        "name": "403", 
         "state": "0", 
-        "y": "59.472", 
-        "x": "37.197", 
-        "annotation": "SBO:0000468", 
+        "links_from": [], 
+        "x": "108.21", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "403"
+        "is_ode": true
     }, 
     {
         "links_to": [], 
@@ -8390,14 +9083,15 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
+        "y": "59.472", 
+        "annotation": "SBO:0000468", 
         "name_alt": "plasmamembrane_vol", 
+        "name": "404", 
         "state": "0", 
-        "y": "59.472", 
-        "x": "101.45", 
-        "annotation": "SBO:0000468", 
+        "links_from": [], 
+        "x": "117.6", 
         "compartment": "plasma_membrane", 
-        "is_ode": true, 
-        "name": "404"
+        "is_ode": true
     }, 
     {
         "links_to": [], 
@@ -8405,14 +9099,15 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "AA_trp_check", 
-        "state": "0", 
         "y": "59.472", 
-        "x": "36.197", 
         "annotation": "YCM:AA_check", 
+        "name_alt": "AA_trp_check", 
+        "name": "405", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "104.43", 
         "compartment": "intracellular", 
-        "is_ode": true, 
-        "name": "405"
+        "is_ode": true
     }, 
     {
         "links_to": [
@@ -8422,35 +9117,36 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "glycerol_cyt", 
-        "state": "0", 
         "y": "59.472", 
-        "x": "35.197", 
         "annotation": "CHEBI:17754", 
+        "name_alt": "glycerol_cyt", 
+        "name": "406", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "112.21", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "406"
+        "is_ode": false
     }, 
     {
-        "links_to": [
-            "421"
-        ], 
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "CO2_ext", 
-        "state": "0", 
-        "y": "52.472", 
-        "x": "31.03", 
+        "y": "49.472", 
         "annotation": "CHEBI:16526", 
+        "name_alt": "CO2_ext", 
+        "name": "407", 
+        "state": "0", 
+        "links_from": [
+            "421"
+        ], 
+        "x": "42.542", 
         "compartment": "extracellular", 
-        "is_ode": false, 
-        "name": "407"
+        "is_ode": false
     }, 
     {
         "links_to": [
-            "420", 
             "409", 
             "409", 
             "409"
@@ -8459,17 +9155,31 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "glucose_cyt", 
-        "state": "0", 
         "y": "58.472", 
-        "x": "36.197", 
         "annotation": "CHEBI:17634", 
+        "name_alt": "glucose_cyt", 
+        "name": "408", 
+        "state": "0", 
+        "links_from": [
+            "420"
+        ], 
+        "x": "110", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "408"
+        "is_ode": false
     }, 
     {
-        "links_to": [
+        "links_to": [], 
+        "symbol": "triangle", 
+        "module": [
+            "TRP_NUT"
+        ], 
+        "y": "57.472", 
+        "annotation": "SBO:0000627", 
+        "name_alt": "glc_uptake", 
+        "name": "409", 
+        "equation": "SURFACE * V_MAX_HXT * ( (glucose_ext/KM_HXT) - (glucose_cyt/KM_HXT) ) / ( 1 + (glucose_ext/KM_HXT) + (glucose_cyt/KM_HXT) + KI_HXT*glucose_ext*glucose_cyt/(KM_HXT**2))", 
+        "state": "0", 
+        "links_from": [
             "415", 
             "412", 
             "408", 
@@ -8478,19 +9188,9 @@ var data =[
             "412", 
             "408"
         ], 
-        "symbol": "triangle", 
-        "module": [
-            "TRP_NUT"
-        ], 
-        "name_alt": "glc_uptake", 
-        "equation": "SURFACE * V_MAX_HXT * ( (glucose_ext/KM_HXT) - (glucose_cyt/KM_HXT) ) / ( 1 + (glucose_ext/KM_HXT) + (glucose_cyt/KM_HXT) + KI_HXT*glucose_ext*glucose_cyt/(KM_HXT**2))", 
-        "state": "0", 
-        "y": "57.472", 
-        "x": "35.197", 
-        "annotation": "SBO:0000627", 
+        "x": "110", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "409"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -8498,31 +9198,33 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "VOLUME_EXT", 
-        "state": "0", 
-        "y": "57.472", 
-        "x": "29.308", 
+        "y": "50.472", 
         "annotation": "SBO:0000468", 
+        "name_alt": "VOLUME_EXT", 
+        "name": "410", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "40.514", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "410"
+        "is_ode": true
     }, 
     {
-        "links_to": [
-            "418"
-        ], 
+        "links_to": [], 
         "symbol": "circle", 
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "glycerol_ext", 
-        "state": "0", 
-        "y": "53.472", 
-        "x": "28.252", 
+        "y": "51.472", 
         "annotation": "CHEBI:17754", 
+        "name_alt": "glycerol_ext", 
+        "name": "411", 
+        "state": "0", 
+        "links_from": [
+            "418"
+        ], 
+        "x": "39.319", 
         "compartment": "extracellular", 
-        "is_ode": false, 
-        "name": "411"
+        "is_ode": false
     }, 
     {
         "links_to": [
@@ -8535,29 +9237,15 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "glucose_ext", 
-        "state": "0", 
-        "y": "54.472", 
-        "x": "29.808", 
+        "y": "53.472", 
         "annotation": "CHEBI:17634", 
-        "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "412"
-    }, 
-    {
-        "links_to": [], 
-        "symbol": "circle", 
-        "module": [
-            "TRP_NUT"
-        ], 
-        "name_alt": "AA_ext", 
+        "name_alt": "glucose_ext", 
+        "name": "412", 
         "state": "0", 
-        "y": "57.472", 
-        "x": "28.308", 
-        "annotation": "YCM:AA", 
+        "links_from": [], 
+        "x": "41.042", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "413"
+        "is_ode": true
     }, 
     {
         "links_to": [], 
@@ -8565,51 +9253,53 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "Pi_ext", 
-        "state": "-2", 
-        "y": "57.472", 
-        "x": "27.308", 
-        "annotation": "CHEBI:43474", 
+        "y": "52.472", 
+        "annotation": "YCM:AA", 
+        "name_alt": "AA_ext", 
+        "name": "413", 
+        "state": "0", 
+        "links_from": [], 
+        "x": "37.736", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "414"
+        "is_ode": true
+    }, 
+    {
+        "links_to": [], 
+        "symbol": "circle", 
+        "module": [
+            "TRP_NUT"
+        ], 
+        "y": "54.472", 
+        "annotation": "CHEBI:43474", 
+        "name_alt": "Pi_ext", 
+        "name": "414", 
+        "state": "-2", 
+        "links_from": [], 
+        "x": "39.625", 
+        "compartment": "extracellular", 
+        "is_ode": true
     }, 
     {
         "links_to": [
             "420", 
-            "409", 
-            "403"
+            "409"
         ], 
         "symbol": "triangle", 
         "module": [
             "TRP_NUT"
         ], 
+        "y": "58.472", 
+        "annotation": "SBO:0000467", 
         "name_alt": "SURFACE", 
+        "name": "415", 
         "equation": "4*pi*((3./4./pi * VOLUME)**(1/3))**2", 
         "state": "0", 
-        "y": "58.472", 
-        "x": "35.197", 
-        "annotation": "SBO:0000467", 
+        "links_from": [
+            "403"
+        ], 
+        "x": "111", 
         "compartment": "intracellular", 
-        "is_ode": false, 
-        "name": "415"
-    }, 
-    {
-        "links_to": [
-            "419"
-        ], 
-        "symbol": "circle", 
-        "module": [
-            "TRP_NUT"
-        ], 
-        "name_alt": "EtOH_ext", 
-        "state": "0", 
-        "y": "55.472", 
-        "x": "30.752", 
-        "annotation": "CHEBI:16236", 
-        "compartment": "extracellular", 
-        "is_ode": false, 
-        "name": "416"
+        "is_ode": false
     }, 
     {
         "links_to": [], 
@@ -8617,96 +9307,123 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "NH4_ext", 
-        "state": "+1", 
-        "y": "57.472", 
-        "x": "26.308", 
-        "annotation": "CHEBI:28938", 
+        "y": "55.472", 
+        "annotation": "CHEBI:16236", 
+        "name_alt": "EtOH_ext", 
+        "name": "416", 
+        "state": "0", 
+        "links_from": [
+            "419"
+        ], 
+        "x": "41.167", 
         "compartment": "extracellular", 
-        "is_ode": true, 
-        "name": "417"
+        "is_ode": false
     }, 
     {
-        "rate": "glycerol_mem_permeability * SURFACE * (glycerol_cyt - glycerol_ext)", 
-        "name": "418", 
-        "x": "27.988", 
-        "y": "58.472", 
+        "links_to": [], 
+        "symbol": "circle", 
+        "module": [
+            "TRP_NUT"
+        ], 
+        "y": "56.472", 
+        "annotation": "CHEBI:28938", 
+        "name_alt": "NH4_ext", 
+        "name": "417", 
+        "state": "+1", 
+        "links_from": [], 
+        "x": "42.208", 
+        "compartment": "extracellular", 
+        "is_ode": true
+    }, 
+    {
         "links_to": [
-            "406", 
             "411"
         ], 
         "symbol": "rect", 
+        "module": [
+            "TRP_NUT"
+        ], 
+        "links_from": [
+            "406"
+        ], 
+        "rate": "glycerol_mem_permeability * SURFACE * (glycerol_cyt - glycerol_ext)", 
+        "name_alt": "glycerol_trp", 
+        "name": "418", 
         "compartments": [
             "intracellular", 
             "extracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_NUT"
-        ], 
-        "name_alt": "glycerol_trp"
+        "y": "52.472", 
+        "x": "118.54", 
+        "is_ode": false
     }, 
     {
-        "rate": "EtOH_mem_permeability * SURFACE * 1e-10 * 1e15 * (EtOH - EtOH_ext)", 
-        "name": "419", 
-        "x": "34.224", 
-        "y": "7.4722", 
         "links_to": [
-            "288", 
             "416"
         ], 
         "symbol": "rect", 
+        "module": [
+            "TRP_NUT"
+        ], 
+        "links_from": [
+            "288"
+        ], 
+        "rate": "EtOH_mem_permeability * SURFACE * 1e-10 * 1e15 * (EtOH - EtOH_ext)", 
+        "name_alt": "v_EtOHdif", 
+        "name": "419", 
         "compartments": [
             "intracellular", 
             "extracellular"
         ], 
-        "is_ode": false, 
+        "y": "7.4722", 
+        "x": "116.47", 
+        "is_ode": false
+    }, 
+    {
+        "links_to": [
+            "408"
+        ], 
+        "symbol": "rect", 
         "module": [
             "TRP_NUT"
         ], 
-        "name_alt": "v_EtOHdif"
-    }, 
-    {
-        "rate": "SURFACE * V_MAX_HXT * ( (glucose_ext/KM_HXT) - (glucose_cyt/KM_HXT) ) / ( 1 + (glucose_ext/KM_HXT) + (glucose_cyt/KM_HXT) + KI_HXT*glucose_ext*glucose_cyt/(KM_HXT**2))", 
-        "name": "420", 
-        "x": "25.308", 
-        "y": "57.472", 
-        "links_to": [
-            "408", 
+        "links_from": [
             "403", 
             "415", 
             "412"
         ], 
-        "symbol": "rect", 
+        "rate": "SURFACE * V_MAX_HXT * ( (glucose_ext/KM_HXT) - (glucose_cyt/KM_HXT) ) / ( 1 + (glucose_ext/KM_HXT) + (glucose_cyt/KM_HXT) + KI_HXT*glucose_ext*glucose_cyt/(KM_HXT**2))", 
+        "name_alt": "v_hxt", 
+        "name": "420", 
         "compartments": [
             "intracellular", 
             "extracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_NUT"
-        ], 
-        "name_alt": "v_hxt"
+        "y": "57.472", 
+        "x": "113.18", 
+        "is_ode": false
     }, 
     {
-        "rate": "CO2_mem_permeability * SURFACE * 1e-10 * 1e15 * (CO2 - CO2_ext)", 
-        "name": "421", 
-        "x": "33.224", 
-        "y": "7.4722", 
         "links_to": [
-            "301", 
             "407"
         ], 
         "symbol": "rect", 
+        "module": [
+            "TRP_NUT"
+        ], 
+        "links_from": [
+            "301"
+        ], 
+        "rate": "CO2_mem_permeability * SURFACE * 1e-10 * 1e15 * (CO2 - CO2_ext)", 
+        "name_alt": "v_C02dif", 
+        "name": "421", 
         "compartments": [
             "intracellular", 
             "extracellular"
         ], 
-        "is_ode": false, 
-        "module": [
-            "TRP_NUT"
-        ], 
-        "name_alt": "v_C02dif"
+        "y": "7.4722", 
+        "x": "114.71", 
+        "is_ode": false
     }
 ]
 var links =[
@@ -13945,10 +14662,10 @@ var links =[
 var compartments ={
     "parameter_compartment": {
         "spread": [
-            10.724, 
-            0.61323, 
-            48.472, 
-            45.472
+            26.125, 
+            16.014, 
+            44.472, 
+            41.472
         ], 
         "species": [
             "340", 
@@ -13983,10 +14700,10 @@ var compartments ={
     }, 
     "cytosol": {
         "spread": [
-            16.391, 
-            11.947, 
-            54.472, 
-            46.472
+            12.542, 
+            8.3333, 
+            52.472, 
+            41.472
         ], 
         "species": [
             "142", 
@@ -14024,8 +14741,8 @@ var compartments ={
     }, 
     "intracellular": {
         "spread": [
-            98.974, 
-            35.197, 
+            112.21, 
+            52.208, 
             59.472, 
             0.47222
         ], 
@@ -14373,10 +15090,10 @@ var compartments ={
     }, 
     "vacuole": {
         "spread": [
-            23.419, 
-            21.752, 
-            55.472, 
-            50.472
+            2.2639, 
+            0.79167, 
+            51.472, 
+            46.472
         ], 
         "species": [
             "345", 
@@ -14398,8 +15115,8 @@ var compartments ={
     }, 
     "plasma_membrane": {
         "spread": [
-            102.45, 
-            101.45, 
+            118.6, 
+            117.6, 
             59.472, 
             59.472
         ], 
@@ -14413,8 +15130,8 @@ var compartments ={
     }, 
     "cell_wall": {
         "spread": [
-            103.36, 
-            102.47, 
+            122.43, 
+            121.54, 
             16.472, 
             11.472
         ], 
@@ -14436,9 +15153,9 @@ var compartments ={
     }, 
     "nucleus": {
         "spread": [
-            101.31, 
-            100.06, 
-            26.472, 
+            114.71, 
+            114.43, 
+            27.472, 
             24.472
         ], 
         "species": [
@@ -14455,10 +15172,10 @@ var compartments ={
     }, 
     "extracellular": {
         "spread": [
-            31.308, 
-            26.308, 
-            57.472, 
-            48.472
+            44.708, 
+            37.736, 
+            58.472, 
+            44.472
         ], 
         "species": [
             "15", 
