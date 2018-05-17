@@ -26,7 +26,8 @@ function prepare_comp(){
             invisible: false,
             draggable: false,
             open: 0,
-            onclick: echarts.util.curry(handle_compartment,index)
+            onclick: echarts.util.curry(handle_compartment,index),
+            onmouseover: echarts.util.curry(handle_compartment_tooltip,index)
         });
 
         //index+=1;
@@ -106,6 +107,10 @@ function update_comp_pos_2(){
     myChart.setOption({
         graphic: graphicList
     })
+}
+
+function handle_compartment_tooltip(index){
+    //TODO: Show and Enlarge Compartment name as small compartments name is barely readable at full view
 }
 
 function handle_compartment(index){

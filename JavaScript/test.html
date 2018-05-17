@@ -8,8 +8,6 @@
 <script src="echarts.min.js"></script>
 <!-- including jQuery file -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- including panzoom file -->
-<script src="https://cdn.rawgit.com/anvaka/panzoom/v4.4.0/dist/panzoom.min.js"></script>
 
 <!-- including data file -->
 <script src="data.js"></script>
@@ -25,7 +23,7 @@
 	<div id='main' class="flex-container2">
 	
 		<div class="search-div" align='center'>
-			<input id = 'search' type="text" value="Name">
+			<input id = 'search' type="text" placeholder="Name or Annotation">
 			<button onclick="highlight()">Search</button>
 		</div>
 		<div id='main' class="flex-container">
@@ -41,6 +39,7 @@
 
 	<script type="text/javascript">
 		var info_box = document.getElementById('info-box');
+		modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
 		window.addEventListener('resize', resize, false); //TODO: not called on zoom and drag!!!
 		// Resize function
 		function resize() {	
@@ -48,35 +47,30 @@
 				myChart.resize();
 				update_comp_pos_2();
 		}
-		//panzoom(graph); //zoom and pan but very bad
 
 		//based on prepared DOM, initialize echarts instance
 		var myChart = echarts.init(document.getElementById('graph'));
 
 		var hidden_alpha = 1; 
-		var hidden_nodes= ['ATP','ADP']; //nodes to be reduced in visibility //TODO
+		var hidden_nodes= ['ATP','ADP','Pi']; //nodes to be reduced in visibility //TODO
 		function prepare(){
+			/*
 			var to_color = { }
 			i=0
 	    	jQuery.each(compartments, function(com,dat) {
 	    		to_color[com]= get_disitnct_color_kelly(i);
 	    		i+=1;
 	    	})
-	    	modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
+	    	
 	    	jQuery.each(modulelist, function(index,elem) {
 	    		to_color[elem]= get_disitnct_color_kelly(index);
-		    })
+		    })*/
 		    jQuery.each( data,function(j,sp){
 		    	    	
-		    	itemStyle = {
-		    		'normal': {},
-		    		'emphasis': {}
-		    	};
-		    	//add colours to nodes		    	
-	    		itemStyle.normal.color = to_color[sp['module'][0]] 
-	    		
+	    		sp.category = sp['module'][0];
 		    	
 		    	//remove labels from reactions
+		    	/*
 		        if(sp['symbol']=='rect'||sp['symbol']=='triangle'){ 
 		            sp['label']={
 		                normal: {
@@ -84,13 +78,12 @@
 		                }
 		            };
 		            
-		        }
+		        }*/
 
 		        //reduce visibility of certain nodes
 		        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
 		        	
 		        }
-		        sp['itemStyle'] =itemStyle;
 
 		    })
 		    //reduce visibility of links connected to certain nodes
@@ -103,30 +96,17 @@
 						*/
 					}
 		    })
-
-		    //create compartment nodes #TODO: do this as graphic not as node
-		    jQuery.each( compartments,function(name,compartment){
-		    	
-		    	
-		    	
-		    }) 
 		    
 		    
 		}
         prepare();
-        var testdata = [{
-        			coords: [[0,0],[1,1]]
-        		},{
-        			coords: [[1,0],[1,1]]
-        		},{
-        			coords: [[0,1],[1,0]]
-        		}];
 		//specific chart configuration item and data
 		var option = {
 			backgroundColor: 'white',
 			title : {
 				text : 'YCM'
 			},
+			
 			tooltip : {
 				//show: false, //TODO: only show if node are not large enough to contain name
 				formatter: function(params, ticket, callback){
@@ -134,83 +114,54 @@
 				},
 				position: 'right'
 			}, 
-			//nodeScaleRatio: 0,
-			/*
-			xAxis : [
-		        {
-		            type : 'value',
-		            show : false,
-		            silent: true
-		           
-		        }
-		    ],
-		    yAxis : [
-		        {
-		            type : 'value',
-		            show : false,
-		            silent: true
-		        }
-		    ], */
-		    /*
-		    dataZoom: [
-		        {   // This dataZoom component controls x-axis by dafault
-		            type: 'slider', // this dataZoom component is dataZoom component of slider
-		            //realtime: true,
-		            start: 10,      // the left is located at 10%
-		            end: 60         // the right is located at 60%
-		        }
-		    ], */
+			legend: [{
+	            // selectedMode: 'single',
+	            data: modulelist
+	        }],
+		    color: get_disitnct_color_kelly(),
 			series : [{
 				name : 'YCM',
 				type : 'graph',
 				layout : 'none',//'circular',//'force',
-				zlevel: 0,
-            	//coordinateSystem: 'polar',
 				symbolSize : get_symbolSize(),
-			    
+			    //legendHoverLink: true, //not working
 				roam : true,
 				label: {
 					
-					normal: { //TODO: only show label if node big enough, otherwise show tooltip with name
-						show: false,
-						formatter: function(data){
-							var s = data.data['name_alt'];
-							return s
-						}
-					}
-					
+					show: false 
 				},
-				//focusNodeAdjacency: true, //TODO: implement own version to avoid weird labels
 				edgeSymbol : [ 'none', 'arrow' ],
-				edgeSymbolSize : get_symbolSize(),
+				edgeSymbolSize : get_symbolSize()+1,
                 lineStyle: { 
-                    normal: {
-                        color: 'source',
-                        curveness: 0.0,
-                        type: 'solid',
-                        opacity: 0.3,
-                        width: 2
-                    } 
+                    color: 'source',
+                    curveness: 0.0,
+                    type: 'solid',
+                    opacity: 0.3,
+                    width: 2
+                
                 },
+                categories: modulelist.map(function (a) {
+                	return {name: a};
+            	}),
+                
+                emphasis:{ 
+                	itemStyle: {
+                		borderColor: 'white',
+                        borderWidth: 1
+                	},
+                	lineStyle: { 
+                		opacity: 0.5,
+                		width: 3
+                	},
+                	label:{//not working
+                		show: true,
+	            		position: 'right' 
+                	}		
+            	},
+                
 				data : data,
 				links : links
-			}/*,
-			{
-				type: 'lines',
-				data: testdata,
-				coordinateSystem: 'cartesian2d',
-				symbol: ['none', 'arrow'],
-        		symbolSize: 10,
-        		lineStyle: {
-		            normal: {
-		            	color: 'pink',
-		                width: 1,
-		                opacity: 0.6,
-		                curveness: 0.2
-		            }
-		        }
-        		
-			}*/]
+			}]
 		};
 
 		myChart.setOption(option);
@@ -360,7 +311,7 @@
 			return 7; //todo: used later when integrating information from simulations
 		}
 
-		function get_disitnct_color_kelly(number){
+		function get_disitnct_color_kelly(){
 			var kelly_colors = [
 					//white //already background
 					'rgb(0 , 0, 0)',//black
@@ -387,7 +338,7 @@
                     'rgb(241, 58, 19)',//vivid_reddish_orange
                     'rgb(35, 44, 22))' //dark_olive_green
 				];
-			return kelly_colors[number];
+			return kelly_colors;
 
 
 		}
@@ -492,11 +443,11 @@
 			var result =[];
 
 			jQuery.each( data,function(j,elem){
-				if (elem['name_alt'].indexOf(text)!=-1){
+				if (elem['name_alt'].toLowerCase().indexOf(text)!=-1){
 					result.push({seriesIndex:0, dataIndex:j});
 				}
 				if ('annotation' in elem){
-					if(elem['annotation'].indexOf(text)!=-1){
+					if(elem['annotation'].toLowerCase().indexOf(text)!=-1){
 						result.push({seriesIndex:0, dataIndex:j});
 					}
 				}
@@ -507,13 +458,8 @@
 		}
 
 		function highlight(){
-			var r=search(document.getElementById('search').value);
+			var r=search(document.getElementById('search').value.toLowerCase());
 			myChart.dispatchAction({type:'downplay',seriesIndex:0});
-			/*
-			jQuery.each(r,function(j,elem){				
-				myChart.dispatchAction({type:'highlight',batch:[{seriesIndex:0, dataIndex:elem}]);
-				myChart.dispatchAction({type:'showTip',seriesIndex:0, dataIndex:elem});
-			})*/
 			myChart.dispatchAction({type:'highlight',batch:r});
 			//myChart.dispatchAction({type:'showTip',batch:r}); //cannot show multiple tooltips
 		}
