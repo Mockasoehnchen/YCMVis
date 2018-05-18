@@ -221,7 +221,7 @@ def use_dot():
         #    compartments[compartment]['x'] = textlist[2]
         #    compartments[compartment]['y'] = textlist[3]
         #    compartments[compartment]['symbolSize'] = [float(textlist[4]),float(textlist[5])]
-        # os.remove("testfile.gv") #Graph file no longer needed
+        os.remove("testfile.gv") #Graph file no longer needed
 
 def new_dot():
     "use GraphViz's dot to get x and y for nodes of the graph"
@@ -243,7 +243,7 @@ def new_dot():
                     clustering[cluster].append(comp)
             clustering[cluster].append(node['name'])
 
-    # introduce extra edges to improve layout
+    # introduce extra edges to improve layout, these edges will not be seen in the final design
     pseudoLinks = []
     for cluster in clustering:
         if len(clustering[cluster])<20 and not '8' in cluster:
