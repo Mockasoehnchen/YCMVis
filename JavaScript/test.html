@@ -13,7 +13,6 @@
 <script src="data.js"></script>
 <!-- including compartment function file file -->
 <script src="compartment_functions.js"></script>
-
 <!-- include styles -->
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
@@ -38,6 +37,7 @@
 
 
 	<script type="text/javascript">
+		
 		var info_box = document.getElementById('info-box');
 		modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
 		window.addEventListener('resize', resize, false); //TODO: not called on zoom and drag!!!
@@ -252,11 +252,13 @@
 				text += 'State: '+param.state+'<br>';
 			}
 			if (param.hasOwnProperty('rate')) {
-				//TODO: autoconvert to MathML???
 				text += 'Rate: '+param.rate+'<br>';
+				//rates are not written in a latex compatible form
+				//text += 'Rate: <img src="http://latex.codecogs.com/svg.latex?'+param.rate+'" border="0"/><br>';
 			}
 			if (param.hasOwnProperty('equation')) {
 				text += 'Equation: '+param.equation+'<br>';
+				//text += 'Equation: <img src="http://latex.codecogs.com/svg.latex?'+param.equation+'" border="0"/><br>';
 			}
 			if (param.hasOwnProperty('annotation')) {
 				var annoList =  param.annotation.split('_');

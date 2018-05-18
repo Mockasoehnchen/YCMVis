@@ -255,7 +255,7 @@ def new_dot():
     #pseudoLinks = []
 
     # Build digraph for GraphViz and write to file
-    text = 'digraph {' + os.linesep
+    text = 'digraph {' + os.linesep #+'layout=fdp'+ os.linesep
     for node in nodes:
         text = text + node[
             'name'] + ';' + os.linesep  # not needed for dot beacuse all species are in a compartment but provides order used later

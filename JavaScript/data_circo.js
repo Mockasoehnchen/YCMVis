@@ -5,7 +5,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "53.472", 
+        "y": "45.097", 
         "annotation": "YCM:r_os_flux", 
         "name_alt": "dr_os", 
         "name": "0", 
@@ -16,7 +16,7 @@ var data =[
             "15", 
             "8"
         ], 
-        "x": "110.25", 
+        "x": "4.327", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -26,7 +26,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "55.472", 
+        "y": "47.009", 
         "annotation": "SBO:0000467", 
         "name_alt": "G", 
         "name": "1", 
@@ -36,7 +36,7 @@ var data =[
             "9", 
             "2"
         ], 
-        "x": "108.78", 
+        "x": "7.0966", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -50,13 +50,13 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "56.472", 
+        "y": "45.712", 
         "annotation": "YCM:internal_osmolarity", 
         "name_alt": "c_i", 
         "name": "2", 
         "state": "0", 
         "links_from": [], 
-        "x": "108.06", 
+        "x": "5.9474", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -66,7 +66,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "54.472", 
+        "y": "53.363", 
         "annotation": "YCM:r_b_flux", 
         "name_alt": "dr_b", 
         "name": "3", 
@@ -75,7 +75,7 @@ var data =[
         "links_from": [
             "10"
         ], 
-        "x": "106.78", 
+        "x": "2.119", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -94,7 +94,7 @@ var data =[
             "MET_DNA", 
             "MET_CWS"
         ], 
-        "y": "54.472", 
+        "y": "48.692", 
         "annotation": "SBO:0000468", 
         "name_alt": "int_vol", 
         "name": "4", 
@@ -103,7 +103,7 @@ var data =[
         "links_from": [
             "11"
         ], 
-        "x": "60.569", 
+        "x": "8.8863", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -118,13 +118,13 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "59.472", 
+        "y": "46.291", 
         "annotation": "SBO:0000466", 
         "name_alt": "r_os", 
         "name": "5", 
         "state": "osmotic", 
         "links_from": [], 
-        "x": "106.99", 
+        "x": "1.1804", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -158,7 +158,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "58.472", 
+        "y": "51.093", 
         "annotation": "SBO:0000279", 
         "name_alt": "pi_t", 
         "name": "6", 
@@ -173,7 +173,7 @@ var data =[
             "6", 
             "12"
         ], 
-        "x": "107.5", 
+        "x": "1.1804", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -183,7 +183,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "56.472", 
+        "y": "53.651", 
         "annotation": "SBO:0000468", 
         "name_alt": "V_ref", 
         "name": "7", 
@@ -192,7 +192,7 @@ var data =[
         "links_from": [
             "12"
         ], 
-        "x": "109.06", 
+        "x": "4.4927", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -205,7 +205,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "54.472", 
+        "y": "47.825", 
         "annotation": "SBO:0000279", 
         "name_alt": "pi_i", 
         "name": "8", 
@@ -218,7 +218,7 @@ var data =[
             "6", 
             "6"
         ], 
-        "x": "109.89", 
+        "x": "0.375", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -232,7 +232,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "56.472", 
+        "y": "50.374", 
         "annotation": "SBO:0000466", 
         "name_alt": "r", 
         "name": "9", 
@@ -249,7 +249,7 @@ var data =[
             "6", 
             "12"
         ], 
-        "x": "106.22", 
+        "x": "7.0966", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -262,7 +262,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "55.472", 
+        "y": "52.077", 
         "annotation": "YCM:R_ref_flux", 
         "name_alt": "dR_ref", 
         "name": "10", 
@@ -274,7 +274,7 @@ var data =[
             "6", 
             "13"
         ], 
-        "x": "106.78", 
+        "x": "2.6066", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -287,7 +287,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "55.472", 
+        "y": "48.692", 
         "annotation": "SBO:0000468", 
         "name_alt": "V", 
         "name": "11", 
@@ -297,7 +297,7 @@ var data =[
             "9", 
             "2"
         ], 
-        "x": "107.78", 
+        "x": "7.5113", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -313,7 +313,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "57.472", 
+        "y": "52.286", 
         "annotation": "YCM:radius_relaxed_volume", 
         "name_alt": "R_ref", 
         "name": "12", 
@@ -325,7 +325,7 @@ var data =[
             "6", 
             "12"
         ], 
-        "x": "108.14", 
+        "x": "4.327", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -338,13 +338,13 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "57.472", 
+        "y": "51.672", 
         "annotation": "SBO:0000466", 
         "name_alt": "r_b", 
         "name": "13", 
         "state": "nonosmotic", 
         "links_from": [], 
-        "x": "106.86", 
+        "x": "5.9474", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -354,7 +354,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "53.472", 
+        "y": "49.558", 
         "annotation": "YCM:r_flux", 
         "name_alt": "dr", 
         "name": "14", 
@@ -366,7 +366,7 @@ var data =[
             "15", 
             "8"
         ], 
-        "x": "109.25", 
+        "x": "0.375", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -379,7 +379,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "58.472", 
+        "y": "45.306", 
         "annotation": "SBO:0000279", 
         "name_alt": "pi_e", 
         "name": "15", 
@@ -390,7 +390,7 @@ var data =[
             "6", 
             "6"
         ], 
-        "x": "42.292", 
+        "x": "2.6066", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -405,7 +405,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "58.472", 
+        "y": "129.5", 
         "annotation": "SGD:S000003723p", 
         "name_alt": "Swe1_cyt", 
         "name": "16", 
@@ -413,7 +413,7 @@ var data =[
         "links_from": [
             "91"
         ], 
-        "x": "104.49", 
+        "x": "167.81", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -428,7 +428,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "42.472", 
+        "y": "154.59", 
         "annotation": "SGD:S000002553p", 
         "name_alt": "Swi5_nuc", 
         "name": "17", 
@@ -437,7 +437,7 @@ var data =[
             "97", 
             "109"
         ], 
-        "x": "106.86", 
+        "x": "176.73", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -449,7 +449,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "36.472", 
+        "y": "172.12", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "SBF_p_cyt", 
         "name": "18", 
@@ -457,7 +457,7 @@ var data =[
         "links_from": [
             "62"
         ], 
-        "x": "96.806", 
+        "x": "139.85", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -471,7 +471,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "30.472", 
+        "y": "140.79", 
         "annotation": "SGD:S000003693p", 
         "name_alt": "Far1_cyt", 
         "name": "19", 
@@ -480,7 +480,7 @@ var data =[
             "76", 
             "78"
         ], 
-        "x": "103.4", 
+        "x": "175.79", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -498,7 +498,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "42.472", 
+        "y": "172.12", 
         "annotation": "SGD:S000002971p", 
         "name_alt": "APC_cyt", 
         "name": "20", 
@@ -507,7 +507,7 @@ var data =[
             "77", 
             "136"
         ], 
-        "x": "102.29", 
+        "x": "163.43", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -524,7 +524,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "40.472", 
+        "y": "174.05", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "Cdc14_p_cyt", 
         "name": "21", 
@@ -534,7 +534,7 @@ var data =[
             "102", 
             "135"
         ], 
-        "x": "99.375", 
+        "x": "144.73", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -549,7 +549,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "28.472", 
+        "y": "129.5", 
         "annotation": "SGD:S000006324p_SGD:S000004069p", 
         "name_alt": "Clb5_Sic1_cyt", 
         "name": "22", 
@@ -558,7 +558,7 @@ var data =[
             "87", 
             "110"
         ], 
-        "x": "110.9", 
+        "x": "135.47", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -571,7 +571,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "26.472", 
+        "y": "161.16", 
         "annotation": "SGD:S000005609p", 
         "name_alt": "Whi5_p_cyt", 
         "name": "23", 
@@ -580,7 +580,7 @@ var data =[
             "59", 
             "74"
         ], 
-        "x": "97.111", 
+        "x": "128.89", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -594,7 +594,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "38.472", 
+        "y": "174.94", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "Cdc14_cyt", 
         "name": "24", 
@@ -602,7 +602,7 @@ var data =[
         "links_from": [
             "92"
         ], 
-        "x": "100.15", 
+        "x": "149.89", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -619,13 +619,13 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "44.472", 
+        "y": "145.88", 
         "annotation": "SGD:S000004103p", 
         "name_alt": "Hog1_PP_cyt", 
         "name": "25", 
         "state": "PP", 
         "links_from": [], 
-        "x": "109.92", 
+        "x": "126.26", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -638,7 +638,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "48.472", 
+        "y": "169.25", 
         "annotation": "SGD:S000002314p_SGD:S000004069p", 
         "name_alt": "Clb3_Sic1_cyt", 
         "name": "26", 
@@ -646,7 +646,7 @@ var data =[
         "links_from": [
             "132"
         ], 
-        "x": "106.68", 
+        "x": "167.81", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -660,7 +660,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "34.472", 
+        "y": "125.23", 
         "annotation": "SGD:S000006177p_SGD:S000003693p", 
         "name_alt": "Cln2_Far1_p_cyt", 
         "name": "27", 
@@ -668,7 +668,7 @@ var data =[
         "links_from": [
             "66"
         ], 
-        "x": "101.42", 
+        "x": "160.22", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -680,7 +680,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "42.472", 
+        "y": "131.88", 
         "annotation": "SGD:S000003723p", 
         "name_alt": "Swe1_p_cyt", 
         "name": "28", 
@@ -689,7 +689,7 @@ var data =[
             "72", 
             "82"
         ], 
-        "x": "112.04", 
+        "x": "170.37", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -708,7 +708,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "32.472", 
+        "y": "134.6", 
         "annotation": "SGD:S000006324p", 
         "name_alt": "Clb5_cyt", 
         "name": "29", 
@@ -719,7 +719,7 @@ var data =[
             "108", 
             "134"
         ], 
-        "x": "109.15", 
+        "x": "130.71", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -733,7 +733,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "24.472", 
+        "y": "164.15", 
         "annotation": "SGD:S000005609p", 
         "name_alt": "Whi5_cyt", 
         "name": "30", 
@@ -742,7 +742,7 @@ var data =[
             "130", 
             "131"
         ], 
-        "x": "97.111", 
+        "x": "130.71", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -754,7 +754,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "26.472", 
+        "y": "123.99", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "Sic1_p_cyt", 
         "name": "31", 
@@ -763,7 +763,7 @@ var data =[
             "101", 
             "108"
         ], 
-        "x": "110.53", 
+        "x": "148.15", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -778,7 +778,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "28.472", 
+        "y": "156.29", 
         "annotation": "SGD:S000000038p", 
         "name_alt": "Cln3_cyt", 
         "name": "32", 
@@ -788,7 +788,7 @@ var data =[
             "115", 
             "140"
         ], 
-        "x": "99.847", 
+        "x": "126.97", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -801,7 +801,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "30.472", 
+        "y": "137.58", 
         "annotation": "SGD:S000006324p_SGD:S000004069p", 
         "name_alt": "Clb5_Sic1_Hp_cyt", 
         "name": "33", 
@@ -810,7 +810,7 @@ var data =[
             "63", 
             "128"
         ], 
-        "x": "108.68", 
+        "x": "128.89", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -823,7 +823,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "56.472", 
+        "y": "103.13", 
         "annotation": "SGD:S000004639p", 
         "name_alt": "Mih1_cyt", 
         "name": "34", 
@@ -831,7 +831,7 @@ var data =[
         "links_from": [
             "137"
         ], 
-        "x": "102.1", 
+        "x": "175.6", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -847,7 +847,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "32.472", 
+        "y": "136.06", 
         "annotation": "SGD:S000003693p", 
         "name_alt": "Far1_p_cyt", 
         "name": "35", 
@@ -857,7 +857,7 @@ var data =[
             "94", 
             "117"
         ], 
-        "x": "99.944", 
+        "x": "173.53", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -870,7 +870,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "56.472", 
+        "y": "127.48", 
         "annotation": "SGD:S000006323p", 
         "name_alt": "Clb2_p_cyt", 
         "name": "36", 
@@ -878,7 +878,7 @@ var data =[
         "links_from": [
             "121"
         ], 
-        "x": "103.6", 
+        "x": "164.95", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -892,13 +892,13 @@ var data =[
             "GEX_TRL", 
             "MET_DNA"
         ], 
-        "y": "27.472", 
+        "y": "90.081", 
         "annotation": "SBO:0000468", 
         "name_alt": "nuc_vol", 
         "name": "37", 
         "state": "0", 
         "links_from": [], 
-        "x": "114.4", 
+        "x": "90.21", 
         "compartment": "nucleus", 
         "is_ode": true
     }, 
@@ -919,7 +919,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "54.472", 
+        "y": "170.31", 
         "annotation": "SGD:S000006323p", 
         "name_alt": "Clb2_cyt", 
         "name": "38", 
@@ -929,7 +929,7 @@ var data =[
             "95", 
             "125"
         ], 
-        "x": "104", 
+        "x": "136.86", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -946,7 +946,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "50.472", 
+        "y": "126.62", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "Sic1_cyt", 
         "name": "39", 
@@ -958,7 +958,7 @@ var data =[
             "95", 
             "134"
         ], 
-        "x": "107.4", 
+        "x": "139.85", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -971,13 +971,13 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "32.472", 
+        "y": "145.88", 
         "annotation": "SGD:S000000112p", 
         "name_alt": "Fus3_cyt", 
         "name": "40", 
         "state": "0", 
         "links_from": [], 
-        "x": "103.4", 
+        "x": "177.03", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -990,7 +990,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "52.472", 
+        "y": "125.23", 
         "annotation": "SGD:S000006323p_SGD:S000004069p", 
         "name_alt": "Clb2_Sic1_cyt", 
         "name": "41", 
@@ -998,7 +998,7 @@ var data =[
         "links_from": [
             "57"
         ], 
-        "x": "106.56", 
+        "x": "143.06", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1011,7 +1011,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "28.472", 
+        "y": "162.69", 
         "annotation": "SGD:S000000913p_SGD:S000004172p_SGD:S000005609p", 
         "name_alt": "SBF_Whi5_nuc", 
         "name": "42", 
@@ -1019,7 +1019,7 @@ var data =[
         "links_from": [
             "60"
         ], 
-        "x": "95.792", 
+        "x": "129.75", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1032,7 +1032,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "30.472", 
+        "y": "174.05", 
         "annotation": "SGD:S000002971p", 
         "name_alt": "APC_p_cyt", 
         "name": "43", 
@@ -1041,7 +1041,7 @@ var data =[
             "123", 
             "124"
         ], 
-        "x": "94.486", 
+        "x": "158.55", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1056,7 +1056,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "44.472", 
+        "y": "159.58", 
         "annotation": "SGD:S000004646p", 
         "name_alt": "Mcm1_nuc", 
         "name": "44", 
@@ -1065,7 +1065,7 @@ var data =[
             "103", 
             "116"
         ], 
-        "x": "106.18", 
+        "x": "175.14", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1080,7 +1080,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "46.472", 
+        "y": "165.54", 
         "annotation": "SGD:S000002314p", 
         "name_alt": "Clb3_cyt", 
         "name": "45", 
@@ -1089,7 +1089,7 @@ var data =[
             "71", 
             "122"
         ], 
-        "x": "106.03", 
+        "x": "171.52", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1110,7 +1110,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "36.472", 
+        "y": "123.99", 
         "annotation": "SGD:S000006177p", 
         "name_alt": "Cln2_cyt", 
         "name": "46", 
@@ -1120,7 +1120,7 @@ var data =[
             "94", 
             "111"
         ], 
-        "x": "103.51", 
+        "x": "155.13", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1133,7 +1133,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "30.472", 
+        "y": "149.37", 
         "annotation": "SGD:S000002553p", 
         "name_alt": "Swi5_p_cyt", 
         "name": "47", 
@@ -1142,7 +1142,7 @@ var data =[
             "118", 
             "119"
         ], 
-        "x": "97.014", 
+        "x": "177.26", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1156,7 +1156,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "38.472", 
+        "y": "168.1", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "SBF_nuc", 
         "name": "48", 
@@ -1165,7 +1165,7 @@ var data =[
             "59", 
             "70"
         ], 
-        "x": "98.181", 
+        "x": "134.15", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1179,7 +1179,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "30.472", 
+        "y": "151.12", 
         "annotation": "SGD:S000000038p_SGD:S000003693p", 
         "name_alt": "Cln3_Far1_p_cyt", 
         "name": "49", 
@@ -1187,7 +1187,7 @@ var data =[
         "links_from": [
             "107"
         ], 
-        "x": "99.208", 
+        "x": "126.08", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1200,7 +1200,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "34.472", 
+        "y": "123.75", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
         "name_alt": "MBF_nuc", 
         "name": "50", 
@@ -1208,7 +1208,7 @@ var data =[
         "links_from": [
             "52"
         ], 
-        "x": "106.4", 
+        "x": "151.64", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1221,7 +1221,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "28.472", 
+        "y": "140.79", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "Sic1_Hp_cyt", 
         "name": "51", 
@@ -1230,7 +1230,7 @@ var data =[
             "79", 
             "100"
         ], 
-        "x": "107.46", 
+        "x": "127.5", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1251,8 +1251,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "35.472", 
-        "x": "105.53", 
+        "y": "123.81", 
+        "x": "153.39", 
         "is_ode": false
     }, 
     {
@@ -1273,8 +1273,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "55.472", 
-        "x": "102.6", 
+        "y": "126.62", 
+        "x": "163.43", 
         "is_ode": false
     }, 
     {
@@ -1292,8 +1292,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "100.12", 
+        "y": "135.34", 
+        "x": "174.71", 
         "is_ode": false
     }, 
     {
@@ -1312,8 +1312,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "105.62", 
+        "y": "137.58", 
+        "x": "174.39", 
         "is_ode": false
     }, 
     {
@@ -1331,8 +1331,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "105.68", 
+        "y": "160.13", 
+        "x": "176.4", 
         "is_ode": false
     }, 
     {
@@ -1353,8 +1353,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "106.56", 
+        "y": "124.7", 
+        "x": "144.73", 
         "is_ode": false
     }, 
     {
@@ -1372,8 +1372,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "33.472", 
-        "x": "101.42", 
+        "y": "123.93", 
+        "x": "160.68", 
         "is_ode": false
     }, 
     {
@@ -1396,8 +1396,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "97.111", 
+        "y": "159.58", 
+        "x": "128.14", 
         "is_ode": false
     }, 
     {
@@ -1418,8 +1418,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "95.792", 
+        "y": "165.54", 
+        "x": "131.76", 
         "is_ode": false
     }, 
     {
@@ -1437,8 +1437,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "104.62", 
+        "y": "140.33", 
+        "x": "177.08", 
         "is_ode": false
     }, 
     {
@@ -1459,8 +1459,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "37.472", 
-        "x": "97.014", 
+        "y": "169.25", 
+        "x": "135.47", 
         "is_ode": false
     }, 
     {
@@ -1481,8 +1481,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "108.07", 
+        "y": "136.06", 
+        "x": "129.75", 
         "is_ode": false
     }, 
     {
@@ -1503,8 +1503,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "37.472", 
-        "x": "100.93", 
+        "y": "174.46", 
+        "x": "146.43", 
         "is_ode": false
     }, 
     {
@@ -1522,8 +1522,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "49.472", 
-        "x": "106.24", 
+        "y": "125.4", 
+        "x": "139.22", 
         "is_ode": false
     }, 
     {
@@ -1544,8 +1544,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "35.472", 
-        "x": "101.42", 
+        "y": "125.87", 
+        "x": "161.85", 
         "is_ode": false
     }, 
     {
@@ -1565,8 +1565,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "106.57", 
+        "y": "156.29", 
+        "x": "176.31", 
         "is_ode": false
     }, 
     {
@@ -1587,8 +1587,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "102.62", 
+        "y": "149.37", 
+        "x": "126.02", 
         "is_ode": false
     }, 
     {
@@ -1606,8 +1606,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "25.472", 
-        "x": "110.53", 
+        "y": "122.62", 
+        "x": "147.96", 
         "is_ode": false
     }, 
     {
@@ -1628,8 +1628,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "98.458", 
+        "y": "172.87", 
+        "x": "141.43", 
         "is_ode": false
     }, 
     {
@@ -1650,8 +1650,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "105.68", 
+        "y": "170.31", 
+        "x": "166.42", 
         "is_ode": false
     }, 
     {
@@ -1672,8 +1672,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "108.25", 
+        "y": "130.65", 
+        "x": "169.13", 
         "is_ode": false
     }, 
     {
@@ -1691,8 +1691,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "98.069", 
+        "y": "149.37", 
+        "x": "178.64", 
         "is_ode": false
     }, 
     {
@@ -1714,8 +1714,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "23.472", 
-        "x": "99.639", 
+        "y": "157.95", 
+        "x": "127.5", 
         "is_ode": false
     }, 
     {
@@ -1736,8 +1736,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "33.472", 
-        "x": "109.43", 
+        "y": "133.2", 
+        "x": "131.76", 
         "is_ode": false
     }, 
     {
@@ -1757,8 +1757,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "103.4", 
+        "y": "144.16", 
+        "x": "176.73", 
         "is_ode": false
     }, 
     {
@@ -1779,8 +1779,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "93.792", 
+        "y": "172.87", 
+        "x": "161.85", 
         "is_ode": false
     }, 
     {
@@ -1800,8 +1800,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "101.12", 
+        "y": "139.16", 
+        "x": "175.14", 
         "is_ode": false
     }, 
     {
@@ -1822,8 +1822,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "108.01", 
+        "y": "139.16", 
+        "x": "128.14", 
         "is_ode": false
     }, 
     {
@@ -1842,8 +1842,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "104.29", 
+        "y": "174.94", 
+        "x": "153.39", 
         "is_ode": false
     }, 
     {
@@ -1861,8 +1861,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "25.472", 
-        "x": "97.111", 
+        "y": "161.79", 
+        "x": "127.67", 
         "is_ode": false
     }, 
     {
@@ -1883,8 +1883,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "111.9", 
+        "y": "133.2", 
+        "x": "171.52", 
         "is_ode": false
     }, 
     {
@@ -1902,8 +1902,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "51.472", 
-        "x": "106.76", 
+        "y": "123.93", 
+        "x": "142.6", 
         "is_ode": false
     }, 
     {
@@ -1923,8 +1923,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "107.18", 
+        "y": "127.48", 
+        "x": "138.33", 
         "is_ode": false
     }, 
     {
@@ -1944,8 +1944,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "33.472", 
-        "x": "102.42", 
+        "y": "124.28", 
+        "x": "156.85", 
         "is_ode": false
     }, 
     {
@@ -1964,8 +1964,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "100.46", 
+        "y": "171.27", 
+        "x": "164.95", 
         "is_ode": false
     }, 
     {
@@ -1986,8 +1986,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "110.9", 
+        "y": "130.65", 
+        "x": "134.15", 
         "is_ode": false
     }, 
     {
@@ -2006,8 +2006,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "102.12", 
+        "y": "134.6", 
+        "x": "172.57", 
         "is_ode": false
     }, 
     {
@@ -2025,8 +2025,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "57.472", 
-        "x": "105.31", 
+        "y": "127.89", 
+        "x": "167.99", 
         "is_ode": false
     }, 
     {
@@ -2045,8 +2045,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "105.79", 
+        "y": "174.76", 
+        "x": "155.13", 
         "is_ode": false
     }, 
     {
@@ -2064,8 +2064,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "59.472", 
-        "x": "104.49", 
+        "y": "128.99", 
+        "x": "169.35", 
         "is_ode": false
     }, 
     {
@@ -2085,8 +2085,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "100.01", 
+        "y": "174.76", 
+        "x": "148.15", 
         "is_ode": false
     }, 
     {
@@ -2104,8 +2104,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "110.88", 
+        "y": "128.43", 
+        "x": "134.6", 
         "is_ode": false
     }, 
     {
@@ -2126,8 +2126,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "33.472", 
-        "x": "100.42", 
+        "y": "124.7", 
+        "x": "158.55", 
         "is_ode": false
     }, 
     {
@@ -2148,8 +2148,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "51.472", 
-        "x": "105.76", 
+        "y": "125.87", 
+        "x": "141.43", 
         "is_ode": false
     }, 
     {
@@ -2167,8 +2167,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "106.68", 
+        "y": "170.32", 
+        "x": "168.68", 
         "is_ode": false
     }, 
     {
@@ -2189,8 +2189,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "97.069", 
+        "y": "147.62", 
+        "x": "177.2", 
         "is_ode": false
     }, 
     {
@@ -2208,8 +2208,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "109.07", 
+        "y": "133.8", 
+        "x": "129.58", 
         "is_ode": false
     }, 
     {
@@ -2227,8 +2227,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "103.01", 
+        "y": "173.34", 
+        "x": "164.06", 
         "is_ode": false
     }, 
     {
@@ -2249,8 +2249,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "109.24", 
+        "y": "142.46", 
+        "x": "126.97", 
         "is_ode": false
     }, 
     {
@@ -2272,8 +2272,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "111.9", 
+        "y": "124.28", 
+        "x": "146.43", 
         "is_ode": false
     }, 
     {
@@ -2294,8 +2294,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "37.472", 
-        "x": "99.931", 
+        "y": "173.52", 
+        "x": "143.06", 
         "is_ode": false
     }, 
     {
@@ -2315,8 +2315,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "52.472", 
-        "x": "105.12", 
+        "y": "162.69", 
+        "x": "173.53", 
         "is_ode": false
     }, 
     {
@@ -2334,8 +2334,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "45.472", 
-        "x": "105.96", 
+        "y": "166.41", 
+        "x": "172.58", 
         "is_ode": false
     }, 
     {
@@ -2353,8 +2353,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "94.792", 
+        "y": "175.37", 
+        "x": "158.92", 
         "is_ode": false
     }, 
     {
@@ -2372,8 +2372,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "55.472", 
-        "x": "103.6", 
+        "y": "107.58", 
+        "x": "177.05", 
         "is_ode": false
     }, 
     {
@@ -2394,8 +2394,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "98.569", 
+        "y": "152.86", 
+        "x": "126.26", 
         "is_ode": false
     }, 
     {
@@ -2417,8 +2417,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "108.88", 
+        "y": "123.81", 
+        "x": "149.89", 
         "is_ode": false
     }, 
     {
@@ -2438,8 +2438,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "106.68", 
+        "y": "157.95", 
+        "x": "175.79", 
         "is_ode": false
     }, 
     {
@@ -2459,8 +2459,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "110.9", 
+        "y": "131.88", 
+        "x": "132.91", 
         "is_ode": false
     }, 
     {
@@ -2481,8 +2481,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "37.472", 
-        "x": "103.51", 
+        "y": "147.62", 
+        "x": "126.08", 
         "is_ode": false
     }, 
     {
@@ -2500,8 +2500,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "101.62", 
+        "y": "151.21", 
+        "x": "124.7", 
         "is_ode": false
     }, 
     {
@@ -2519,8 +2519,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "108.12", 
+        "y": "154.87", 
+        "x": "178.07", 
         "is_ode": false
     }, 
     {
@@ -2538,8 +2538,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "35.472", 
-        "x": "104.53", 
+        "y": "122.62", 
+        "x": "155.32", 
         "is_ode": false
     }, 
     {
@@ -2560,8 +2560,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "99.347", 
+        "y": "154.59", 
+        "x": "126.55", 
         "is_ode": false
     }, 
     {
@@ -2581,8 +2581,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "45.472", 
-        "x": "106.96", 
+        "y": "161.16", 
+        "x": "174.39", 
         "is_ode": false
     }, 
     {
@@ -2603,8 +2603,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "103.62", 
+        "y": "142.46", 
+        "x": "176.31", 
         "is_ode": false
     }, 
     {
@@ -2625,8 +2625,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "97.014", 
+        "y": "152.86", 
+        "x": "177.03", 
         "is_ode": false
     }, 
     {
@@ -2647,8 +2647,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "105.57", 
+        "y": "151.12", 
+        "x": "177.2", 
         "is_ode": false
     }, 
     {
@@ -2666,8 +2666,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "112.04", 
+        "y": "130.94", 
+        "x": "171.37", 
         "is_ode": false
     }, 
     {
@@ -2688,8 +2688,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "57.472", 
-        "x": "103.75", 
+        "y": "128.44", 
+        "x": "166.42", 
         "is_ode": false
     }, 
     {
@@ -2709,8 +2709,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "106.79", 
+        "y": "166.86", 
+        "x": "170.37", 
         "is_ode": false
     }, 
     {
@@ -2731,8 +2731,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "99.181", 
+        "y": "174.46", 
+        "x": "156.85", 
         "is_ode": false
     }, 
     {
@@ -2753,8 +2753,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "94.625", 
+        "y": "173.52", 
+        "x": "160.22", 
         "is_ode": false
     }, 
     {
@@ -2775,8 +2775,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "108.24", 
+        "y": "171.27", 
+        "x": "138.33", 
         "is_ode": false
     }, 
     {
@@ -2794,8 +2794,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "33.472", 
-        "x": "106.4", 
+        "y": "122.37", 
+        "x": "151.64", 
         "is_ode": false
     }, 
     {
@@ -2813,8 +2813,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "23.472", 
-        "x": "97.111", 
+        "y": "172.25", 
+        "x": "120.75", 
         "is_ode": false
     }, 
     {
@@ -2835,8 +2835,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "111.88", 
+        "y": "144.16", 
+        "x": "126.55", 
         "is_ode": false
     }, 
     {
@@ -2854,8 +2854,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "100.9", 
+        "y": "171.43", 
+        "x": "136.07", 
         "is_ode": false
     }, 
     {
@@ -2876,8 +2876,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "25.472", 
-        "x": "96.111", 
+        "y": "166.86", 
+        "x": "132.91", 
         "is_ode": false
     }, 
     {
@@ -2895,8 +2895,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "25.472", 
-        "x": "98.111", 
+        "y": "170.82", 
+        "x": "119.74", 
         "is_ode": false
     }, 
     {
@@ -2917,8 +2917,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "49.472", 
-        "x": "107.24", 
+        "y": "168.1", 
+        "x": "169.13", 
         "is_ode": false
     }, 
     {
@@ -2936,8 +2936,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "55.472", 
-        "x": "101.6", 
+        "y": "102.33", 
+        "x": "174.05", 
         "is_ode": false
     }, 
     {
@@ -2958,8 +2958,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "109.88", 
+        "y": "128.44", 
+        "x": "136.86", 
         "is_ode": false
     }, 
     {
@@ -2980,8 +2980,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "102.01", 
+        "y": "175", 
+        "x": "151.64", 
         "is_ode": false
     }, 
     {
@@ -3001,8 +3001,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "103.57", 
+        "y": "164.15", 
+        "x": "172.57", 
         "is_ode": false
     }, 
     {
@@ -3020,8 +3020,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "57.472", 
-        "x": "102.1", 
+        "y": "103.94", 
+        "x": "177.15", 
         "is_ode": false
     }, 
     {
@@ -3039,8 +3039,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "99.208", 
+        "y": "157.5", 
+        "x": "125.89", 
         "is_ode": false
     }, 
     {
@@ -3058,8 +3058,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "95.792", 
+        "y": "169.34", 
+        "x": "118.8", 
         "is_ode": false
     }, 
     {
@@ -3077,8 +3077,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "100.35", 
+        "y": "155.81", 
+        "x": "125.42", 
         "is_ode": false
     }, 
     {
@@ -3089,7 +3089,7 @@ var data =[
         "module": [
             "GEX_APC"
         ], 
-        "y": "54.472", 
+        "y": "67.422", 
         "annotation": "YCM:rRNA", 
         "name_alt": "rRNA", 
         "name": "141", 
@@ -3097,7 +3097,7 @@ var data =[
         "links_from": [
             "145"
         ], 
-        "x": "64.847", 
+        "x": "112.31", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3108,13 +3108,13 @@ var data =[
             "GEX_APC", 
             "GEX_TRL"
         ], 
-        "y": "52.472", 
+        "y": "81.914", 
         "annotation": "SBO:0000468", 
         "name_alt": "cyt_vol", 
         "name": "142", 
         "state": "0", 
         "links_from": [], 
-        "x": "10.347", 
+        "x": "90.21", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -3128,7 +3128,7 @@ var data =[
             "GEX_APC", 
             "GEX_TRL"
         ], 
-        "y": "54.472", 
+        "y": "70.587", 
         "annotation": "YCM:B_Protein_R", 
         "name_alt": "B_Protein_R", 
         "name": "143", 
@@ -3137,7 +3137,7 @@ var data =[
             "145", 
             "272"
         ], 
-        "x": "63.847", 
+        "x": "113.81", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3154,7 +3154,7 @@ var data =[
             "GEX_APC", 
             "GEX_TRL"
         ], 
-        "y": "56.472", 
+        "y": "57.393", 
         "annotation": "YCM:ribosome", 
         "name_alt": "Ribosome", 
         "name": "144", 
@@ -3165,7 +3165,7 @@ var data =[
             "276", 
             "278"
         ], 
-        "x": "59.931", 
+        "x": "109.28", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3187,8 +3187,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "55.472", 
-        "x": "63.847", 
+        "y": "69.018", 
+        "x": "113.03", 
         "is_ode": false
     }, 
     {
@@ -3209,8 +3209,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "64.903", 
+        "y": "65.801", 
+        "x": "111.66", 
         "is_ode": false
     }, 
     {
@@ -3222,7 +3222,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "42.472", 
+        "y": "37.425", 
         "annotation": "SGD:S000005609p", 
         "name_alt": "mWhi5", 
         "name": "147", 
@@ -3230,7 +3230,7 @@ var data =[
         "links_from": [
             "190"
         ], 
-        "x": "67.014", 
+        "x": "202.38", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3243,7 +3243,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "34.472", 
+        "y": "11.928", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
         "name_alt": "mMBF", 
         "name": "148", 
@@ -3251,7 +3251,7 @@ var data =[
         "links_from": [
             "231"
         ], 
-        "x": "63.403", 
+        "x": "125.83", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3264,7 +3264,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "46.472", 
+        "y": "34.057", 
         "annotation": "SGD:S000000038p", 
         "name_alt": "mCln3", 
         "name": "149", 
@@ -3272,7 +3272,7 @@ var data =[
         "links_from": [
             "189"
         ], 
-        "x": "70.542", 
+        "x": "201.43", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3285,7 +3285,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "38.472", 
+        "y": "18.078", 
         "annotation": "SGD:S000006177p", 
         "name_alt": "mCln2", 
         "name": "150", 
@@ -3293,7 +3293,7 @@ var data =[
         "links_from": [
             "212"
         ], 
-        "x": "76.514", 
+        "x": "119.62", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3305,7 +3305,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "50.472", 
+        "y": "92.307", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "Cdc14", 
         "name": "151", 
@@ -3313,7 +3313,7 @@ var data =[
         "links_from": [
             "191"
         ], 
-        "x": "62.792", 
+        "x": "175.23", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3326,7 +3326,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "18.472", 
+        "y": "11.378", 
         "annotation": "SGD:S000002553p", 
         "name_alt": "mSwi5", 
         "name": "152", 
@@ -3334,7 +3334,7 @@ var data =[
         "links_from": [
             "250"
         ], 
-        "x": "72.597", 
+        "x": "185.7", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3361,7 +3361,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "44.472", 
+        "y": "2.5221", 
         "annotation": "YCM:NA", 
         "name_alt": "NA", 
         "name": "153", 
@@ -3384,7 +3384,7 @@ var data =[
             "245", 
             "249"
         ], 
-        "x": "73.625", 
+        "x": "144.41", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3397,7 +3397,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "26.472", 
+        "y": "3.5051", 
         "annotation": "SGD:S000002314p", 
         "name_alt": "mClb3", 
         "name": "154", 
@@ -3405,7 +3405,7 @@ var data =[
         "links_from": [
             "221"
         ], 
-        "x": "80.014", 
+        "x": "141.05", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3418,7 +3418,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "18.472", 
+        "y": "9.3053", 
         "annotation": "SGD:S000006323p", 
         "name_alt": "mClb2", 
         "name": "155", 
@@ -3426,7 +3426,7 @@ var data =[
         "links_from": [
             "247"
         ], 
-        "x": "70.403", 
+        "x": "182.88", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3438,7 +3438,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "40.472", 
+        "y": "90.785", 
         "annotation": "SGD:S000004639p", 
         "name_alt": "Mih1", 
         "name": "156", 
@@ -3446,7 +3446,7 @@ var data =[
         "links_from": [
             "254"
         ], 
-        "x": "75.236", 
+        "x": "178.39", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3459,7 +3459,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "30.472", 
+        "y": "7.015", 
         "annotation": "SGD:S000006324p", 
         "name_alt": "mClb5", 
         "name": "157", 
@@ -3467,7 +3467,7 @@ var data =[
         "links_from": [
             "216"
         ], 
-        "x": "70.347", 
+        "x": "133.05", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3480,7 +3480,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "42.472", 
+        "y": "46.068", 
         "annotation": "SGD:S000003723p", 
         "name_alt": "mSwe1", 
         "name": "158", 
@@ -3488,7 +3488,7 @@ var data =[
         "links_from": [
             "208"
         ], 
-        "x": "84.181", 
+        "x": "203.66", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3501,7 +3501,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "40.472", 
+        "y": "84.894", 
         "annotation": "SGD:S000003693p", 
         "name_alt": "Far1", 
         "name": "159", 
@@ -3509,7 +3509,7 @@ var data =[
         "links_from": [
             "234"
         ], 
-        "x": "62.458", 
+        "x": "187.05", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3527,7 +3527,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "50.472", 
+        "y": "58.251", 
         "annotation": "CHEBI:456216", 
         "name_alt": "ADP", 
         "name": "160", 
@@ -3579,7 +3579,7 @@ var data =[
             "317", 
             "320"
         ], 
-        "x": "74.792", 
+        "x": "202.76", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3592,7 +3592,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "42.472", 
+        "y": "49.567", 
         "annotation": "SGD:S000003693p", 
         "name_alt": "mFar1", 
         "name": "161", 
@@ -3600,7 +3600,7 @@ var data =[
         "links_from": [
             "238"
         ], 
-        "x": "61.569", 
+        "x": "203.72", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3612,7 +3612,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "12.472", 
+        "y": "87.58", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "Sic1", 
         "name": "162", 
@@ -3620,7 +3620,7 @@ var data =[
         "links_from": [
             "198"
         ], 
-        "x": "55.639", 
+        "x": "128.61", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3634,7 +3634,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "24.472", 
+        "y": "3.2363", 
         "annotation": "SGD:S000002314p", 
         "name_alt": "Clb3", 
         "name": "163", 
@@ -3642,7 +3642,7 @@ var data =[
         "links_from": [
             "246"
         ], 
-        "x": "79.458", 
+        "x": "170.32", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3656,7 +3656,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "16.472", 
+        "y": "89.938", 
         "annotation": "SGD:S000006323p", 
         "name_alt": "Clb2", 
         "name": "164", 
@@ -3664,7 +3664,7 @@ var data =[
         "links_from": [
             "227"
         ], 
-        "x": "72.972", 
+        "x": "179.92", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3677,7 +3677,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "42.472", 
+        "y": "54.8", 
         "annotation": "SGD:S000004639p", 
         "name_alt": "mMih1", 
         "name": "165", 
@@ -3685,7 +3685,7 @@ var data =[
         "links_from": [
             "255"
         ], 
-        "x": "80.958", 
+        "x": "203.34", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3701,7 +3701,7 @@ var data =[
             "GEX_GRN", 
             "MET_DNA"
         ], 
-        "y": "28.472", 
+        "y": "5.435", 
         "annotation": "SGD:S000006324p", 
         "name_alt": "Clb5", 
         "name": "166", 
@@ -3709,7 +3709,7 @@ var data =[
         "links_from": [
             "257"
         ], 
-        "x": "75.208", 
+        "x": "136.17", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3721,13 +3721,13 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "44.472", 
+        "y": "51.391", 
         "annotation": "SGD:S000000112p", 
         "name_alt": "Fus3", 
         "name": "167", 
         "state": "0", 
         "links_from": [], 
-        "x": "61.681", 
+        "x": "205.03", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -3739,7 +3739,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "44.472", 
+        "y": "93.594", 
         "annotation": "SGD:S000000038p", 
         "name_alt": "Cln3", 
         "name": "168", 
@@ -3747,7 +3747,7 @@ var data =[
         "links_from": [
             "195"
         ], 
-        "x": "64.069", 
+        "x": "171.98", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3761,7 +3761,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "36.472", 
+        "y": "15.482", 
         "annotation": "SGD:S000006177p", 
         "name_alt": "Cln2", 
         "name": "169", 
@@ -3769,7 +3769,7 @@ var data =[
         "links_from": [
             "248"
         ], 
-        "x": "64.403", 
+        "x": "121.96", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3784,7 +3784,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "16.472", 
+        "y": "5.8084", 
         "annotation": "SGD:S000002971p", 
         "name_alt": "APC", 
         "name": "170", 
@@ -3792,7 +3792,7 @@ var data =[
         "links_from": [
             "199"
         ], 
-        "x": "76.569", 
+        "x": "176.82", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3805,7 +3805,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "22.472", 
+        "y": "13.651", 
         "annotation": "SGD:S000004646p", 
         "name_alt": "mMcm1", 
         "name": "171", 
@@ -3813,7 +3813,7 @@ var data =[
         "links_from": [
             "209"
         ], 
-        "x": "77.069", 
+        "x": "188.36", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3872,7 +3872,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "48.472", 
+        "y": "71.36", 
         "annotation": "CHEBI:30616", 
         "name_alt": "ATP", 
         "name": "172", 
@@ -3882,7 +3882,7 @@ var data =[
             "315", 
             "318"
         ], 
-        "x": "78.069", 
+        "x": "197.99", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3894,13 +3894,13 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "54.472", 
+        "y": "82.21", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "Cdc14_p", 
         "name": "173", 
         "state": "P", 
         "links_from": [], 
-        "x": "55.347", 
+        "x": "191.85", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3915,7 +3915,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "20.472", 
+        "y": "7.4455", 
         "annotation": "SGD:S000004646p", 
         "name_alt": "Mcm1", 
         "name": "174", 
@@ -3923,7 +3923,7 @@ var data =[
         "links_from": [
             "240"
         ], 
-        "x": "70.347", 
+        "x": "179.92", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3940,7 +3940,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "12.472", 
+        "y": "40.853", 
         "annotation": "CHEBI:43474", 
         "name_alt": "Pi", 
         "name": "175", 
@@ -3989,7 +3989,7 @@ var data =[
             "313", 
             "317"
         ], 
-        "x": "77.347", 
+        "x": "203.08", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4001,13 +4001,13 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "54.472", 
+        "y": "83.5", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "SBF_p", 
         "name": "176", 
         "state": "P", 
         "links_from": [], 
-        "x": "54.111", 
+        "x": "190.59", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4034,13 +4034,13 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "52.472", 
+        "y": "24.5", 
         "annotation": "YCM:ribosome", 
         "name_alt": "ribosome", 
         "name": "177", 
         "state": "0", 
         "links_from": [], 
-        "x": "91.625", 
+        "x": "197.13", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -4053,7 +4053,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "40.472", 
+        "y": "22.277", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "SBF", 
         "name": "178", 
@@ -4061,7 +4061,7 @@ var data =[
         "links_from": [
             "223"
         ], 
-        "x": "87.736", 
+        "x": "116.47", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4073,7 +4073,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "40.472", 
+        "y": "77.25", 
         "annotation": "SGD:S000005609p", 
         "name_alt": "Whi5", 
         "name": "179", 
@@ -4081,7 +4081,7 @@ var data =[
         "links_from": [
             "193"
         ], 
-        "x": "64.014", 
+        "x": "194.22", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4115,7 +4115,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "52.472", 
+        "y": "87.068", 
         "annotation": "YCM:AA", 
         "name_alt": "AA", 
         "name": "180", 
@@ -4148,7 +4148,7 @@ var data =[
             "275", 
             "304"
         ], 
-        "x": "59.514", 
+        "x": "184.31", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4161,7 +4161,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "18.472", 
+        "y": "1.9481", 
         "annotation": "SGD:S000002971p", 
         "name_alt": "mAPC", 
         "name": "181", 
@@ -4169,7 +4169,7 @@ var data =[
         "links_from": [
             "204"
         ], 
-        "x": "69.125", 
+        "x": "165.23", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4182,7 +4182,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "42.472", 
+        "y": "25.258", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "mSBF", 
         "name": "182", 
@@ -4190,7 +4190,7 @@ var data =[
         "links_from": [
             "214"
         ], 
-        "x": "89.347", 
+        "x": "114.64", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4203,7 +4203,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "42.472", 
+        "y": "42.584", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "mCdc14", 
         "name": "183", 
@@ -4211,7 +4211,7 @@ var data =[
         "links_from": [
             "192"
         ], 
-        "x": "72.736", 
+        "x": "203.34", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4223,7 +4223,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "40.472", 
+        "y": "85.456", 
         "annotation": "SGD:S000003723p", 
         "name_alt": "Swe1", 
         "name": "184", 
@@ -4231,7 +4231,7 @@ var data =[
         "links_from": [
             "213"
         ], 
-        "x": "82.569", 
+        "x": "125.83", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4244,7 +4244,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "14.472", 
+        "y": "30.769", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "mSic1", 
         "name": "185", 
@@ -4252,7 +4252,7 @@ var data =[
         "links_from": [
             "197"
         ], 
-        "x": "62.069", 
+        "x": "200.23", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4262,13 +4262,13 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "59.472", 
+        "y": "69.664", 
         "annotation": "SGD:S000004103p", 
         "name_alt": "HOG1", 
         "name": "186", 
         "state": "PP", 
         "links_from": [], 
-        "x": "110.18", 
+        "x": "102.46", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -4281,7 +4281,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "16.472", 
+        "y": "29.16", 
         "annotation": "SGD:S000002553p", 
         "name_alt": "Swi5", 
         "name": "187", 
@@ -4289,7 +4289,7 @@ var data =[
         "links_from": [
             "258"
         ], 
-        "x": "85.625", 
+        "x": "199.54", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4302,7 +4302,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "32.472", 
+        "y": "9.8039", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
         "name_alt": "MBF", 
         "name": "188", 
@@ -4310,7 +4310,7 @@ var data =[
         "links_from": [
             "224"
         ], 
-        "x": "65.958", 
+        "x": "128.61", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4334,8 +4334,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "71.653", 
+        "y": "35.732", 
+        "x": "201.93", 
         "is_ode": false
     }, 
     {
@@ -4358,8 +4358,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "67.847", 
+        "y": "39.132", 
+        "x": "202.76", 
         "is_ode": false
     }, 
     {
@@ -4384,8 +4384,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "51.472", 
-        "x": "68.792", 
+        "y": "63.326", 
+        "x": "201.43", 
         "is_ode": false
     }, 
     {
@@ -4408,8 +4408,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "80.236", 
+        "y": "44.323", 
+        "x": "203.53", 
         "is_ode": false
     }, 
     {
@@ -4434,8 +4434,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "61.403", 
+        "y": "64.981", 
+        "x": "200.86", 
         "is_ode": false
     }, 
     {
@@ -4456,8 +4456,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "15.472", 
-        "x": "78.125", 
+        "y": "4.4028", 
+        "x": "173.62", 
         "is_ode": false
     }, 
     {
@@ -4482,8 +4482,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "45.472", 
-        "x": "66.181", 
+        "y": "66.614", 
+        "x": "200.23", 
         "is_ode": false
     }, 
     {
@@ -4503,8 +4503,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "35.472", 
-        "x": "65.125", 
+        "y": "14.25", 
+        "x": "123.21", 
         "is_ode": false
     }, 
     {
@@ -4528,8 +4528,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "15.472", 
-        "x": "79.125", 
+        "y": "32.402", 
+        "x": "200.86", 
         "is_ode": false
     }, 
     {
@@ -4554,8 +4554,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "13.472", 
-        "x": "55.778", 
+        "y": "68.223", 
+        "x": "199.54", 
         "is_ode": false
     }, 
     {
@@ -4580,8 +4580,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "17.472", 
-        "x": "80.403", 
+        "y": "16.114", 
+        "x": "190.85", 
         "is_ode": false
     }, 
     {
@@ -4601,8 +4601,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "15.472", 
-        "x": "67.014", 
+        "y": "6.5986", 
+        "x": "178.39", 
         "is_ode": false
     }, 
     {
@@ -4622,8 +4622,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "65.958", 
+        "y": "8.82", 
+        "x": "130.05", 
         "is_ode": false
     }, 
     {
@@ -4643,8 +4643,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "49.472", 
-        "x": "61.958", 
+        "y": "92.981", 
+        "x": "173.62", 
         "is_ode": false
     }, 
     {
@@ -4664,8 +4664,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "80.125", 
+        "y": "1.5161", 
+        "x": "149.56", 
         "is_ode": false
     }, 
     {
@@ -4689,8 +4689,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "19.472", 
-        "x": "69.125", 
+        "y": "2.3151", 
+        "x": "166.94", 
         "is_ode": false
     }, 
     {
@@ -4710,8 +4710,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "25.472", 
-        "x": "79.458", 
+        "y": "2.9828", 
+        "x": "142.72", 
         "is_ode": false
     }, 
     {
@@ -4731,8 +4731,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "15.472", 
-        "x": "85.625", 
+        "y": "78.631", 
+        "x": "193.14", 
         "is_ode": false
     }, 
     {
@@ -4752,8 +4752,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "88.569", 
+        "y": "20.839", 
+        "x": "117.47", 
         "is_ode": false
     }, 
     {
@@ -4776,8 +4776,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "84.736", 
+        "y": "47.817", 
+        "x": "203.72", 
         "is_ode": false
     }, 
     {
@@ -4802,8 +4802,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "23.472", 
-        "x": "77.347", 
+        "y": "14.86", 
+        "x": "189.63", 
         "is_ode": false
     }, 
     {
@@ -4823,8 +4823,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "73.014", 
+        "y": "91.575", 
+        "x": "176.82", 
         "is_ode": false
     }, 
     {
@@ -4844,8 +4844,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "72.736", 
+        "y": "1.7883", 
+        "x": "147.83", 
         "is_ode": false
     }, 
     {
@@ -4869,8 +4869,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "83.681", 
+        "y": "19.439", 
+        "x": "118.52", 
         "is_ode": false
     }, 
     {
@@ -4895,8 +4895,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "84.236", 
+        "y": "61.651", 
+        "x": "201.93", 
         "is_ode": false
     }, 
     {
@@ -4919,8 +4919,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "88.847", 
+        "y": "2.7447", 
+        "x": "168.64", 
         "is_ode": false
     }, 
     {
@@ -4940,8 +4940,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "71.181", 
+        "y": "6.1963", 
+        "x": "134.6", 
         "is_ode": false
     }, 
     {
@@ -4965,8 +4965,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "31.472", 
-        "x": "67.514", 
+        "y": "7.89", 
+        "x": "131.54", 
         "is_ode": false
     }, 
     {
@@ -4986,8 +4986,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "33.472", 
-        "x": "65.958", 
+        "y": "10.84", 
+        "x": "127.2", 
         "is_ode": false
     }, 
     {
@@ -5007,8 +5007,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "64.292", 
+        "y": "79.971", 
+        "x": "192.02", 
         "is_ode": false
     }, 
     {
@@ -5028,8 +5028,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "63.514", 
+        "y": "94.147", 
+        "x": "170.32", 
         "is_ode": false
     }, 
     {
@@ -5050,8 +5050,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "55.347", 
+        "y": "81.269", 
+        "x": "190.85", 
         "is_ode": false
     }, 
     {
@@ -5075,8 +5075,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "79.875", 
+        "y": "4.0885", 
+        "x": "139.4", 
         "is_ode": false
     }, 
     {
@@ -5096,8 +5096,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "45.472", 
-        "x": "72.194", 
+        "y": "2.1238", 
+        "x": "146.12", 
         "is_ode": false
     }, 
     {
@@ -5122,8 +5122,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "89.569", 
+        "y": "17.413", 
+        "x": "192.02", 
         "is_ode": false
     }, 
     {
@@ -5148,8 +5148,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "33.472", 
-        "x": "61.347", 
+        "y": "18.753", 
+        "x": "193.14", 
         "is_ode": false
     }, 
     {
@@ -5169,8 +5169,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "17.472", 
-        "x": "67.153", 
+        "y": "1.6443", 
+        "x": "163.51", 
         "is_ode": false
     }, 
     {
@@ -5190,8 +5190,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "23.472", 
-        "x": "78.903", 
+        "y": "3.7892", 
+        "x": "171.98", 
         "is_ode": false
     }, 
     {
@@ -5216,8 +5216,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "17.472", 
-        "x": "69.319", 
+        "y": "59.959", 
+        "x": "202.38", 
         "is_ode": false
     }, 
     {
@@ -5237,8 +5237,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "73.931", 
+        "y": "4.7321", 
+        "x": "137.78", 
         "is_ode": false
     }, 
     {
@@ -5258,8 +5258,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "87.181", 
+        "y": "23.751", 
+        "x": "115.53", 
         "is_ode": false
     }, 
     {
@@ -5279,8 +5279,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "68.403", 
+        "y": "1.4039", 
+        "x": "161.78", 
         "is_ode": false
     }, 
     {
@@ -5304,8 +5304,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "35.472", 
-        "x": "63.125", 
+        "y": "13.065", 
+        "x": "124.5", 
         "is_ode": false
     }, 
     {
@@ -5325,8 +5325,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "81.569", 
+        "y": "84.319", 
+        "x": "124.5", 
         "is_ode": false
     }, 
     {
@@ -5347,8 +5347,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "15.472", 
-        "x": "76.167", 
+        "y": "88.078", 
+        "x": "182.88", 
         "is_ode": false
     }, 
     {
@@ -5373,8 +5373,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "59.292", 
+        "y": "74.374", 
+        "x": "196.21", 
         "is_ode": false
     }, 
     {
@@ -5394,8 +5394,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "13.472", 
-        "x": "62.389", 
+        "y": "1.2274", 
+        "x": "160.04", 
         "is_ode": false
     }, 
     {
@@ -5415,8 +5415,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "21.472", 
-        "x": "77.194", 
+        "y": "1.1149", 
+        "x": "158.29", 
         "is_ode": false
     }, 
     {
@@ -5436,8 +5436,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "15.472", 
-        "x": "62.069", 
+        "y": "89.035", 
+        "x": "181.42", 
         "is_ode": false
     }, 
     {
@@ -5461,8 +5461,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "61.403", 
+        "y": "51.316", 
+        "x": "203.66", 
         "is_ode": false
     }, 
     {
@@ -5482,8 +5482,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "39.472", 
-        "x": "63.014", 
+        "y": "86.006", 
+        "x": "185.7", 
         "is_ode": false
     }, 
     {
@@ -5508,8 +5508,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "21.472", 
-        "x": "76.153", 
+        "y": "26.024", 
+        "x": "197.99", 
         "is_ode": false
     }, 
     {
@@ -5529,8 +5529,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "82.403", 
+        "y": "1.0667", 
+        "x": "156.54", 
         "is_ode": false
     }, 
     {
@@ -5550,8 +5550,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "17.472", 
-        "x": "70.319", 
+        "y": "1.0828", 
+        "x": "154.79", 
         "is_ode": false
     }, 
     {
@@ -5571,8 +5571,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "37.472", 
-        "x": "75.403", 
+        "y": "16.758", 
+        "x": "120.77", 
         "is_ode": false
     }, 
     {
@@ -5593,8 +5593,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "15.472", 
-        "x": "75.167", 
+        "y": "5.0762", 
+        "x": "175.23", 
         "is_ode": false
     }, 
     {
@@ -5614,8 +5614,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "63.792", 
+        "y": "1.1632", 
+        "x": "153.04", 
         "is_ode": false
     }, 
     {
@@ -5640,8 +5640,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "25.472", 
-        "x": "82.514", 
+        "y": "20.134", 
+        "x": "194.22", 
         "is_ode": false
     }, 
     {
@@ -5665,8 +5665,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "19.472", 
-        "x": "73.028", 
+        "y": "10.316", 
+        "x": "184.31", 
         "is_ode": false
     }, 
     {
@@ -5691,8 +5691,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "37.472", 
-        "x": "76.681", 
+        "y": "21.554", 
+        "x": "195.24", 
         "is_ode": false
     }, 
     {
@@ -5712,8 +5712,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "17.472", 
-        "x": "71.319", 
+        "y": "1.3077", 
+        "x": "151.3", 
         "is_ode": false
     }, 
     {
@@ -5737,8 +5737,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "19.472", 
-        "x": "71.889", 
+        "y": "12.49", 
+        "x": "187.05", 
         "is_ode": false
     }, 
     {
@@ -5759,8 +5759,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "54.111", 
+        "y": "82.524", 
+        "x": "189.63", 
         "is_ode": false
     }, 
     {
@@ -5781,8 +5781,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "35.472", 
-        "x": "64.125", 
+        "y": "83.732", 
+        "x": "188.36", 
         "is_ode": false
     }, 
     {
@@ -5802,8 +5802,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "11.472", 
-        "x": "55.583", 
+        "y": "86.543", 
+        "x": "127.2", 
         "is_ode": false
     }, 
     {
@@ -5828,8 +5828,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "41.472", 
-        "x": "81.125", 
+        "y": "72.883", 
+        "x": "197.13", 
         "is_ode": false
     }, 
     {
@@ -5852,8 +5852,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "43.472", 
-        "x": "82.625", 
+        "y": "53.061", 
+        "x": "203.53", 
         "is_ode": false
     }, 
     {
@@ -5873,8 +5873,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "19.472", 
-        "x": "67.847", 
+        "y": "8.3482", 
+        "x": "181.42", 
         "is_ode": false
     }, 
     {
@@ -5899,8 +5899,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "29.472", 
-        "x": "70.181", 
+        "y": "23.01", 
+        "x": "196.21", 
         "is_ode": false
     }, 
     {
@@ -5925,8 +5925,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "17.472", 
-        "x": "86.542", 
+        "y": "27.578", 
+        "x": "198.79", 
         "is_ode": false
     }, 
     {
@@ -5935,7 +5935,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "53.472", 
+        "y": "48.692", 
         "annotation": "YCM:ribosomes_check", 
         "name_alt": "total_ribosomes", 
         "name": "259", 
@@ -5948,7 +5948,7 @@ var data =[
             "265", 
             "4"
         ], 
-        "x": "60.292", 
+        "x": "108.48", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -5958,7 +5958,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "46.472", 
+        "y": "75.107", 
         "annotation": "CHEBI:43474", 
         "name_alt": "P_i", 
         "name": "260", 
@@ -5968,7 +5968,7 @@ var data =[
             "279", 
             "280"
         ], 
-        "x": "62.569", 
+        "x": "116.47", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -5980,7 +5980,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "52.472", 
+        "y": "53.931", 
         "annotation": "YCM:mRNA_metabolic", 
         "name_alt": "mRNA_met", 
         "name": "261", 
@@ -5988,7 +5988,7 @@ var data =[
         "links_from": [
             "274"
         ], 
-        "x": "60.792", 
+        "x": "108.77", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6000,7 +6000,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "52.472", 
+        "y": "43.452", 
         "annotation": "YCM:mRNA_other", 
         "name_alt": "mRNA_other", 
         "name": "262", 
@@ -6008,7 +6008,7 @@ var data =[
         "links_from": [
             "276"
         ], 
-        "x": "62.528", 
+        "x": "108.77", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6020,7 +6020,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "52.472", 
+        "y": "60.807", 
         "annotation": "YCM:mRNA_R", 
         "name_alt": "mRNA_R", 
         "name": "263", 
@@ -6028,7 +6028,7 @@ var data =[
         "links_from": [
             "278"
         ], 
-        "x": "56.694", 
+        "x": "110.04", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6040,7 +6040,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "46.472", 
+        "y": "77.945", 
         "annotation": "YCM:B_Protein_metabolic", 
         "name_alt": "B_Protein_met", 
         "name": "264", 
@@ -6048,7 +6048,7 @@ var data =[
         "links_from": [
             "280"
         ], 
-        "x": "60.458", 
+        "x": "118.52", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6062,7 +6062,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "54.472", 
+        "y": "46.942", 
         "annotation": "YCM:mRNA_other_Ribosome", 
         "name_alt": "mRNA_other_Ribosome", 
         "name": "265", 
@@ -6070,7 +6070,7 @@ var data =[
         "links_from": [
             "269"
         ], 
-        "x": "61.569", 
+        "x": "108.51", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6084,7 +6084,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "54.472", 
+        "y": "64.156", 
         "annotation": "YCM:mRNA_R_Ribosome", 
         "name_alt": "mRNA_R_Ribosome", 
         "name": "266", 
@@ -6092,7 +6092,7 @@ var data =[
         "links_from": [
             "277"
         ], 
-        "x": "57.736", 
+        "x": "111.06", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6104,7 +6104,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "46.472", 
+        "y": "81.902", 
         "annotation": "YCM:B_Protein_other", 
         "name_alt": "B_Protein_other", 
         "name": "267", 
@@ -6112,7 +6112,7 @@ var data =[
         "links_from": [
             "279"
         ], 
-        "x": "58.903", 
+        "x": "121.96", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6126,7 +6126,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "54.472", 
+        "y": "50.441", 
         "annotation": "YCM:mRNA_met_Ribosome", 
         "name_alt": "mRNA_met_Ribosome", 
         "name": "268", 
@@ -6134,7 +6134,7 @@ var data =[
         "links_from": [
             "271"
         ], 
-        "x": "59.014", 
+        "x": "108.51", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6156,8 +6156,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "55.472", 
-        "x": "62.847", 
+        "y": "41.717", 
+        "x": "108.99", 
         "is_ode": false
     }, 
     {
@@ -6177,8 +6177,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "45.472", 
-        "x": "60.042", 
+        "y": "79.306", 
+        "x": "119.62", 
         "is_ode": false
     }, 
     {
@@ -6199,8 +6199,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "55.472", 
-        "x": "59.292", 
+        "y": "52.189", 
+        "x": "108.6", 
         "is_ode": false
     }, 
     {
@@ -6224,8 +6224,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "64.375", 
+        "y": "73.633", 
+        "x": "115.53", 
         "is_ode": false
     }, 
     {
@@ -6245,8 +6245,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "62.569", 
+        "y": "72.126", 
+        "x": "114.64", 
         "is_ode": false
     }, 
     {
@@ -6267,8 +6267,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "58.375", 
+        "y": "55.667", 
+        "x": "108.99", 
         "is_ode": false
     }, 
     {
@@ -6288,8 +6288,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "45.472", 
-        "x": "58.347", 
+        "y": "83.134", 
+        "x": "123.21", 
         "is_ode": false
     }, 
     {
@@ -6310,8 +6310,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "61.569", 
+        "y": "45.195", 
+        "x": "108.6", 
         "is_ode": false
     }, 
     {
@@ -6332,8 +6332,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "55.472", 
-        "x": "57.736", 
+        "y": "59.107", 
+        "x": "109.63", 
         "is_ode": false
     }, 
     {
@@ -6354,8 +6354,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "53.472", 
-        "x": "56.458", 
+        "y": "62.491", 
+        "x": "110.52", 
         "is_ode": false
     }, 
     {
@@ -6379,8 +6379,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "60.986", 
+        "y": "80.626", 
+        "x": "120.77", 
         "is_ode": false
     }, 
     {
@@ -6404,8 +6404,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "61.986", 
+        "y": "76.545", 
+        "x": "117.47", 
         "is_ode": false
     }, 
     {
@@ -6419,7 +6419,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "10.472", 
+        "y": "96.156", 
         "annotation": "CHEBI:57945", 
         "name_alt": "NADH", 
         "name": "281", 
@@ -6428,7 +6428,7 @@ var data =[
             "315", 
             "318"
         ], 
-        "x": "89.958", 
+        "x": "160.04", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6441,7 +6441,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "12.472", 
+        "y": "39.991", 
         "annotation": "CHEBI:28808", 
         "name_alt": "mannan", 
         "name": "282", 
@@ -6449,7 +6449,7 @@ var data =[
         "links_from": [
             "317"
         ], 
-        "x": "91.125", 
+        "x": "109.28", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6462,7 +6462,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "8.4722", 
+        "y": "95.739", 
         "annotation": "CHEBI:57540", 
         "name_alt": "NAD", 
         "name": "283", 
@@ -6473,7 +6473,7 @@ var data =[
             "310", 
             "319"
         ], 
-        "x": "87.125", 
+        "x": "163.51", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6483,7 +6483,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "6.4722", 
+        "y": "96.785", 
         "annotation": "YCM:pyr_check", 
         "name_alt": "pyr_check", 
         "name": "284", 
@@ -6491,7 +6491,7 @@ var data =[
         "links_from": [
             "315"
         ], 
-        "x": "83.458", 
+        "x": "165.5", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6504,7 +6504,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "2.4722", 
+        "y": "91.949", 
         "annotation": "YCM:NA_RNA", 
         "name_alt": "NA_RNA", 
         "name": "285", 
@@ -6512,7 +6512,7 @@ var data =[
         "links_from": [
             "309"
         ], 
-        "x": "52.347", 
+        "x": "136.17", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6522,7 +6522,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "12.472", 
+        "y": "97.593", 
         "annotation": "YCM:TriP_check", 
         "name_alt": "TriP_check", 
         "name": "286", 
@@ -6530,7 +6530,7 @@ var data =[
         "links_from": [
             "320"
         ], 
-        "x": "86.458", 
+        "x": "152.95", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6540,7 +6540,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "8.4722", 
+        "y": "173.15", 
         "annotation": "YCM:EtOH_check", 
         "name_alt": "EtOH_check", 
         "name": "287", 
@@ -6548,7 +6548,7 @@ var data =[
         "links_from": [
             "319"
         ], 
-        "x": "89.958", 
+        "x": "84.231", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6561,7 +6561,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "8.4722", 
+        "y": "169.87", 
         "annotation": "CHEBI:16236", 
         "name_alt": "EtOH", 
         "name": "288", 
@@ -6569,7 +6569,7 @@ var data =[
         "links_from": [
             "319"
         ], 
-        "x": "91.236", 
+        "x": "82.134", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6587,7 +6587,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "14.472", 
+        "y": "95.595", 
         "annotation": "CHEBI:58225", 
         "name_alt": "HexP", 
         "name": "289", 
@@ -6595,7 +6595,7 @@ var data =[
         "links_from": [
             "314"
         ], 
-        "x": "88.569", 
+        "x": "147.83", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6607,13 +6607,13 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "50.472", 
+        "y": "95.965", 
         "annotation": "YCM:O2_check", 
         "name_alt": "O2_check", 
         "name": "290", 
         "state": "0", 
         "links_from": [], 
-        "x": "98.514", 
+        "x": "169", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6624,7 +6624,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "4.4722", 
+        "y": "96.604", 
         "annotation": "YCM:lipid", 
         "name_alt": "lipid", 
         "name": "291", 
@@ -6632,7 +6632,7 @@ var data =[
         "links_from": [
             "313"
         ], 
-        "x": "56.931", 
+        "x": "145.83", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6642,7 +6642,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "0.47222", 
+        "y": "93.879", 
         "annotation": "CHEBI:24636", 
         "name_alt": "H", 
         "name": "292", 
@@ -6654,7 +6654,7 @@ var data =[
             "312", 
             "313"
         ], 
-        "x": "57.569", 
+        "x": "141.05", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6670,7 +6670,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "6.4722", 
+        "y": "94.862", 
         "annotation": "CHEBI:15361", 
         "name_alt": "pyr", 
         "name": "293", 
@@ -6678,7 +6678,7 @@ var data =[
         "links_from": [
             "315"
         ], 
-        "x": "85.014", 
+        "x": "144.41", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6690,13 +6690,13 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "48.472", 
+        "y": "77.328", 
         "annotation": "CHEBI:17634", 
         "name_alt": "Glc", 
         "name": "294", 
         "state": "0", 
         "links_from": [], 
-        "x": "94.625", 
+        "x": "195.87", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6706,7 +6706,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "8.4722", 
+        "y": "90.369", 
         "annotation": "YCM:CO2_check", 
         "name_alt": "CO2_check", 
         "name": "295", 
@@ -6715,7 +6715,7 @@ var data =[
             "318", 
             "319"
         ], 
-        "x": "88.681", 
+        "x": "133.05", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6728,7 +6728,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "12.472", 
+        "y": "34.893", 
         "annotation": "CHEBI:17029", 
         "name_alt": "chitin", 
         "name": "296", 
@@ -6736,7 +6736,7 @@ var data =[
         "links_from": [
             "305"
         ], 
-        "x": "93.236", 
+        "x": "110.52", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6753,13 +6753,13 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "14.472", 
+        "y": "92.652", 
         "annotation": "CHEBI:28938", 
         "name_alt": "NH4", 
         "name": "297", 
         "state": "+1", 
         "links_from": [], 
-        "x": "53.667", 
+        "x": "137.78", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6769,7 +6769,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "2.4722", 
+        "y": "97.345", 
         "annotation": "CHEBI:17754", 
         "name_alt": "glycerol", 
         "name": "298", 
@@ -6777,7 +6777,7 @@ var data =[
         "links_from": [
             "308"
         ], 
-        "x": "92.736", 
+        "x": "161.94", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6790,7 +6790,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "12.472", 
+        "y": "29.962", 
         "annotation": "CHEBI:37671", 
         "name_alt": "glucan", 
         "name": "299", 
@@ -6798,7 +6798,7 @@ var data =[
         "links_from": [
             "306"
         ], 
-        "x": "90.125", 
+        "x": "112.31", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6812,7 +6812,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "4.4722", 
+        "y": "96.076", 
         "annotation": "CHEBI:58027", 
         "name_alt": "TriP", 
         "name": "300", 
@@ -6822,7 +6822,7 @@ var data =[
             "313", 
             "320"
         ], 
-        "x": "84.167", 
+        "x": "151.3", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6835,7 +6835,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "8.4722", 
+        "y": "88.564", 
         "annotation": "CHEBI:16526", 
         "name_alt": "CO2", 
         "name": "301", 
@@ -6844,7 +6844,7 @@ var data =[
             "318", 
             "319"
         ], 
-        "x": "92.236", 
+        "x": "130.05", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6854,7 +6854,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "46.472", 
+        "y": "75.89", 
         "annotation": "YCM:HexP_check", 
         "name_alt": "HexP_check", 
         "name": "302", 
@@ -6862,7 +6862,7 @@ var data =[
         "links_from": [
             "314"
         ], 
-        "x": "94.625", 
+        "x": "196.86", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6872,7 +6872,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "0.47222", 
+        "y": "100.35", 
         "annotation": "YCM:NA_DNA", 
         "name_alt": "NA_DNA", 
         "name": "303", 
@@ -6880,7 +6880,7 @@ var data =[
         "links_from": [
             "312"
         ], 
-        "x": "51.986", 
+        "x": "129.96", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6908,8 +6908,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "5.4722", 
-        "x": "85.653", 
+        "y": "95.868", 
+        "x": "149.56", 
         "is_ode": false
     }, 
     {
@@ -6934,8 +6934,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "13.472", 
-        "x": "91.403", 
+        "y": "93.295", 
+        "x": "139.4", 
         "is_ode": false
     }, 
     {
@@ -6958,8 +6958,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "13.472", 
-        "x": "88.847", 
+        "y": "96.317", 
+        "x": "156.54", 
         "is_ode": false
     }, 
     {
@@ -6983,8 +6983,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "49.472", 
-        "x": "98.514", 
+        "y": "94.639", 
+        "x": "168.64", 
         "is_ode": false
     }, 
     {
@@ -7007,8 +7007,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "3.4722", 
-        "x": "92.736", 
+        "y": "95.98", 
+        "x": "161.78", 
         "is_ode": false
     }, 
     {
@@ -7035,8 +7035,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "3.4722", 
-        "x": "54.944", 
+        "y": "94.401", 
+        "x": "142.72", 
         "is_ode": false
     }, 
     {
@@ -7058,8 +7058,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "9.4722", 
-        "x": "87.569", 
+        "y": "95.069", 
+        "x": "166.94", 
         "is_ode": false
     }, 
     {
@@ -7080,8 +7080,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "65.931", 
+        "y": "56.531", 
+        "x": "203.08", 
         "is_ode": false
     }, 
     {
@@ -7103,8 +7103,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "1.4722", 
-        "x": "51.986", 
+        "y": "91.187", 
+        "x": "134.6", 
         "is_ode": false
     }, 
     {
@@ -7131,8 +7131,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "5.4722", 
-        "x": "57.25", 
+        "y": "95.26", 
+        "x": "146.12", 
         "is_ode": false
     }, 
     {
@@ -7155,8 +7155,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "47.472", 
-        "x": "94.625", 
+        "y": "75.83", 
+        "x": "195.24", 
         "is_ode": false
     }, 
     {
@@ -7182,8 +7182,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "7.4722", 
-        "x": "83.528", 
+        "y": "95.436", 
+        "x": "165.23", 
         "is_ode": false
     }, 
     {
@@ -7205,8 +7205,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "1.4722", 
-        "x": "52.986", 
+        "y": "69.806", 
+        "x": "198.79", 
         "is_ode": false
     }, 
     {
@@ -7229,8 +7229,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "13.472", 
-        "x": "89.847", 
+        "y": "96.301", 
+        "x": "154.79", 
         "is_ode": false
     }, 
     {
@@ -7256,8 +7256,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "11.472", 
-        "x": "89.417", 
+        "y": "96.269", 
+        "x": "158.29", 
         "is_ode": false
     }, 
     {
@@ -7282,8 +7282,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "9.4722", 
-        "x": "89.958", 
+        "y": "89.494", 
+        "x": "131.54", 
         "is_ode": false
     }, 
     {
@@ -7306,8 +7306,8 @@ var data =[
         "compartments": [
             "intracellular"
         ], 
-        "y": "13.472", 
-        "x": "86.458", 
+        "y": "96.221", 
+        "x": "153.04", 
         "is_ode": false
     }, 
     {
@@ -7319,7 +7319,7 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "26.472", 
+        "y": "2.4174", 
         "annotation": "YCM:A", 
         "name_alt": "A", 
         "name": "321", 
@@ -7327,7 +7327,7 @@ var data =[
         "links_from": [
             "326"
         ], 
-        "x": "114.4", 
+        "x": "134.78", 
         "compartment": "nucleus", 
         "is_ode": false
     }, 
@@ -7339,7 +7339,7 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "24.472", 
+        "y": "0.25", 
         "annotation": "YCM:DNA", 
         "name_alt": "DNA", 
         "name": "322", 
@@ -7347,7 +7347,7 @@ var data =[
         "links_from": [
             "325"
         ], 
-        "x": "114.4", 
+        "x": "135.3", 
         "compartment": "nucleus", 
         "is_ode": false
     }, 
@@ -7359,13 +7359,13 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "59.472", 
+        "y": "0.75648", 
         "annotation": "YCM:NA_DNA", 
         "name_alt": "NA_DNA_cyt", 
         "name": "323", 
         "state": "0", 
         "links_from": [], 
-        "x": "109.18", 
+        "x": "132.62", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7385,8 +7385,8 @@ var data =[
         "compartments": [
             "nucleus"
         ], 
-        "y": "25.472", 
-        "x": "114.68", 
+        "y": "1.5921", 
+        "x": "136.13", 
         "is_ode": false
     }, 
     {
@@ -7408,8 +7408,8 @@ var data =[
             "intracellular", 
             "nucleus"
         ], 
-        "y": "25.472", 
-        "x": "115.93", 
+        "y": "1.0754", 
+        "x": "133.96", 
         "is_ode": false
     }, 
     {
@@ -7430,8 +7430,8 @@ var data =[
             "nucleus", 
             "intracellular"
         ], 
-        "y": "27.472", 
-        "x": "113.15", 
+        "y": "4.1862", 
+        "x": "135.6", 
         "is_ode": false
     }, 
     {
@@ -7442,7 +7442,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "16.472", 
+        "y": "32.745", 
         "annotation": "YCM:B_Protein_other", 
         "name_alt": "proteins_cw", 
         "name": "327", 
@@ -7450,7 +7450,7 @@ var data =[
         "links_from": [
             "335"
         ], 
-        "x": "121.71", 
+        "x": "107.18", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -7462,7 +7462,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "15.472", 
+        "y": "38.277", 
         "annotation": "CHEBI:28808", 
         "name_alt": "mannan_cw", 
         "name": "328", 
@@ -7470,7 +7470,7 @@ var data =[
         "links_from": [
             "336"
         ], 
-        "x": "122.35", 
+        "x": "109.63", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -7480,13 +7480,13 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "59.472", 
+        "y": "98.247", 
         "annotation": "SBO:0000468", 
         "name_alt": "pm_vol", 
         "name": "329", 
         "state": "0", 
         "links_from": [], 
-        "x": "118.57", 
+        "x": "82.043", 
         "compartment": "plasma_membrane", 
         "is_ode": true
     }, 
@@ -7498,13 +7498,13 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "59.472", 
+        "y": "30.055", 
         "annotation": "YCM:B_Protein_other", 
         "name_alt": "proteins", 
         "name": "330", 
         "state": "0", 
         "links_from": [], 
-        "x": "111.18", 
+        "x": "106.74", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7519,13 +7519,13 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "11.472", 
+        "y": "32.266", 
         "annotation": "SBO:0000468", 
         "name_alt": "V_cw", 
         "name": "331", 
         "state": "0", 
         "links_from": [], 
-        "x": "121.51", 
+        "x": "109.87", 
         "compartment": "cell_wall", 
         "is_ode": true
     }, 
@@ -7540,7 +7540,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "12.472", 
+        "y": "32.14", 
         "annotation": "SBO:0000504", 
         "name_alt": "m_cw", 
         "name": "332", 
@@ -7556,7 +7556,7 @@ var data =[
             "327", 
             "331"
         ], 
-        "x": "121.51", 
+        "x": "108.5", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -7568,7 +7568,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "13.472", 
+        "y": "26.797", 
         "annotation": "CHEBI:37671", 
         "name_alt": "glucan_cw", 
         "name": "333", 
@@ -7576,7 +7576,7 @@ var data =[
         "links_from": [
             "337"
         ], 
-        "x": "121.24", 
+        "x": "113.81", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -7588,7 +7588,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "14.472", 
+        "y": "33.227", 
         "annotation": "CHEBI:17029", 
         "name_alt": "chitin_cw", 
         "name": "334", 
@@ -7596,7 +7596,7 @@ var data =[
         "links_from": [
             "338"
         ], 
-        "x": "121.79", 
+        "x": "111.06", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -7619,8 +7619,8 @@ var data =[
             "intracellular", 
             "cell_wall"
         ], 
-        "y": "17.472", 
-        "x": "121.71", 
+        "y": "31.304", 
+        "x": "107.32", 
         "is_ode": false
     }, 
     {
@@ -7642,8 +7642,8 @@ var data =[
             "intracellular", 
             "cell_wall"
         ], 
-        "y": "11.472", 
-        "x": "119.99", 
+        "y": "36.576", 
+        "x": "110.04", 
         "is_ode": false
     }, 
     {
@@ -7665,8 +7665,8 @@ var data =[
             "intracellular", 
             "cell_wall"
         ], 
-        "y": "11.472", 
-        "x": "118.99", 
+        "y": "28.366", 
+        "x": "113.03", 
         "is_ode": false
     }, 
     {
@@ -7688,8 +7688,8 @@ var data =[
             "intracellular", 
             "cell_wall"
         ], 
-        "y": "11.472", 
-        "x": "117.99", 
+        "y": "31.583", 
+        "x": "111.66", 
         "is_ode": false
     }, 
     {
@@ -7707,7 +7707,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "51.472", 
+        "y": "79.144", 
         "annotation": "CHEBI:24636", 
         "name_alt": "h_cyt", 
         "name": "339", 
@@ -7716,7 +7716,7 @@ var data =[
             "391", 
             "397"
         ], 
-        "x": "10.347", 
+        "x": "102.4", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -7726,13 +7726,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "90.081", 
         "annotation": "SBML_IMPORT_ANNOTATION:8", 
         "name_alt": "v_v", 
         "name": "340", 
         "state": "0", 
         "links_from": [], 
-        "x": "24.514", 
+        "x": "82.043", 
         "compartment": "parameter_compartment", 
         "is_ode": true
     }, 
@@ -7746,13 +7746,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "41.472", 
+        "y": "81.262", 
         "annotation": "CHEBI:30616", 
         "name_alt": "atp_cyt", 
         "name": "341", 
         "state": "-4", 
         "links_from": [], 
-        "x": "8.3333", 
+        "x": "112.23", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -7764,7 +7764,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "80.712", 
         "annotation": "SBML_IMPORT_ANNOTATION:13", 
         "name_alt": "E_pma1", 
         "name": "342", 
@@ -7775,7 +7775,7 @@ var data =[
             "339", 
             "379"
         ], 
-        "x": "23.514", 
+        "x": "99.29", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -7788,13 +7788,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "101.36", 
         "annotation": "SBO:0000468", 
         "name_alt": "cytosol", 
         "name": "343", 
         "state": "0", 
         "links_from": [], 
-        "x": "8.3333", 
+        "x": "100.18", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -7817,13 +7817,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "98.851", 
         "annotation": "SBML_IMPORT_ANNOTATION:7", 
         "name_alt": "v_m", 
         "name": "344", 
         "state": "0", 
         "links_from": [], 
-        "x": "20.514", 
+        "x": "102.4", 
         "compartment": "parameter_compartment", 
         "is_ode": true
     }, 
@@ -7837,13 +7837,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "51.472", 
+        "y": "78.701", 
         "annotation": "CHEBI:24636", 
         "name_alt": "h_vac", 
         "name": "345", 
         "state": "0", 
         "links_from": [], 
-        "x": "1.9861", 
+        "x": "105.86", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -7860,13 +7860,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "57.472", 
+        "y": "81.867", 
         "annotation": "CHEBI:24636", 
         "name_alt": "h_ext", 
         "name": "346", 
         "state": "+1", 
         "links_from": [], 
-        "x": "42.292", 
+        "x": "97.978", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -7879,7 +7879,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "101.92", 
         "annotation": "CHEBI:17996", 
         "name_alt": "cl_cyt", 
         "name": "347", 
@@ -7887,7 +7887,7 @@ var data =[
         "links_from": [
             "400"
         ], 
-        "x": "9.125", 
+        "x": "112.75", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -7899,7 +7899,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "98.199", 
         "annotation": "SBML_IMPORT_ANNOTATION:11", 
         "name_alt": "gp_trk12", 
         "name": "348", 
@@ -7908,7 +7908,7 @@ var data =[
         "links_from": [
             "344"
         ], 
-        "x": "16.014", 
+        "x": "100.78", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -7925,13 +7925,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "92.43", 
         "annotation": "CHEBI:29101", 
         "name_alt": "na_ext", 
         "name": "349", 
         "state": "0", 
         "links_from": [], 
-        "x": "39.597", 
+        "x": "115.13", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -7947,7 +7947,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "88.997", 
         "annotation": "CHEBI:29101", 
         "name_alt": "na_cyt", 
         "name": "350", 
@@ -7956,7 +7956,7 @@ var data =[
             "398", 
             "402"
         ], 
-        "x": "10.875", 
+        "x": "115.72", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -7966,7 +7966,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "100.81", 
         "annotation": "SBML_IMPORT_ANNOTATION:20", 
         "name_alt": "my_J_Cl", 
         "name": "351", 
@@ -7978,7 +7978,7 @@ var data =[
             "383", 
             "347"
         ], 
-        "x": "20.569", 
+        "x": "111.63", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -7988,7 +7988,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "41.472", 
+        "y": "97.283", 
         "annotation": "SBML_IMPORT_ANNOTATION:26", 
         "name_alt": "my_J_trk12", 
         "name": "352", 
@@ -8001,7 +8001,7 @@ var data =[
             "363", 
             "366"
         ], 
-        "x": "22.208", 
+        "x": "99.29", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8011,7 +8011,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "102.38", 
         "annotation": "SBML_IMPORT_ANNOTATION:21", 
         "name_alt": "my_J_Ca", 
         "name": "353", 
@@ -8023,7 +8023,7 @@ var data =[
             "367", 
             "354"
         ], 
-        "x": "21.569", 
+        "x": "105.89", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8036,7 +8036,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.472", 
+        "y": "103.45", 
         "annotation": "CHEBI:29108", 
         "name_alt": "ca_cyt", 
         "name": "354", 
@@ -8044,7 +8044,7 @@ var data =[
         "links_from": [
             "399"
         ], 
-        "x": "9.0694", 
+        "x": "107.05", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -8056,13 +8056,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "50.472", 
+        "y": "101.92", 
         "annotation": "CHEBI:17996", 
         "name_alt": "cl_vac", 
         "name": "355", 
         "state": "0", 
         "links_from": [], 
-        "x": "1.9861", 
+        "x": "115.87", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8072,7 +8072,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "99.071", 
         "annotation": "SBML_IMPORT_ANNOTATION:24", 
         "name_alt": "my_J_ena1", 
         "name": "356", 
@@ -8083,7 +8083,7 @@ var data =[
             "344", 
             "364"
         ], 
-        "x": "17.292", 
+        "x": "107.59", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8093,13 +8093,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.472", 
+        "y": "81.914", 
         "annotation": "SBO:0000468", 
         "name_alt": "extracellular", 
         "name": "357", 
         "state": "0", 
         "links_from": [], 
-        "x": "39.597", 
+        "x": "82.043", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8109,7 +8109,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "77.829", 
         "annotation": "SBML_IMPORT_ANNOTATION:9", 
         "name_alt": "myph", 
         "name": "358", 
@@ -8118,7 +8118,7 @@ var data =[
         "links_from": [
             "339"
         ], 
-        "x": "23.514", 
+        "x": "102", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8130,7 +8130,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "99.752", 
         "annotation": "SBML_IMPORT_ANNOTATION:3", 
         "name_alt": "r", 
         "name": "359", 
@@ -8139,7 +8139,7 @@ var data =[
         "links_from": [
             "343"
         ], 
-        "x": "17.431", 
+        "x": "100.86", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8151,13 +8151,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "46.472", 
+        "y": "88.997", 
         "annotation": "CHEBI:29101", 
         "name_alt": "na_vac", 
         "name": "360", 
         "state": "0", 
         "links_from": [], 
-        "x": "0.79167", 
+        "x": "118.85", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8167,7 +8167,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "95.471", 
         "annotation": "SBML_IMPORT_ANNOTATION:19", 
         "name_alt": "my_J_Na", 
         "name": "361", 
@@ -8179,7 +8179,7 @@ var data =[
             "349", 
             "350"
         ], 
-        "x": "19.569", 
+        "x": "113.44", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8191,13 +8191,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "47.472", 
+        "y": "106.58", 
         "annotation": "CHEBI:29108", 
         "name_alt": "ca_vac", 
         "name": "362", 
         "state": "0", 
         "links_from": [], 
-        "x": "1.4306", 
+        "x": "107.16", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8214,13 +8214,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "46.472", 
+        "y": "88.123", 
         "annotation": "CHEBI:29103", 
         "name_alt": "k_ext", 
         "name": "363", 
         "state": "0", 
         "links_from": [], 
-        "x": "37.653", 
+        "x": "95.15", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8232,7 +8232,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "94.023", 
         "annotation": "SBML_IMPORT_ANNOTATION:15", 
         "name_alt": "E_ena1", 
         "name": "364", 
@@ -8243,7 +8243,7 @@ var data =[
             "350", 
             "379"
         ], 
-        "x": "19.514", 
+        "x": "114.41", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8253,7 +8253,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "106.2", 
         "annotation": "SBML_IMPORT_ANNOTATION:6", 
         "name_alt": "surface_vac", 
         "name": "365", 
@@ -8262,7 +8262,7 @@ var data =[
         "links_from": [
             "372"
         ], 
-        "x": "18.514", 
+        "x": "98.131", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8279,7 +8279,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "46.472", 
+        "y": "94.768", 
         "annotation": "CHEBI:29103", 
         "name_alt": "k_cyt", 
         "name": "366", 
@@ -8287,7 +8287,7 @@ var data =[
         "links_from": [
             "395"
         ], 
-        "x": "12.542", 
+        "x": "96.88", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -8300,13 +8300,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "47.472", 
+        "y": "101.23", 
         "annotation": "CHEBI:29108", 
         "name_alt": "ca_ext", 
         "name": "367", 
         "state": "0", 
         "links_from": [], 
-        "x": "43.431", 
+        "x": "106.97", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8327,7 +8327,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "99.293", 
         "annotation": "SBML_IMPORT_ANNOTATION:4", 
         "name_alt": "surface", 
         "name": "368", 
@@ -8336,7 +8336,7 @@ var data =[
         "links_from": [
             "359"
         ], 
-        "x": "21.514", 
+        "x": "105.86", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8346,13 +8346,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "73.747", 
         "annotation": "SBO:0000468", 
         "name_alt": "par_vol", 
         "name": "369", 
         "state": "0", 
         "links_from": [], 
-        "x": "21.014", 
+        "x": "82.043", 
         "compartment": "parameter_compartment", 
         "is_ode": true
     }, 
@@ -8364,7 +8364,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "97.773", 
         "annotation": "SBML_IMPORT_ANNOTATION:14", 
         "name_alt": "E_nha1", 
         "name": "370", 
@@ -8376,7 +8376,7 @@ var data =[
             "339", 
             "349"
         ], 
-        "x": "24.514", 
+        "x": "110.82", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8390,13 +8390,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "47.472", 
+        "y": "82.523", 
         "annotation": "CHEBI:456216", 
         "name_alt": "adp_cyt", 
         "name": "371", 
         "state": "-3", 
         "links_from": [], 
-        "x": "10.875", 
+        "x": "113.44", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -8408,7 +8408,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "104.59", 
         "annotation": "SBML_IMPORT_ANNOTATION:5", 
         "name_alt": "r_vac", 
         "name": "372", 
@@ -8417,7 +8417,7 @@ var data =[
         "links_from": [
             "375"
         ], 
-        "x": "19.014", 
+        "x": "98.813", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8427,7 +8427,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "41.472", 
+        "y": "86.401", 
         "annotation": "SBML_IMPORT_ANNOTATION:25", 
         "name_alt": "my_J_tok1", 
         "name": "373", 
@@ -8440,7 +8440,7 @@ var data =[
             "363", 
             "366"
         ], 
-        "x": "24.486", 
+        "x": "95.446", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8450,7 +8450,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.472", 
+        "y": "78.923", 
         "annotation": "SBML_IMPORT_ANNOTATION:16", 
         "name_alt": "E_vma1", 
         "name": "374", 
@@ -8461,7 +8461,7 @@ var data =[
             "345", 
             "379"
         ], 
-        "x": "22.514", 
+        "x": "107.59", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8473,7 +8473,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "48.472", 
+        "y": "102.97", 
         "annotation": "SBO:0000468", 
         "name_alt": "vacuole", 
         "name": "375", 
@@ -8482,7 +8482,7 @@ var data =[
         "links_from": [
             "343"
         ], 
-        "x": "2.2639", 
+        "x": "99.496", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8496,13 +8496,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "49.472", 
+        "y": "83.972", 
         "annotation": "CHEBI:43474", 
         "name_alt": "pi_cyt", 
         "name": "376", 
         "state": "-2", 
         "links_from": [], 
-        "x": "11.153", 
+        "x": "114.41", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -8512,13 +8512,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "48.472", 
+        "y": "65.581", 
         "annotation": "SBML_IMPORT_ANNOTATION:1", 
         "name_alt": "acid_cytosol_h", 
         "name": "377", 
         "state": "0", 
         "links_from": [], 
-        "x": "8.9306", 
+        "x": "82.043", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -8530,13 +8530,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "49.472", 
+        "y": "96.518", 
         "annotation": "CHEBI:29103", 
         "name_alt": "k_vac", 
         "name": "378", 
         "state": "0", 
         "links_from": [], 
-        "x": "1.4306", 
+        "x": "94.291", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8550,7 +8550,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.472", 
+        "y": "79.435", 
         "annotation": "SBML_IMPORT_ANNOTATION:12", 
         "name_alt": "D_G_ATP", 
         "name": "379", 
@@ -8561,7 +8561,7 @@ var data =[
             "371", 
             "376"
         ], 
-        "x": "22.514", 
+        "x": "109.26", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8571,13 +8571,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "50.472", 
+        "y": "65.581", 
         "annotation": "SBML_IMPORT_ANNOTATION:2", 
         "name_alt": "acid_cytosol", 
         "name": "380", 
         "state": "0", 
         "links_from": [], 
-        "x": "9.5972", 
+        "x": "90.21", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -8587,7 +8587,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "96.128", 
         "annotation": "SBML_IMPORT_ANNOTATION:18", 
         "name_alt": "my_J_K", 
         "name": "381", 
@@ -8599,7 +8599,7 @@ var data =[
             "363", 
             "366"
         ], 
-        "x": "25.125", 
+        "x": "97.978", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8609,7 +8609,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "83.227", 
         "annotation": "SBML_IMPORT_ANNOTATION:17", 
         "name_alt": "my_J_H", 
         "name": "382", 
@@ -8621,7 +8621,7 @@ var data =[
             "346", 
             "339"
         ], 
-        "x": "26.125", 
+        "x": "96.88", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8634,13 +8634,13 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "48.472", 
+        "y": "101.92", 
         "annotation": "CHEBI:17996", 
         "name_alt": "cl_ext", 
         "name": "383", 
         "state": "0", 
         "links_from": [], 
-        "x": "42.542", 
+        "x": "110.52", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8650,7 +8650,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "99.219", 
         "annotation": "SBML_IMPORT_ANNOTATION:22", 
         "name_alt": "my_J_pma1", 
         "name": "384", 
@@ -8661,7 +8661,7 @@ var data =[
             "344", 
             "342"
         ], 
-        "x": "22.847", 
+        "x": "104.11", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8671,7 +8671,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "98.56", 
         "annotation": "SBML_IMPORT_ANNOTATION:23", 
         "name_alt": "my_J_nha1", 
         "name": "385", 
@@ -8682,7 +8682,7 @@ var data =[
             "344", 
             "370"
         ], 
-        "x": "23.847", 
+        "x": "109.26", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8694,7 +8694,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.472", 
+        "y": "84.753", 
         "annotation": "SBML_IMPORT_ANNOTATION:10", 
         "name_alt": "gp_tok1", 
         "name": "386", 
@@ -8703,7 +8703,7 @@ var data =[
         "links_from": [
             "344"
         ], 
-        "x": "18.292", 
+        "x": "96.028", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8727,8 +8727,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "40.472", 
-        "x": "29", 
+        "y": "85.564", 
+        "x": "115.13", 
         "is_ode": false
     }, 
     {
@@ -8748,8 +8748,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "43.472", 
-        "x": "14.042", 
+        "y": "87.256", 
+        "x": "115.58", 
         "is_ode": false
     }, 
     {
@@ -8769,8 +8769,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "45.472", 
-        "x": "21.514", 
+        "y": "89.871", 
+        "x": "95.15", 
         "is_ode": false
     }, 
     {
@@ -8790,8 +8790,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "44.472", 
-        "x": "15.042", 
+        "y": "102.3", 
+        "x": "108.12", 
         "is_ode": false
     }, 
     {
@@ -8812,8 +8812,8 @@ var data =[
             "vacuole", 
             "cytosol"
         ], 
-        "y": "52.472", 
-        "x": "2.75", 
+        "y": "78.776", 
+        "x": "104.11", 
         "is_ode": false
     }, 
     {
@@ -8833,8 +8833,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "50.472", 
-        "x": "33.958", 
+        "y": "79.796", 
+        "x": "100.78", 
         "is_ode": false
     }, 
     {
@@ -8854,8 +8854,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "42.472", 
-        "x": "14.264", 
+        "y": "103.04", 
+        "x": "111.63", 
         "is_ode": false
     }, 
     {
@@ -8875,8 +8875,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "45.472", 
-        "x": "22.514", 
+        "y": "91.594", 
+        "x": "95.446", 
         "is_ode": false
     }, 
     {
@@ -8897,8 +8897,8 @@ var data =[
             "vacuole", 
             "cytosol"
         ], 
-        "y": "48.472", 
-        "x": "19.819", 
+        "y": "95.538", 
+        "x": "95.741", 
         "is_ode": false
     }, 
     {
@@ -8918,8 +8918,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "45.472", 
-        "x": "23.514", 
+        "y": "93.242", 
+        "x": "96.028", 
         "is_ode": false
     }, 
     {
@@ -8943,8 +8943,8 @@ var data =[
             "vacuole", 
             "cytosol"
         ], 
-        "y": "46.472", 
-        "x": "27.681", 
+        "y": "80.222", 
+        "x": "110.82", 
         "is_ode": false
     }, 
     {
@@ -8967,8 +8967,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "45.472", 
-        "x": "33.431", 
+        "y": "96.733", 
+        "x": "112.23", 
         "is_ode": false
     }, 
     {
@@ -8989,8 +8989,8 @@ var data =[
             "vacuole", 
             "cytosol"
         ], 
-        "y": "46.472", 
-        "x": "3.4861", 
+        "y": "104.83", 
+        "x": "107.1", 
         "is_ode": false
     }, 
     {
@@ -9011,8 +9011,8 @@ var data =[
             "vacuole", 
             "cytosol"
         ], 
-        "y": "49.472", 
-        "x": "20.875", 
+        "y": "101.92", 
+        "x": "114.12", 
         "is_ode": false
     }, 
     {
@@ -9032,8 +9032,8 @@ var data =[
             "cytosol", 
             "extracellular"
         ], 
-        "y": "43.472", 
-        "x": "15.042", 
+        "y": "90.739", 
+        "x": "115.58", 
         "is_ode": false
     }, 
     {
@@ -9054,8 +9054,8 @@ var data =[
             "vacuole", 
             "cytosol"
         ], 
-        "y": "45.472", 
-        "x": "2.1528", 
+        "y": "88.997", 
+        "x": "117.1", 
         "is_ode": false
     }, 
     {
@@ -9067,13 +9067,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "59.472", 
+        "y": "102.33", 
         "annotation": "SBO:0000468", 
         "name_alt": "VOLUME", 
         "name": "403", 
         "state": "0", 
         "links_from": [], 
-        "x": "108.18", 
+        "x": "88.629", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -9083,13 +9083,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "59.472", 
+        "y": "61.497", 
         "annotation": "SBO:0000468", 
         "name_alt": "plasmamembrane_vol", 
         "name": "404", 
         "state": "0", 
         "links_from": [], 
-        "x": "117.57", 
+        "x": "102.46", 
         "compartment": "plasma_membrane", 
         "is_ode": true
     }, 
@@ -9099,13 +9099,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "59.472", 
+        "y": "110.5", 
         "annotation": "YCM:AA_check", 
         "name_alt": "AA_trp_check", 
         "name": "405", 
         "state": "0", 
         "links_from": [], 
-        "x": "105.6", 
+        "x": "126.96", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -9117,13 +9117,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "59.472", 
+        "y": "73.747", 
         "annotation": "CHEBI:17754", 
         "name_alt": "glycerol_cyt", 
         "name": "406", 
         "state": "0", 
         "links_from": [], 
-        "x": "112.18", 
+        "x": "90.21", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -9133,7 +9133,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "49.472", 
+        "y": "167.67", 
         "annotation": "CHEBI:16526", 
         "name_alt": "CO2_ext", 
         "name": "407", 
@@ -9141,7 +9141,7 @@ var data =[
         "links_from": [
             "421"
         ], 
-        "x": "41.653", 
+        "x": "78.374", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -9155,7 +9155,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "58.472", 
+        "y": "105.22", 
         "annotation": "CHEBI:17634", 
         "name_alt": "glucose_cyt", 
         "name": "408", 
@@ -9163,7 +9163,7 @@ var data =[
         "links_from": [
             "420"
         ], 
-        "x": "111.18", 
+        "x": "86.958", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -9173,7 +9173,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "57.472", 
+        "y": "105.22", 
         "annotation": "SBO:0000627", 
         "name_alt": "glc_uptake", 
         "name": "409", 
@@ -9188,7 +9188,7 @@ var data =[
             "412", 
             "408"
         ], 
-        "x": "111.18", 
+        "x": "88.629", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -9198,13 +9198,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "50.472", 
+        "y": "110.5", 
         "annotation": "SBO:0000468", 
         "name_alt": "VOLUME_EXT", 
         "name": "410", 
         "state": "0", 
         "links_from": [], 
-        "x": "38.847", 
+        "x": "82.043", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -9214,7 +9214,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "51.472", 
+        "y": "73.747", 
         "annotation": "CHEBI:17754", 
         "name_alt": "glycerol_ext", 
         "name": "411", 
@@ -9222,7 +9222,7 @@ var data =[
         "links_from": [
             "418"
         ], 
-        "x": "39.403", 
+        "x": "93.71", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -9237,13 +9237,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "53.472", 
+        "y": "103.78", 
         "annotation": "CHEBI:17634", 
         "name_alt": "glucose_ext", 
         "name": "412", 
         "state": "0", 
         "links_from": [], 
-        "x": "41.931", 
+        "x": "89.464", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -9253,13 +9253,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "52.472", 
+        "y": "114.58", 
         "annotation": "YCM:AA", 
         "name_alt": "AA_ext", 
         "name": "413", 
         "state": "0", 
         "links_from": [], 
-        "x": "41.069", 
+        "x": "106.54", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -9269,13 +9269,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "54.472", 
+        "y": "114.58", 
         "annotation": "CHEBI:43474", 
         "name_alt": "Pi_ext", 
         "name": "414", 
         "state": "-2", 
         "links_from": [], 
-        "x": "42.819", 
+        "x": "98.377", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -9288,7 +9288,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "58.472", 
+        "y": "102.33", 
         "annotation": "SBO:0000467", 
         "name_alt": "SURFACE", 
         "name": "415", 
@@ -9297,7 +9297,7 @@ var data =[
         "links_from": [
             "403"
         ], 
-        "x": "112.18", 
+        "x": "86.958", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -9307,7 +9307,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "55.472", 
+        "y": "172.85", 
         "annotation": "CHEBI:16236", 
         "name_alt": "EtOH_ext", 
         "name": "416", 
@@ -9315,7 +9315,7 @@ var data =[
         "links_from": [
             "419"
         ], 
-        "x": "41.653", 
+        "x": "80.31", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -9325,13 +9325,13 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "56.472", 
+        "y": "114.58", 
         "annotation": "CHEBI:28938", 
         "name_alt": "NH4_ext", 
         "name": "417", 
         "state": "+1", 
         "links_from": [], 
-        "x": "43.736", 
+        "x": "90.21", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -9353,8 +9353,8 @@ var data =[
             "intracellular", 
             "extracellular"
         ], 
-        "y": "52.472", 
-        "x": "118.51", 
+        "y": "73.747", 
+        "x": "91.96", 
         "is_ode": false
     }, 
     {
@@ -9375,8 +9375,8 @@ var data =[
             "intracellular", 
             "extracellular"
         ], 
-        "y": "7.4722", 
-        "x": "116.46", 
+        "y": "171.36", 
+        "x": "81.222", 
         "is_ode": false
     }, 
     {
@@ -9399,8 +9399,8 @@ var data =[
             "intracellular", 
             "extracellular"
         ], 
-        "y": "57.472", 
-        "x": "113.15", 
+        "y": "103.78", 
+        "x": "86.122", 
         "is_ode": false
     }, 
     {
@@ -9421,8 +9421,8 @@ var data =[
             "intracellular", 
             "extracellular"
         ], 
-        "y": "7.4722", 
-        "x": "113.93", 
+        "y": "166.2", 
+        "x": "79.331", 
         "is_ode": false
     }
 ]
@@ -14662,10 +14662,10 @@ var links =[
 var compartments ={
     "parameter_compartment": {
         "spread": [
-            26.125, 
-            16.014, 
-            44.472, 
-            41.472
+            114.41, 
+            82.043, 
+            106.2, 
+            73.747
         ], 
         "species": [
             "340", 
@@ -14700,10 +14700,10 @@ var compartments ={
     }, 
     "cytosol": {
         "spread": [
-            12.542, 
-            8.3333, 
-            52.472, 
-            41.472
+            115.72, 
+            82.043, 
+            103.45, 
+            65.581
         ], 
         "species": [
             "142", 
@@ -14741,10 +14741,10 @@ var compartments ={
     }, 
     "intracellular": {
         "spread": [
-            112.18, 
-            51.986, 
-            59.472, 
-            0.47222
+            205.03, 
+            0.375, 
+            175.37, 
+            0.75648
         ], 
         "species": [
             "0", 
@@ -15090,10 +15090,10 @@ var compartments ={
     }, 
     "vacuole": {
         "spread": [
-            2.2639, 
-            0.79167, 
-            51.472, 
-            46.472
+            118.85, 
+            94.291, 
+            106.58, 
+            78.701
         ], 
         "species": [
             "345", 
@@ -15115,10 +15115,10 @@ var compartments ={
     }, 
     "plasma_membrane": {
         "spread": [
-            118.57, 
-            117.57, 
-            59.472, 
-            59.472
+            102.46, 
+            82.043, 
+            98.247, 
+            61.497
         ], 
         "species": [
             "329", 
@@ -15130,10 +15130,10 @@ var compartments ={
     }, 
     "cell_wall": {
         "spread": [
-            122.35, 
-            121.24, 
-            16.472, 
-            11.472
+            113.81, 
+            107.18, 
+            38.277, 
+            26.797
         ], 
         "species": [
             "327", 
@@ -15153,10 +15153,10 @@ var compartments ={
     }, 
     "nucleus": {
         "spread": [
-            114.68, 
-            114.4, 
-            27.472, 
-            24.472
+            136.13, 
+            90.21, 
+            90.081, 
+            0.25
         ], 
         "species": [
             "37", 
@@ -15172,10 +15172,10 @@ var compartments ={
     }, 
     "extracellular": {
         "spread": [
-            43.736, 
-            37.653, 
-            58.472, 
-            44.472
+            115.13, 
+            2.6066, 
+            172.85, 
+            45.306
         ], 
         "species": [
             "15", 
