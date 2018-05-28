@@ -117,7 +117,7 @@ def data_to_graph():
             counter += 1
 
         for algebraic in modeldict['alg_eqs']: #gather algebraic-species
-            if not algebraic+modeldict['name'] in nodes_to_int_ids:
+            if not algebraic+modeldict['name'] in nodes_to_int_ids: #all algebraic species should allready be introduced
                 print('Error: '+algebraic)
             nodes[int(nodes_to_int_ids[algebraic+modeldict['name']])]['symbol']='triangle'
             nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['is_ode'] = False #algebraic-species can never be ode-species
@@ -153,6 +153,7 @@ def data_to_graph():
 
 def same_edge_collection():
     "collect information on which nodes have similar edges. This could be used for edge collapse"
+    # TODO: collect percentage of overlaps
     numbers = {}
     all_same =[]
     for i in range(0,len(nodes)):
@@ -255,18 +256,18 @@ def new_dot():
     #pseudoLinks = []
 
     # Build digraph for GraphViz and write to file
-    text = 'digraph {' + os.linesep #+'layout=fdp'+ os.linesep
+    text = 'digraph {' + os.linesep #+'layout=twopi'+ os.linesep
     for node in nodes:
         text = text + node[
             'name'] + ';' + os.linesep  # not needed for dot beacuse all species are in a compartment but provides order used later
     for cluster in clustering:
-        if '8' in cluster:
+        if '8' in cluster: #cluster with reations that are connected to multiple compartments
             text = text + 'subgraph ' + cluster + '{' + os.linesep
             for sp in clustering[cluster]:
                 text = text + sp + ';' + os.linesep
             text = text + '}' + os.linesep
         else:
-            text = text + 'subgraph cluster_' + cluster + '{' + os.linesep
+            text = text + 'subgraph cluster_' + cluster + '{' + os.linesep #
             for sp in clustering[cluster]:
                 text = text + sp + ';' + os.linesep
             text = text + '}' + os.linesep
@@ -299,6 +300,8 @@ def new_dot():
 
     #compute midpoint, high and widths for each compartment
     for cluster in clustering:
+        #print out cluster size for statistics
+        print(cluster+' : '+ str(len(clustering[cluster])))
         if cluster in compartments:
             max_x = -10000 #arbitrary max initialization, needs testing
             max_y = -10000 #arbitrary max initialization, needs testing
@@ -318,6 +321,7 @@ def new_dot():
             if max_x==-10000 or max_y == -10000 or min_x==10000 or min_y == 10000:
                 print('Error: Wrong initialization of min or max in new_dot: '+max_x+','+max_y+','+min_x+','+min_y)
             compartments[cluster]['spread']=[max_x,min_x,max_y,min_y]
+    print('---------------------------------------')
 
 
 
