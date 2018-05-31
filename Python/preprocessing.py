@@ -163,6 +163,7 @@ def same_edge_collection():
     "collect information on which nodes have similar edges. This could be used for edge collapse"
     # TODO: collect percentage of overlaps
     numbers = {}
+    percentage = {}
     all_same =[]
     for i in range(0,len(nodes)):
         for j in range(i+1,len(nodes)):
@@ -176,10 +177,26 @@ def same_edge_collection():
                 numbers[same]+=1
             else:
                 numbers[same] = 1
-            same_i = len(nodes[i]['links_to']) + len(nodes[i]['links_from'])+len(nodes[i]['links_to_mod']) + len(nodes[i]['links_from_mod'])+ len(nodes[i]['uni_links'])
-            same_j= len(nodes[j]['links_to']) + len(nodes[j]['links_from']) + len(nodes[j]['links_to_mod']) + len(
+
+            len_i = len(nodes[i]['links_to']) + len(nodes[i]['links_from'])+len(nodes[i]['links_to_mod']) + len(nodes[i]['links_from_mod'])+ len(nodes[i]['uni_links'])
+            len_j= len(nodes[j]['links_to']) + len(nodes[j]['links_from']) + len(nodes[j]['links_to_mod']) + len(
                 nodes[j]['links_from_mod']) + len(nodes[j]['uni_links'])
-            if same!=0 and same == same_i and same == same_j:
+            percent= 0
+            if(len_i!=0 and same!=0):
+                percent = str(same /float(len_i)*100)
+            if percent in percentage:
+                percentage[percent]+=1
+            else:
+                percentage[percent] = 1
+            percent = 0
+            if (len_j != 0 and same!=0):
+                percent = str(same / float(len_i)*100)
+            if percent in percentage:
+                percentage[percent] += 1
+            else:
+                percentage[percent] = 1
+
+            if same!=0 and same == len_i and same == len_j:
                 if 'all' in numbers:
                     numbers['all'] += 1
                 else:
@@ -187,6 +204,7 @@ def same_edge_collection():
                 all_same.append(nodes[i]['name_alt']+'+'+nodes[j]['name_alt']+': '+str(same))
             if(same==42):
                 print(nodes[i]['name_alt']+'+'+nodes[j]['name_alt']+': '+str(same))
+    
     for i in numbers:
         print i, numbers[i]
     print(all_same)
