@@ -39,6 +39,9 @@ def data_to_graph():
                     'module': [modeldict['name']],
                     'links_to': [],
                     'links_from': [],
+                    'links_to_mod': [],
+                    'links_from_mod': [],
+                    'uni_links': [],
                     'is_ode': True
                 }
                 if species in modeldict['sp_annotations']:
@@ -73,6 +76,9 @@ def data_to_graph():
                 'compartments': [],
                 'links_to': [],
                 'links_from': [],
+                'links_to_mod': [],
+                'links_from_mod': [],
+                'uni_links': [],
                 'is_ode': False #reaction can never be ode-species
             }
             # nodes_to_int_ids[reaction+modeldict['name']]=str(counter) #not used?
@@ -108,8 +114,9 @@ def data_to_graph():
                 if not nodes[int(nodes_to_int_ids[source+modeldict['name']])]['compartment'] in new_node['compartments']:
                     new_node['compartments'].append(nodes[int(nodes_to_int_ids[source + modeldict['name']])]['compartment'])
 
-                new_node['links_from'].append(nodes_to_int_ids[source + modeldict['name']])
-                nodes[int(nodes_to_int_ids[source + modeldict['name']])]['links_to'].append(str(counter))
+                #different kind of to and from
+                new_node['links_from_mod'].append(nodes_to_int_ids[source + modeldict['name']])
+                nodes[int(nodes_to_int_ids[source + modeldict['name']])]['links_to_mod'].append(str(counter))
                 #modifiers can be ode-species
             for i in range(0, len(new_node['compartments'])):
                 compartments[new_node['compartments'][i]]['species'].append(new_node['name'])
@@ -133,8 +140,9 @@ def data_to_graph():
                                   'target': nodes_to_int_ids[algebraic+modeldict['name']],
                                   'symbol': 'circle'})  # TODO: change symbol
 
-                    nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['links_from'].append(nodes_to_int_ids[algid])
-                    nodes[int(nodes_to_int_ids[algid])]['links_to'].append(nodes_to_int_ids[algebraic+modeldict['name']])
+                    #not really to or from
+                    nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['uni_links'].append(nodes_to_int_ids[algid])
+                    nodes[int(nodes_to_int_ids[algid])]['uni_links'].append(nodes_to_int_ids[algebraic+modeldict['name']])
 
         for ode in modeldict['odes']: #gather ode-species
             ode_id= ode+modeldict['name'] #this species should already be introduce in this module
@@ -160,13 +168,18 @@ def same_edge_collection():
         for j in range(i+1,len(nodes)):
             same_to = [val for val in nodes[i]['links_to'] if val in nodes[j]['links_to']]
             same_from = [val for val in nodes[i]['links_from'] if val in nodes[j]['links_from']]
-            same = len(same_to) + len(same_from)
+            same_to_mod = [val for val in nodes[i]['links_to_mod'] if val in nodes[j]['links_to_mod']]
+            same_from_mod = [val for val in nodes[i]['links_from_mod'] if val in nodes[j]['links_from_mod']]
+            same_uni_links = [val for val in nodes[i]['uni_links'] if val in nodes[j]['uni_links']]
+            same = len(same_to) + len(same_from)+len(same_to_mod) + len(same_from_mod)+ len(same_uni_links)
             if same in numbers:
                 numbers[same]+=1
             else:
                 numbers[same] = 1
-            if same!=0 and same == len(nodes[i]['links_to']) + len(nodes[i]['links_from']) and same == len(nodes[j]['links_to']) + len(
-                    nodes[j]['links_from']):
+            same_i = len(nodes[i]['links_to']) + len(nodes[i]['links_from'])+len(nodes[i]['links_to_mod']) + len(nodes[i]['links_from_mod'])+ len(nodes[i]['uni_links'])
+            same_j= len(nodes[j]['links_to']) + len(nodes[j]['links_from']) + len(nodes[j]['links_to_mod']) + len(
+                nodes[j]['links_from_mod']) + len(nodes[j]['uni_links'])
+            if same!=0 and same == same_i and same == same_j:
                 if 'all' in numbers:
                     numbers['all'] += 1
                 else:

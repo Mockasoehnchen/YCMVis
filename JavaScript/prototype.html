@@ -23,7 +23,15 @@
 	
 		<div class="search-div" align='center'>
 			<input id = 'search' type="text" placeholder="Name or Annotation">
+			
 			<button onclick="highlight()">Search</button>
+			<div class="dropdown">
+			  <button class="dropbtn">Settings</button>
+			  <div class="dropdown-content">
+			  	<input type="checkbox" onchange="hide()" id = 'High' checked> high degree nodes <br>
+			  	<input type="checkbox" id = 'exactSearch' checked> exact search <br>
+			  </div>
+			</div> 
 		</div>
 		<div id='main' class="flex-container">
 			
@@ -50,9 +58,8 @@
 
 		//based on prepared DOM, initialize echarts instance
 		var myChart = echarts.init(document.getElementById('graph'));
-
-		var hidden_alpha = 1; 
-		var hidden_nodes= ['ATP','ADP','Pi']; //nodes to be reduced in visibility //TODO
+ 
+		var hidden_nodes= ['ATP','ADP','Pi','AA']; //nodes to be reduced in visibility, or removed through button press
 		function prepare(){
 			/*
 			var to_color = { }
@@ -80,26 +87,10 @@
 		            
 		        }*/
 
-		        //reduce visibility of certain nodes
-		        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
-		        	
-		        }
-
-		    })
-		    //reduce visibility of links connected to certain nodes
-		    jQuery.each( links,function(j,link){ 
-					if(hidden_nodes.indexOf(link['target_alt'])>-1){ //hidden_nodes.indexOf(link['source'])>-1
-						/*
-						link['lineStyle']= {
-							//todo
-						}
-						*/
-					}
-		    })
-		    
-		    
+		    }) 
 		}
         prepare();
+
 		//specific chart configuration item and data
 		var option = {
 			backgroundColor: 'white',
@@ -233,8 +224,11 @@
 		});
 
 
+		/*
+			info-box function: displays extended node information in a separate div
+		*/
+		function show_info(param) { 
 
-		function show_info(param) {
 			info_box.style.width = '40%';
 			var text = '<button class="close-button" onclick="hide_info()">Close</button>' 
 			text += param.name_alt + '<br>';
@@ -313,6 +307,10 @@
 			return 7; //todo: used later when integrating information from simulations
 		}
 
+
+		/*
+			provides color palet of colors with high contrast if used in order
+		*/
 		function get_disitnct_color_kelly(){
 			var kelly_colors = [
 					//white //already background
@@ -440,31 +438,74 @@
 		
 		//search utility
 		//searches data for elements with name_alt or annotation containing text
-		function search(text){
+		//if exact = true then only return elements that have that exact annotation or name_alt (ignoring case)
+		function search(text, exact){
 			
 			var result =[];
-
-			jQuery.each( data,function(j,elem){
-				if (elem['name_alt'].toLowerCase().indexOf(text)!=-1){
-					result.push({seriesIndex:0, dataIndex:j});
-				}
-				if ('annotation' in elem){
-					if(elem['annotation'].toLowerCase().indexOf(text)!=-1){
+			if(exact){
+				jQuery.each( data,function(j,elem){
+					if (elem['name_alt'].toLowerCase()==text){
 						result.push({seriesIndex:0, dataIndex:j});
 					}
-				}
-			})
+					if ('annotation' in elem){
+						if(elem['annotation'].toLowerCase()==text){
+							result.push({seriesIndex:0, dataIndex:j});
+						}
+					}
+				})
+			}
+			else{
+				jQuery.each( data,function(j,elem){
+					if (elem['name_alt'].toLowerCase().indexOf(text)!=-1){
+						result.push({seriesIndex:0, dataIndex:j});
+					}
+					if ('annotation' in elem){
+						if(elem['annotation'].toLowerCase().indexOf(text)!=-1){
+							result.push({seriesIndex:0, dataIndex:j});
+						}
+					}
+				})
+			}
+			
 
 			return result;
 			
 		}
 
 		function highlight(){
-			var r=search(document.getElementById('search').value.toLowerCase());
+			var r=search(document.getElementById('search').value.toLowerCase(),document.getElementById("exactSearch").checked);
 			myChart.dispatchAction({type:'downplay',seriesIndex:0});
-			myChart.dispatchAction({type:'highlight',batch:r});
+			myChart.dispatchAction({type:'highlight',batch:r}); //Very bad highlighting!!!
 			//myChart.dispatchAction({type:'showTip',batch:r}); //cannot show multiple tooltips
 		}
+
+		function hide(){
+			var to_hide = document.getElementById("High").checked;
+
+			jQuery.each( data,function(j,sp){
+				
+		        //reduce visibility of certain nodes
+		        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
+		        	sp['symbol'] = 'rect'
+		        	alert(''+sp['symbol'])
+		        }
+			
+
+			})
+			
+			if(to_hide){ //show high degree nodes
+
+			}
+			else{ //hide high degree nodes
+				
+
+			}
+			
+	        myChart.setOption({
+	        	data: data 
+	        });
+		}
+
 
 	</script>
 </body>
