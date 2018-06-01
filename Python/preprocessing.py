@@ -204,7 +204,7 @@ def same_edge_collection():
                 all_same.append(nodes[i]['name_alt']+'+'+nodes[j]['name_alt']+': '+str(same))
             if(same==42):
                 print(nodes[i]['name_alt']+'+'+nodes[j]['name_alt']+': '+str(same))
-    
+
     for i in numbers:
         print i, numbers[i]
     print(all_same)

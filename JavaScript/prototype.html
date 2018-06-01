@@ -28,8 +28,10 @@
 			<div class="dropdown">
 			  <button class="dropbtn">Settings</button>
 			  <div class="dropdown-content">
-			  	<input type="checkbox" onchange="hide()" id = 'High' checked> high degree nodes <br>
+			  	
 			  	<input type="checkbox" id = 'exactSearch' checked> exact search <br>
+			  	<input type="checkbox" onchange="hide()" id = 'High' checked> show ADP,ATP,Pi <br>
+
 			  </div>
 			</div> 
 		</div>
@@ -59,7 +61,7 @@
 		//based on prepared DOM, initialize echarts instance
 		var myChart = echarts.init(document.getElementById('graph'));
  
-		var hidden_nodes= ['ATP','ADP','Pi','AA']; //nodes to be reduced in visibility, or removed through button press
+		var hidden_nodes= ['ATP','ADP','Pi']; //nodes to be reduced in visibility, or removed through button press
 		function prepare(){
 			/*
 			var to_color = { }
@@ -472,6 +474,9 @@
 			
 		}
 
+		/*
+		search and highlight nodes
+		*/
 		function highlight(){
 			var r=search(document.getElementById('search').value.toLowerCase(),document.getElementById("exactSearch").checked);
 			myChart.dispatchAction({type:'downplay',seriesIndex:0});
@@ -482,27 +487,58 @@
 		function hide(){
 			var to_hide = document.getElementById("High").checked;
 
-			jQuery.each( data,function(j,sp){
-				
-		        //reduce visibility of certain nodes
-		        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
-		        	sp['symbol'] = 'rect'
-		        	alert(''+sp['symbol'])
-		        }
-			
 
-			})
 			
 			if(to_hide){ //show high degree nodes
 
+				jQuery.each( data,function(j,sp){
+			        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
+			        	sp['itemStyle']={
+			        		opacity: 1
+			        	}
+			        }
+				
+
+				})
+				jQuery.each( links,function(j,sp){
+			        if(hidden_nodes.indexOf(sp['source_alt'])>-1 || hidden_nodes.indexOf(sp['target_alt'])>-1 ){ 
+			        	sp['lineStyle']={
+			        		opacity: 0.3
+			        	}
+			        }
+				
+
+				})
 			}
 			else{ //hide high degree nodes
+				jQuery.each( data,function(j,sp){
+			        if(hidden_nodes.indexOf(sp['name_alt'])>-1){ 
+			        	sp['itemStyle']={
+			        		opacity: 0
+			        	}
+			        }
 				
+
+				})
+				//hide connected links
+				jQuery.each( links,function(j,sp){
+			        if(hidden_nodes.indexOf(sp['source_alt'])>-1 || hidden_nodes.indexOf(sp['target_alt'])>-1 ){ 
+			        	sp['lineStyle']={
+			        		opacity: 0
+			        	}
+			        }
+				
+
+				})
 
 			}
 			
 	        myChart.setOption({
-	        	data: data 
+	        	series: {
+
+	        		data: data,
+	        		links: links
+	        	}  
 	        });
 		}
 
