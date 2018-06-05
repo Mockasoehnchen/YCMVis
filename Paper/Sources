@@ -3,7 +3,7 @@ https://www.lri.fr/~isenberg/publications/papers/Holten_2011_AEP.pdf
 -> comparison of different edge types
 
 PURCHASE, Helen C.; COHEN, Robert F.; JAMES, Murray. Validating graph drawing aesthetics. In: International Symposium on Graph Drawing. Springer, Berlin, Heidelberg, 1995. S. 435-446.
--> edge crossing is relevant
+-> edge crossing is relevant, symmetry not
 
 http://www.graphviz.org/Documentation/TSE93.pdf
 -> GraphVis drawing algorithm

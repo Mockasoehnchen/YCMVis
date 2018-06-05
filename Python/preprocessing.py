@@ -365,7 +365,9 @@ def write_graph_to_file():
     file.write(os.linesep)
     file.write('var compartments =' + json.dumps(compartments, indent=4))
     file.close()
-
+    print('-----------------')
+    print('number of nodes: '+str(len(nodes)))
+    print('number of edges: '+str(len(links)))
 
 def circle_mania():
     "all nodes of a compartment are placed on 3 circles. outer for species, middle for reactions, inner for species with many links"

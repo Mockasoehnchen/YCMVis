@@ -121,7 +121,13 @@
 				roam : true,
 				label: {
 					
-					show: false 
+					show: true,
+					formatter: function(params){
+						if(params.data.name == current_infoelement) {
+							return params.data.name_alt
+						}
+						return '' ;
+					}
 				},
 				edgeSymbol : [ 'none', 'arrow' ],
 				edgeSymbolSize : get_symbolSize()+1,
