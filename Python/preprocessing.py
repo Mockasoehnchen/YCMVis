@@ -24,7 +24,7 @@ def data_to_graph():
         for species in modeldict['sp_compartment']:
             # two species are the same if compartment,annotation and state are the same
             # within a module, name is id
-            true_id = species + modeldict['sp_compartment'][species]
+            true_id =  modeldict['sp_compartment'][species]
             if species in modeldict['sp_annotations']:
                 true_id = true_id + modeldict['sp_annotations'][species]
             if species in modeldict['sp_states']:
