@@ -10,3 +10,18 @@ http://www.graphviz.org/Documentation/TSE93.pdf
 
 http://ialab.it.monash.edu/~timd/Dwyer2013EdgeCompression.pdf
 -> egde compression techniques
+
+Gansner, E. R., Hu, Y., North, S., & Scheidegger, C. (2011, March). Multilevel agglomerative edge bundling for visualizing large graphs. In Visualization Symposium (PacificVis), 2011 IEEE Pacific (pp. 187-194). IEEE.
+-> edge bundling based on ink minimization
+
+Holten, D., & Van Wijk, J. J. (2009, June). Force‐Directed Edge Bundling for Graph Visualization. In Computer graphics forum (Vol. 28, No. 3, pp. 983-990). Blackwell Publishing Ltd.
+-> edge bundling based with force-directed approach
+
+Lambert, A., Bourqui, R., & Auber, D. (2010, June). Winding roads: Routing edges into bundles. In Computer Graphics Forum (Vol. 29, No. 3, pp. 853-862). Blackwell Publishing Ltd.
+-> edge bundling based on meshes
+
+Boynton, R. M. (1989, August). Eleven colors that are almost never confused. In Human Vision, Visual Processing, and Digital Display (Vol. 1077, pp. 322-333). International Society for Optics and Photonics.
+-> boyton colors
+
+Kelly, K. (1965). Color Eng.
+-> IF possible find better souce

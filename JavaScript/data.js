@@ -10835,133 +10835,133 @@ var data =[
 var links =[
     {
         "target_alt": "dR_ref", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "10", 
         "source_alt": "R_ref", 
         "source": "12"
     }, 
     {
         "target_alt": "dR_ref", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "10", 
         "source_alt": "r", 
         "source": "9"
     }, 
     {
         "target_alt": "dR_ref", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "10", 
         "source_alt": "pi_t", 
         "source": "6"
     }, 
     {
         "target_alt": "G", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "1", 
         "source_alt": "r", 
         "source": "9"
     }, 
     {
         "target_alt": "dr_b", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "3", 
         "source_alt": "dR_ref", 
         "source": "10"
     }, 
     {
         "target_alt": "int_vol", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "4", 
         "source_alt": "V", 
         "source": "11"
     }, 
     {
         "target_alt": "V_ref", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "7", 
         "source_alt": "R_ref", 
         "source": "12"
     }, 
     {
         "target_alt": "pi_i", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "8", 
         "source_alt": "c_i", 
         "source": "2"
     }, 
     {
         "target_alt": "pi_i", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "8", 
         "source_alt": "V", 
         "source": "11"
     }, 
     {
         "target_alt": "r", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "9", 
         "source_alt": "r_os", 
         "source": "5"
     }, 
     {
         "target_alt": "r", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "9", 
         "source_alt": "r_b", 
         "source": "13"
     }, 
     {
         "target_alt": "dr_os", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "0", 
         "source_alt": "pi_t", 
         "source": "6"
     }, 
     {
         "target_alt": "dr_os", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "0", 
         "source_alt": "pi_e", 
         "source": "15"
     }, 
     {
         "target_alt": "dr_os", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "0", 
         "source_alt": "pi_i", 
         "source": "8"
     }, 
     {
         "target_alt": "V", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "11", 
         "source_alt": "r", 
         "source": "9"
     }, 
     {
         "target_alt": "dr", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "14", 
         "source_alt": "dR_ref", 
         "source": "10"
     }, 
     {
         "target_alt": "dr", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "14", 
         "source_alt": "pi_t", 
         "source": "6"
     }, 
     {
         "target_alt": "dr", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "14", 
         "source_alt": "pi_e", 
         "source": "15"
     }, 
     {
         "target_alt": "dr", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "14", 
         "source_alt": "pi_i", 
         "source": "8"
@@ -14417,35 +14417,35 @@ var links =[
     }, 
     {
         "target_alt": "total_ribosomes", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "259", 
         "source_alt": "Ribosome", 
         "source": "144"
     }, 
     {
         "target_alt": "total_ribosomes", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "259", 
         "source_alt": "mRNA_R_Ribosome", 
         "source": "266"
     }, 
     {
         "target_alt": "total_ribosomes", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "259", 
         "source_alt": "mRNA_met_Ribosome", 
         "source": "268"
     }, 
     {
         "target_alt": "total_ribosomes", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "259", 
         "source_alt": "mRNA_other_Ribosome", 
         "source": "265"
     }, 
     {
         "target_alt": "total_ribosomes", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "259", 
         "source_alt": "int_vol", 
         "source": "4"
@@ -15193,56 +15193,56 @@ var links =[
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "glucan_cw", 
         "source": "333"
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "V_cw", 
         "source": "331"
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "chitin_cw", 
         "source": "334"
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "V_cw", 
         "source": "331"
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "mannan_cw", 
         "source": "328"
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "V_cw", 
         "source": "331"
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "proteins_cw", 
         "source": "327"
     }, 
     {
         "target_alt": "m_cw", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "332", 
         "source_alt": "V_cw", 
         "source": "331"
@@ -15506,441 +15506,441 @@ var links =[
     }, 
     {
         "target_alt": "E_ena1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "364", 
         "source_alt": "na_ext", 
         "source": "349"
     }, 
     {
         "target_alt": "E_ena1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "364", 
         "source_alt": "na_cyt", 
         "source": "350"
     }, 
     {
         "target_alt": "E_ena1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "364", 
         "source_alt": "D_G_ATP", 
         "source": "379"
     }, 
     {
         "target_alt": "surface_vac", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "365", 
         "source_alt": "r_vac", 
         "source": "372"
     }, 
     {
         "target_alt": "surface", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "368", 
         "source_alt": "r", 
         "source": "359"
     }, 
     {
         "target_alt": "E_nha1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "370", 
         "source_alt": "h_ext", 
         "source": "346"
     }, 
     {
         "target_alt": "E_nha1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "370", 
         "source_alt": "na_cyt", 
         "source": "350"
     }, 
     {
         "target_alt": "E_nha1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "370", 
         "source_alt": "h_cyt", 
         "source": "339"
     }, 
     {
         "target_alt": "E_nha1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "370", 
         "source_alt": "na_ext", 
         "source": "349"
     }, 
     {
         "target_alt": "r_vac", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "372", 
         "source_alt": "vacuole", 
         "source": "375"
     }, 
     {
         "target_alt": "my_J_tok1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "373", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_tok1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "373", 
         "source_alt": "gp_tok1", 
         "source": "386"
     }, 
     {
         "target_alt": "my_J_tok1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "373", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_tok1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "373", 
         "source_alt": "k_ext", 
         "source": "363"
     }, 
     {
         "target_alt": "my_J_tok1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "373", 
         "source_alt": "k_cyt", 
         "source": "366"
     }, 
     {
         "target_alt": "E_pma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "342", 
         "source_alt": "h_ext", 
         "source": "346"
     }, 
     {
         "target_alt": "E_pma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "342", 
         "source_alt": "h_cyt", 
         "source": "339"
     }, 
     {
         "target_alt": "E_pma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "342", 
         "source_alt": "D_G_ATP", 
         "source": "379"
     }, 
     {
         "target_alt": "E_vma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "374", 
         "source_alt": "h_cyt", 
         "source": "339"
     }, 
     {
         "target_alt": "E_vma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "374", 
         "source_alt": "h_vac", 
         "source": "345"
     }, 
     {
         "target_alt": "E_vma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "374", 
         "source_alt": "D_G_ATP", 
         "source": "379"
     }, 
     {
         "target_alt": "vacuole", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "375", 
         "source_alt": "cytosol", 
         "source": "343"
     }, 
     {
         "target_alt": "my_J_trk12", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "352", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_trk12", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "352", 
         "source_alt": "gp_trk12", 
         "source": "348"
     }, 
     {
         "target_alt": "my_J_trk12", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "352", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_trk12", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "352", 
         "source_alt": "k_ext", 
         "source": "363"
     }, 
     {
         "target_alt": "my_J_trk12", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "352", 
         "source_alt": "k_cyt", 
         "source": "366"
     }, 
     {
         "target_alt": "gp_trk12", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "348", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "D_G_ATP", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "379", 
         "source_alt": "atp_cyt", 
         "source": "341"
     }, 
     {
         "target_alt": "D_G_ATP", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "379", 
         "source_alt": "adp_cyt", 
         "source": "371"
     }, 
     {
         "target_alt": "D_G_ATP", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "379", 
         "source_alt": "pi_cyt", 
         "source": "376"
     }, 
     {
         "target_alt": "my_J_Cl", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "351", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_Cl", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "351", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_Cl", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "351", 
         "source_alt": "cl_ext", 
         "source": "383"
     }, 
     {
         "target_alt": "my_J_Cl", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "351", 
         "source_alt": "cl_cyt", 
         "source": "347"
     }, 
     {
         "target_alt": "my_J_K", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "381", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_K", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "381", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_K", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "381", 
         "source_alt": "k_ext", 
         "source": "363"
     }, 
     {
         "target_alt": "my_J_K", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "381", 
         "source_alt": "k_cyt", 
         "source": "366"
     }, 
     {
         "target_alt": "my_J_H", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "382", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_H", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "382", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_H", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "382", 
         "source_alt": "h_ext", 
         "source": "346"
     }, 
     {
         "target_alt": "my_J_H", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "382", 
         "source_alt": "h_cyt", 
         "source": "339"
     }, 
     {
         "target_alt": "my_J_Ca", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "353", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_Ca", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "353", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_Ca", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "353", 
         "source_alt": "ca_ext", 
         "source": "367"
     }, 
     {
         "target_alt": "my_J_Ca", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "353", 
         "source_alt": "ca_cyt", 
         "source": "354"
     }, 
     {
         "target_alt": "my_J_pma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "384", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_pma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "384", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_pma1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "384", 
         "source_alt": "E_pma1", 
         "source": "342"
     }, 
     {
         "target_alt": "my_J_ena1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "356", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_ena1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "356", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_ena1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "356", 
         "source_alt": "E_ena1", 
         "source": "364"
     }, 
     {
         "target_alt": "gp_tok1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "386", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "myph", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "358", 
         "source_alt": "h_cyt", 
         "source": "339"
     }, 
     {
         "target_alt": "r", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "359", 
         "source_alt": "cytosol", 
         "source": "343"
     }, 
     {
         "target_alt": "my_J_Na", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "361", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_Na", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "361", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_Na", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "361", 
         "source_alt": "na_ext", 
         "source": "349"
     }, 
     {
         "target_alt": "my_J_Na", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "361", 
         "source_alt": "na_cyt", 
         "source": "350"
     }, 
     {
         "target_alt": "my_J_nha1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "385", 
         "source_alt": "surface", 
         "source": "368"
     }, 
     {
         "target_alt": "my_J_nha1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "385", 
         "source_alt": "v_m", 
         "source": "344"
     }, 
     {
         "target_alt": "my_J_nha1", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "385", 
         "source_alt": "E_nha1", 
         "source": "370"
@@ -16010,56 +16010,56 @@ var links =[
     }, 
     {
         "target_alt": "glc_uptake", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "409", 
         "source_alt": "SURFACE", 
         "source": "415"
     }, 
     {
         "target_alt": "glc_uptake", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "409", 
         "source_alt": "glucose_ext", 
         "source": "412"
     }, 
     {
         "target_alt": "glc_uptake", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "409", 
         "source_alt": "glucose_cyt", 
         "source": "408"
     }, 
     {
         "target_alt": "glc_uptake", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "409", 
         "source_alt": "glucose_ext", 
         "source": "412"
     }, 
     {
         "target_alt": "glc_uptake", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "409", 
         "source_alt": "glucose_cyt", 
         "source": "408"
     }, 
     {
         "target_alt": "glc_uptake", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "409", 
         "source_alt": "glucose_ext", 
         "source": "412"
     }, 
     {
         "target_alt": "glc_uptake", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "409", 
         "source_alt": "glucose_cyt", 
         "source": "408"
     }, 
     {
         "target_alt": "SURFACE", 
-        "symbol": "circle", 
+        "symbol": "none", 
         "target": "415", 
         "source_alt": "VOLUME", 
         "source": "403"

@@ -138,7 +138,7 @@ def data_to_graph():
                                   'target_alt': algebraic,
                                   'source': nodes_to_int_ids[algid],
                                   'target': nodes_to_int_ids[algebraic+modeldict['name']],
-                                  'symbol': 'circle'})  # TODO: change symbol
+                                  'symbol': 'none'}) 
 
                     #not really to or from
                     nodes[int(nodes_to_int_ids[algebraic + modeldict['name']])]['uni_links'].append(nodes_to_int_ids[algid])

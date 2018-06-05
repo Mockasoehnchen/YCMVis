@@ -35,7 +35,7 @@
 			  </div>
 			</div> 
 		</div>
-		<div id='main' class="flex-container">
+		<div  class="flex-container">
 			
 			<div id='graph' class="graph-container"></div>
 			
@@ -146,9 +146,11 @@
                 		opacity: 0.5,
                 		width: 3
                 	},
-                	label:{//not working
+                	label:{ 
                 		show: true,
-	            		position: 'right' 
+                		formatter: function (params){
+                			return params.data.name_alt
+                		}
                 	}		
             	},
                 
