@@ -7,7 +7,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "94.967", 
+        "y": "21.715", 
         "annotation": "YCM:r_os_flux", 
         "name_alt": "dr_os", 
         "name": "0", 
@@ -19,7 +19,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "260.61", 
+        "x": "24.364", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -34,7 +34,7 @@ var data =[
             "VOL_core_growth_single_vol", 
             "TRP_NUT"
         ], 
-        "y": "77.671", 
+        "y": "25.832", 
         "annotation": "SBO:0000467", 
         "name_alt": "G", 
         "name": "1", 
@@ -48,7 +48,7 @@ var data =[
         "links_from": [
             "2"
         ], 
-        "x": "248.82", 
+        "x": "25.572", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -63,7 +63,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "78.981", 
+        "y": "24.594", 
         "annotation": "YCM:internal_osmolarity", 
         "name_alt": "c_i", 
         "name": "2", 
@@ -72,7 +72,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "249.98", 
+        "x": "24.738", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -84,7 +84,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "85.137", 
+        "y": "20.913", 
         "annotation": "YCM:r_b_flux", 
         "name_alt": "dr_b", 
         "name": "3", 
@@ -94,7 +94,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "256.45", 
+        "x": "21.783", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -116,7 +116,7 @@ var data =[
             "MET_CWS", 
             "TRP_NUT"
         ], 
-        "y": "76.388", 
+        "y": "27.358", 
         "annotation": "SBO:0000468", 
         "name_alt": "int_vol", 
         "name": "4", 
@@ -128,7 +128,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "247.63", 
+        "x": "26.417", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -144,7 +144,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "91.868", 
+        "y": "22.567", 
         "annotation": "SBO:0000466", 
         "name_alt": "r_os", 
         "name": "5", 
@@ -153,7 +153,7 @@ var data =[
         ], 
         "state": "osmotic", 
         "links_from": [], 
-        "x": "258.98", 
+        "x": "24.125", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -186,7 +186,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "87.368", 
+        "y": "22.794", 
         "annotation": "SBO:0000279", 
         "name_alt": "pi_t", 
         "name": "6", 
@@ -206,7 +206,7 @@ var data =[
             "6", 
             "12"
         ], 
-        "x": "256.28", 
+        "x": "23.255", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -218,7 +218,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "83.676", 
+        "y": "21.562", 
         "annotation": "SBO:0000468", 
         "name_alt": "V_ref", 
         "name": "7", 
@@ -228,7 +228,7 @@ var data =[
         ], 
         "state": "relaxed", 
         "links_from": [], 
-        "x": "255.43", 
+        "x": "21.044", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -240,7 +240,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "90.347", 
+        "y": "23.467", 
         "annotation": "SBO:0000279", 
         "name_alt": "pi_i", 
         "name": "8", 
@@ -257,7 +257,7 @@ var data =[
             "6", 
             "6"
         ], 
-        "x": "258.12", 
+        "x": "24.197", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -269,7 +269,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "81.679", 
+        "y": "24.079", 
         "annotation": "SBO:0000466", 
         "name_alt": "r", 
         "name": "9", 
@@ -291,7 +291,7 @@ var data =[
             "6", 
             "12"
         ], 
-        "x": "252.21", 
+        "x": "23.865", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -303,7 +303,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "85.911", 
+        "y": "22.182", 
         "annotation": "YCM:R_ref_flux", 
         "name_alt": "dR_ref", 
         "name": "10", 
@@ -319,7 +319,7 @@ var data =[
         "links_from": [
             "13"
         ], 
-        "x": "255.31", 
+        "x": "22.419", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -331,7 +331,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "80.317", 
+        "y": "25.221", 
         "annotation": "SBO:0000468", 
         "name_alt": "V", 
         "name": "11", 
@@ -345,7 +345,7 @@ var data =[
         "links_from": [
             "2"
         ], 
-        "x": "251.11", 
+        "x": "24.889", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -361,7 +361,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "84.477", 
+        "y": "22.793", 
         "annotation": "YCM:radius_relaxed_volume", 
         "name_alt": "R_ref", 
         "name": "12", 
@@ -377,7 +377,7 @@ var data =[
             "6", 
             "12"
         ], 
-        "x": "254.31", 
+        "x": "21.799", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -391,7 +391,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "83.066", 
+        "y": "23.405", 
         "annotation": "SBO:0000466", 
         "name_alt": "r_b", 
         "name": "13", 
@@ -400,7 +400,7 @@ var data =[
         ], 
         "state": "nonosmotic", 
         "links_from": [], 
-        "x": "253.28", 
+        "x": "22.249", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -412,7 +412,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "88.847", 
+        "y": "21.956", 
         "annotation": "YCM:r_flux", 
         "name_alt": "dr", 
         "name": "14", 
@@ -425,7 +425,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "257.22", 
+        "x": "23.495", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -437,7 +437,7 @@ var data =[
         "module": [
             "VOL_core_growth_single_vol"
         ], 
-        "y": "93.408", 
+        "y": "21.173", 
         "annotation": "SBO:0000279", 
         "name_alt": "pi_e", 
         "name": "15", 
@@ -452,7 +452,7 @@ var data =[
             "6", 
             "6"
         ], 
-        "x": "259.82", 
+        "x": "23.236", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -472,7 +472,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "67.695", 
+        "y": "34.497", 
         "annotation": "SGD:S000003723p", 
         "name_alt": "Swe1_cyt", 
         "name": "16", 
@@ -482,7 +482,7 @@ var data =[
             "91", 
             "192"
         ], 
-        "x": "147.16", 
+        "x": "37.714", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -503,7 +503,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "133.99", 
+        "y": "37.897", 
         "annotation": "SGD:S000002553p", 
         "name_alt": "Swi5_nuc", 
         "name": "17", 
@@ -514,7 +514,7 @@ var data =[
             "109", 
             "237"
         ], 
-        "x": "268.34", 
+        "x": "36.245", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -530,7 +530,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "55.242", 
+        "y": "38.293", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "SBF_p_cyt", 
         "name": "18", 
@@ -539,7 +539,7 @@ var data =[
         "links_from": [
             "62"
         ], 
-        "x": "211.96", 
+        "x": "34.921", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -558,7 +558,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "104.67", 
+        "y": "39.306", 
         "annotation": "SGD:S000003693p", 
         "name_alt": "Far1_cyt", 
         "name": "19", 
@@ -569,7 +569,7 @@ var data =[
             "78", 
             "213"
         ], 
-        "x": "264.61", 
+        "x": "26.215", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -595,7 +595,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "151.16", 
+        "y": "36.721", 
         "annotation": "SGD:S000002971p", 
         "name_alt": "APC_cyt", 
         "name": "20", 
@@ -606,7 +606,7 @@ var data =[
             "136", 
             "178"
         ], 
-        "x": "265.15", 
+        "x": "37.515", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -628,7 +628,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "54.424", 
+        "y": "38.833", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "Cdc14_p_cyt", 
         "name": "21", 
@@ -639,7 +639,7 @@ var data =[
             "102", 
             "135"
         ], 
-        "x": "208.55", 
+        "x": "36.647", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -656,7 +656,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "53.162", 
+        "y": "44.178", 
         "annotation": "SGD:S000006324p_SGD:S000004069p", 
         "name_alt": "Clb5_Sic1_cyt", 
         "name": "22", 
@@ -666,7 +666,7 @@ var data =[
             "87", 
             "110"
         ], 
-        "x": "184.19", 
+        "x": "34.974", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -681,7 +681,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "61.622", 
+        "y": "43.289", 
         "annotation": "SGD:S000005609p", 
         "name_alt": "Whi5_p_cyt", 
         "name": "23", 
@@ -691,7 +691,7 @@ var data =[
             "59", 
             "74"
         ], 
-        "x": "228.21", 
+        "x": "33.555", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -709,7 +709,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "53.262", 
+        "y": "36.218", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "Cdc14_cyt", 
         "name": "24", 
@@ -719,7 +719,7 @@ var data =[
             "92", 
             "170"
         ], 
-        "x": "201.65", 
+        "x": "36.629", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -739,14 +739,14 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "56.483", 
+        "y": "40.558", 
         "annotation": "SGD:S000004103p", 
         "name_alt": "Hog1_PP_cyt", 
         "name": "25", 
         "uni_links": [], 
         "state": "PP", 
         "links_from": [], 
-        "x": "168.83", 
+        "x": "35.847", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -761,7 +761,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "181.1", 
+        "y": "43.086", 
         "annotation": "SGD:S000002314p_SGD:S000004069p", 
         "name_alt": "Clb3_Sic1_cyt", 
         "name": "26", 
@@ -770,7 +770,7 @@ var data =[
         "links_from": [
             "132"
         ], 
-        "x": "247.63", 
+        "x": "38.155", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -786,7 +786,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "116.55", 
+        "y": "43.731", 
         "annotation": "SGD:S000006177p_SGD:S000003693p", 
         "name_alt": "Cln2_Far1_p_cyt", 
         "name": "27", 
@@ -795,7 +795,7 @@ var data =[
         "links_from": [
             "66"
         ], 
-        "x": "267.54", 
+        "x": "27.524", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -809,7 +809,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "65.674", 
+        "y": "36.645", 
         "annotation": "SGD:S000003723p", 
         "name_alt": "Swe1_p_cyt", 
         "name": "28", 
@@ -819,7 +819,7 @@ var data =[
             "72", 
             "82"
         ], 
-        "x": "150.02", 
+        "x": "41.839", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -847,7 +847,7 @@ var data =[
             "GEX_GRN", 
             "MET_DNA"
         ], 
-        "y": "62.037", 
+        "y": "39.518", 
         "annotation": "SGD:S000006324p", 
         "name_alt": "Clb5_cyt", 
         "name": "29", 
@@ -860,7 +860,7 @@ var data =[
             "134", 
             "236"
         ], 
-        "x": "156", 
+        "x": "34.634", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -878,7 +878,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "58.622", 
+        "y": "40.233", 
         "annotation": "SGD:S000005609p", 
         "name_alt": "Whi5_cyt", 
         "name": "30", 
@@ -889,7 +889,7 @@ var data =[
             "131", 
             "172"
         ], 
-        "x": "221.89", 
+        "x": "31.187", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -903,7 +903,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "52.739", 
+        "y": "44.042", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "Sic1_p_cyt", 
         "name": "31", 
@@ -913,7 +913,7 @@ var data =[
             "101", 
             "108"
         ], 
-        "x": "194.68", 
+        "x": "33.792", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -933,7 +933,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "69.296", 
+        "y": "40.642", 
         "annotation": "SGD:S000000038p", 
         "name_alt": "Cln3_cyt", 
         "name": "32", 
@@ -945,7 +945,7 @@ var data =[
             "140", 
             "174"
         ], 
-        "x": "239.9", 
+        "x": "27.463", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -960,7 +960,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "53.914", 
+        "y": "43.761", 
         "annotation": "SGD:S000006324p_SGD:S000004069p", 
         "name_alt": "Clb5_Sic1_Hp_cyt", 
         "name": "33", 
@@ -970,7 +970,7 @@ var data =[
             "63", 
             "128"
         ], 
-        "x": "179", 
+        "x": "36.706", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -988,7 +988,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "73.304", 
+        "y": "32.479", 
         "annotation": "SGD:S000004639p", 
         "name_alt": "Mih1_cyt", 
         "name": "34", 
@@ -998,7 +998,7 @@ var data =[
             "137", 
             "233"
         ], 
-        "x": "140.45", 
+        "x": "36.136", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1016,7 +1016,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "109.7", 
+        "y": "42.223", 
         "annotation": "SGD:S000003693p", 
         "name_alt": "Far1_p_cyt", 
         "name": "35", 
@@ -1027,7 +1027,7 @@ var data =[
             "94", 
             "117"
         ], 
-        "x": "266.1", 
+        "x": "25.082", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1042,7 +1042,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "70.968", 
+        "y": "33.116", 
         "annotation": "SGD:S000006323p", 
         "name_alt": "Clb2_p_cyt", 
         "name": "36", 
@@ -1051,7 +1051,7 @@ var data =[
         "links_from": [
             "121"
         ], 
-        "x": "143.06", 
+        "x": "39.659", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1067,14 +1067,14 @@ var data =[
             "GEX_TRL", 
             "MET_DNA"
         ], 
-        "y": "96.577", 
+        "y": "17.467", 
         "annotation": "SBO:0000468", 
         "name_alt": "nuc_vol", 
         "name": "37", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "113.71", 
+        "x": "9.8505", 
         "compartment": "nucleus", 
         "is_ode": true
     }, 
@@ -1102,7 +1102,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "167.14", 
+        "y": "36.094", 
         "annotation": "SGD:S000006323p", 
         "name_alt": "Clb2_cyt", 
         "name": "38", 
@@ -1114,7 +1114,7 @@ var data =[
             "125", 
             "206"
         ], 
-        "x": "258.12", 
+        "x": "38.023", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1135,7 +1135,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "59.678", 
+        "y": "39.947", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "Sic1_cyt", 
         "name": "39", 
@@ -1149,7 +1149,7 @@ var data =[
             "134", 
             "177"
         ], 
-        "x": "160.69", 
+        "x": "35.496", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1166,14 +1166,14 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "121.75", 
+        "y": "38.19", 
         "annotation": "SGD:S000000112p", 
         "name_alt": "Fus3_cyt", 
         "name": "40", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "268.2", 
+        "x": "24.833", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -1188,7 +1188,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "57.649", 
+        "y": "39.903", 
         "annotation": "SGD:S000006323p_SGD:S000004069p", 
         "name_alt": "Clb2_Sic1_cyt", 
         "name": "41", 
@@ -1197,7 +1197,7 @@ var data =[
         "links_from": [
             "57"
         ], 
-        "x": "165.53", 
+        "x": "40.941", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1212,7 +1212,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "60.817", 
+        "y": "43.935", 
         "annotation": "SGD:S000000913p_SGD:S000004172p_SGD:S000005609p", 
         "name_alt": "SBF_Whi5_nuc", 
         "name": "42", 
@@ -1221,7 +1221,7 @@ var data =[
         "links_from": [
             "60"
         ], 
-        "x": "226.66", 
+        "x": "31.619", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1236,7 +1236,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "162.52", 
+        "y": "38.541", 
         "annotation": "SGD:S000002971p", 
         "name_alt": "APC_p_cyt", 
         "name": "43", 
@@ -1246,7 +1246,7 @@ var data =[
             "123", 
             "124"
         ], 
-        "x": "260.61", 
+        "x": "41.162", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1269,7 +1269,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "140.94", 
+        "y": "34.834", 
         "annotation": "SGD:S000004646p", 
         "name_alt": "Mcm1_nuc", 
         "name": "44", 
@@ -1280,7 +1280,7 @@ var data =[
             "116", 
             "219"
         ], 
-        "x": "267.54", 
+        "x": "35.082", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1302,7 +1302,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "171.58", 
+        "y": "39.127", 
         "annotation": "SGD:S000002314p", 
         "name_alt": "Clb3_cyt", 
         "name": "45", 
@@ -1313,7 +1313,7 @@ var data =[
             "122", 
             "225"
         ], 
-        "x": "255.31", 
+        "x": "35.754", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1341,7 +1341,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "66.167", 
+        "y": "40.714", 
         "annotation": "SGD:S000006177p", 
         "name_alt": "Cln2_cyt", 
         "name": "46", 
@@ -1353,7 +1353,7 @@ var data =[
             "111", 
             "227"
         ], 
-        "x": "235.68", 
+        "x": "30.096", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1368,7 +1368,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "128.74", 
+        "y": "40.12", 
         "annotation": "SGD:S000002553p", 
         "name_alt": "Swi5_p_cyt", 
         "name": "47", 
@@ -1378,7 +1378,7 @@ var data =[
             "118", 
             "119"
         ], 
-        "x": "268.53", 
+        "x": "40.021", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1398,7 +1398,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "56.76", 
+        "y": "40.218", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "SBF_nuc", 
         "name": "48", 
@@ -1409,7 +1409,7 @@ var data =[
             "70", 
             "202"
         ], 
-        "x": "216.98", 
+        "x": "32.049", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1425,7 +1425,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "98.137", 
+        "y": "43.362", 
         "annotation": "SGD:S000000038p_SGD:S000003693p", 
         "name_alt": "Cln3_Far1_p_cyt", 
         "name": "49", 
@@ -1434,7 +1434,7 @@ var data =[
         "links_from": [
             "107"
         ], 
-        "x": "262.09", 
+        "x": "26.543", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1453,7 +1453,7 @@ var data =[
             "CDC_core", 
             "GEX_GRN"
         ], 
-        "y": "75.757", 
+        "y": "39.872", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
         "name_alt": "MBF_nuc", 
         "name": "50", 
@@ -1463,7 +1463,7 @@ var data =[
             "52", 
             "203"
         ], 
-        "x": "137.96", 
+        "x": "29.61", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1478,7 +1478,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "55.023", 
+        "y": "43.129", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "Sic1_Hp_cyt", 
         "name": "51", 
@@ -1488,7 +1488,7 @@ var data =[
             "79", 
             "100"
         ], 
-        "x": "173.87", 
+        "x": "37.129", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -1504,7 +1504,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "63.336", 
+        "y": "40.771", 
         "rate": "( int_vol *    ( ( kp_MBF  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( K_MBF  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   )", 
         "name_alt": "v_MBF_akt", 
         "name": "52", 
@@ -1513,7 +1513,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "231.26", 
+        "x": "29.233", 
         "is_ode": false
     }, 
     {
@@ -1528,7 +1528,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "72.121", 
+        "y": "33.038", 
         "rate": "( int_vol *   ( ( kdp_Clb2  *  Clb2_p_cyt )  *  Mih1_cyt )  )", 
         "name_alt": "v_Clb2_dp", 
         "name": "53", 
@@ -1539,7 +1539,7 @@ var data =[
         "links_from": [
             "36"
         ], 
-        "x": "141.74", 
+        "x": "37.712", 
         "is_ode": false
     }, 
     {
@@ -1550,7 +1550,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "109.35", 
+        "y": "43.216", 
         "rate": "( int_vol *   ( kd_Far1p  *  Far1_p_cyt )  )", 
         "name_alt": "v_Far1p_d", 
         "name": "54", 
@@ -1561,7 +1561,7 @@ var data =[
         "links_from": [
             "35"
         ], 
-        "x": "267.43", 
+        "x": "24.518", 
         "is_ode": false
     }, 
     {
@@ -1574,7 +1574,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "103.01", 
+        "y": "41.054", 
         "rate": "( int_vol *   ( ( kdd_Far1  *  Far1_cyt )  *  Cln2_cyt )  )", 
         "name_alt": "v_Far1_dd", 
         "name": "55", 
@@ -1585,7 +1585,7 @@ var data =[
         "links_from": [
             "19"
         ], 
-        "x": "264.04", 
+        "x": "26.602", 
         "is_ode": false
     }, 
     {
@@ -1596,7 +1596,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "141.16", 
+        "y": "33.494", 
         "rate": "( int_vol *   ( kd_Mcm1  *  Mcm1_nuc )  )", 
         "name_alt": "v_Mcm1_d", 
         "name": "56", 
@@ -1607,7 +1607,7 @@ var data =[
         "links_from": [
             "44"
         ], 
-        "x": "268.9", 
+        "x": "36.363", 
         "is_ode": false
     }, 
     {
@@ -1620,7 +1620,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "57.047", 
+        "y": "38.868", 
         "rate": "( int_vol *   ( (   kcf_Clb2_Sic1 )  *  Clb2_cyt )  *  Sic1_cyt )", 
         "name_alt": "v_Clb2_ass_Sic1", 
         "name": "57", 
@@ -1632,7 +1632,7 @@ var data =[
             "38", 
             "39"
         ], 
-        "x": "167.17", 
+        "x": "39.835", 
         "is_ode": false
     }, 
     {
@@ -1643,7 +1643,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "116.33", 
+        "y": "45.184", 
         "rate": "( int_vol *   ( kd_Cln2_Far1p  *  Cln2_Far1_p_cyt )  )", 
         "name_alt": "v_Cln2_Far1p_d", 
         "name": "58", 
@@ -1654,7 +1654,7 @@ var data =[
         "links_from": [
             "27"
         ], 
-        "x": "268.9", 
+        "x": "26.611", 
         "is_ode": false
     }, 
     {
@@ -1671,7 +1671,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "62.461", 
+        "y": "41.467", 
         "rate": "( int_vol *   ( SBF_Whi5_nuc  *  (  ( ( kppa_Cln3_Whi5  *  Cln3_cyt )  /  ( Kpp_Cln3_Whi5  + Cln3_cyt ) )   +  ( ( kppa_Cln2_Whi5  *  ( (Cln2_cyt)  **  n_SBF ) )  /  ( ( Kpp_Cln2_Whi5  **  n_SBF )  + ( (Cln2_cyt)  **  n_SBF ) ) )  ) )  )", 
         "name_alt": "v_SBF_akt", 
         "name": "59", 
@@ -1682,7 +1682,7 @@ var data =[
         "links_from": [
             "42"
         ], 
-        "x": "229.75", 
+        "x": "31.125", 
         "is_ode": false
     }, 
     {
@@ -1695,7 +1695,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "59.317", 
+        "y": "41.455", 
         "rate": "( int_vol *   ( ( kcf_SBF_Whi5  *  SBF_nuc )  *  Whi5_cyt )  )", 
         "name_alt": "v_SBF_ass_Whi5", 
         "name": "60", 
@@ -1707,7 +1707,7 @@ var data =[
             "48", 
             "30"
         ], 
-        "x": "223.5", 
+        "x": "32.342", 
         "is_ode": false
     }, 
     {
@@ -1718,7 +1718,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "104.23", 
+        "y": "39.566", 
         "rate": "( int_vol *   ( kd_Far1  *  Far1_cyt )  )", 
         "name_alt": "v_Far1_d", 
         "name": "61", 
@@ -1729,7 +1729,7 @@ var data =[
         "links_from": [
             "19"
         ], 
-        "x": "265.92", 
+        "x": "24.526", 
         "is_ode": false
     }, 
     {
@@ -1744,7 +1744,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "55.71", 
+        "y": "38.516", 
         "rate": "( int_vol *   ( ( kpp_SBF_Clb2  *  SBF_nuc )  *  Clb2_cyt )  )", 
         "name_alt": "v_SBF_inakt_Clb2", 
         "name": "62", 
@@ -1755,7 +1755,7 @@ var data =[
         "links_from": [
             "48"
         ], 
-        "x": "213.64", 
+        "x": "35.784", 
         "is_ode": false
     }, 
     {
@@ -1768,7 +1768,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "54.244", 
+        "y": "42.736", 
         "rate": "( int_vol *   ( (   kcf_Clb5_Sic1_Hp )  *  Clb5_cyt )  *  Sic1_Hp_cyt )", 
         "name_alt": "v_Clb5_ass_Sic1_Hp", 
         "name": "63", 
@@ -1780,7 +1780,7 @@ var data =[
             "51", 
             "29"
         ], 
-        "x": "177.28", 
+        "x": "36.073", 
         "is_ode": false
     }, 
     {
@@ -1795,7 +1795,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "54.074", 
+        "y": "36.693", 
         "rate": "( int_vol *   ( ( kpp_Cdc14_MEN  *  Cdc14_cyt )  *  Cdc14_p_cyt )  )", 
         "name_alt": "v_Cdc14_akt_MEN_fb", 
         "name": "64", 
@@ -1806,7 +1806,7 @@ var data =[
         "links_from": [
             "24"
         ], 
-        "x": "206.84", 
+        "x": "39.255", 
         "is_ode": false
     }, 
     {
@@ -1817,7 +1817,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "58.429", 
+        "y": "41.743", 
         "rate": "( int_vol *   ( kd_Sic1  *  Sic1_cyt )  )", 
         "name_alt": "v_Sic1_d", 
         "name": "65", 
@@ -1828,7 +1828,7 @@ var data =[
         "links_from": [
             "39"
         ], 
-        "x": "160.11", 
+        "x": "37.527", 
         "is_ode": false
     }, 
     {
@@ -1841,7 +1841,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "113.11", 
+        "y": "42.898", 
         "rate": "( int_vol *   ( ( kcf_Cln2_Far1p  *  Cln2_cyt )  *  Far1_p_cyt )  )", 
         "name_alt": "v_Cln2_ass_Far1p", 
         "name": "66", 
@@ -1853,7 +1853,7 @@ var data =[
             "46", 
             "35"
         ], 
-        "x": "266.9", 
+        "x": "28.702", 
         "is_ode": false
     }, 
     {
@@ -1868,7 +1868,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "139.21", 
+        "y": "40.033", 
         "rate": "( int_vol *    ( ( kp_Sic1  *  Swi5_nuc )  /  ( Kp_Sic1  + Swi5_nuc ) )   )", 
         "name_alt": "v_Sic1_p", 
         "name": "67", 
@@ -1877,7 +1877,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "267.8", 
+        "x": "36.869", 
         "is_ode": false
     }, 
     {
@@ -1891,7 +1891,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "99.747", 
+        "y": "42.743", 
         "rate": "( int_vol *   ( kcd_Cln3_Far1p  *  Cln3_Far1_p_cyt )  )", 
         "name_alt": "v_Cln3_diss_Far1p", 
         "name": "68", 
@@ -1902,7 +1902,7 @@ var data =[
         "links_from": [
             "49"
         ], 
-        "x": "262.78", 
+        "x": "27.051", 
         "is_ode": false
     }, 
     {
@@ -1913,7 +1913,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "51.365", 
+        "y": "45.577", 
         "rate": "( int_vol *   ( kd_Sic1p  *  Sic1_p_cyt )  )", 
         "name_alt": "v_Sic1_p_d", 
         "name": "69", 
@@ -1924,7 +1924,7 @@ var data =[
         "links_from": [
             "31"
         ], 
-        "x": "194.72", 
+        "x": "34.067", 
         "is_ode": false
     }, 
     {
@@ -1939,7 +1939,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "54.814", 
+        "y": "39.544", 
         "rate": "( int_vol *   ( ( kdp_SBF  *  SBF_p_cyt )  *  Cdc14_p_cyt )  )", 
         "name_alt": "v_SBF_dp", 
         "name": "70", 
@@ -1950,7 +1950,7 @@ var data =[
         "links_from": [
             "18"
         ], 
-        "x": "210.26", 
+        "x": "33.773", 
         "is_ode": false
     }, 
     {
@@ -1964,7 +1964,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "182.35", 
+        "y": "40.896", 
         "rate": "( int_vol * ( kcd_Clb3_Sic1  *  Clb3_Sic1_cyt )  )", 
         "name_alt": "v_Clb3_diss_Sic1", 
         "name": "71", 
@@ -1975,7 +1975,7 @@ var data =[
         "links_from": [
             "26"
         ], 
-        "x": "246.41", 
+        "x": "36.708", 
         "is_ode": false
     }, 
     {
@@ -1990,7 +1990,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "66.668", 
+        "y": "35.139", 
         "rate": "( int_vol *   ( ( kpp_Swe1_Clb2  *  Swe1_cyt )  *  Clb2_cyt )  )", 
         "name_alt": "v_Swe1_pp", 
         "name": "72", 
@@ -2001,7 +2001,7 @@ var data =[
         "links_from": [
             "16"
         ], 
-        "x": "148.58", 
+        "x": "40.15", 
         "is_ode": false
     }, 
     {
@@ -2012,7 +2012,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "128.74", 
+        "y": "40.968", 
         "rate": "( int_vol * ( kd_Swi5_p  *  Swi5_p_cyt )  )", 
         "name_alt": "v_Swi5_p_d", 
         "name": "73", 
@@ -2023,7 +2023,7 @@ var data =[
         "links_from": [
             "47"
         ], 
-        "x": "269.9", 
+        "x": "41.402", 
         "is_ode": false
     }, 
     {
@@ -2039,7 +2039,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "64.246", 
+        "y": "42.022", 
         "rate": "( int_vol *   ( Whi5_cyt  *  ( ( kpp_Cln2_Whi5  *  Cln2_cyt )  + ( kpp_Cln3_Whi5  *  Cln3_cyt ) ) )  )", 
         "name_alt": "v_Whi5_pp", 
         "name": "74", 
@@ -2050,7 +2050,7 @@ var data =[
         "links_from": [
             "30"
         ], 
-        "x": "232.76", 
+        "x": "30.176", 
         "is_ode": false
     }, 
     {
@@ -2066,7 +2066,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "61.215", 
+        "y": "39.887", 
         "rate": "( int_vol *    (  ( ( kp_Clb5  *  MBF_nuc )  /  ( Kp_Clb5  + MBF_nuc ) )   /  ( 1.0  + ( kI_Clb5_Hog1  *  Hog1_PP_cyt ) ) )   )", 
         "name_alt": "v_Clb5_p", 
         "name": "75", 
@@ -2075,7 +2075,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "157.54", 
+        "x": "32.911", 
         "is_ode": false
     }, 
     {
@@ -2090,7 +2090,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "120.01", 
+        "y": "38.886", 
         "rate": "( int_vol *   ( ( kp_Far1  *  Fus3_cyt )  + kp_basal_Far1 )  )", 
         "name_alt": "v_Far1_p", 
         "name": "76", 
@@ -2099,7 +2099,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "268.02", 
+        "x": "24.605", 
         "is_ode": false
     }, 
     {
@@ -2114,7 +2114,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "159.35", 
+        "y": "38.201", 
         "rate": "( int_vol *   ( ( ka_APC_Cdc14  *  APC_p_cyt )  *  Cdc14_p_cyt )  )", 
         "name_alt": "v_APC_akt_Cdc14", 
         "name": "77", 
@@ -2125,7 +2125,7 @@ var data =[
         "links_from": [
             "43"
         ], 
-        "x": "262.09", 
+        "x": "40.237", 
         "is_ode": false
     }, 
     {
@@ -2138,7 +2138,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "106.33", 
+        "y": "40.564", 
         "rate": "( int_vol *   ( kdp_Far1p  *  Far1_p_cyt )  )", 
         "name_alt": "v_Far1p_dp", 
         "name": "78", 
@@ -2149,7 +2149,7 @@ var data =[
         "links_from": [
             "35"
         ], 
-        "x": "265.15", 
+        "x": "25.427", 
         "is_ode": false
     }, 
     {
@@ -2163,7 +2163,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "54.614", 
+        "y": "43.032", 
         "rate": "( int_vol * ( kcd_Clb5_Sic1_Hp  *  Clb5_Sic1_Hp_cyt )  )", 
         "name_alt": "v_Clb5_diss_Sic1_Hp", 
         "name": "79", 
@@ -2174,7 +2174,7 @@ var data =[
         "links_from": [
             "33"
         ], 
-        "x": "175.57", 
+        "x": "34.982", 
         "is_ode": false
     }, 
     {
@@ -2187,7 +2187,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "157.74", 
+        "y": "35.132", 
         "rate": "( int_vol *   ( ( kd_Clb2_APC  *  Clb2_cyt )  *  APC_cyt )  )", 
         "name_alt": "v_Clb2_d_APC", 
         "name": "80", 
@@ -2198,7 +2198,7 @@ var data =[
         "links_from": [
             "38"
         ], 
-        "x": "262.78", 
+        "x": "38.819", 
         "is_ode": false
     }, 
     {
@@ -2209,7 +2209,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "60.408", 
+        "y": "45.023", 
         "rate": "( int_vol *   ( kd_Whi5p  *  Whi5_p_cyt )  )", 
         "name_alt": "v_Whi5_p_d", 
         "name": "81", 
@@ -2220,7 +2220,7 @@ var data =[
         "links_from": [
             "23"
         ], 
-        "x": "228.86", 
+        "x": "32.569", 
         "is_ode": false
     }, 
     {
@@ -2235,7 +2235,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "64.714", 
+        "y": "37.573", 
         "rate": "( int_vol *    ( ( kpp_Swe1_Hls1  *  Swe1_cyt )  /  ( 1.0  + ( kI_Swe1_Hog1  *  Hog1_PP_cyt ) ) )   )", 
         "name_alt": "v_Swe1_Hog1", 
         "name": "82", 
@@ -2246,7 +2246,7 @@ var data =[
         "links_from": [
             "16"
         ], 
-        "x": "151.48", 
+        "x": "40.623", 
         "is_ode": false
     }, 
     {
@@ -2257,7 +2257,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "56.363", 
+        "y": "40.416", 
         "rate": "( int_vol *   ( kd_Clb2_Sic1  *  Clb2_Sic1_cyt )  )", 
         "name_alt": "v_Clb2_Sic1_d", 
         "name": "83", 
@@ -2268,7 +2268,7 @@ var data =[
         "links_from": [
             "41"
         ], 
-        "x": "165.04", 
+        "x": "42.397", 
         "is_ode": false
     }, 
     {
@@ -2281,7 +2281,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "55.471", 
+        "y": "42.474", 
         "rate": "( int_vol *   ( kdp_Sic1_Hp  *  Sic1_Hp_cyt )  )", 
         "name_alt": "v_Sic1_Hp_dp", 
         "name": "84", 
@@ -2292,7 +2292,7 @@ var data =[
         "links_from": [
             "51"
         ], 
-        "x": "172.18", 
+        "x": "37.392", 
         "is_ode": false
     }, 
     {
@@ -2305,7 +2305,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "114.82", 
+        "y": "43.374", 
         "rate": "( int_vol *   ( ( kpp_Cln2_Far1p  *  Cln2_Far1_p_cyt )  *  Cln2_cyt )  )", 
         "name_alt": "v_Cln2_rel", 
         "name": "85", 
@@ -2316,7 +2316,7 @@ var data =[
         "links_from": [
             "27"
         ], 
-        "x": "267.24", 
+        "x": "29.848", 
         "is_ode": false
     }, 
     {
@@ -2329,7 +2329,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "156.12", 
+        "y": "38.415", 
         "rate": "( int_vol *   ( ( kd_Clb3_APC  *  Clb3_cyt )  *  APC_cyt )  )", 
         "name_alt": "v_Clb3_d_APC", 
         "name": "86", 
@@ -2340,7 +2340,7 @@ var data =[
         "links_from": [
             "45"
         ], 
-        "x": "263.43", 
+        "x": "37.525", 
         "is_ode": false
     }, 
     {
@@ -2353,7 +2353,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "58.288", 
+        "y": "42.223", 
         "rate": "( int_vol *   ( (   kcf_Clb5_Sic1 )  *  Clb5_cyt )  *  Sic1_cyt )", 
         "name_alt": "v_Clb5_ass_Sic1", 
         "name": "87", 
@@ -2365,7 +2365,7 @@ var data =[
             "39", 
             "29"
         ], 
-        "x": "163.9", 
+        "x": "35.162", 
         "is_ode": false
     }, 
     {
@@ -2378,7 +2378,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "108.01", 
+        "y": "41.614", 
         "rate": "( int_vol *   ( ( kdd_Far1p  *  Far1_p_cyt )  *  Cln2_cyt )  )", 
         "name_alt": "v_Far1_p_dd", 
         "name": "88", 
@@ -2389,7 +2389,7 @@ var data =[
         "links_from": [
             "35"
         ], 
-        "x": "265.64", 
+        "x": "28.461", 
         "is_ode": false
     }, 
     {
@@ -2400,7 +2400,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "67.117", 
+        "y": "33.048", 
         "rate": "( int_vol *   ( kd_Swe1  *  Swe1_cyt )  )", 
         "name_alt": "v_Swe1_d", 
         "name": "89", 
@@ -2411,7 +2411,7 @@ var data =[
         "links_from": [
             "16"
         ], 
-        "x": "145.64", 
+        "x": "38.573", 
         "is_ode": false
     }, 
     {
@@ -2424,7 +2424,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "154.48", 
+        "y": "39.104", 
         "rate": "( int_vol *   ( ( kd_Clb5_APC  *  Clb5_cyt )  *  APC_cyt )  )", 
         "name_alt": "v_Clb5_d_APC", 
         "name": "90", 
@@ -2435,7 +2435,7 @@ var data =[
         "links_from": [
             "29"
         ], 
-        "x": "264.04", 
+        "x": "37.509", 
         "is_ode": false
     }, 
     {
@@ -2448,7 +2448,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "66.074", 
+        "y": "33.728", 
         "rate": "( int_vol *   kp_Swe1  )", 
         "name_alt": "v_Swe1_p", 
         "name": "91", 
@@ -2457,7 +2457,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "147.05", 
+        "x": "38.864", 
         "is_ode": false
     }, 
     {
@@ -2470,7 +2470,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "53.764", 
+        "y": "37.341", 
         "rate": "( int_vol *   ( ki_Cdc14  *  Cdc14_p_cyt )  )", 
         "name_alt": "v_Cdc14_inakt", 
         "name": "92", 
@@ -2481,7 +2481,7 @@ var data =[
         "links_from": [
             "21"
         ], 
-        "x": "205.12", 
+        "x": "38.83", 
         "is_ode": false
     }, 
     {
@@ -2492,7 +2492,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "51.795", 
+        "y": "44.988", 
         "rate": "( int_vol *   ( kd_Clb5_Sic1  *  Clb5_Sic1_cyt )  )", 
         "name_alt": "v_Clb5_Sic1_d", 
         "name": "93", 
@@ -2503,7 +2503,7 @@ var data =[
         "links_from": [
             "22"
         ], 
-        "x": "184.04", 
+        "x": "35.554", 
         "is_ode": false
     }, 
     {
@@ -2517,7 +2517,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "111.4", 
+        "y": "42.225", 
         "rate": "( int_vol *   ( kcd_Cln2_Far1p  *  Cln2_Far1_p_cyt )  )", 
         "name_alt": "v_Cln2_diss_Far1p", 
         "name": "94", 
@@ -2528,7 +2528,7 @@ var data =[
         "links_from": [
             "27"
         ], 
-        "x": "266.52", 
+        "x": "27.918", 
         "is_ode": false
     }, 
     {
@@ -2542,7 +2542,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "58.965", 
+        "y": "39.507", 
         "rate": "( int_vol * ( kcd_Clb2_Sic1  *  Clb2_Sic1_cyt )  )", 
         "name_alt": "v_Clb2_diss_Sic1", 
         "name": "95", 
@@ -2553,7 +2553,7 @@ var data =[
         "links_from": [
             "41"
         ], 
-        "x": "162.28", 
+        "x": "39.611", 
         "is_ode": false
     }, 
     {
@@ -2564,7 +2564,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "182.05", 
+        "y": "43.822", 
         "rate": "( int_vol *   ( kd_Clb3_Sic1  *  Clb3_Sic1_cyt )  )", 
         "name_alt": "v_Clb3_Sic1_d", 
         "name": "96", 
@@ -2575,7 +2575,7 @@ var data =[
         "links_from": [
             "26"
         ], 
-        "x": "248.63", 
+        "x": "39.189", 
         "is_ode": false
     }, 
     {
@@ -2590,7 +2590,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "126.99", 
+        "y": "39.699", 
         "rate": "( int_vol *   ( ( kdp_Swi5_Cdc14  *  Swi5_p_cyt )  *  Cdc14_p_cyt )  )", 
         "name_alt": "v_Swi5_dp", 
         "name": "97", 
@@ -2601,7 +2601,7 @@ var data =[
         "links_from": [
             "47"
         ], 
-        "x": "268.51", 
+        "x": "38.749", 
         "is_ode": false
     }, 
     {
@@ -2612,7 +2612,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "60.831", 
+        "y": "42.42", 
         "rate": "( int_vol *   ( kd_Clb5  *  Clb5_cyt )  )", 
         "name_alt": "v_Clb5_d", 
         "name": "98", 
@@ -2623,7 +2623,7 @@ var data =[
         "links_from": [
             "29"
         ], 
-        "x": "155.34", 
+        "x": "34.26", 
         "is_ode": false
     }, 
     {
@@ -2634,7 +2634,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "151.56", 
+        "y": "35.752", 
         "rate": "( int_vol *   ( kd_APC  *  APC_cyt )  )", 
         "name_alt": "v_APC_d", 
         "name": "99", 
@@ -2645,7 +2645,7 @@ var data =[
         "links_from": [
             "20"
         ], 
-        "x": "266.46", 
+        "x": "40.282", 
         "is_ode": false
     }, 
     {
@@ -2660,7 +2660,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "55.958", 
+        "y": "42.124", 
         "rate": "( int_vol *   ( ( kpp_Sic1_Hog1  *  Hog1_PP_cyt )  *  Sic1_cyt )  )", 
         "name_alt": "v_Sic1_pp_Hog1", 
         "name": "100", 
@@ -2671,7 +2671,7 @@ var data =[
         "links_from": [
             "39"
         ], 
-        "x": "170.5", 
+        "x": "36.526", 
         "is_ode": false
     }, 
     {
@@ -2687,7 +2687,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "52.709", 
+        "y": "42.067", 
         "rate": "( int_vol *   ( Sic1_cyt  *  (  ( ( kpp_Cln2_Sic1  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( Kpp_Cln2_Sic1  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   +  ( ( kpp_Clb5_Sic1  *  ( (Clb5_cyt)  **  n1 ) )  /  ( ( Kpp_Clb5_Sic1  **  n1 )  + ( (Clb5_cyt)  **  n1 ) ) )  ) )  )", 
         "name_alt": "v_Sic1_pp", 
         "name": "101", 
@@ -2698,7 +2698,7 @@ var data =[
         "links_from": [
             "39"
         ], 
-        "x": "192.93", 
+        "x": "32.513", 
         "is_ode": false
     }, 
     {
@@ -2713,7 +2713,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "53.493", 
+        "y": "37.363", 
         "rate": "( int_vol *   ( ( kpp_Cdc14_Clb2  *  Cdc14_cyt )  *  Clb2_cyt )  )", 
         "name_alt": "v_Cdc14_akt_Clb2", 
         "name": "102", 
@@ -2724,7 +2724,7 @@ var data =[
         "links_from": [
             "24"
         ], 
-        "x": "203.39", 
+        "x": "37.969", 
         "is_ode": false
     }, 
     {
@@ -2739,7 +2739,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "144.38", 
+        "y": "34.111", 
         "rate": "( int_vol *    ( ( kp_Mcm1  *  ( (Clb2_cyt)  **  n_Mcm1 ) )  /  ( ( Kp_Mcm1  **  n_Mcm1 )  + ( (Clb2_cyt)  **  n_Mcm1 ) ) )   )", 
         "name_alt": "v_Mcm1_p_Clb2_fb", 
         "name": "103", 
@@ -2748,7 +2748,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "266.9", 
+        "x": "36.851", 
         "is_ode": false
     }, 
     {
@@ -2759,7 +2759,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "172.35", 
+        "y": "41.171", 
         "rate": "( int_vol *   ( kd_Clb3  *  Clb3_cyt )  )", 
         "name_alt": "v_Clb3_d", 
         "name": "104", 
@@ -2770,7 +2770,7 @@ var data =[
         "links_from": [
             "45"
         ], 
-        "x": "256.45", 
+        "x": "34.984", 
         "is_ode": false
     }, 
     {
@@ -2781,7 +2781,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "163.13", 
+        "y": "38.971", 
         "rate": "( int_vol *   ( kd_APC_p  *  APC_p_cyt )  )", 
         "name_alt": "v_APC_p_d", 
         "name": "105", 
@@ -2792,7 +2792,7 @@ var data =[
         "links_from": [
             "43"
         ], 
-        "x": "261.84", 
+        "x": "42.418", 
         "is_ode": false
     }, 
     {
@@ -2803,7 +2803,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "69.923", 
+        "y": "33.135", 
         "rate": "( int_vol * ( kd_Clb2_p  *  Clb2_p_cyt )  )", 
         "name_alt": "v_Clb2_p_d", 
         "name": "106", 
@@ -2814,7 +2814,7 @@ var data =[
         "links_from": [
             "36"
         ], 
-        "x": "142.16", 
+        "x": "40.525", 
         "is_ode": false
     }, 
     {
@@ -2827,7 +2827,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "96.543", 
+        "y": "42.281", 
         "rate": "( int_vol *   ( ( kcf_Cln3_Far1p  *  Cln3_cyt )  *  Far1_p_cyt )  )", 
         "name_alt": "v_Cln3_ass_Far1p", 
         "name": "107", 
@@ -2839,7 +2839,7 @@ var data =[
             "32", 
             "35"
         ], 
-        "x": "261.37", 
+        "x": "25.977", 
         "is_ode": false
     }, 
     {
@@ -2855,7 +2855,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "52.81", 
+        "y": "42.678", 
         "rate": "( int_vol *   ( Clb5_Sic1_cyt  *  (  ( ( kpp_Cln2_Sic1  *  ( (Cln2_cyt)  **  n1 ) )  /  ( ( Kpp_Cln2_Sic1  **  n1 )  + ( (Cln2_cyt)  **  n1 ) ) )   +  ( ( kpp_Clb5_Sic1  *  ( (Clb5_cyt)  **  n1 ) )  /  ( ( Kpp_Clb5_Sic1  **  n1 )  + ( (Clb5_cyt)  **  n1 ) ) )  ) )  )", 
         "name_alt": "v_Clb5_rel", 
         "name": "108", 
@@ -2866,7 +2866,7 @@ var data =[
         "links_from": [
             "22"
         ], 
-        "x": "196.42", 
+        "x": "32.862", 
         "is_ode": false
     }, 
     {
@@ -2881,7 +2881,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "137.47", 
+        "y": "35.398", 
         "rate": "( int_vol *    ( ( kp_Swi5  *  Mcm1_nuc )  /  ( Kp_Swi5  + Mcm1_nuc ) )   )", 
         "name_alt": "v_Swi5_p", 
         "name": "109", 
@@ -2890,7 +2890,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "268.02", 
+        "x": "37.157", 
         "is_ode": false
     }, 
     {
@@ -2903,7 +2903,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "53.372", 
+        "y": "44.374", 
         "rate": "( int_vol *   ( kdp_Clb5_Sic1_Hp  *  Clb5_Sic1_Hp_cyt )  )", 
         "name_alt": "v_Clb5_Sic1_Hp_dp", 
         "name": "110", 
@@ -2914,7 +2914,7 @@ var data =[
         "links_from": [
             "33"
         ], 
-        "x": "182.46", 
+        "x": "36.304", 
         "is_ode": false
     }, 
     {
@@ -2930,7 +2930,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "57.343", 
+        "y": "40.844", 
         "rate": "( int_vol *    (  ( ( kp_Cln2  *  SBF_nuc )  /  ( Kp_Cln2  + SBF_nuc ) )   /  ( 1.0  + ( kI_Cln2_Hog1  *  Hog1_PP_cyt ) ) )   )", 
         "name_alt": "v_Cln2_p", 
         "name": "111", 
@@ -2939,7 +2939,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "218.63", 
+        "x": "31.782", 
         "is_ode": false
     }, 
     {
@@ -2950,7 +2950,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "97.584", 
+        "y": "44.718", 
         "rate": "( int_vol *   ( kd_Cln3_Far1p  *  Cln3_Far1_p_cyt )  )", 
         "name_alt": "v_Cln3_Far1p_d", 
         "name": "112", 
@@ -2961,7 +2961,7 @@ var data =[
         "links_from": [
             "49"
         ], 
-        "x": "263.35", 
+        "x": "25.421", 
         "is_ode": false
     }, 
     {
@@ -2972,7 +2972,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "134.08", 
+        "y": "39.715", 
         "rate": "( int_vol *   ( kd_Swi5  *  Swi5_nuc )  )", 
         "name_alt": "v_Swi5_d", 
         "name": "113", 
@@ -2983,7 +2983,7 @@ var data =[
         "links_from": [
             "17"
         ], 
-        "x": "269.72", 
+        "x": "37.888", 
         "is_ode": false
     }, 
     {
@@ -2994,7 +2994,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "65.036", 
+        "y": "43.366", 
         "rate": "( int_vol *   ( kd_Cln2  *  Cln2_cyt )  )", 
         "name_alt": "v_Cln2_d", 
         "name": "114", 
@@ -3005,7 +3005,7 @@ var data =[
         "links_from": [
             "46"
         ], 
-        "x": "236.46", 
+        "x": "30.733", 
         "is_ode": false
     }, 
     {
@@ -3020,7 +3020,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "70.403", 
+        "y": "42.275", 
         "rate": "( int_vol *   ( ( kpp_Cln2_Far1p  *  Cln3_Far1_p_cyt )  *  Cln2_cyt )  )", 
         "name_alt": "v_Cln3_rel", 
         "name": "115", 
@@ -3031,7 +3031,7 @@ var data =[
         "links_from": [
             "49"
         ], 
-        "x": "241.25", 
+        "x": "28.814", 
         "is_ode": false
     }, 
     {
@@ -3046,7 +3046,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "142.66", 
+        "y": "36.917", 
         "rate": "( int_vol *    ( ( v0_Mcm1  *  ( (Clb3_cyt)  **  n_Mcm1 ) )  /  ( ( V0_Mcm1  **  n_Mcm1 )  + ( (Clb3_cyt)  **  n_Mcm1 ) ) )   )", 
         "name_alt": "v_Mcm1_p_basal", 
         "name": "116", 
@@ -3055,7 +3055,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "267.24", 
+        "x": "36.615", 
         "is_ode": false
     }, 
     {
@@ -3070,7 +3070,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "118.28", 
+        "y": "39.922", 
         "rate": "( int_vol *   ( ( kpp_Far1  *  Far1_cyt )  *  Fus3_cyt )  )", 
         "name_alt": "v_Far1_pp", 
         "name": "117", 
@@ -3081,7 +3081,7 @@ var data =[
         "links_from": [
             "19"
         ], 
-        "x": "267.8", 
+        "x": "25.457", 
         "is_ode": false
     }, 
     {
@@ -3096,7 +3096,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "132.24", 
+        "y": "40.327", 
         "rate": "( int_vol *   ( ( kpp_Swi5_Clb5  *  Swi5_nuc )  *  Clb5_cyt )  )", 
         "name_alt": "v_Swi5_pp_Clb5", 
         "name": "118", 
@@ -3107,7 +3107,7 @@ var data =[
         "links_from": [
             "17"
         ], 
-        "x": "268.44", 
+        "x": "37.814", 
         "is_ode": false
     }, 
     {
@@ -3122,7 +3122,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "130.49", 
+        "y": "38.222", 
         "rate": "( int_vol *   ( ( kpp_Swi5_Clb2  *  Swi5_nuc )  *  Clb2_cyt )  )", 
         "name_alt": "v_Swi5_pp_Clb2", 
         "name": "119", 
@@ -3133,7 +3133,7 @@ var data =[
         "links_from": [
             "17"
         ], 
-        "x": "268.51", 
+        "x": "38.977", 
         "is_ode": false
     }, 
     {
@@ -3144,7 +3144,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "64.534", 
+        "y": "37.078", 
         "rate": "( int_vol *   ( kd_Swe1_p  *  Swe1_p_cyt )  )", 
         "name_alt": "v_Swe1_p_d", 
         "name": "120", 
@@ -3155,7 +3155,7 @@ var data =[
         "links_from": [
             "28"
         ], 
-        "x": "149.25", 
+        "x": "43.021", 
         "is_ode": false
     }, 
     {
@@ -3170,7 +3170,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "69.846", 
+        "y": "34.341", 
         "rate": "( int_vol *   ( ( kpp_Clb2  *  Clb2_cyt )  *  Swe1_cyt )  )", 
         "name_alt": "v_Clb2_pp", 
         "name": "121", 
@@ -3181,7 +3181,7 @@ var data =[
         "links_from": [
             "38"
         ], 
-        "x": "144.4", 
+        "x": "38.575", 
         "is_ode": false
     }, 
     {
@@ -3196,7 +3196,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "173.01", 
+        "y": "40.953", 
         "rate": "( int_vol *    ( ( kp_Clb3  *  ( (Clb5_cyt)  **  n_Clb3 ) )  /  ( ( Kp_Clb3  **  n_Clb3 )  + ( (Clb5_cyt)  **  n_Clb3 ) ) )   )", 
         "name_alt": "v_Clb3_p_Clb5", 
         "name": "122", 
@@ -3205,7 +3205,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "254.31", 
+        "x": "33.748", 
         "is_ode": false
     }, 
     {
@@ -3220,7 +3220,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "164.08", 
+        "y": "36.525", 
         "rate": "( int_vol *   ( ( kpp_APC_Clb2  *  APC_cyt )  *  Clb2_cyt )  )", 
         "name_alt": "v_APC_inakt_Clb2", 
         "name": "123", 
@@ -3231,7 +3231,7 @@ var data =[
         "links_from": [
             "20"
         ], 
-        "x": "259.82", 
+        "x": "40.977", 
         "is_ode": false
     }, 
     {
@@ -3246,7 +3246,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "160.94", 
+        "y": "38.954", 
         "rate": "( int_vol *   ( ( kpp_APC_Clb5  *  APC_cyt )  *  Clb5_cyt )  )", 
         "name_alt": "v_APC_inakt_Clb5", 
         "name": "124", 
@@ -3257,7 +3257,7 @@ var data =[
         "links_from": [
             "20"
         ], 
-        "x": "261.37", 
+        "x": "38.745", 
         "is_ode": false
     }, 
     {
@@ -3273,7 +3273,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "149.48", 
+        "y": "37.633", 
         "rate": "( int_vol *    (  ( ( kp_Clb2  *  Mcm1_nuc )  /  ( Kp_Clb2  + Mcm1_nuc ) )   /  ( 1.0  + ( kI_Clb2_Hog1  *  Hog1_PP_cyt ) ) )   )", 
         "name_alt": "v_Clb2_p", 
         "name": "125", 
@@ -3282,7 +3282,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "265.64", 
+        "x": "37.107", 
         "is_ode": false
     }, 
     {
@@ -3293,7 +3293,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "74.799", 
+        "y": "40.159", 
         "rate": "( int_vol *   ( kd_MBF  *  MBF_nuc )  )", 
         "name_alt": "v_MBF_d", 
         "name": "126", 
@@ -3304,7 +3304,7 @@ var data =[
         "links_from": [
             "50"
         ], 
-        "x": "136.97", 
+        "x": "28.324", 
         "is_ode": false
     }, 
     {
@@ -3315,7 +3315,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "57.02", 
+        "y": "42.754", 
         "rate": "( int_vol *   ( kd_Whi5  *  Whi5_cyt )  )", 
         "name_alt": "v_Whi5_d", 
         "name": "127", 
@@ -3326,7 +3326,7 @@ var data =[
         "links_from": [
             "30"
         ], 
-        "x": "221.61", 
+        "x": "30.921", 
         "is_ode": false
     }, 
     {
@@ -3341,7 +3341,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "53.623", 
+        "y": "43.544", 
         "rate": "( int_vol *   ( ( kpp_Clb5_Sic1_Hog1  *  Hog1_PP_cyt )  *  Clb5_Sic1_cyt)  )", 
         "name_alt": "v_Clb5_Sic1_pp_Hog1", 
         "name": "128", 
@@ -3352,7 +3352,7 @@ var data =[
         "links_from": [
             "22"
         ], 
-        "x": "180.72", 
+        "x": "35.844", 
         "is_ode": false
     }, 
     {
@@ -3363,7 +3363,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "167.83", 
+        "y": "34.52", 
         "rate": "( int_vol *   ( kd_Clb2  *  Clb2_cyt )  )", 
         "name_alt": "v_Clb2_d", 
         "name": "129", 
@@ -3374,7 +3374,7 @@ var data =[
         "links_from": [
             "38"
         ], 
-        "x": "259.31", 
+        "x": "39.627", 
         "is_ode": false
     }, 
     {
@@ -3389,7 +3389,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "60.049", 
+        "y": "40.839", 
         "rate": "( int_vol *   ( ( Whi5_p_cyt  *  kdp_Whi5 )  *  Cdc14_p_cyt )  )", 
         "name_alt": "v_Whi5p_dp", 
         "name": "130", 
@@ -3400,7 +3400,7 @@ var data =[
         "links_from": [
             "23"
         ], 
-        "x": "225.09", 
+        "x": "32.76", 
         "is_ode": false
     }, 
     {
@@ -3413,7 +3413,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "57.697", 
+        "y": "42.678", 
         "rate": "( int_vol *   kp_Whi5  )", 
         "name_alt": "v_Whi5_p", 
         "name": "131", 
@@ -3422,7 +3422,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "223.23", 
+        "x": "31.783", 
         "is_ode": false
     }, 
     {
@@ -3435,7 +3435,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "179.82", 
+        "y": "41.513", 
         "rate": "( int_vol *   ( (   kcf_Clb3_Sic1 )  *  Clb3_cyt )  *  Sic1_cyt )", 
         "name_alt": "v_Clb3_ass_Sic1", 
         "name": "132", 
@@ -3447,7 +3447,7 @@ var data =[
             "45", 
             "39"
         ], 
-        "x": "248.82", 
+        "x": "35.853", 
         "is_ode": false
     }, 
     {
@@ -3458,7 +3458,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "72.904", 
+        "y": "31.411", 
         "rate": "( int_vol *   ( kd_Mih1  *  Mih1_cyt )  )", 
         "name_alt": "v_Mih1_d", 
         "name": "133", 
@@ -3469,7 +3469,7 @@ var data =[
         "links_from": [
             "34"
         ], 
-        "x": "138.88", 
+        "x": "36.519", 
         "is_ode": false
     }, 
     {
@@ -3483,7 +3483,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "60.429", 
+        "y": "41.809", 
         "rate": "( int_vol * ( kcd_Clb5_Sic1  *  Clb5_Sic1_cyt )  )", 
         "name_alt": "v_Clb5_diss_Sic1", 
         "name": "134", 
@@ -3494,7 +3494,7 @@ var data =[
         "links_from": [
             "22"
         ], 
-        "x": "159.1", 
+        "x": "34.009", 
         "is_ode": false
     }, 
     {
@@ -3509,7 +3509,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "53.071", 
+        "y": "36.729", 
         "rate": "( int_vol *   ( ( ka_Cdc14_APC  *  Cdc14_cyt )  *  APC_cyt )  )", 
         "name_alt": "v_Cdc14_akt_APC", 
         "name": "135", 
@@ -3520,7 +3520,7 @@ var data =[
         "links_from": [
             "24"
         ], 
-        "x": "199.91", 
+        "x": "38.393", 
         "is_ode": false
     }, 
     {
@@ -3535,7 +3535,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "147.79", 
+        "y": "34.786", 
         "rate": "( int_vol *    ( ( kp_APC  *  Mcm1_nuc )  /  ( Kp_APC  + Mcm1_nuc ) )   )", 
         "name_alt": "v_APC_akt_p_Mcm1", 
         "name": "136", 
@@ -3544,7 +3544,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "266.1", 
+        "x": "36.853", 
         "is_ode": false
     }, 
     {
@@ -3557,7 +3557,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "71.706", 
+        "y": "32.023", 
         "rate": "( int_vol *   kp_Mih1  )", 
         "name_alt": "v_Mih1_p", 
         "name": "137", 
@@ -3566,7 +3566,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "140.15", 
+        "x": "36.998", 
         "is_ode": false
     }, 
     {
@@ -3577,7 +3577,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "67.68", 
+        "y": "41.669", 
         "rate": "( int_vol *   ( kd_Cln3  *  Cln3_cyt )  )", 
         "name_alt": "v_Cln3_d", 
         "name": "138", 
@@ -3588,7 +3588,7 @@ var data =[
         "links_from": [
             "32"
         ], 
-        "x": "240.07", 
+        "x": "26.679", 
         "is_ode": false
     }, 
     {
@@ -3599,7 +3599,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "59.589", 
+        "y": "45.602", 
         "rate": "( int_vol *   ( kd_Whi5_SBF  *  SBF_Whi5_nuc )  )", 
         "name_alt": "v_Whi5_SBF_d", 
         "name": "139", 
@@ -3610,7 +3610,7 @@ var data =[
         "links_from": [
             "42"
         ], 
-        "x": "227.28", 
+        "x": "31.155", 
         "is_ode": false
     }, 
     {
@@ -3623,7 +3623,7 @@ var data =[
         "module": [
             "CDC_core"
         ], 
-        "y": "68.771", 
+        "y": "41.212", 
         "rate": "( int_vol *   kp_Cln3  )", 
         "name_alt": "v_Cln3_p", 
         "name": "140", 
@@ -3632,7 +3632,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "241.44", 
+        "x": "25.74", 
         "is_ode": false
     }, 
     {
@@ -3645,7 +3645,7 @@ var data =[
         "module": [
             "GEX_APC"
         ], 
-        "y": "176.49", 
+        "y": "31.752", 
         "annotation": "YCM:rRNA", 
         "name_alt": "rRNA", 
         "name": "141", 
@@ -3654,7 +3654,7 @@ var data =[
         "links_from": [
             "145"
         ], 
-        "x": "133.32", 
+        "x": "24.177", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3668,7 +3668,7 @@ var data =[
             "GEX_TRL", 
             "TRP_ION"
         ], 
-        "y": "45.077", 
+        "y": "15.854", 
         "annotation": "SBO:0000468", 
         "name_alt": "cyt_vol", 
         "name": "142", 
@@ -3678,7 +3678,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "225.39", 
+        "x": "8.7707", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -3694,7 +3694,7 @@ var data =[
             "GEX_APC", 
             "GEX_TRL"
         ], 
-        "y": "160.15", 
+        "y": "33.204", 
         "annotation": "YCM:B_Protein_R", 
         "name_alt": "B_Protein_R", 
         "name": "143", 
@@ -3704,7 +3704,7 @@ var data =[
             "145", 
             "250"
         ], 
-        "x": "123.24", 
+        "x": "25.394", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3740,7 +3740,7 @@ var data =[
             "GEX_GRN", 
             "GEX_TRL"
         ], 
-        "y": "179.17", 
+        "y": "33.434", 
         "annotation": "YCM:ribosome", 
         "name_alt": "Ribosome", 
         "name": "144", 
@@ -3754,7 +3754,7 @@ var data =[
             "254", 
             "256"
         ], 
-        "x": "135.58", 
+        "x": "29.081", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3769,7 +3769,7 @@ var data =[
         "module": [
             "GEX_APC"
         ], 
-        "y": "175.12", 
+        "y": "31.767", 
         "rate": "(k_DIS_Ribosome * Ribosome)*int_vol", 
         "name_alt": "v_DIS_Ribosome", 
         "name": "145", 
@@ -3780,7 +3780,7 @@ var data =[
         "links_from": [
             "144"
         ], 
-        "x": "132.23", 
+        "x": "26.001", 
         "is_ode": false
     }, 
     {
@@ -3793,7 +3793,7 @@ var data =[
         "module": [
             "GEX_APC"
         ], 
-        "y": "177.84", 
+        "y": "32.38", 
         "rate": "(k_ASS_Ribosome * rRNA * B_Protein_R)*int_vol", 
         "name_alt": "v_ASS_Ribosome", 
         "name": "146", 
@@ -3805,7 +3805,7 @@ var data =[
             "143", 
             "141"
         ], 
-        "x": "134.43", 
+        "x": "25.65", 
         "is_ode": false
     }, 
     {
@@ -3820,7 +3820,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.75", 
+        "y": "36.293", 
         "annotation": "SGD:S000005609p", 
         "name_alt": "mWhi5", 
         "name": "147", 
@@ -3829,7 +3829,7 @@ var data =[
         "links_from": [
             "169"
         ], 
-        "x": "194.68", 
+        "x": "26.109", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3845,7 +3845,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "203.24", 
+        "y": "36.955", 
         "annotation": "SGD:S000002214p_SGD:S000004172p", 
         "name_alt": "mMBF", 
         "name": "148", 
@@ -3854,7 +3854,7 @@ var data =[
         "links_from": [
             "210"
         ], 
-        "x": "177.28", 
+        "x": "26.456", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3870,7 +3870,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.77", 
+        "y": "35.676", 
         "annotation": "SGD:S000000038p", 
         "name_alt": "mCln3", 
         "name": "149", 
@@ -3879,7 +3879,7 @@ var data =[
         "links_from": [
             "168"
         ], 
-        "x": "191.18", 
+        "x": "25.622", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3895,7 +3895,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.63", 
+        "y": "37.627", 
         "annotation": "SGD:S000006177p", 
         "name_alt": "mCln2", 
         "name": "150", 
@@ -3904,7 +3904,7 @@ var data =[
         "links_from": [
             "191"
         ], 
-        "x": "187.68", 
+        "x": "27.267", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3920,7 +3920,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "191.32", 
+        "y": "38.397", 
         "annotation": "SGD:S000002553p", 
         "name_alt": "mSwi5", 
         "name": "151", 
@@ -3929,7 +3929,7 @@ var data =[
         "links_from": [
             "229"
         ], 
-        "x": "235.68", 
+        "x": "30.34", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3958,7 +3958,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "195.87", 
+        "y": "36.08", 
         "annotation": "YCM:NA", 
         "name_alt": "NA", 
         "name": "152", 
@@ -3982,7 +3982,7 @@ var data =[
             "224", 
             "228"
         ], 
-        "x": "228.21", 
+        "x": "27.485", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -3998,7 +3998,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "203.86", 
+        "y": "38.325", 
         "annotation": "SGD:S000002314p", 
         "name_alt": "mClb3", 
         "name": "153", 
@@ -4007,7 +4007,7 @@ var data =[
         "links_from": [
             "200"
         ], 
-        "x": "180.72", 
+        "x": "29.479", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4023,7 +4023,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "188.19", 
+        "y": "33.205", 
         "annotation": "SGD:S000006323p", 
         "name_alt": "mClb2", 
         "name": "154", 
@@ -4032,7 +4032,7 @@ var data =[
         "links_from": [
             "226"
         ], 
-        "x": "239.9", 
+        "x": "31.711", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4048,7 +4048,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.33", 
+        "y": "37.665", 
         "annotation": "SGD:S000006324p", 
         "name_alt": "mClb5", 
         "name": "155", 
@@ -4057,7 +4057,7 @@ var data =[
         "links_from": [
             "195"
         ], 
-        "x": "184.19", 
+        "x": "28.132", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4073,7 +4073,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.23", 
+        "y": "34.017", 
         "annotation": "SGD:S000003723p", 
         "name_alt": "mSwe1", 
         "name": "156", 
@@ -4082,7 +4082,7 @@ var data =[
         "links_from": [
             "187"
         ], 
-        "x": "201.65", 
+        "x": "29.942", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4102,7 +4102,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "197.06", 
+        "y": "33.584", 
         "annotation": "CHEBI:456216", 
         "name_alt": "ADP", 
         "name": "157", 
@@ -4155,7 +4155,7 @@ var data =[
             "295", 
             "298"
         ], 
-        "x": "159.1", 
+        "x": "30.804", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4171,7 +4171,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "202.46", 
+        "y": "36.329", 
         "annotation": "SGD:S000003693p", 
         "name_alt": "mFar1", 
         "name": "158", 
@@ -4180,7 +4180,7 @@ var data =[
         "links_from": [
             "217"
         ], 
-        "x": "173.87", 
+        "x": "24.852", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4196,7 +4196,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "203.72", 
+        "y": "32.002", 
         "annotation": "SGD:S000004639p", 
         "name_alt": "mMih1", 
         "name": "159", 
@@ -4205,7 +4205,7 @@ var data =[
         "links_from": [
             "234"
         ], 
-        "x": "205.12", 
+        "x": "29.724", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4221,7 +4221,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "177.17", 
+        "y": "38.184", 
         "annotation": "SGD:S000004646p", 
         "name_alt": "mMcm1", 
         "name": "160", 
@@ -4230,7 +4230,7 @@ var data =[
         "links_from": [
             "188"
         ], 
-        "x": "251.11", 
+        "x": "31.202", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4292,7 +4292,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "201.53", 
+        "y": "34.288", 
         "annotation": "CHEBI:30616", 
         "name_alt": "ATP", 
         "name": "161", 
@@ -4303,7 +4303,7 @@ var data =[
             "293", 
             "296"
         ], 
-        "x": "170.5", 
+        "x": "30.804", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4323,7 +4323,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "194.59", 
+        "y": "34.121", 
         "annotation": "CHEBI:43474", 
         "name_alt": "Pi", 
         "name": "162", 
@@ -4376,7 +4376,7 @@ var data =[
             "291", 
             "295"
         ], 
-        "x": "154.47", 
+        "x": "31.665", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4412,7 +4412,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "145.24", 
+        "y": "35.962", 
         "annotation": "YCM:AA", 
         "name_alt": "AA", 
         "name": "163", 
@@ -4446,7 +4446,7 @@ var data =[
             "253", 
             "282"
         ], 
-        "x": "118.26", 
+        "x": "32.17", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4462,7 +4462,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "184.78", 
+        "y": "32.972", 
         "annotation": "SGD:S000002971p", 
         "name_alt": "mAPC", 
         "name": "164", 
@@ -4471,7 +4471,7 @@ var data =[
         "links_from": [
             "183"
         ], 
-        "x": "243.89", 
+        "x": "30.772", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4487,7 +4487,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "203.06", 
+        "y": "34.812", 
         "annotation": "SGD:S000000913p_SGD:S000004172p", 
         "name_alt": "mSBF", 
         "name": "165", 
@@ -4496,7 +4496,7 @@ var data =[
         "links_from": [
             "193"
         ], 
-        "x": "208.55", 
+        "x": "26.891", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4512,7 +4512,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.57", 
+        "y": "34.191", 
         "annotation": "SGD:S000001924p", 
         "name_alt": "mCdc14", 
         "name": "166", 
@@ -4521,7 +4521,7 @@ var data =[
         "links_from": [
             "171"
         ], 
-        "x": "198.17", 
+        "x": "27.734", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4537,7 +4537,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "194.15", 
+        "y": "39.01", 
         "annotation": "SGD:S000004069p", 
         "name_alt": "mSic1", 
         "name": "167", 
@@ -4546,7 +4546,7 @@ var data =[
         "links_from": [
             "176"
         ], 
-        "x": "231.26", 
+        "x": "30.542", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -4562,7 +4562,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.72", 
+        "y": "34.657", 
         "rate": "corr_Cln3_TRSC * vmax_TRSC_Cln3 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
         "name_alt": "v_mCln3_TRSC", 
         "name": "168", 
@@ -4574,7 +4574,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "189.43", 
+        "x": "28.596", 
         "is_ode": false
     }, 
     {
@@ -4589,7 +4589,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.78", 
+        "y": "35.268", 
         "rate": "corr_Whi5_TRSC * vmax_TRSC_Whi5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
         "name_alt": "v_mWhi5_TRSC", 
         "name": "169", 
@@ -4601,7 +4601,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "192.93", 
+        "x": "28.739", 
         "is_ode": false
     }, 
     {
@@ -4619,7 +4619,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "181.73", 
+        "y": "34.628", 
         "rate": "corr_Cdc14_TRSL * vmax_TRSL_Cdc14 * mCdc14 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mCdc14_TRSL", 
         "name": "170", 
@@ -4631,7 +4631,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "137.96", 
+        "x": "32.543", 
         "is_ode": false
     }, 
     {
@@ -4646,7 +4646,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.68", 
+        "y": "32.853", 
         "rate": "corr_Cdc14_TRSC * vmax_TRSC_Cdc14 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
         "name_alt": "v_mCdc14_TRSC", 
         "name": "171", 
@@ -4658,7 +4658,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "196.42", 
+        "x": "28.094", 
         "is_ode": false
     }, 
     {
@@ -4676,7 +4676,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "189.79", 
+        "y": "37.102", 
         "rate": "corr_Whi5_TRSL * vmax_TRSL_Whi5 * mWhi5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mWhi5_TRSL", 
         "name": "172", 
@@ -4688,7 +4688,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "147.16", 
+        "x": "29.229", 
         "is_ode": false
     }, 
     {
@@ -4703,7 +4703,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "170.12", 
+        "y": "36.89", 
         "rate": "(kd_Clb3_APC * Clb3 * APC)*int_vol", 
         "name_alt": "v_Clb3_deg_APC", 
         "name": "173", 
@@ -4714,7 +4714,7 @@ var data =[
         "links_from": [
             "45"
         ], 
-        "x": "256.28", 
+        "x": "35.447", 
         "is_ode": false
     }, 
     {
@@ -4732,7 +4732,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "180.46", 
+        "y": "37.053", 
         "rate": "corr_Cln3_TRSL * vmax_TRSL_Cln3 * mCln3 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mCln3_TRSL", 
         "name": "174", 
@@ -4744,7 +4744,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "136.75", 
+        "x": "28.35", 
         "is_ode": false
     }, 
     {
@@ -4757,7 +4757,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "65.19", 
+        "y": "39.621", 
         "rate": "(kd_Cln2 * Cln2)*int_vol", 
         "name_alt": "v_Cln2_deg", 
         "name": "175", 
@@ -4768,7 +4768,7 @@ var data =[
         "links_from": [
             "46"
         ], 
-        "x": "234.23", 
+        "x": "30.472", 
         "is_ode": false
     }, 
     {
@@ -4785,7 +4785,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "195.03", 
+        "y": "36.574", 
         "rate": "corr_Sic1_TRSC * vmax_TRSC_Sic1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Swi5/(Kp_Sic1 + Swi5)*int_vol", 
         "name_alt": "v_mSic1_TRSC", 
         "name": "176", 
@@ -4797,7 +4797,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "229.75", 
+        "x": "32.169", 
         "is_ode": false
     }, 
     {
@@ -4815,7 +4815,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "182.97", 
+        "y": "36.957", 
         "rate": "corr_Sic1_TRSL * kp_Sic1 * mSic1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mSic1_TRSL", 
         "name": "177", 
@@ -4827,7 +4827,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "139.19", 
+        "x": "33.039", 
         "is_ode": false
     }, 
     {
@@ -4845,7 +4845,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "200.44", 
+        "y": "34.681", 
         "rate": "corr_APC_TRSL * kp_APC * mAPC * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mAPC_TRSL", 
         "name": "178", 
@@ -4857,7 +4857,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "167.17", 
+        "x": "33.404", 
         "is_ode": false
     }, 
     {
@@ -4870,7 +4870,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "152.82", 
+        "y": "36.18", 
         "rate": "(kd_APC * APC)*int_vol", 
         "name_alt": "v_APC_deg", 
         "name": "179", 
@@ -4881,7 +4881,7 @@ var data =[
         "links_from": [
             "20"
         ], 
-        "x": "264.61", 
+        "x": "35.427", 
         "is_ode": false
     }, 
     {
@@ -4894,7 +4894,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "77.026", 
+        "y": "38.802", 
         "rate": "(kd_MBF * MBF)*int_vol", 
         "name_alt": "v_MBF_deg", 
         "name": "180", 
@@ -4905,7 +4905,7 @@ var data =[
         "links_from": [
             "50"
         ], 
-        "x": "136.75", 
+        "x": "31.775", 
         "is_ode": false
     }, 
     {
@@ -4918,7 +4918,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "52.92", 
+        "y": "35.446", 
         "rate": "(k_Cdc14_deg * Cdc14)*int_vol", 
         "name_alt": "v_Cdc14_deg", 
         "name": "181", 
@@ -4929,7 +4929,7 @@ var data =[
         "links_from": [
             "24"
         ], 
-        "x": "198.17", 
+        "x": "35.061", 
         "is_ode": false
     }, 
     {
@@ -4942,7 +4942,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "201.78", 
+        "y": "32.991", 
         "rate": "(k_mMih1_deg * mMih1)*int_vol", 
         "name_alt": "v_mMih1_deg", 
         "name": "182", 
@@ -4953,7 +4953,7 @@ var data =[
         "links_from": [
             "159"
         ], 
-        "x": "213.64", 
+        "x": "26.269", 
         "is_ode": false
     }, 
     {
@@ -4970,7 +4970,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "185.95", 
+        "y": "34.732", 
         "rate": "corr_APC_TRSC * vmax_TRSC_APC * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_APC + Mcm1)*int_vol", 
         "name_alt": "v_mAPC_TRSC", 
         "name": "183", 
@@ -4982,7 +4982,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "242.58", 
+        "x": "31.681", 
         "is_ode": false
     }, 
     {
@@ -4995,7 +4995,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "196.67", 
+        "y": "38.018", 
         "rate": "(k_mClb3_deg * mClb3)*int_vol", 
         "name_alt": "v_mClb3_deg", 
         "name": "184", 
@@ -5006,7 +5006,7 @@ var data =[
         "links_from": [
             "153"
         ], 
-        "x": "226.66", 
+        "x": "26.149", 
         "is_ode": false
     }, 
     {
@@ -5019,7 +5019,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "135.73", 
+        "y": "37.07", 
         "rate": "(kd_Swi5 * Swi5)*int_vol", 
         "name_alt": "v_Swi5_deg", 
         "name": "185", 
@@ -5030,7 +5030,7 @@ var data =[
         "links_from": [
             "17"
         ], 
-        "x": "268.2", 
+        "x": "34.572", 
         "is_ode": false
     }, 
     {
@@ -5043,7 +5043,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "56.216", 
+        "y": "38.637", 
         "rate": "(k_SBF_deg * SBF)*int_vol", 
         "name_alt": "v_SBF_deg", 
         "name": "186", 
@@ -5054,7 +5054,7 @@ var data =[
         "links_from": [
             "48"
         ], 
-        "x": "215.32", 
+        "x": "32.8", 
         "is_ode": false
     }, 
     {
@@ -5069,7 +5069,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.42", 
+        "y": "34.046", 
         "rate": "corr_Swe1_TRSC * vmax_TRSC_Swe1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
         "name_alt": "v_mSwe1_TRSC", 
         "name": "187", 
@@ -5081,7 +5081,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "199.91", 
+        "x": "28.837", 
         "is_ode": false
     }, 
     {
@@ -5099,7 +5099,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "178.51", 
+        "y": "36.119", 
         "rate": "corr_Mcm1_TRSC * vmax_TRSC_Mcm1 * (Clb2**n_Mcm1/(Kp_Mcm1**n_Mcm1 + Clb2**n_Mcm1) + (v0_Mcm1/kp_Mcm1) * Clb3**n_Mcm1/(V0_Mcm1**n_Mcm1 + Clb3**n_Mcm1)) * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
         "name_alt": "v_mMcm1_TRSC", 
         "name": "188", 
@@ -5111,7 +5111,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "249.98", 
+        "x": "33.294", 
         "is_ode": false
     }, 
     {
@@ -5124,7 +5124,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "74.516", 
+        "y": "33.306", 
         "rate": "(k_Mih1_deg * Mih1)*int_vol", 
         "name_alt": "v_Mih1_deg", 
         "name": "189", 
@@ -5135,7 +5135,7 @@ var data =[
         "links_from": [
             "34"
         ], 
-        "x": "139.19", 
+        "x": "35.5", 
         "is_ode": false
     }, 
     {
@@ -5148,7 +5148,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "201.27", 
+        "y": "34.445", 
         "rate": "(k_mCdc14_deg * mCdc14)*int_vol", 
         "name_alt": "v_mCdc14_deg", 
         "name": "190", 
@@ -5159,7 +5159,7 @@ var data =[
         "links_from": [
             "166"
         ], 
-        "x": "215.32", 
+        "x": "25.15", 
         "is_ode": false
     }, 
     {
@@ -5176,7 +5176,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.5", 
+        "y": "36.935", 
         "rate": "corr_Cln2_TRSC * vmax_TRSC_Cln2 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * SBF/(Kp_Cln2 + SBF)*int_vol", 
         "name_alt": "v_mCln2_TRSC", 
         "name": "191", 
@@ -5188,7 +5188,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "185.93", 
+        "x": "30.223", 
         "is_ode": false
     }, 
     {
@@ -5206,7 +5206,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "184.18", 
+        "y": "33.611", 
         "rate": "corr_Swe1_TRSL * vmax_TRSL_Swe1 * mSwe1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mSwe1_TRSL", 
         "name": "192", 
@@ -5218,7 +5218,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "140.45", 
+        "x": "33.449", 
         "is_ode": false
     }, 
     {
@@ -5233,7 +5233,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "203.41", 
+        "y": "32.67", 
         "rate": "vmax_TRSC_SBF * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
         "name_alt": "v_mSBF_TRSC", 
         "name": "193", 
@@ -5245,7 +5245,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "206.84", 
+        "x": "29.87", 
         "is_ode": false
     }, 
     {
@@ -5258,7 +5258,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "200.73", 
+        "y": "37.347", 
         "rate": "(k_mClb5_deg * mClb5)*int_vol", 
         "name_alt": "v_mClb5_deg", 
         "name": "194", 
@@ -5269,7 +5269,7 @@ var data =[
         "links_from": [
             "155"
         ], 
-        "x": "216.98", 
+        "x": "25.593", 
         "is_ode": false
     }, 
     {
@@ -5286,7 +5286,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "204.12", 
+        "y": "36.491", 
         "rate": "corr_Clb5_TRSC * vmax_TRSC_Clb5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * MBF/(Kp_Clb5 + MBF)*int_vol", 
         "name_alt": "v_mClb5_TRSC", 
         "name": "195", 
@@ -5298,7 +5298,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "182.46", 
+        "x": "29.273", 
         "is_ode": false
     }, 
     {
@@ -5311,7 +5311,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "202.67", 
+        "y": "36.941", 
         "rate": "(k_mMBF_deg * mMBF)*int_vol", 
         "name_alt": "v_mMBF_deg", 
         "name": "196", 
@@ -5322,7 +5322,7 @@ var data =[
         "links_from": [
             "148"
         ], 
-        "x": "210.26", 
+        "x": "24.065", 
         "is_ode": false
     }, 
     {
@@ -5335,7 +5335,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "57.964", 
+        "y": "39.418", 
         "rate": "(k_Whi5_deg * Whi5)*int_vol", 
         "name_alt": "v_Whi5_deg", 
         "name": "197", 
@@ -5346,7 +5346,7 @@ var data =[
         "links_from": [
             "30"
         ], 
-        "x": "220.27", 
+        "x": "31.783", 
         "is_ode": false
     }, 
     {
@@ -5359,7 +5359,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "68.221", 
+        "y": "39.261", 
         "rate": "(k_Cln3_deg * Cln3)*int_vol", 
         "name_alt": "v_Cln3_deg", 
         "name": "198", 
@@ -5370,7 +5370,7 @@ var data =[
         "links_from": [
             "32"
         ], 
-        "x": "238.52", 
+        "x": "29.49", 
         "is_ode": false
     }, 
     {
@@ -5384,7 +5384,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "140.08", 
+        "y": "36.459", 
         "rate": "(k_Cdc14_p_deg * Cdc14_p)*int_vol", 
         "name_alt": "v_Cdc14_p_deg", 
         "name": "199", 
@@ -5395,7 +5395,7 @@ var data =[
         "links_from": [
             "21"
         ], 
-        "x": "117.3", 
+        "x": "34.564", 
         "is_ode": false
     }, 
     {
@@ -5412,7 +5412,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "203.57", 
+        "y": "37.318", 
         "rate": "corr_Clb3_TRSC * vmax_TRSC_Clb3 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * (Clb5**n_Clb3/(Kp_Clb3**n_Clb3 + Clb5**n_Clb3))*int_vol", 
         "name_alt": "v_mClb3_TRSC", 
         "name": "200", 
@@ -5424,7 +5424,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "179", 
+        "x": "32.106", 
         "is_ode": false
     }, 
     {
@@ -5437,7 +5437,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "197.44", 
+        "y": "35.669", 
         "rate": "(k_mCln3_deg * mCln3)*int_vol", 
         "name_alt": "v_mCln3_deg", 
         "name": "201", 
@@ -5448,7 +5448,7 @@ var data =[
         "links_from": [
             "149"
         ], 
-        "x": "225.09", 
+        "x": "23.926", 
         "is_ode": false
     }, 
     {
@@ -5466,7 +5466,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "185.37", 
+        "y": "36.205", 
         "rate": "vmax_TRSL_SBF * mSBF * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mSBF_TRSL", 
         "name": "202", 
@@ -5478,7 +5478,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "141.74", 
+        "x": "30.195", 
         "is_ode": false
     }, 
     {
@@ -5496,7 +5496,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "186.52", 
+        "y": "35.879", 
         "rate": "corr_MBF_TRSL * kp_MBF * mMBF * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mMBF_TRSL", 
         "name": "203", 
@@ -5508,7 +5508,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "143.06", 
+        "x": "29.322", 
         "is_ode": false
     }, 
     {
@@ -5521,7 +5521,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "183.58", 
+        "y": "33.602", 
         "rate": "(k_mAPC_deg * mAPC)*int_vol", 
         "name_alt": "v_mAPC_deg", 
         "name": "204", 
@@ -5532,7 +5532,7 @@ var data =[
         "links_from": [
             "164"
         ], 
-        "x": "245.16", 
+        "x": "26.873", 
         "is_ode": false
     }, 
     {
@@ -5545,7 +5545,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "174.42", 
+        "y": "37.683", 
         "rate": "(kd_Clb3 * Clb3)*int_vol", 
         "name_alt": "v_Clb3_deg", 
         "name": "205", 
@@ -5556,7 +5556,7 @@ var data =[
         "links_from": [
             "45"
         ], 
-        "x": "253.28", 
+        "x": "33.845", 
         "is_ode": false
     }, 
     {
@@ -5574,7 +5574,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "199.84", 
+        "y": "34.223", 
         "rate": "corr_Clb2_TRSL * kp_Clb2 * mClb2 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mClb2_TRSL", 
         "name": "206", 
@@ -5586,7 +5586,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "165.53", 
+        "x": "34.265", 
         "is_ode": false
     }, 
     {
@@ -5599,7 +5599,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "62.895", 
+        "y": "38.295", 
         "rate": "(kd_Clb5 * Clb5)*int_vol", 
         "name_alt": "v_Clb5_deg", 
         "name": "207", 
@@ -5610,7 +5610,7 @@ var data =[
         "links_from": [
             "29"
         ], 
-        "x": "154.47", 
+        "x": "33.707", 
         "is_ode": false
     }, 
     {
@@ -5623,7 +5623,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "200.14", 
+        "y": "35.057", 
         "rate": "(k_mSBF_deg * mSBF)*int_vol", 
         "name_alt": "v_mSBF_deg", 
         "name": "208", 
@@ -5634,7 +5634,7 @@ var data =[
         "links_from": [
             "165"
         ], 
-        "x": "218.63", 
+        "x": "24.717", 
         "is_ode": false
     }, 
     {
@@ -5647,7 +5647,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "199.52", 
+        "y": "36.329", 
         "rate": "(k_mWhi5_deg * mWhi5)*int_vol", 
         "name_alt": "v_mWhi5_deg", 
         "name": "209", 
@@ -5658,7 +5658,7 @@ var data =[
         "links_from": [
             "147"
         ], 
-        "x": "220.27", 
+        "x": "23.978", 
         "is_ode": false
     }, 
     {
@@ -5675,7 +5675,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "202.87", 
+        "y": "37.713", 
         "rate": "corr_MBF_TRSC * vmax_TRSC_MBF * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Cln2**n1/(K_MBF**n1 + Cln2**n1)*int_vol", 
         "name_alt": "v_mMBF_TRSC", 
         "name": "210", 
@@ -5687,7 +5687,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "175.57", 
+        "x": "29.08", 
         "is_ode": false
     }, 
     {
@@ -5700,7 +5700,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "68.755", 
+        "y": "34.364", 
         "rate": "(k_Swe1_deg * Swe1)*int_vol", 
         "name_alt": "v_Swe1_deg", 
         "name": "211", 
@@ -5711,7 +5711,7 @@ var data =[
         "links_from": [
             "16"
         ], 
-        "x": "145.77", 
+        "x": "35.99", 
         "is_ode": false
     }, 
     {
@@ -5726,7 +5726,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "165.62", 
+        "y": "35.604", 
         "rate": "(kd_Clb2_APC * Clb2 * APC)*int_vol", 
         "name_alt": "v_Clb2_deg_APC", 
         "name": "212", 
@@ -5737,7 +5737,7 @@ var data =[
         "links_from": [
             "38"
         ], 
-        "x": "258.98", 
+        "x": "36.296", 
         "is_ode": false
     }, 
     {
@@ -5755,7 +5755,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "187.64", 
+        "y": "36.441", 
         "rate": "corr_Far1_TRSL * kp_basal_Far1 * mFar1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mFar1_TRSL", 
         "name": "213", 
@@ -5767,7 +5767,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "144.4", 
+        "x": "28.361", 
         "is_ode": false
     }, 
     {
@@ -5780,7 +5780,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "193.24", 
+        "y": "38.924", 
         "rate": "(k_mSic1_deg * mSic1)*int_vol", 
         "name_alt": "v_mSic1_deg", 
         "name": "214", 
@@ -5791,7 +5791,7 @@ var data =[
         "links_from": [
             "167"
         ], 
-        "x": "232.76", 
+        "x": "27.587", 
         "is_ode": false
     }, 
     {
@@ -5804,7 +5804,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "175.81", 
+        "y": "38.297", 
         "rate": "(k_mMcm1_deg * mMcm1)*int_vol", 
         "name_alt": "v_mMcm1_deg", 
         "name": "215", 
@@ -5815,7 +5815,7 @@ var data =[
         "links_from": [
             "160"
         ], 
-        "x": "252.21", 
+        "x": "27.941", 
         "is_ode": false
     }, 
     {
@@ -5828,7 +5828,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "168.64", 
+        "y": "34.992", 
         "rate": "(kd_Clb2 * Clb2)*int_vol", 
         "name_alt": "v_Clb2_deg", 
         "name": "216", 
@@ -5839,7 +5839,7 @@ var data =[
         "links_from": [
             "38"
         ], 
-        "x": "257.22", 
+        "x": "35.944", 
         "is_ode": false
     }, 
     {
@@ -5856,7 +5856,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "202.02", 
+        "y": "35.463", 
         "rate": "corr_Far1_TRSC * vmax_TRSC_Far1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * ( ((kp_Far1/kp_basal_Far1) * Fus3) + 1 )*int_vol", 
         "name_alt": "v_mFar1_TRSC", 
         "name": "217", 
@@ -5868,7 +5868,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "172.18", 
+        "x": "26.686", 
         "is_ode": false
     }, 
     {
@@ -5881,7 +5881,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "101.37", 
+        "y": "38.936", 
         "rate": "(kd_Far1 * Far1)*int_vol", 
         "name_alt": "v_Far1_deg", 
         "name": "218", 
@@ -5892,7 +5892,7 @@ var data =[
         "links_from": [
             "19"
         ], 
-        "x": "263.43", 
+        "x": "28.625", 
         "is_ode": false
     }, 
     {
@@ -5910,7 +5910,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "199.2", 
+        "y": "35.344", 
         "rate": "corr_Mcm1_TRSL * kp_Mcm1 * mMcm1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mMcm1_TRSL", 
         "name": "219", 
@@ -5922,7 +5922,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "163.9", 
+        "x": "32.303", 
         "is_ode": false
     }, 
     {
@@ -5935,7 +5935,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "202.25", 
+        "y": "34.208", 
         "rate": "(k_mSwe1_deg * mSwe1)*int_vol", 
         "name_alt": "v_mSwe1_deg", 
         "name": "220", 
@@ -5946,7 +5946,7 @@ var data =[
         "links_from": [
             "156"
         ], 
-        "x": "211.96", 
+        "x": "26.012", 
         "is_ode": false
     }, 
     {
@@ -5959,7 +5959,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "187.08", 
+        "y": "33.484", 
         "rate": "(k_mClb2_deg * mClb2)*int_vol", 
         "name_alt": "v_mClb2_deg", 
         "name": "221", 
@@ -5970,7 +5970,7 @@ var data =[
         "links_from": [
             "154"
         ], 
-        "x": "241.25", 
+        "x": "27.973", 
         "is_ode": false
     }, 
     {
@@ -5983,7 +5983,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "198.87", 
+        "y": "37.557", 
         "rate": "(k_mCln2_deg * mCln2)*int_vol", 
         "name_alt": "v_mCln2_deg", 
         "name": "222", 
@@ -5994,7 +5994,7 @@ var data =[
         "links_from": [
             "150"
         ], 
-        "x": "221.89", 
+        "x": "24.729", 
         "is_ode": false
     }, 
     {
@@ -6009,7 +6009,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "143.52", 
+        "y": "37.681", 
         "rate": "(kd_Clb5_APC * Clb5 * APC)*int_vol", 
         "name_alt": "v_Clb5_deg_APC", 
         "name": "223", 
@@ -6020,7 +6020,7 @@ var data =[
         "links_from": [
             "29"
         ], 
-        "x": "117.9", 
+        "x": "35.384", 
         "is_ode": false
     }, 
     {
@@ -6033,7 +6033,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "198.17", 
+        "y": "36.29", 
         "rate": "(k_mFar1_deg * mFar1)*int_vol", 
         "name_alt": "v_mFar1_deg", 
         "name": "224", 
@@ -6044,7 +6044,7 @@ var data =[
         "links_from": [
             "158"
         ], 
-        "x": "223.5", 
+        "x": "23.093", 
         "is_ode": false
     }, 
     {
@@ -6062,7 +6062,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "198.52", 
+        "y": "36.574", 
         "rate": "corr_Clb3_TRSL * kp_Clb3 * mClb3 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mClb3_TRSL", 
         "name": "225", 
@@ -6074,7 +6074,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "162.28", 
+        "x": "31.297", 
         "is_ode": false
     }, 
     {
@@ -6091,7 +6091,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "189.27", 
+        "y": "35.183", 
         "rate": "corr_Clb2_TRSC * vmax_TRSC_Clb2 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_Clb2 + Mcm1)*int_vol", 
         "name_alt": "v_mClb2_TRSC", 
         "name": "226", 
@@ -6103,7 +6103,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "238.52", 
+        "x": "30.594", 
         "is_ode": false
     }, 
     {
@@ -6121,7 +6121,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "188.73", 
+        "y": "37.669", 
         "rate": "corr_Cln2_TRSL * kp_Cln2 * mCln2 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mCln2_TRSL", 
         "name": "227", 
@@ -6133,7 +6133,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "145.77", 
+        "x": "30.271", 
         "is_ode": false
     }, 
     {
@@ -6146,7 +6146,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "190.31", 
+        "y": "38.662", 
         "rate": "(k_mSwi5_deg * mSwi5)*int_vol", 
         "name_alt": "v_mSwi5_deg", 
         "name": "228", 
@@ -6157,7 +6157,7 @@ var data =[
         "links_from": [
             "151"
         ], 
-        "x": "237.11", 
+        "x": "26.726", 
         "is_ode": false
     }, 
     {
@@ -6174,7 +6174,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "192.3", 
+        "y": "35.816", 
         "rate": "corr_Swi5_TRSC * vmax_TRSC_Swi5 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA)) * Mcm1/(Kp_Swi5 + Mcm1)*int_vol", 
         "name_alt": "v_mSwi5_TRSC", 
         "name": "229", 
@@ -6186,7 +6186,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "234.23", 
+        "x": "31.308", 
         "is_ode": false
     }, 
     {
@@ -6200,7 +6200,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "141.8", 
+        "y": "35.847", 
         "rate": "(k_SBF_p_deg * SBF_p)*int_vol", 
         "name_alt": "v_SBF_p_deg", 
         "name": "230", 
@@ -6211,7 +6211,7 @@ var data =[
         "links_from": [
             "18"
         ], 
-        "x": "117.58", 
+        "x": "34.159", 
         "is_ode": false
     }, 
     {
@@ -6226,7 +6226,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "67.178", 
+        "y": "39.547", 
         "rate": "(kdd_Far1 * Far1 * Cln2)*int_vol", 
         "name_alt": "v_Far1_deg_Cln2", 
         "name": "231", 
@@ -6237,7 +6237,7 @@ var data =[
         "links_from": [
             "19"
         ], 
-        "x": "237.11", 
+        "x": "28.439", 
         "is_ode": false
     }, 
     {
@@ -6250,7 +6250,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "63.787", 
+        "y": "38.906", 
         "rate": "(kd_Sic1 * Sic1)*int_vol", 
         "name_alt": "v_Sic1_deg", 
         "name": "232", 
@@ -6261,7 +6261,7 @@ var data =[
         "links_from": [
             "39"
         ], 
-        "x": "152.97", 
+        "x": "34.502", 
         "is_ode": false
     }, 
     {
@@ -6279,7 +6279,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "190.82", 
+        "y": "33", 
         "rate": "corr_Mih1_TRSL * vmax_TRSL_Mih1 * mMih1 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mMih1_TRSL", 
         "name": "233", 
@@ -6291,7 +6291,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "148.58", 
+        "x": "33.478", 
         "is_ode": false
     }, 
     {
@@ -6306,7 +6306,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "203.99", 
+        "y": "34.628", 
         "rate": "corr_Mih1_TRSC * vmax_TRSC_Mih1 * (ATP/(kM_ATP + ATP)) * (NA/(kM_NA + NA))*int_vol", 
         "name_alt": "v_mMih1_TRSC", 
         "name": "234", 
@@ -6318,7 +6318,7 @@ var data =[
             "152", 
             "161"
         ], 
-        "x": "203.39", 
+        "x": "29.72", 
         "is_ode": false
     }, 
     {
@@ -6331,7 +6331,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "146.09", 
+        "y": "33.917", 
         "rate": "(kd_Mcm1 * Mcm1)*int_vol", 
         "name_alt": "v_Mcm1_deg", 
         "name": "235", 
@@ -6342,7 +6342,7 @@ var data =[
         "links_from": [
             "44"
         ], 
-        "x": "266.52", 
+        "x": "35.127", 
         "is_ode": false
     }, 
     {
@@ -6360,7 +6360,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "195.45", 
+        "y": "37.244", 
         "rate": "corr_Clb5_TRSL * kp_Clb5 * mClb5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mClb5_TRSL", 
         "name": "236", 
@@ -6372,7 +6372,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "156", 
+        "x": "31.155", 
         "is_ode": false
     }, 
     {
@@ -6390,7 +6390,7 @@ var data =[
         "module": [
             "GEX_GRN"
         ], 
-        "y": "201", 
+        "y": "35.453", 
         "rate": "corr_Swi5_TRSL * kp_Swi5 * mSwi5 * (ATP/(kM_ATP + ATP)) * (AA/(kM_AA + AA)) * (ribosome/(kM_ribosome + ribosome))*int_vol", 
         "name_alt": "v_mSwi5_TRSL", 
         "name": "237", 
@@ -6402,7 +6402,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "168.83", 
+        "x": "33.213", 
         "is_ode": false
     }, 
     {
@@ -6413,7 +6413,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "151.99", 
+        "y": "29.083", 
         "annotation": "YCM:ribosomes_check", 
         "name_alt": "total_ribosomes", 
         "name": "238", 
@@ -6427,7 +6427,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "120.09", 
+        "x": "27.01", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6441,7 +6441,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "167.89", 
+        "y": "29.694", 
         "annotation": "YCM:mRNA_metabolic", 
         "name_alt": "mRNA_met", 
         "name": "239", 
@@ -6450,7 +6450,7 @@ var data =[
         "links_from": [
             "252"
         ], 
-        "x": "127.31", 
+        "x": "26.306", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6464,7 +6464,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "163.3", 
+        "y": "28.613", 
         "annotation": "YCM:mRNA_other", 
         "name_alt": "mRNA_other", 
         "name": "240", 
@@ -6473,7 +6473,7 @@ var data =[
         "links_from": [
             "254"
         ], 
-        "x": "124.76", 
+        "x": "27.901", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6487,7 +6487,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "172.3", 
+        "y": "32.044", 
         "annotation": "YCM:mRNA_R", 
         "name_alt": "mRNA_R", 
         "name": "241", 
@@ -6496,7 +6496,7 @@ var data =[
         "links_from": [
             "256"
         ], 
-        "x": "130.16", 
+        "x": "23.315", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6510,7 +6510,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "79.646", 
+        "y": "31.171", 
         "annotation": "YCM:B_Protein_metabolic", 
         "name_alt": "B_Protein_met", 
         "name": "242", 
@@ -6519,7 +6519,7 @@ var data =[
         "links_from": [
             "258"
         ], 
-        "x": "134.43", 
+        "x": "34.795", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6535,7 +6535,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "150.32", 
+        "y": "30.306", 
         "annotation": "YCM:mRNA_other_Ribosome", 
         "name_alt": "mRNA_other_Ribosome", 
         "name": "243", 
@@ -6546,7 +6546,7 @@ var data =[
         "links_from": [
             "247"
         ], 
-        "x": "119.58", 
+        "x": "27.128", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6562,7 +6562,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "156.93", 
+        "y": "31.154", 
         "annotation": "YCM:mRNA_R_Ribosome", 
         "name_alt": "mRNA_R_Ribosome", 
         "name": "244", 
@@ -6573,7 +6573,7 @@ var data =[
         "links_from": [
             "255"
         ], 
-        "x": "121.87", 
+        "x": "26.07", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6589,7 +6589,7 @@ var data =[
             "GEX_TRL", 
             "MET_CWS"
         ], 
-        "y": "136.6", 
+        "y": "30.827", 
         "annotation": "YCM:B_Protein_other", 
         "name_alt": "B_Protein_other", 
         "name": "245", 
@@ -6598,7 +6598,7 @@ var data =[
         "links_from": [
             "257"
         ], 
-        "x": "116.86", 
+        "x": "25.197", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6614,7 +6614,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "155.3", 
+        "y": "30.095", 
         "annotation": "YCM:mRNA_met_Ribosome", 
         "name_alt": "mRNA_met_Ribosome", 
         "name": "246", 
@@ -6625,7 +6625,7 @@ var data =[
         "links_from": [
             "249"
         ], 
-        "x": "121.24", 
+        "x": "29.569", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6639,7 +6639,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "161.73", 
+        "y": "30.917", 
         "rate": "(k_ASS_Ribosome_mRNA_other * Ribosome * mRNA_other)*int_vol", 
         "name_alt": "v_ASS_Ribosome_mRNA_other", 
         "name": "247", 
@@ -6651,7 +6651,7 @@ var data =[
             "144", 
             "240"
         ], 
-        "x": "123.98", 
+        "x": "27.245", 
         "is_ode": false
     }, 
     {
@@ -6664,7 +6664,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "78.323", 
+        "y": "33.13", 
         "rate": "(k_DEG_B_Protein_met * B_Protein_met)*int_vol", 
         "name_alt": "v_DEG_B_Protein_met", 
         "name": "248", 
@@ -6675,7 +6675,7 @@ var data =[
         "links_from": [
             "242"
         ], 
-        "x": "135.58", 
+        "x": "34.462", 
         "is_ode": false
     }, 
     {
@@ -6688,7 +6688,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "166.38", 
+        "y": "31.529", 
         "rate": "(k_ASS_Ribosome_mRNA_met * Ribosome * mRNA_met)*int_vol", 
         "name_alt": "v_ASS_Ribosome_mRNA_met", 
         "name": "249", 
@@ -6700,7 +6700,7 @@ var data =[
             "239", 
             "144"
         ], 
-        "x": "126.42", 
+        "x": "27.153", 
         "is_ode": false
     }, 
     {
@@ -6717,7 +6717,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "158.55", 
+        "y": "32.822", 
         "rate": "(vmax_TRSL_mRNA_R * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_R_Ribosome/(k_TRSL_mRNA_R + mRNA_R_Ribosome)))*int_vol", 
         "name_alt": "v_TRSL_mRNA_R", 
         "name": "250", 
@@ -6729,7 +6729,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "122.54", 
+        "x": "28.99", 
         "is_ode": false
     }, 
     {
@@ -6742,7 +6742,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "146.94", 
+        "y": "35.27", 
         "rate": "(k_DEG_B_Protein_R * B_Protein_R)*int_vol", 
         "name_alt": "v_DEG_B_Protein_R", 
         "name": "251", 
@@ -6753,7 +6753,7 @@ var data =[
         "links_from": [
             "143"
         ], 
-        "x": "118.66", 
+        "x": "27.762", 
         "is_ode": false
     }, 
     {
@@ -6767,7 +6767,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "169.38", 
+        "y": "30.989", 
         "rate": "(k_DIS_Ribosome_mRNA_met * mRNA_met_Ribosome)*int_vol", 
         "name_alt": "v_DIS_Ribosome_mRNA_met", 
         "name": "252", 
@@ -6778,7 +6778,7 @@ var data =[
         "links_from": [
             "246"
         ], 
-        "x": "128.22", 
+        "x": "28.361", 
         "is_ode": false
     }, 
     {
@@ -6791,7 +6791,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "138.34", 
+        "y": "32.867", 
         "rate": "(k_DEG_B_Protein_other * B_Protein_other)*int_vol", 
         "name_alt": "v_DEG_B_Protein_other", 
         "name": "253", 
@@ -6802,7 +6802,7 @@ var data =[
         "links_from": [
             "245"
         ], 
-        "x": "117.06", 
+        "x": "27.213", 
         "is_ode": false
     }, 
     {
@@ -6816,7 +6816,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "164.85", 
+        "y": "30.377", 
         "rate": "(k_DIS_Ribosome_mRNA_other * mRNA_other_Ribosome)*int_vol", 
         "name_alt": "v_DIS_Ribosome_mRNA_other", 
         "name": "254", 
@@ -6827,7 +6827,7 @@ var data =[
         "links_from": [
             "243"
         ], 
-        "x": "125.57", 
+        "x": "28.106", 
         "is_ode": false
     }, 
     {
@@ -6840,7 +6840,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "170.85", 
+        "y": "32.383", 
         "rate": "(k_ASS_Ribosome_mRNA_R * Ribosome * mRNA_R)*int_vol", 
         "name_alt": "v_ASS_Ribosome_mRNA_R", 
         "name": "255", 
@@ -6852,7 +6852,7 @@ var data =[
             "144", 
             "241"
         ], 
-        "x": "129.18", 
+        "x": "24.788", 
         "is_ode": false
     }, 
     {
@@ -6866,7 +6866,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "173.72", 
+        "y": "31.768", 
         "rate": "(k_DIS_Ribosome_mRNA_R * mRNA_R_Ribosome)*int_vol", 
         "name_alt": "v_DIS_Ribosome_mRNA_R", 
         "name": "256", 
@@ -6877,7 +6877,7 @@ var data =[
         "links_from": [
             "244"
         ], 
-        "x": "131.18", 
+        "x": "25.038", 
         "is_ode": false
     }, 
     {
@@ -6894,7 +6894,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "148.63", 
+        "y": "32.211", 
         "rate": "(vmax_TRSL_mRNA_other * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_other_Ribosome/(k_TRSL_mRNA_other + mRNA_other_Ribosome)))*int_vol", 
         "name_alt": "v_TRSL_mRNA_other", 
         "name": "257", 
@@ -6906,7 +6906,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "119.1", 
+        "x": "28.481", 
         "is_ode": false
     }, 
     {
@@ -6923,7 +6923,7 @@ var data =[
         "module": [
             "GEX_TRL"
         ], 
-        "y": "153.65", 
+        "y": "32.491", 
         "rate": "(vmax_TRSL_mRNA_met * (ATP/(k_atp + ATP)) * (AA/(k_aa + AA)) * (mRNA_met_Ribosome/(k_TRSL_mRNA_met + mRNA_met_Ribosome)))*int_vol", 
         "name_alt": "v_TRSL_mRNA_met", 
         "name": "258", 
@@ -6935,7 +6935,7 @@ var data =[
             "163", 
             "161"
         ], 
-        "x": "120.65", 
+        "x": "31.634", 
         "is_ode": false
     }, 
     {
@@ -6952,7 +6952,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "80.995", 
+        "y": "29.326", 
         "annotation": "CHEBI:57945", 
         "name_alt": "NADH", 
         "name": "259", 
@@ -6962,7 +6962,7 @@ var data =[
             "293", 
             "296"
         ], 
-        "x": "133.32", 
+        "x": "34.436", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -6977,7 +6977,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "120.88", 
+        "y": "28.581", 
         "annotation": "CHEBI:28808", 
         "name_alt": "mannan", 
         "name": "260", 
@@ -6986,7 +6986,7 @@ var data =[
         "links_from": [
             "295"
         ], 
-        "x": "116.86", 
+        "x": "26.142", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7001,7 +7001,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "85.191", 
+        "y": "28.863", 
         "annotation": "CHEBI:57540", 
         "name_alt": "NAD", 
         "name": "261", 
@@ -7013,7 +7013,7 @@ var data =[
             "288", 
             "297"
         ], 
-        "x": "130.16", 
+        "x": "33.474", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7025,7 +7025,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "93.56", 
+        "y": "28.231", 
         "annotation": "YCM:pyr_check", 
         "name_alt": "pyr_check", 
         "name": "262", 
@@ -7034,7 +7034,7 @@ var data =[
         "links_from": [
             "293"
         ], 
-        "x": "123.54", 
+        "x": "32.926", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7049,7 +7049,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "98.94", 
+        "y": "30.154", 
         "annotation": "YCM:NA_RNA", 
         "name_alt": "NA_RNA", 
         "name": "263", 
@@ -7058,7 +7058,7 @@ var data =[
         "links_from": [
             "287"
         ], 
-        "x": "122.54", 
+        "x": "35.313", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7070,7 +7070,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "110.22", 
+        "y": "28.528", 
         "annotation": "YCM:TriP_check", 
         "name_alt": "TriP_check", 
         "name": "264", 
@@ -7079,7 +7079,7 @@ var data =[
         "links_from": [
             "298"
         ], 
-        "x": "117.33", 
+        "x": "30.263", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7091,7 +7091,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "4.1464", 
+        "y": "26.88", 
         "annotation": "YCM:EtOH_check", 
         "name_alt": "EtOH_check", 
         "name": "265", 
@@ -7100,7 +7100,7 @@ var data =[
         "links_from": [
             "297"
         ], 
-        "x": "0.40186", 
+        "x": "34.324", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7115,7 +7115,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "2.1993", 
+        "y": "26.257", 
         "annotation": "CHEBI:16236", 
         "name_alt": "EtOH", 
         "name": "266", 
@@ -7124,7 +7124,7 @@ var data =[
         "links_from": [
             "297"
         ], 
-        "x": "3.7824", 
+        "x": "34.703", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7144,7 +7144,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "108.85", 
+        "y": "29.943", 
         "annotation": "CHEBI:58225", 
         "name_alt": "HexP", 
         "name": "267", 
@@ -7153,7 +7153,7 @@ var data =[
         "links_from": [
             "292"
         ], 
-        "x": "119.1", 
+        "x": "30.463", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7167,14 +7167,14 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "193.93", 
+        "y": "28.975", 
         "annotation": "YCM:O2_check", 
         "name_alt": "O2_check", 
         "name": "268", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "150.74", 
+        "x": "35.32", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7187,7 +7187,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "105.08", 
+        "y": "28.714", 
         "annotation": "YCM:lipid", 
         "name_alt": "lipid", 
         "name": "269", 
@@ -7196,7 +7196,7 @@ var data =[
         "links_from": [
             "291"
         ], 
-        "x": "118.78", 
+        "x": "34.361", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7208,7 +7208,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "102.19", 
+        "y": "29.937", 
         "annotation": "CHEBI:24636", 
         "name_alt": "H", 
         "name": "270", 
@@ -7221,7 +7221,7 @@ var data =[
             "290", 
             "291"
         ], 
-        "x": "121.24", 
+        "x": "34.357", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7239,7 +7239,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "92.636", 
+        "y": "29.478", 
         "annotation": "CHEBI:15361", 
         "name_alt": "pyr", 
         "name": "271", 
@@ -7248,7 +7248,7 @@ var data =[
         "links_from": [
             "293"
         ], 
-        "x": "125.57", 
+        "x": "33.493", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7263,7 +7263,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "71.541", 
+        "y": "27.32", 
         "annotation": "CHEBI:17634", 
         "name_alt": "Glc", 
         "name": "272", 
@@ -7276,7 +7276,7 @@ var data =[
         "links_from": [
             "389"
         ], 
-        "x": "242.58", 
+        "x": "27.754", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7288,7 +7288,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "89.595", 
+        "y": "28.103", 
         "annotation": "YCM:CO2_check", 
         "name_alt": "CO2_check", 
         "name": "273", 
@@ -7298,7 +7298,7 @@ var data =[
             "296", 
             "297"
         ], 
-        "x": "127.31", 
+        "x": "34.283", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7313,7 +7313,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "115.68", 
+        "y": "28.002", 
         "annotation": "CHEBI:17029", 
         "name_alt": "chitin", 
         "name": "274", 
@@ -7322,7 +7322,7 @@ var data =[
         "links_from": [
             "283"
         ], 
-        "x": "117.58", 
+        "x": "28.282", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7341,14 +7341,14 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "103.84", 
+        "y": "30.548", 
         "annotation": "CHEBI:28938", 
         "name_alt": "NH4", 
         "name": "275", 
         "uni_links": [], 
         "state": "+1", 
         "links_from": [], 
-        "x": "120.65", 
+        "x": "34.452", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7363,7 +7363,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "51.072", 
+        "y": "26.958", 
         "annotation": "CHEBI:17754", 
         "name_alt": "glycerol", 
         "name": "276", 
@@ -7372,7 +7372,7 @@ var data =[
         "links_from": [
             "286"
         ], 
-        "x": "86.611", 
+        "x": "32.685", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7387,7 +7387,7 @@ var data =[
             "MET_CCM", 
             "MET_CWS"
         ], 
-        "y": "131.37", 
+        "y": "29.634", 
         "annotation": "CHEBI:37671", 
         "name_alt": "glucan", 
         "name": "277", 
@@ -7396,7 +7396,7 @@ var data =[
         "links_from": [
             "284"
         ], 
-        "x": "116.5", 
+        "x": "25.444", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7412,7 +7412,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "95.753", 
+        "y": "29.984", 
         "annotation": "CHEBI:58027", 
         "name_alt": "TriP", 
         "name": "278", 
@@ -7423,7 +7423,7 @@ var data =[
             "291", 
             "298"
         ], 
-        "x": "123.98", 
+        "x": "31.813", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7438,7 +7438,7 @@ var data =[
             "MET_CCM", 
             "TRP_NUT"
         ], 
-        "y": "88.105", 
+        "y": "27.611", 
         "annotation": "CHEBI:16526", 
         "name_alt": "CO2", 
         "name": "279", 
@@ -7448,7 +7448,7 @@ var data =[
             "296", 
             "297"
         ], 
-        "x": "128.22", 
+        "x": "33.29", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7460,7 +7460,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "111.95", 
+        "y": "27.381", 
         "annotation": "YCM:HexP_check", 
         "name_alt": "HexP_check", 
         "name": "280", 
@@ -7469,7 +7469,7 @@ var data =[
         "links_from": [
             "292"
         ], 
-        "x": "116.92", 
+        "x": "29.024", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7484,7 +7484,7 @@ var data =[
             "MET_CCM", 
             "MET_DNA"
         ], 
-        "y": "52.86", 
+        "y": "31.72", 
         "annotation": "YCM:NA_DNA", 
         "name_alt": "NA_DNA", 
         "name": "281", 
@@ -7493,7 +7493,7 @@ var data =[
         "links_from": [
             "290"
         ], 
-        "x": "187.68", 
+        "x": "37.859", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -7511,7 +7511,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "107.17", 
+        "y": "31.972", 
         "rate": "(E_v_AA_f * ((kf_v_AA_f * (NH4/Km_v_AA_f_NH4) * (HexP/Km_v_AA_f_HexP) * (pyr/Km_v_AA_f_pyr) * (ATP/Km_v_AA_f_ATP) - kr_v_AA_f * (AA/Km_v_AA_f_AA) * (Pi/Km_v_AA_f_Pi) * (ADP/Km_v_AA_f_ADP) * (TriP/Km_v_AA_f_TriP))/((1+(NH4/Km_v_AA_f_NH4))*(1+(HexP/Km_v_AA_f_HexP))*(1+(pyr/Km_v_AA_f_pyr))*(1+(ATP/Km_v_AA_f_ATP)) + (1+(AA/Km_v_AA_f_AA))*(1+(Pi/Km_v_AA_f_Pi))*(1+(ADP/Km_v_AA_f_ADP))*(1+(TriP/Km_v_AA_f_TriP)) - 1)) * int_vol)", 
         "name_alt": "v_AA_f", 
         "name": "282", 
@@ -7525,7 +7525,7 @@ var data =[
             "161", 
             "275"
         ], 
-        "x": "119.58", 
+        "x": "32.496", 
         "is_ode": false
     }, 
     {
@@ -7541,7 +7541,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "113.96", 
+        "y": "30.558", 
         "rate": "(E_v_chitin_f * ((kf_v_chitin_f * (NH4/Km_v_chitin_f_NH4) * (HexP/Km_v_chitin_f_HexP) * (ATP/Km_v_chitin_f_ATP) - kr_v_chitin_f * (Pi/Km_v_chitin_f_Pi) * (chitin/Km_v_chitin_f_chitin) * (ADP/Km_v_chitin_f_ADP))/((1+(NH4/Km_v_chitin_f_NH4))*(1+(HexP/Km_v_chitin_f_HexP))*(1+(ATP/Km_v_chitin_f_ATP)) + (1+(Pi/Km_v_chitin_f_Pi))*(1+(chitin/Km_v_chitin_f_chitin))*(1+(ADP/Km_v_chitin_f_ADP)) - 1)) * int_vol)", 
         "name_alt": "v_chitin_f", 
         "name": "283", 
@@ -7554,7 +7554,7 @@ var data =[
             "161", 
             "275"
         ], 
-        "x": "117.9", 
+        "x": "30.95", 
         "is_ode": false
     }, 
     {
@@ -7569,7 +7569,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "191.81", 
+        "y": "31.6", 
         "rate": "(E_glucan * ((kf_glucan * (HexP/Km_glucan_HexP)*(ATP/Km_glucan_ATP) - kr_glucan * (glucan/Km_glucan_glucan)*(ADP/Km_glucan_ADP)*(Pi/Km_glucan_Pi))/((1+(HexP/Km_glucan_HexP))*(1+(ATP/Km_glucan_ATP)) + (1+(glucan/Km_glucan_glucan))*(1+(ADP/Km_glucan_ADP))*(1+(Pi/Km_glucan_Pi)) - 1)) * int_vol)", 
         "name_alt": "v_glucan_f", 
         "name": "284", 
@@ -7581,7 +7581,7 @@ var data =[
             "267", 
             "161"
         ], 
-        "x": "150.02", 
+        "x": "28.033", 
         "is_ode": false
     }, 
     {
@@ -7595,7 +7595,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "192.77", 
+        "y": "31.16", 
         "rate": "(((1./(1.+ exp(k1_resp*(ATP - ATPcrit)))) * kf_resp * NADH * ADP * Pi) * int_vol)", 
         "name_alt": "v_resp", 
         "name": "285", 
@@ -7609,7 +7609,7 @@ var data =[
             "162", 
             "157"
         ], 
-        "x": "151.48", 
+        "x": "33.645", 
         "is_ode": false
     }, 
     {
@@ -7624,7 +7624,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "83.768", 
+        "y": "29.371", 
         "rate": "(E_v_glycerol_syn * ((kf_v_glycerol_syn * (NADH/Km_v_glycerol_syn_NADH) * (TriP/Km_v_glycerol_syn_TriP) - kr_v_glycerol_syn * (Pi/Km_v_glycerol_syn_Pi) * (glycerol/Km_v_glycerol_syn_glycerol) * (NAD/Km_v_glycerol_syn_NAD))/((1+(NADH/Km_v_glycerol_syn_NADH))*(1+(TriP/Km_v_glycerol_syn_TriP)) + (1+(Pi/Km_v_glycerol_syn_Pi))*(1+(glycerol/Km_v_glycerol_syn_glycerol))*(1+(NAD/Km_v_glycerol_syn_NAD)) - 1)) * int_vol)", 
         "name_alt": "v_glycerol_syn", 
         "name": "286", 
@@ -7636,7 +7636,7 @@ var data =[
             "259", 
             "278"
         ], 
-        "x": "131.18", 
+        "x": "32.61", 
         "is_ode": false
     }, 
     {
@@ -7652,7 +7652,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "100.56", 
+        "y": "31.337", 
         "rate": "(E_v_NA_RNA_f * ((kf_v_NA_RNA_f * (NH4/Km_v_NA_RNA_f_NH4) * (HexP/Km_v_NA_RNA_f_HexP) * (pyr/Km_v_NA_RNA_f_pyr) * (ATP/Km_v_NA_RNA_f_ATP) * (TriP/Km_v_NA_RNA_f_TriP) - kr_v_NA_RNA_f * (Pi/Km_v_NA_RNA_f_Pi) * (NA_RNA/Km_v_NA_RNA_f_NA_RNA) * (ADP/Km_v_NA_RNA_f_ADP))/((1+(NH4/Km_v_NA_RNA_f_NH4))*(1+(HexP/Km_v_NA_RNA_f_HexP))*(1+(pyr/Km_v_NA_RNA_f_pyr))*(1+(ATP/Km_v_NA_RNA_f_ATP))*(1+(TriP/Km_v_NA_RNA_f_TriP)) + (1+(Pi/Km_v_NA_RNA_f_Pi))*(1+(NA_RNA/Km_v_NA_RNA_f_NA_RNA))*(1+(ADP/Km_v_NA_RNA_f_ADP)) - 1)) * int_vol)", 
         "name_alt": "v_NA_RNA_f", 
         "name": "287", 
@@ -7667,7 +7667,7 @@ var data =[
             "161", 
             "275"
         ], 
-        "x": "121.87", 
+        "x": "31.641", 
         "is_ode": false
     }, 
     {
@@ -7682,7 +7682,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "82.369", 
+        "y": "31.771", 
         "rate": "(((1./(1.+ exp(k1_NAD_syn*((NAD+NADH) - NADNADHcrit)))) * kf_NAD_syn * AA * ADP) * int_vol)", 
         "name_alt": "v_NAD_syn", 
         "name": "288", 
@@ -7694,7 +7694,7 @@ var data =[
             "163", 
             "157"
         ], 
-        "x": "132.23", 
+        "x": "33.597", 
         "is_ode": false
     }, 
     {
@@ -7708,7 +7708,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "197.81", 
+        "y": "31.915", 
         "rate": "((0.5 * ATP) * int_vol)", 
         "name_alt": "v_ATP_con", 
         "name": "289", 
@@ -7719,7 +7719,7 @@ var data =[
         "links_from": [
             "161"
         ], 
-        "x": "160.69", 
+        "x": "30.757", 
         "is_ode": false
     }, 
     {
@@ -7733,7 +7733,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "97.338", 
+        "y": "30.876", 
         "rate": "(E_v_NA_DNA_syn * ((kf_v_NA_DNA_syn * (NH4/Km_v_NA_DNA_syn_NH4) * (NA_RNA/Km_v_NA_DNA_syn_NA_RNA) - kr_v_NA_DNA_syn * (NA_DNA/Km_v_NA_DNA_syn_NA_DNA))/((1+(NH4/Km_v_NA_DNA_syn_NH4))*(1+(NA_RNA/Km_v_NA_DNA_syn_NA_RNA)) + (1+(NA_DNA/Km_v_NA_DNA_syn_NA_DNA)) - 1)) * int_vol)", 
         "name_alt": "v_NA_DNA_syn", 
         "name": "290", 
@@ -7745,7 +7745,7 @@ var data =[
             "275", 
             "263"
         ], 
-        "x": "123.24", 
+        "x": "35.657", 
         "is_ode": false
     }, 
     {
@@ -7762,7 +7762,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "105.5", 
+        "y": "31.352", 
         "rate": "(E_v_lipid_f * ((kf_v_lipid_f * (NH4/Km_v_lipid_f_NH4) * (HexP/Km_v_lipid_f_HexP) * (pyr/Km_v_lipid_f_pyr) * (ATP/Km_v_lipid_f_ATP) - kr_v_lipid_f * (Pi/Km_v_lipid_f_Pi) * (lipid/Km_v_lipid_f_lipid) * (ADP/Km_v_lipid_f_ADP) * (TriP/Km_v_lipid_f_TriP))/((1+(NH4/Km_v_lipid_f_NH4))*(1+(HexP/Km_v_lipid_f_HexP))*(1+(pyr/Km_v_lipid_f_pyr))*(1+(ATP/Km_v_lipid_f_ATP)) + (1+(Pi/Km_v_lipid_f_Pi))*(1+(lipid/Km_v_lipid_f_lipid))*(1+(ADP/Km_v_lipid_f_ADP))*(1+(TriP/Km_v_lipid_f_TriP)) - 1)) * int_vol)", 
         "name_alt": "v_lipid_f", 
         "name": "291", 
@@ -7776,7 +7776,7 @@ var data =[
             "161", 
             "275"
         ], 
-        "x": "120.09", 
+        "x": "32.616", 
         "is_ode": false
     }, 
     {
@@ -7791,7 +7791,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "112.25", 
+        "y": "29.484", 
         "rate": "(E_v_HK * ((kf_v_HK * (Glc/Km_v_HK_Glc) * (ATP/Km_v_HK_ATP) - kr_v_HK * (HexP/Km_v_HK_HexP) * (ADP/Km_v_HK_ADP))/((1+(Glc/Km_v_HK_Glc))*(1+(ATP/Km_v_HK_ATP)) + (1+(HexP/Km_v_HK_HexP))*(1+(ADP/Km_v_HK_ADP)) - 1)) * int_vol)", 
         "name_alt": "v_HK", 
         "name": "292", 
@@ -7803,7 +7803,7 @@ var data =[
             "272", 
             "161"
         ], 
-        "x": "118.26", 
+        "x": "29.427", 
         "is_ode": false
     }, 
     {
@@ -7819,7 +7819,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "94.185", 
+        "y": "30.726", 
         "rate": "(E_pyr * ((kf_pyr * (Pi/Km_pyr_Pi) * (NAD/Km_pyr_NAD) * (ADP/Km_pyr_ADP)**2.0 * (TriP/Km_pyr_TriP) - kr_pyr * (pyr/Km_pyr_pyr) * (NADH/Km_pyr_NADH) * (ATP/Km_pyr_ATP)**2.0)/((1+(Pi/Km_pyr_Pi))*(1+(NAD/Km_pyr_NAD))*(1+(ADP/Km_pyr_ADP)**1+(ADP/Km_pyr_ADP)**2)*(1+(TriP/Km_pyr_TriP)) + (1+(pyr/Km_pyr_pyr))*(1+(NADH/Km_pyr_NADH))*(1+(ATP/Km_pyr_ATP)**1+(ATP/Km_pyr_ATP)**2) - 1)) * int_vol)", 
         "name_alt": "v_pyr", 
         "name": "293", 
@@ -7833,7 +7833,7 @@ var data =[
             "278", 
             "157"
         ], 
-        "x": "124.76", 
+        "x": "32.403", 
         "is_ode": false
     }, 
     {
@@ -7848,7 +7848,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "196.27", 
+        "y": "32.383", 
         "rate": "(((1./(1.+ exp(k1_ADP_syn*((ATP+ADP) - ATPADPcrit)))) * kf_ADP_syn * NA_RNA * Pi**2) * int_vol)", 
         "name_alt": "v_ADP_syn", 
         "name": "294", 
@@ -7860,7 +7860,7 @@ var data =[
             "162", 
             "263"
         ], 
-        "x": "157.54", 
+        "x": "33.357", 
         "is_ode": false
     }, 
     {
@@ -7875,7 +7875,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "193.7", 
+        "y": "31.181", 
         "rate": "(E_mannan * ((kf_mannan * (HexP/Km_mannan_HexP)*(ATP/Km_mannan_ATP) - kr_mannan * (mannan/Km_mannan_mannan)*(ADP/Km_mannan_ADP)*(Pi/Km_mannan_Pi))/((1+(HexP/Km_mannan_HexP))*(1+(ATP/Km_mannan_ATP)) + (1+(mannan/Km_mannan_mannan))*(1+(ADP/Km_mannan_ADP))*(1+(Pi/Km_mannan_Pi)) - 1)) * int_vol)", 
         "name_alt": "v_mannan_f", 
         "name": "295", 
@@ -7887,7 +7887,7 @@ var data =[
             "267", 
             "161"
         ], 
-        "x": "152.97", 
+        "x": "29.224", 
         "is_ode": false
     }, 
     {
@@ -7903,7 +7903,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "91.105", 
+        "y": "30.09", 
         "rate": "((kf_TCA * pyr * NAD * ADP * Pi) * int_vol)", 
         "name_alt": "v_TCA", 
         "name": "296", 
@@ -7917,7 +7917,7 @@ var data =[
             "157", 
             "261"
         ], 
-        "x": "126.42", 
+        "x": "32.976", 
         "is_ode": false
     }, 
     {
@@ -7934,7 +7934,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "86.637", 
+        "y": "27.491", 
         "rate": "(E_ferm * ((kf_ferm * (pyr/Km_ferm_pyr) * (NADH/Km_ferm_NADH) - kr_ferm * (CO2/Km_ferm_CO2) * (NAD/Km_ferm_NAD) * (EtOH/Km_ferm_EtOH))/((1+(pyr/Km_ferm_pyr))*(1+(NADH/Km_ferm_NADH)) + (1+(CO2/Km_ferm_CO2))*(1+(NAD/Km_ferm_NAD))*(1+(EtOH/Km_ferm_EtOH)) - 1)) * int_vol)", 
         "name_alt": "v_ferm", 
         "name": "297", 
@@ -7946,7 +7946,7 @@ var data =[
             "271", 
             "259"
         ], 
-        "x": "129.18", 
+        "x": "34.9", 
         "is_ode": false
     }, 
     {
@@ -7961,7 +7961,7 @@ var data =[
         "module": [
             "MET_CCM"
         ], 
-        "y": "110.55", 
+        "y": "30.707", 
         "rate": "(E_TriP * ((kf_TriP * (HexP/Km_TriP_HexP) * (ATP/Km_TriP_ATP) - kr_TriP * (ADP/Km_TriP_ADP) * (TriP/Km_TriP_TriP)**2.0)/((1+(HexP/Km_TriP_HexP))*(1+(ATP/Km_TriP_ATP)) + (1+(ADP/Km_TriP_ADP))*(1+(TriP/Km_TriP_TriP)**1+(TriP/Km_TriP_TriP)**2) - 1)) * int_vol)", 
         "name_alt": "v_TriP", 
         "name": "298", 
@@ -7973,7 +7973,7 @@ var data =[
             "267", 
             "161"
         ], 
-        "x": "118.66", 
+        "x": "30.088", 
         "is_ode": false
     }, 
     {
@@ -7988,7 +7988,7 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "52.719", 
+        "y": "34.317", 
         "annotation": "YCM:A", 
         "name_alt": "A", 
         "name": "299", 
@@ -7997,7 +7997,7 @@ var data =[
         "links_from": [
             "303"
         ], 
-        "x": "191.18", 
+        "x": "40.488", 
         "compartment": "nucleus", 
         "is_ode": false
     }, 
@@ -8011,7 +8011,7 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "125.25", 
+        "y": "32.554", 
         "annotation": "YCM:DNA", 
         "name_alt": "DNA", 
         "name": "300", 
@@ -8020,7 +8020,7 @@ var data =[
         "links_from": [
             "302"
         ], 
-        "x": "268.44", 
+        "x": "41.389", 
         "compartment": "nucleus", 
         "is_ode": false
     }, 
@@ -8034,7 +8034,7 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "123.5", 
+        "y": "33.798", 
         "rate": "(((1./(1.+ exp(-k1_A_con*(DNA - (DNA_crit*16.0e-15/int_vol))))) * kf_A_con * A) * nuc_vol)", 
         "name_alt": "v_A_con", 
         "name": "301", 
@@ -8045,7 +8045,7 @@ var data =[
         "links_from": [
             "299"
         ], 
-        "x": "268.34", 
+        "x": "41.35", 
         "is_ode": false
     }, 
     {
@@ -8060,7 +8060,7 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "52.769", 
+        "y": "32.501", 
         "rate": "(((1./(1.+ exp(-k1_DNA_syn*(A - (A_crit*16.0e-15/int_vol))))) * kf_DNA_syn * 0.147) * nuc_vol)", 
         "name_alt": "v_DNA_syn", 
         "name": "302", 
@@ -8072,7 +8072,7 @@ var data =[
         "links_from": [
             "281"
         ], 
-        "x": "189.43", 
+        "x": "39.729", 
         "is_ode": false
     }, 
     {
@@ -8087,7 +8087,7 @@ var data =[
         "module": [
             "MET_DNA"
         ], 
-        "y": "52.991", 
+        "y": "36.955", 
         "rate": "((  (1./(1.+ exp(-k1_A_syn*(Clb5/1.65801328396e-05 - (Clb5_crit*16.0e-15/int_vol)/1.65801328396e-05)))) * kf_A_syn  ) * nuc_vol)", 
         "name_alt": "v_A_syn", 
         "name": "303", 
@@ -8097,7 +8097,7 @@ var data =[
             "intracellular"
         ], 
         "links_from": [], 
-        "x": "185.93", 
+        "x": "40.116", 
         "is_ode": false
     }, 
     {
@@ -8108,7 +8108,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "133.12", 
+        "y": "30.213", 
         "annotation": "YCM:B_Protein_other", 
         "name_alt": "proteins_cw", 
         "name": "304", 
@@ -8119,7 +8119,7 @@ var data =[
         "links_from": [
             "311"
         ], 
-        "x": "116.58", 
+        "x": "23.59", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -8131,7 +8131,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "124.37", 
+        "y": "28.086", 
         "annotation": "CHEBI:28808", 
         "name_alt": "mannan_cw", 
         "name": "305", 
@@ -8142,7 +8142,7 @@ var data =[
         "links_from": [
             "312"
         ], 
-        "x": "116.58", 
+        "x": "23.926", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -8155,14 +8155,14 @@ var data =[
             "MET_CWS", 
             "TRP_NUT"
         ], 
-        "y": "130.58", 
+        "y": "8.8561", 
         "annotation": "SBO:0000468", 
         "name_alt": "pm_vol", 
         "name": "306", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "108.04", 
+        "x": "9.8505", 
         "compartment": "plasma_membrane", 
         "is_ode": true
     }, 
@@ -8174,7 +8174,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "126.07", 
+        "y": "28.175", 
         "annotation": "SBO:0000468", 
         "name_alt": "V_cw", 
         "name": "307", 
@@ -8186,7 +8186,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "115.12", 
+        "x": "23.021", 
         "compartment": "cell_wall", 
         "is_ode": true
     }, 
@@ -8203,7 +8203,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "126.12", 
+        "y": "28.697", 
         "annotation": "SBO:0000504", 
         "name_alt": "m_cw", 
         "name": "308", 
@@ -8220,7 +8220,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "116.5", 
+        "x": "24.4", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -8232,7 +8232,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "127.87", 
+        "y": "29.596", 
         "annotation": "CHEBI:37671", 
         "name_alt": "glucan_cw", 
         "name": "309", 
@@ -8243,7 +8243,7 @@ var data =[
         "links_from": [
             "313"
         ], 
-        "x": "116.46", 
+        "x": "23.24", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -8255,7 +8255,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "119.14", 
+        "y": "27.925", 
         "annotation": "CHEBI:17029", 
         "name_alt": "chitin_cw", 
         "name": "310", 
@@ -8266,7 +8266,7 @@ var data =[
         "links_from": [
             "314"
         ], 
-        "x": "117.06", 
+        "x": "24.964", 
         "compartment": "cell_wall", 
         "is_ode": false
     }, 
@@ -8282,7 +8282,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "134.86", 
+        "y": "29.92", 
         "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(proteins)*int_vol", 
         "name_alt": "CW_proteins", 
         "name": "311", 
@@ -8294,7 +8294,7 @@ var data =[
         "links_from": [
             "245"
         ], 
-        "x": "116.7", 
+        "x": "24.583", 
         "is_ode": false
     }, 
     {
@@ -8309,7 +8309,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "122.63", 
+        "y": "28.537", 
         "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(mannan)*int_vol", 
         "name_alt": "CW_mannan", 
         "name": "312", 
@@ -8321,7 +8321,7 @@ var data =[
         "links_from": [
             "260"
         ], 
-        "x": "116.7", 
+        "x": "25.28", 
         "is_ode": false
     }, 
     {
@@ -8336,7 +8336,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "129.62", 
+        "y": "29.309", 
         "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(glucan)*int_vol", 
         "name_alt": "CW_glucan", 
         "name": "313", 
@@ -8348,7 +8348,7 @@ var data =[
         "links_from": [
             "277"
         ], 
-        "x": "116.46", 
+        "x": "24.112", 
         "is_ode": false
     }, 
     {
@@ -8363,7 +8363,7 @@ var data =[
         "module": [
             "MET_CWS"
         ], 
-        "y": "117.41", 
+        "y": "27.969", 
         "rate": "((1./(1.+ exp(k_cw*(m_cw - (V_cw * rho_cw * 1e15))))))*(chitin)*int_vol", 
         "name_alt": "CW_chitin", 
         "name": "314", 
@@ -8375,7 +8375,7 @@ var data =[
         "links_from": [
             "274"
         ], 
-        "x": "117.3", 
+        "x": "26.485", 
         "is_ode": false
     }, 
     {
@@ -8390,7 +8390,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "35.515", 
+        "y": "17.311", 
         "annotation": "CHEBI:24636", 
         "name_alt": "h_cyt", 
         "name": "315", 
@@ -8406,7 +8406,7 @@ var data =[
             "366", 
             "372"
         ], 
-        "x": "247.35", 
+        "x": "22.55", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -8418,14 +8418,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "119.24", 
+        "y": "7.995", 
         "annotation": "SBML_IMPORT_ANNOTATION:8", 
         "name_alt": "v_v", 
         "name": "316", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "108.04", 
+        "x": "17.601", 
         "compartment": "parameter_compartment", 
         "is_ode": true
     }, 
@@ -8440,7 +8440,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "36.792", 
+        "y": "20.323", 
         "annotation": "CHEBI:30616", 
         "name_alt": "atp_cyt", 
         "name": "317", 
@@ -8449,7 +8449,7 @@ var data =[
         ], 
         "state": "-4", 
         "links_from": [], 
-        "x": "257.32", 
+        "x": "25.193", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -8461,7 +8461,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "37.341", 
+        "y": "15.422", 
         "annotation": "SBML_IMPORT_ANNOTATION:13", 
         "name_alt": "E_pma1", 
         "name": "318", 
@@ -8474,7 +8474,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "244.38", 
+        "x": "22.131", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8486,7 +8486,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "55.151", 
+        "y": "11.696", 
         "annotation": "SBML_IMPORT_ANNOTATION:7", 
         "name_alt": "v_m", 
         "name": "319", 
@@ -8506,7 +8506,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "249.02", 
+        "x": "17.099", 
         "compartment": "parameter_compartment", 
         "is_ode": true
     }, 
@@ -8521,7 +8521,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "34.781", 
+        "y": "17.074", 
         "annotation": "CHEBI:24636", 
         "name_alt": "h_vac", 
         "name": "320", 
@@ -8530,7 +8530,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "250.75", 
+        "x": "27.57", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8546,7 +8546,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "38.603", 
+        "y": "17.217", 
         "annotation": "CHEBI:24636", 
         "name_alt": "h_ext", 
         "name": "321", 
@@ -8557,7 +8557,7 @@ var data =[
         ], 
         "state": "+1", 
         "links_from": [], 
-        "x": "243.17", 
+        "x": "21.416", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8571,7 +8571,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "64.781", 
+        "y": "5.6799", 
         "annotation": "CHEBI:17996", 
         "name_alt": "cl_cyt", 
         "name": "322", 
@@ -8582,7 +8582,7 @@ var data =[
         "links_from": [
             "375"
         ], 
-        "x": "253.07", 
+        "x": "20.92", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -8594,7 +8594,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "54.639", 
+        "y": "8.9821", 
         "annotation": "SBML_IMPORT_ANNOTATION:11", 
         "name_alt": "gp_trk12", 
         "name": "323", 
@@ -8605,7 +8605,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "247.35", 
+        "x": "17.283", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8621,7 +8621,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "47.674", 
+        "y": "18.485", 
         "annotation": "CHEBI:29101", 
         "name_alt": "na_ext", 
         "name": "324", 
@@ -8632,7 +8632,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "261.16", 
+        "x": "17.621", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8647,7 +8647,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.203", 
+        "y": "19.194", 
         "annotation": "CHEBI:29101", 
         "name_alt": "na_cyt", 
         "name": "325", 
@@ -8661,7 +8661,7 @@ var data =[
             "373", 
             "377"
         ], 
-        "x": "261.46", 
+        "x": "17.832", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -8673,7 +8673,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "63.765", 
+        "y": "9.1877", 
         "annotation": "SBML_IMPORT_ANNOTATION:20", 
         "name_alt": "my_J_Cl", 
         "name": "326", 
@@ -8686,7 +8686,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "251.87", 
+        "x": "18.8", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8698,7 +8698,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "53.852", 
+        "y": "9.1326", 
         "annotation": "SBML_IMPORT_ANNOTATION:26", 
         "name_alt": "my_J_trk12", 
         "name": "327", 
@@ -8712,7 +8712,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "245.79", 
+        "x": "15.605", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8724,7 +8724,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "62.46", 
+        "y": "11.225", 
         "annotation": "SBML_IMPORT_ANNOTATION:21", 
         "name_alt": "my_J_Ca", 
         "name": "328", 
@@ -8737,7 +8737,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "246.41", 
+        "x": "13.256", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8751,7 +8751,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "63.83", 
+        "y": "9.9456", 
         "annotation": "CHEBI:29108", 
         "name_alt": "ca_cyt", 
         "name": "329", 
@@ -8762,7 +8762,7 @@ var data =[
         "links_from": [
             "374"
         ], 
-        "x": "247.19", 
+        "x": "9.4424", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -8776,14 +8776,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "64.516", 
+        "y": "0.25071", 
         "annotation": "CHEBI:17996", 
         "name_alt": "cl_vac", 
         "name": "330", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "256.19", 
+        "x": "23.93", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8795,7 +8795,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "54.931", 
+        "y": "14.239", 
         "annotation": "SBML_IMPORT_ANNOTATION:24", 
         "name_alt": "my_J_ena1", 
         "name": "331", 
@@ -8807,7 +8807,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "254.21", 
+        "x": "18.096", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8820,14 +8820,14 @@ var data =[
             "TRP_ION", 
             "TRP_NUT"
         ], 
-        "y": "107.91", 
+        "y": "18.328", 
         "annotation": "SBO:0000468", 
         "name_alt": "extracellular", 
         "name": "332", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "108.04", 
+        "x": "13.295", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8839,7 +8839,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "34.239", 
+        "y": "20.109", 
         "annotation": "SBML_IMPORT_ANNOTATION:9", 
         "name_alt": "myph", 
         "name": "333", 
@@ -8849,7 +8849,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "246.84", 
+        "x": "23.495", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8861,7 +8861,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.077", 
+        "y": "14.23", 
         "annotation": "SBML_IMPORT_ANNOTATION:3", 
         "name_alt": "r", 
         "name": "334", 
@@ -8872,7 +8872,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "227.14", 
+        "x": "12.132", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8886,14 +8886,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.938", 
+        "y": "25.567", 
         "annotation": "CHEBI:29101", 
         "name_alt": "na_vac", 
         "name": "335", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "264.57", 
+        "x": "16.303", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8905,7 +8905,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "50.848", 
+        "y": "15.394", 
         "annotation": "SBML_IMPORT_ANNOTATION:19", 
         "name_alt": "my_J_Na", 
         "name": "336", 
@@ -8918,7 +8918,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "259.73", 
+        "x": "16.78", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -8932,14 +8932,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "66.843", 
+        "y": "7.6664", 
         "annotation": "CHEBI:29108", 
         "name_alt": "ca_vac", 
         "name": "337", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "246.36", 
+        "x": "3.6935", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -8955,7 +8955,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.077", 
+        "y": "6.9294", 
         "annotation": "CHEBI:29103", 
         "name_alt": "k_ext", 
         "name": "338", 
@@ -8966,7 +8966,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "240.89", 
+        "x": "15.36", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -8978,7 +8978,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "49.322", 
+        "y": "17.496", 
         "annotation": "SBML_IMPORT_ANNOTATION:15", 
         "name_alt": "E_ena1", 
         "name": "339", 
@@ -8991,7 +8991,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "260.58", 
+        "x": "20.012", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9003,7 +9003,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.077", 
+        "y": "19.555", 
         "annotation": "SBML_IMPORT_ANNOTATION:6", 
         "name_alt": "surface_vac", 
         "name": "340", 
@@ -9013,7 +9013,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "198.72", 
+        "x": "0.36887", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9029,7 +9029,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "51.551", 
+        "y": "6.7524", 
         "annotation": "CHEBI:29103", 
         "name_alt": "k_cyt", 
         "name": "341", 
@@ -9042,7 +9042,7 @@ var data =[
         "links_from": [
             "370"
         ], 
-        "x": "243.17", 
+        "x": "14.097", 
         "compartment": "cytosol", 
         "is_ode": false
     }, 
@@ -9056,7 +9056,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "61.681", 
+        "y": "11.186", 
         "annotation": "CHEBI:29108", 
         "name_alt": "ca_ext", 
         "name": "342", 
@@ -9065,7 +9065,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "247.78", 
+        "x": "9.9998", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -9077,7 +9077,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "55.299", 
+        "y": "12.376", 
         "annotation": "SBML_IMPORT_ANNOTATION:4", 
         "name_alt": "surface", 
         "name": "343", 
@@ -9097,7 +9097,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "252.5", 
+        "x": "16.028", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9109,14 +9109,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "85.244", 
+        "y": "18.328", 
         "annotation": "SBO:0000468", 
         "name_alt": "par_vol", 
         "name": "344", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "108.04", 
+        "x": "11.573", 
         "compartment": "parameter_compartment", 
         "is_ode": true
     }, 
@@ -9128,7 +9128,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "53.363", 
+        "y": "16.626", 
         "annotation": "SBML_IMPORT_ANNOTATION:14", 
         "name_alt": "E_nha1", 
         "name": "345", 
@@ -9142,7 +9142,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "257.32", 
+        "x": "18.918", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9157,7 +9157,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "37.947", 
+        "y": "19.614", 
         "annotation": "CHEBI:456216", 
         "name_alt": "adp_cyt", 
         "name": "346", 
@@ -9166,7 +9166,7 @@ var data =[
         ], 
         "state": "-3", 
         "links_from": [], 
-        "x": "258.63", 
+        "x": "26.125", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -9178,7 +9178,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.077", 
+        "y": "18.584", 
         "annotation": "SBML_IMPORT_ANNOTATION:5", 
         "name_alt": "r_vac", 
         "name": "347", 
@@ -9189,7 +9189,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "200.47", 
+        "x": "2.623", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9201,7 +9201,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "43.336", 
+        "y": "9.7964", 
         "annotation": "SBML_IMPORT_ANNOTATION:25", 
         "name_alt": "my_J_tok1", 
         "name": "348", 
@@ -9215,7 +9215,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "241.03", 
+        "x": "16.078", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9227,7 +9227,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "34.855", 
+        "y": "17.07", 
         "annotation": "SBML_IMPORT_ANNOTATION:16", 
         "name_alt": "E_vma1", 
         "name": "349", 
@@ -9239,7 +9239,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "252.5", 
+        "x": "25.556", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9251,7 +9251,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.077", 
+        "y": "17.413", 
         "annotation": "SBO:0000468", 
         "name_alt": "vacuole", 
         "name": "350", 
@@ -9262,7 +9262,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "202.22", 
+        "x": "5.3085", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -9277,7 +9277,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "39.307", 
+        "y": "18.907", 
         "annotation": "CHEBI:43474", 
         "name_alt": "pi_cyt", 
         "name": "351", 
@@ -9286,7 +9286,7 @@ var data =[
         ], 
         "state": "-2", 
         "links_from": [], 
-        "x": "259.73", 
+        "x": "26.644", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -9298,14 +9298,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "96.577", 
+        "y": "12.301", 
         "annotation": "SBML_IMPORT_ANNOTATION:1", 
         "name_alt": "acid_cytosol_h", 
         "name": "352", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "102.38", 
+        "x": "8.9894", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -9319,14 +9319,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "53.514", 
+        "y": "1.0116", 
         "annotation": "CHEBI:29103", 
         "name_alt": "k_vac", 
         "name": "353", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "240.74", 
+        "x": "11.085", 
         "compartment": "vacuole", 
         "is_ode": false
     }, 
@@ -9338,7 +9338,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "35.224", 
+        "y": "17.982", 
         "annotation": "SBML_IMPORT_ANNOTATION:12", 
         "name_alt": "D_G_ATP", 
         "name": "354", 
@@ -9353,7 +9353,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "254.21", 
+        "x": "23.644", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9365,14 +9365,14 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "68.244", 
+        "y": "7.995", 
         "annotation": "SBML_IMPORT_ANNOTATION:2", 
         "name_alt": "acid_cytosol", 
         "name": "355", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "125.04", 
+        "x": "11.573", 
         "compartment": "cytosol", 
         "is_ode": true
     }, 
@@ -9384,7 +9384,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "52.813", 
+        "y": "9.6816", 
         "annotation": "SBML_IMPORT_ANNOTATION:18", 
         "name_alt": "my_J_K", 
         "name": "356", 
@@ -9397,7 +9397,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "244.38", 
+        "x": "14.711", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9409,7 +9409,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "40.051", 
+        "y": "14.37", 
         "annotation": "SBML_IMPORT_ANNOTATION:17", 
         "name_alt": "my_J_H", 
         "name": "357", 
@@ -9422,7 +9422,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "242.19", 
+        "x": "19.318", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9436,7 +9436,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "64.97", 
+        "y": "6.9486", 
         "annotation": "CHEBI:17996", 
         "name_alt": "cl_ext", 
         "name": "358", 
@@ -9445,7 +9445,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "250.85", 
+        "x": "21.264", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -9457,7 +9457,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "55.373", 
+        "y": "13.048", 
         "annotation": "SBML_IMPORT_ANNOTATION:22", 
         "name_alt": "my_J_pma1", 
         "name": "359", 
@@ -9469,7 +9469,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "250.75", 
+        "x": "19.213", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9481,7 +9481,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "54.279", 
+        "y": "14.326", 
         "annotation": "SBML_IMPORT_ANNOTATION:23", 
         "name_alt": "my_J_nha1", 
         "name": "360", 
@@ -9493,7 +9493,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "255.83", 
+        "x": "17.209", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9505,7 +9505,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "41.644", 
+        "y": "9.8216", 
         "annotation": "SBML_IMPORT_ANNOTATION:10", 
         "name_alt": "gp_tok1", 
         "name": "361", 
@@ -9516,7 +9516,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "241.47", 
+        "x": "17.968", 
         "compartment": "parameter_compartment", 
         "is_ode": false
     }, 
@@ -9533,7 +9533,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "40.832", 
+        "y": "18.698", 
         "rate": "( (  ( surface  /  F )   *  I_MAX_PMA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_pma1 ) )) )", 
         "name_alt": "J_pma1", 
         "name": "362", 
@@ -9545,7 +9545,7 @@ var data =[
         "links_from": [
             "315"
         ], 
-        "x": "260.58", 
+        "x": "24.025", 
         "is_ode": false
     }, 
     {
@@ -9558,7 +9558,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "42.481", 
+        "y": "20.892", 
         "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_na )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_ext  /  na_cyt ) ) )  ) ) ", 
         "name_alt": "J_na", 
         "name": "363", 
@@ -9570,7 +9570,7 @@ var data =[
         "links_from": [
             "325"
         ], 
-        "x": "261.16", 
+        "x": "17.111", 
         "is_ode": false
     }, 
     {
@@ -9583,7 +9583,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "46.819", 
+        "y": "4.4158", 
         "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_trk12 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
         "name_alt": "J_trk12", 
         "name": "364", 
@@ -9595,7 +9595,7 @@ var data =[
         "links_from": [
             "341"
         ], 
-        "x": "241.03", 
+        "x": "15.206", 
         "is_ode": false
     }, 
     {
@@ -9608,7 +9608,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "63.051", 
+        "y": "10.684", 
         "rate": " ( (  ( surface  /  ( 2.  *  F ) )   *  gp_ca )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_ext  /  ca_cyt ) ) )  ) ) ", 
         "name_alt": "J_ca", 
         "name": "365", 
@@ -9620,7 +9620,7 @@ var data =[
         "links_from": [
             "329"
         ], 
-        "x": "248.56", 
+        "x": "7.6999", 
         "is_ode": false
     }, 
     {
@@ -9633,7 +9633,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "35.003", 
+        "y": "16.122", 
         "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_h )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_cyt  /  h_vac ) ) )  ) ) ", 
         "name_alt": "J_vac_h", 
         "name": "366", 
@@ -9645,7 +9645,7 @@ var data =[
         "links_from": [
             "320"
         ], 
-        "x": "249.02", 
+        "x": "25.694", 
         "is_ode": false
     }, 
     {
@@ -9658,7 +9658,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "36.302", 
+        "y": "19.378", 
         "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_h )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( h_ext  /  h_cyt ) ) )  ) ) ", 
         "name_alt": "J_h", 
         "name": "367", 
@@ -9670,7 +9670,7 @@ var data =[
         "links_from": [
             "315"
         ], 
-        "x": "245.79", 
+        "x": "22.207", 
         "is_ode": false
     }, 
     {
@@ -9683,7 +9683,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "65.985", 
+        "y": "5.0522", 
         "rate": " ( (  ( surface  /  ( -1.  *  F ) )   *  gp_cl )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_ext  /  cl_cyt ) ) )  ) ) ", 
         "name_alt": "J_cl", 
         "name": "368", 
@@ -9695,7 +9695,7 @@ var data =[
         "links_from": [
             "322"
         ], 
-        "x": "252.06", 
+        "x": "22.722", 
         "is_ode": false
     }, 
     {
@@ -9708,7 +9708,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "48.51", 
+        "y": "4.4735", 
         "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_k )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
         "name_alt": "J_k", 
         "name": "369", 
@@ -9720,7 +9720,7 @@ var data =[
         "links_from": [
             "341"
         ], 
-        "x": "241.47", 
+        "x": "14.148", 
         "is_ode": false
     }, 
     {
@@ -9733,7 +9733,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "52.415", 
+        "y": "3.6775", 
         "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_k )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_cyt  /  k_vac ) ) )  ) ) ", 
         "name_alt": "J_vac_k", 
         "name": "370", 
@@ -9745,7 +9745,7 @@ var data =[
         "links_from": [
             "353"
         ], 
-        "x": "242.1", 
+        "x": "12.527", 
         "is_ode": false
     }, 
     {
@@ -9758,7 +9758,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "50.103", 
+        "y": "5.1637", 
         "rate": " ( (  ( surface  /  ( 1.  *  F ) )   *  gp_tok1 )  *  ( v_m  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( k_ext  /  k_cyt ) ) )  ) ) ", 
         "name_alt": "J_tok1", 
         "name": "371", 
@@ -9770,7 +9770,7 @@ var data =[
         "links_from": [
             "341"
         ], 
-        "x": "242.19", 
+        "x": "13.07", 
         "is_ode": false
     }, 
     {
@@ -9787,7 +9787,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "35.875", 
+        "y": "18.119", 
         "rate": "( (  ( surface_vac  /  F )   *  I_MAX_VMA_1 )  *  tanh( ( ( v_v  - E_vma1 )  /  ( ( 2.  *  R )  *  T ) ) ) )", 
         "name_alt": "J_vma1", 
         "name": "372", 
@@ -9799,7 +9799,7 @@ var data =[
         "links_from": [
             "320"
         ], 
-        "x": "255.83", 
+        "x": "25.7", 
         "is_ode": false
     }, 
     {
@@ -9815,7 +9815,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "52.208", 
+        "y": "18.782", 
         "rate": "( (  ( surface  /  F )   *  G_NHA1 )  *  ( v_m  - E_nha1 ) )", 
         "name_alt": "J_nha1", 
         "name": "373", 
@@ -9827,7 +9827,7 @@ var data =[
         "links_from": [
             "315"
         ], 
-        "x": "258.63", 
+        "x": "20.167", 
         "is_ode": false
     }, 
     {
@@ -9840,7 +9840,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "65.155", 
+        "y": "8.7484", 
         "rate": " ( (  ( surface_vac  /  ( 2.  *  F ) )   *  gv_ca )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  2. )   *  log( ( ca_cyt  /  ca_vac ) ) )  ) ) ", 
         "name_alt": "J_vac_ca", 
         "name": "374", 
@@ -9852,7 +9852,7 @@ var data =[
         "links_from": [
             "337"
         ], 
-        "x": "246.82", 
+        "x": "6.538", 
         "is_ode": false
     }, 
     {
@@ -9865,7 +9865,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "64.664", 
+        "y": "2.8891", 
         "rate": " ( (  ( surface_vac  /  ( -1.  *  F ) )   *  gv_cl )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  -1. )   *  log( ( cl_cyt  /  cl_vac ) ) )  ) ) ", 
         "name_alt": "J_vac_cl", 
         "name": "375", 
@@ -9877,7 +9877,7 @@ var data =[
         "links_from": [
             "330"
         ], 
-        "x": "254.44", 
+        "x": "22.406", 
         "is_ode": false
     }, 
     {
@@ -9890,7 +9890,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "45.951", 
+        "y": "20.394", 
         "rate": "( (  ( surface  /  F )   *  I_MAX_ENA1 )  *  tanh((  ( F  /  ( ( 2.  *  R )  *  T ) )   *  ( v_m  - E_ena1 ) )) )", 
         "name_alt": "J_ena1", 
         "name": "376", 
@@ -9902,7 +9902,7 @@ var data =[
         "links_from": [
             "325"
         ], 
-        "x": "261.46", 
+        "x": "15.953", 
         "is_ode": false
     }, 
     {
@@ -9915,7 +9915,7 @@ var data =[
         "module": [
             "TRP_ION"
         ], 
-        "y": "44.087", 
+        "y": "22.893", 
         "rate": " ( (  ( surface_vac  /  ( 1.  *  F ) )   *  gv_na )  *  ( v_v  -  (  (  ( ( R  *  T )  /  F )   /  1. )   *  log( ( na_cyt  /  na_vac ) ) )  ) ) ", 
         "name_alt": "J_vac_na", 
         "name": "377", 
@@ -9927,7 +9927,7 @@ var data =[
         "links_from": [
             "335"
         ], 
-        "x": "262.83", 
+        "x": "16.905", 
         "is_ode": false
     }, 
     {
@@ -9938,14 +9938,14 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "62.577", 
+        "y": "7.1339", 
         "annotation": "YCM:AA_check", 
         "name_alt": "AA_trp_check", 
         "name": "378", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "136.38", 
+        "x": "19.323", 
         "compartment": "intracellular", 
         "is_ode": true
     }, 
@@ -9957,7 +9957,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "7.2583", 
+        "y": "24.859", 
         "annotation": "CHEBI:16526", 
         "name_alt": "CO2_ext", 
         "name": "379", 
@@ -9966,7 +9966,7 @@ var data =[
         "links_from": [
             "390"
         ], 
-        "x": "0.375", 
+        "x": "33.878", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -9978,7 +9978,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "72.709", 
+        "y": "26.326", 
         "annotation": "SBO:0000627", 
         "name_alt": "glc_uptake", 
         "name": "380", 
@@ -9994,7 +9994,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "243.89", 
+        "x": "27.38", 
         "compartment": "intracellular", 
         "is_ode": false
     }, 
@@ -10006,7 +10006,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "49.001", 
+        "y": "24.077", 
         "annotation": "CHEBI:17754", 
         "name_alt": "glycerol_ext", 
         "name": "381", 
@@ -10015,7 +10015,7 @@ var data =[
         "links_from": [
             "387"
         ], 
-        "x": "83.789", 
+        "x": "32.793", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -10029,7 +10029,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "73.906", 
+        "y": "25.957", 
         "annotation": "CHEBI:17634", 
         "name_alt": "glucose_ext", 
         "name": "382", 
@@ -10040,7 +10040,7 @@ var data =[
         ], 
         "state": "0", 
         "links_from": [], 
-        "x": "245.16", 
+        "x": "26.434", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -10052,14 +10052,14 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "141.91", 
+        "y": "11.439", 
         "annotation": "YCM:AA", 
         "name_alt": "AA_ext", 
         "name": "383", 
         "uni_links": [], 
         "state": "0", 
         "links_from": [], 
-        "x": "108.04", 
+        "x": "20.184", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -10071,14 +10071,14 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "141.91", 
+        "y": "19.189", 
         "annotation": "CHEBI:43474", 
         "name_alt": "Pi_ext", 
         "name": "384", 
         "uni_links": [], 
         "state": "-2", 
         "links_from": [], 
-        "x": "96.711", 
+        "x": "15.878", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -10090,7 +10090,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "0.25", 
+        "y": "22.909", 
         "annotation": "CHEBI:16236", 
         "name_alt": "EtOH_ext", 
         "name": "385", 
@@ -10099,7 +10099,7 @@ var data =[
         "links_from": [
             "388"
         ], 
-        "x": "0.87545", 
+        "x": "35.965", 
         "compartment": "extracellular", 
         "is_ode": false
     }, 
@@ -10111,14 +10111,14 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "130.58", 
+        "y": "19.189", 
         "annotation": "CHEBI:28938", 
         "name_alt": "NH4_ext", 
         "name": "386", 
         "uni_links": [], 
         "state": "+1", 
         "links_from": [], 
-        "x": "96.711", 
+        "x": "9.8505", 
         "compartment": "extracellular", 
         "is_ode": true
     }, 
@@ -10132,7 +10132,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "50.036", 
+        "y": "25.509", 
         "rate": "glycerol_mem_permeability * SURFACE * (glycerol_cyt - glycerol_ext)", 
         "name_alt": "glycerol_trp", 
         "name": "387", 
@@ -10144,7 +10144,7 @@ var data =[
         "links_from": [
             "276"
         ], 
-        "x": "85.2", 
+        "x": "32.621", 
         "is_ode": false
     }, 
     {
@@ -10157,7 +10157,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "1.2247", 
+        "y": "24.343", 
         "rate": "EtOH_mem_permeability * SURFACE * 1e-10 * 1e15 * (EtOH - EtOH_ext)", 
         "name_alt": "v_EtOHdif", 
         "name": "388", 
@@ -10169,7 +10169,7 @@ var data =[
         "links_from": [
             "266"
         ], 
-        "x": "2.3289", 
+        "x": "35.39", 
         "is_ode": false
     }, 
     {
@@ -10186,7 +10186,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "75.133", 
+        "y": "26.746", 
         "rate": "SURFACE * V_MAX_HXT * ( (glucose_ext/KM_HXT) - (glucose_cyt/KM_HXT) ) / ( 1 + (glucose_ext/KM_HXT) + (glucose_cyt/KM_HXT) + KI_HXT*glucose_ext*glucose_cyt/(KM_HXT**2))", 
         "name_alt": "v_hxt", 
         "name": "389", 
@@ -10196,7 +10196,7 @@ var data =[
             "extracellular"
         ], 
         "links_from": [], 
-        "x": "246.41", 
+        "x": "26.465", 
         "is_ode": false
     }, 
     {
@@ -10209,7 +10209,7 @@ var data =[
         "module": [
             "TRP_NUT"
         ], 
-        "y": "8.1936", 
+        "y": "26.316", 
         "rate": "CO2_mem_permeability * SURFACE * 1e-10 * 1e15 * (CO2 - CO2_ext)", 
         "name_alt": "v_C02dif", 
         "name": "390", 
@@ -10221,7 +10221,7 @@ var data =[
         "links_from": [
             "279"
         ], 
-        "x": "1.8541", 
+        "x": "33.463", 
         "is_ode": false
     }
 ]
@@ -15461,10 +15461,10 @@ var links =[
 var compartments ={
     "parameter_compartment": {
         "spread": [
-            260.58, 
-            108.04, 
-            119.24, 
-            34.239
+            25.556, 
+            0.36887, 
+            20.109, 
+            7.995
         ], 
         "species": [
             "316", 
@@ -15499,10 +15499,10 @@ var compartments ={
     }, 
     "cytosol": {
         "spread": [
-            261.46, 
-            102.38, 
-            96.577, 
-            35.515
+            26.644, 
+            8.7707, 
+            20.323, 
+            5.6799
         ], 
         "species": [
             "142", 
@@ -15539,10 +15539,10 @@ var compartments ={
     }, 
     "intracellular": {
         "spread": [
-            269.9, 
-            0.40186, 
-            204.78, 
-            2.1993
+            43.021, 
+            19.323, 
+            45.602, 
+            7.1339
         ], 
         "species": [
             "0", 
@@ -15860,10 +15860,10 @@ var compartments ={
     }, 
     "vacuole": {
         "spread": [
-            264.57, 
-            202.22, 
-            66.843, 
-            34.781
+            27.57, 
+            3.6935, 
+            25.567, 
+            0.25071
         ], 
         "species": [
             "320", 
@@ -15885,10 +15885,10 @@ var compartments ={
     }, 
     "plasma_membrane": {
         "spread": [
-            108.04, 
-            108.04, 
-            130.58, 
-            130.58
+            9.8505, 
+            9.8505, 
+            8.8561, 
+            8.8561
         ], 
         "species": [
             "306"
@@ -15899,10 +15899,10 @@ var compartments ={
     }, 
     "cell_wall": {
         "spread": [
-            117.06, 
-            115.12, 
-            133.12, 
-            119.14
+            24.964, 
+            23.021, 
+            30.213, 
+            27.925
         ], 
         "species": [
             "304", 
@@ -15922,10 +15922,10 @@ var compartments ={
     }, 
     "nucleus": {
         "spread": [
-            268.44, 
-            113.71, 
-            125.25, 
-            52.719
+            41.389, 
+            9.8505, 
+            34.317, 
+            17.467
         ], 
         "species": [
             "37", 
@@ -15941,10 +15941,10 @@ var compartments ={
     }, 
     "extracellular": {
         "spread": [
-            261.16, 
-            0.375, 
-            141.91, 
-            0.25
+            35.965, 
+            9.8505, 
+            25.957, 
+            6.9294
         ], 
         "species": [
             "15", 

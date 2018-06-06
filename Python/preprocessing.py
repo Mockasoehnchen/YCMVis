@@ -257,7 +257,7 @@ def use_dot():
 
 def new_dot():
     "use GraphViz's dot to get x and y for nodes of the graph"
-
+    type = "dot" #dot,circo,twopi,fdp
     clustering = {}
     #build compartment-based culstering
     for node in nodes:
@@ -277,17 +277,18 @@ def new_dot():
 
     # introduce extra edges to improve layout, these edges will not be seen in the final design
     pseudoLinks = []
-    for cluster in clustering:
-        if len(clustering[cluster])<20 and not '8' in cluster:
-            for node in clustering[cluster]:
-                for node2 in clustering[cluster]:
-                    if (not (len(nodes[int(node)]['links_to'])==0 and len(nodes[int(node)]['links_from'])==0)) or(not (len(nodes[int(node2)]['links_to'])==0 and len(nodes[int(node2)]['links_from'])==0)):
-                        link = node2+ ' -> '+ node+';' + os.linesep;
-                        pseudoLinks.append(link);
+    if type =="dot":
+        for cluster in clustering:
+            if len(clustering[cluster])<20 and not '8' in cluster:
+                for node in clustering[cluster]:
+                    for node2 in clustering[cluster]:
+                        if (not (len(nodes[int(node)]['links_to'])==0 and len(nodes[int(node)]['links_from'])==0)) or(not (len(nodes[int(node2)]['links_to'])==0 and len(nodes[int(node2)]['links_from'])==0)):
+                            link = node2+ ' -> '+ node+';' + os.linesep;
+                            pseudoLinks.append(link);
     #pseudoLinks = []
 
     # Build digraph for GraphViz and write to file
-    text = 'digraph {' + os.linesep #+'layout=twopi'+ os.linesep
+    text = 'digraph {' + os.linesep +'layout='+type+ os.linesep
     for node in nodes:
         text = text + node[
             'name'] + ';' + os.linesep  # not needed for dot beacuse all species are in a compartment but provides order used later
@@ -298,7 +299,9 @@ def new_dot():
                 text = text + sp + ';' + os.linesep
             text = text + '}' + os.linesep
         else:
-            text = text + 'subgraph cluster_' + cluster + '{' + os.linesep #
+            text = text + 'subgraph '
+            if type=="dot": text+= 'cluster_'
+            text+= cluster + '{' + os.linesep #
             for sp in clustering[cluster]:
                 text = text + sp + ';' + os.linesep
             text = text + '}' + os.linesep
@@ -353,12 +356,13 @@ def new_dot():
                 print('Error: Wrong initialization of min or max in new_dot: '+max_x+','+max_y+','+min_x+','+min_y)
             compartments[cluster]['spread']=[max_x,min_x,max_y,min_y]
     print('---------------------------------------')
+    write_graph_to_file(type)
 
 
 
-def write_graph_to_file():
+def write_graph_to_file(type):
     # write file for JavaScript
-    file = open("../JavaScript/data.js", "w")
+    file = open("../JavaScript/data_"+type+".js", "w")
     file.write('var data =' + json.dumps(nodes, indent=4))
     file.write(os.linesep)
     file.write('var links =' + json.dumps(links, indent=4))
@@ -434,5 +438,5 @@ data_to_graph()
 new_dot()
 same_edge_collection()
 # circle_mania()
-write_graph_to_file()
+
 # print nodes

@@ -10,7 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- including data file -->
-<script src="data.js"></script>
+<script src="data_dot.js"></script>
 <!-- including compartment function file file -->
 <script src="compartment_functions.js"></script>
 <!-- include styles -->
@@ -47,7 +47,11 @@
 
 
 	<script type="text/javascript">
-		
+		/* TODO: Better imports
+		import data from '/data.js';
+		import links from '/data.js';
+		import compartments from '/data.js';
+		*/
 		var info_box = document.getElementById('info-box');
 		modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
 		window.addEventListener('resize', resize, false); //TODO: not called on zoom and drag!!!
