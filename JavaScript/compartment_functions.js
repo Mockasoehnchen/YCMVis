@@ -58,6 +58,19 @@ function prepare_comp(){
     })
 }
 
+function remove_comp(){
+    let rem =[]
+    jQuery.each( graphicList,function(index,elem){
+        rem.push({
+            id: elem.id,
+            $action: 'remove'
+        })
+    })
+    myChart.setOption({
+        graphic: rem
+    })
+}
+
 /*
 function update_comp_pos(){ //this function is to slow because of frequent use of setOption
     jQuery.each( compartments,function(name,compartment){

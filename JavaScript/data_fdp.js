@@ -1,4 +1,4 @@
-var data =[
+let data_fdp=[
     {
         "links_to": [], 
         "links_to_mod": [], 
@@ -10225,7 +10225,7 @@ var data =[
         "is_ode": false
     }
 ]
-var links =[
+let links_fdp=[
     {
         "target_alt": "dR_ref", 
         "symbol": "none", 
@@ -15458,7 +15458,7 @@ var links =[
         "source": "4"
     }
 ]
-var compartments ={
+let compartments_fdp={
     "parameter_compartment": {
         "spread": [
             25.556, 

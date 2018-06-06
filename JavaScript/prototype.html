@@ -9,8 +9,11 @@
 <!-- including jQuery file -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- including data file -->
+<!-- including data files -->
 <script src="data_dot.js"></script>
+<script src="data_circo.js"></script>
+<script src="data_twopi.js"></script>
+<script src="data_fdp.js"></script>
 <!-- including compartment function file file -->
 <script src="compartment_functions.js"></script>
 <!-- include styles -->
@@ -31,6 +34,13 @@
 			  	
 			  	<input type="checkbox" id = 'exactSearch' checked> exact search <br>
 			  	<input type="checkbox" onchange="hide()" id = 'High' checked> show ADP,ATP,Pi <br>
+			  	Layout:
+			  	<select id="layoutSelect" onchange="set_layout()">
+				  <option value="1">Dot</option>
+				  <option value="2">Force-Directed</option>
+				  <option value="3">Radial</option>
+				  <option value="4">Circular</option>
+				</select>
 
 			  </div>
 			</div> 
@@ -47,11 +57,41 @@
 
 
 	<script type="text/javascript">
-		/* TODO: Better imports
-		import data from '/data.js';
-		import links from '/data.js';
-		import compartments from '/data.js';
-		*/
+		// TODO: Better imports
+		//import {data,links,compartments} from 'data_dot';
+		
+		var data = data_dot;
+		var links = links_dot;
+		var compartments = compartments_dot;
+
+		function set_layout(){
+			let lay = document.getElementById("layoutSelect").value;
+			if (lay == "1"){
+				data = data_dot;
+			} else {
+				if (lay == "2"){
+					data = data_fdp;
+				} else {
+					if (lay == "3"){
+						data = data_twopi;
+					}else {
+						if (lay == "4"){
+							data = data_circo;
+						}
+					}
+				}
+			}
+			prepare();
+			myChart.setOption({series:{data: data}});			
+			if (lay == "1"){
+				prepare_comp();
+			}
+			else {
+				remove_comp();	
+			}
+				
+		}
+		
 		var info_box = document.getElementById('info-box');
 		modulelist = ['CDC_core', 'GEX_APC', 'GEX_GRN', 'GEX_TRL', 'MET_CCM', 'MET_CWS', 'MET_DNA', 'TRP_ION', 'TRP_NUT', 'VOL_core_growth_single_vol']
 		window.addEventListener('resize', resize, false); //TODO: not called on zoom and drag!!!
@@ -405,8 +445,10 @@
 		function MouseWheelHandler (e){
 			clearTimeout($.data(this, 'timer'));
 			$.data(this, 'timer', setTimeout(function() {
-			    
-				update_comp_pos_2();
+			    let lay = document.getElementById("layoutSelect").value;
+			    if (lay==1){
+					update_comp_pos_2();
+			    }
 			    //do something
 			
 			}, 10));
@@ -438,16 +480,19 @@
 			//info_box.innerHTML = '';
 			//clearInterval(interval);
 			//end continous graph update
-			update_comp_pos_2();
+			let lay = document.getElementById("layoutSelect").value;
+		    if (lay==1){
+				update_comp_pos_2();
+		    }
 			
 			
 		}
 		function MouseMoveHandler(e){
 			//do graph update
-			update_comp_pos_2();
-				  
-		    
-
+			let lay = document.getElementById("layoutSelect").value;
+		    if (lay==1){
+				update_comp_pos_2();
+		    }
 		}
 		
 		//search utility

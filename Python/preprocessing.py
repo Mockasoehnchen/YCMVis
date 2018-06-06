@@ -257,7 +257,7 @@ def use_dot():
 
 def new_dot():
     "use GraphViz's dot to get x and y for nodes of the graph"
-    type = "dot" #dot,circo,twopi,fdp
+    type = "fdp" #dot,circo,twopi,fdp
     clustering = {}
     #build compartment-based culstering
     for node in nodes:
@@ -363,15 +363,16 @@ def new_dot():
 def write_graph_to_file(type):
     # write file for JavaScript
     file = open("../JavaScript/data_"+type+".js", "w")
-    file.write('var data =' + json.dumps(nodes, indent=4))
+    file.write('let data_'+type+ '=' + json.dumps(nodes, indent=4))
     file.write(os.linesep)
-    file.write('var links =' + json.dumps(links, indent=4))
+    file.write('let links_'+type+ '=' + json.dumps(links, indent=4))
     file.write(os.linesep)
-    file.write('var compartments =' + json.dumps(compartments, indent=4))
+    file.write('let compartments_'+type+ '=' + json.dumps(compartments, indent=4))
     file.close()
     print('-----------------')
     print('number of nodes: '+str(len(nodes)))
     print('number of edges: '+str(len(links)))
+    print('-----------------')
 
 def circle_mania():
     "all nodes of a compartment are placed on 3 circles. outer for species, middle for reactions, inner for species with many links"
