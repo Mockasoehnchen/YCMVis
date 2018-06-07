@@ -40,6 +40,11 @@
 				  <option value="2">Force-Directed</option>
 				  <option value="3">Radial</option>
 				  <option value="4">Circular</option>
+				</select><br>
+				Color:
+				<select id="colorSelect" onchange="change_color()">
+				  <option value="kelly">Kelly</option>
+				  <option value="boynton">Boynton</option>
 				</select>
 
 			  </div>
@@ -59,7 +64,8 @@
 	<script type="text/javascript">
 		// TODO: Better imports
 		//import {data,links,compartments} from 'data_dot';
-		
+		//initialization
+		document.getElementById("layoutSelect").value=1;
 		var data = data_dot;
 		var links = links_dot;
 		var compartments = compartments_dot;
@@ -87,7 +93,9 @@
 				prepare_comp();
 			}
 			else {
-				remove_comp();	
+
+				remove_comp();
+
 			}
 				
 		}
@@ -99,7 +107,9 @@
 		function resize() {	
 				// Resize chart
 				myChart.resize();
-				update_comp_pos_2();
+				if(document.getElementById("layoutSelect").value =="1"){
+					update_comp_pos_2();
+				}
 		}
 
 		//based on prepared DOM, initialize echarts instance
@@ -107,31 +117,10 @@
  
 		var hidden_nodes= ['ATP','ADP','Pi']; //nodes to be reduced in visibility, or removed through button press
 		function prepare(){
-			/*
-			var to_color = { }
-			i=0
-	    	jQuery.each(compartments, function(com,dat) {
-	    		to_color[com]= get_disitnct_color_kelly(i);
-	    		i+=1;
-	    	})
-	    	
-	    	jQuery.each(modulelist, function(index,elem) {
-	    		to_color[elem]= get_disitnct_color_kelly(index);
-		    })*/
+			
 		    jQuery.each( data,function(j,sp){
-		    	    	
+		    	//provide each node with a category which indirectly applies color
 	    		sp.category = sp['module'][0];
-		    	
-		    	//remove labels from reactions
-		    	/*
-		        if(sp['symbol']=='rect'||sp['symbol']=='triangle'){ 
-		            sp['label']={
-		                normal: {
-		                    show: false
-		                }
-		            };
-		            
-		        }*/
 
 		    }) 
 		}
@@ -155,7 +144,7 @@
 	            // selectedMode: 'single',
 	            data: modulelist
 	        }],
-		    color: get_disitnct_color_kelly(),
+		    color: get_distinct_color(),
 			series : [{
 				name : 'YCM',
 				type : 'graph',
@@ -362,11 +351,26 @@
 		}
 
 
+		function change_color(){
+			myChart.setOption({color:get_distinct_color()});
+		}
+
+		function get_distinct_color(){
+			let pal = document.getElementById("colorSelect").value;
+			if (pal == "kelly"){
+				return get_distinct_color_kelly();
+			}
+			if(pal == "boynton"){
+				return get_distinct_color_boynton();
+			}
+			return [];
+		}
+
 		/*
 			provides color palet of colors with high contrast if used in order
 		*/
-		function get_disitnct_color_kelly(){
-			var kelly_colors = [
+		function get_distinct_color_kelly(){
+			let kelly_colors = [
 					//white //already background
 					'rgb(0 , 0, 0)',//black
 					'rgb(255, 179, 0)', //vivid_yellow
@@ -393,11 +397,12 @@
                     'rgb(35, 44, 22))' //dark_olive_green
 				];
 			return kelly_colors;
-
-
 		}
-
-		
+		function get_distinct_color_boynton(){
+			let boynton = [ "Blue", "Red", "Green", "Yellow", "Magenta", "Pink", "Gray", "Brown", "Orange" ]; 
+            return boynton;
+		}
+		  
 
 		//add mouse event listeners	for pan and zoom
 		
@@ -500,7 +505,7 @@
 		//if exact = true then only return elements that have that exact annotation or name_alt (ignoring case)
 		function search(text, exact){
 			
-			var result =[];
+			let result =[];
 			if(exact){
 				jQuery.each( data,function(j,elem){
 					if (elem['name_alt'].toLowerCase()==text){
