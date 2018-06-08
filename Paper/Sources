@@ -2,13 +2,13 @@ Holten, Danny; Isenberg, Petra; van Wijk, Jarke J.; Fekete, Jean-Daniel (2011), 
 https://www.lri.fr/~isenberg/publications/papers/Holten_2011_AEP.pdf
 -> comparison of different edge types
 
-PURCHASE, Helen C.; COHEN, Robert F.; JAMES, Murray. Validating graph drawing aesthetics. In: International Symposium on Graph Drawing. Springer, Berlin, Heidelberg, 1995. S. 435-446.
+Purchase, H. C., Cohen, R. F., & James, M. (1995, September). Validating graph drawing aesthetics. In International Symposium on Graph Drawing (pp. 435-446). Springer, Berlin, Heidelberg.
 -> edge crossing is relevant, symmetry not proven
 
-http://www.graphviz.org/Documentation/TSE93.pdf
+Gansner, E. R., Koutsofios, E., North, S. C., & Vo, K. P. (1993). A technique for drawing directed graphs. IEEE Transactions on Software Engineering, 19(3), 214-230.
 -> GraphVis drawing algorithm
 
-http://ialab.it.monash.edu/~timd/Dwyer2013EdgeCompression.pdf
+Dwyer, T., Riche, N. H., Marriott, K., & Mears, C. (2013). Edge compression techniques for visualization of dense directed graphs. IEEE transactions on visualization and computer graphics, 19(12), 2596-2605.
 -> egde compression techniques
 
 Gansner, E. R., Hu, Y., North, S., & Scheidegger, C. (2011, March). Multilevel agglomerative edge bundling for visualizing large graphs. In Visualization Symposium (PacificVis), 2011 IEEE Pacific (pp. 187-194). IEEE.

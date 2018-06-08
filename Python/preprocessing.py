@@ -257,7 +257,7 @@ def use_dot():
 
 def new_dot():
     "use GraphViz's dot to get x and y for nodes of the graph"
-    type = "fdp" #dot,circo,twopi,fdp
+    type = "twopi" #dot,circo,twopi,fdp #TODO: find optimal root node for twopi
     clustering = {}
     #build compartment-based culstering
     for node in nodes:
@@ -285,7 +285,6 @@ def new_dot():
                         if (not (len(nodes[int(node)]['links_to'])==0 and len(nodes[int(node)]['links_from'])==0)) or(not (len(nodes[int(node2)]['links_to'])==0 and len(nodes[int(node2)]['links_from'])==0)):
                             link = node2+ ' -> '+ node+';' + os.linesep;
                             pseudoLinks.append(link);
-    #pseudoLinks = []
 
     # Build digraph for GraphViz and write to file
     text = 'digraph {' + os.linesep +'layout='+type+ os.linesep
@@ -381,6 +380,7 @@ def circle_mania():
 
     # Possible: place reactions first and then place nodes on outer ring at the closest point to their reactions
     # also: place reactions that are in multiple compartments between the compartments instead on one of the rings
+    # basically a radial graph with different node ordering
 
     compartment_center_x = 0
     compartment_center_y = 0
