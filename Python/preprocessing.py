@@ -255,9 +255,8 @@ def use_dot():
         #    compartments[compartment]['symbolSize'] = [float(textlist[4]),float(textlist[5])]
         os.remove("testfile.gv") #Graph file no longer needed
 
-def new_dot():
-    "use GraphViz's dot to get x and y for nodes of the graph"
-    type = "twopi" #dot,circo,twopi,fdp #TODO: find optimal root node for twopi
+def new_dot(type):
+    "use GraphViz's dot to get x and y for nodes of the graph. type declares the layout algorithm used for GraphViz."
     clustering = {}
     #build compartment-based culstering
     for node in nodes:
@@ -299,7 +298,7 @@ def new_dot():
             text = text + '}' + os.linesep
         else:
             text = text + 'subgraph '
-            if type=="dot": text+= 'cluster_'
+            if type=="dot": text+= 'cluster_' #using GraphViz cluster mechanic on other layouts than dot looks terrible or doesn't work
             text+= cluster + '{' + os.linesep #
             for sp in clustering[cluster]:
                 text = text + sp + ';' + os.linesep
@@ -321,7 +320,7 @@ def new_dot():
     file.close()
     i = 1  # line 0 is not a node
 
-    for node in nodes:
+    for node in nodes: #uses order introduced earlier
         textlist = text[i].split(" ")
         i += 1
         if textlist[0] != 'node':
@@ -331,7 +330,7 @@ def new_dot():
         node['x'] = textlist[2]
         node['y'] = textlist[3]
 
-    #compute midpoint, high and widths for each compartment
+    #computes dimensions of compartments
     for cluster in clustering:
         #print out cluster size for statistics
         print(cluster+' : '+ str(len(clustering[cluster])))
@@ -356,6 +355,8 @@ def new_dot():
             compartments[cluster]['spread']=[max_x,min_x,max_y,min_y]
     print('---------------------------------------')
     write_graph_to_file(type)
+    print('Data written to File')
+    print('---------------------------------------')
 
 
 
@@ -380,7 +381,6 @@ def circle_mania():
 
     # Possible: place reactions first and then place nodes on outer ring at the closest point to their reactions
     # also: place reactions that are in multiple compartments between the compartments instead on one of the rings
-    # basically a radial graph with different node ordering
 
     compartment_center_x = 0
     compartment_center_y = 0
@@ -436,7 +436,7 @@ def circle_mania():
 
 
 data_to_graph()
-new_dot()
+new_dot("twopi") #dot,circo,twopi,fdp #TODO: find optimal root node for twopi
 same_edge_collection()
 # circle_mania()
 
