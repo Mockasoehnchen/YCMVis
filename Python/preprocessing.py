@@ -369,10 +369,35 @@ def write_graph_to_file(type):
     file.write(os.linesep)
     file.write('let compartments_'+type+ '=' + json.dumps(compartments, indent=4))
     file.close()
+
+
+def collect_statistic():
     print('-----------------')
-    print('number of nodes: '+str(len(nodes)))
-    print('number of edges: '+str(len(links)))
+    print('number of nodes: ' + str(len(nodes)))
+    print('number of edges: ' + str(len(links)))
     print('-----------------')
+    num_sp =0
+    num_re =0
+    num_alg=0
+    grades ={}
+    for node in nodes:
+        grade = len(node['links_to'])+len(node['links_from'])+len(node['links_to_mod'])+len(node['links_from_mod'])+len(node['uni_links'])
+        if grade in grades:
+            grades[grade]+=1
+        else:
+            grades[grade]=1
+        if node['symbol']=='rect':
+            num_re+=1
+        if node['symbol']=='circle':
+            num_sp+=1
+        if node['symbol']=='triangle':
+            num_alg+=1
+    print('number of species: ' + str(num_sp))
+    print('number of reactions: ' + str(num_re))
+    print('number of algebraic species: ' + str(num_alg))
+    print('-----------------')
+    print('node grades : number of nodes')
+    print(grades)
 
 def circle_mania():
     "all nodes of a compartment are placed on 3 circles. outer for species, middle for reactions, inner for species with many links"
@@ -438,6 +463,7 @@ def circle_mania():
 data_to_graph()
 new_dot("twopi") #dot,circo,twopi,fdp #TODO: find optimal root node for twopi
 same_edge_collection()
+collect_statistic()
 # circle_mania()
 
 # print nodes
