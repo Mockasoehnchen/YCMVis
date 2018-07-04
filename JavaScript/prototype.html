@@ -11,6 +11,7 @@
 
 <!-- including data files -->
 <script src="data_dot.js"></script>
+<script src="data_dot_unclustered.js"></script>
 <script src="data_circo.js"></script>
 <script src="data_twopi.js"></script>
 <script src="data_fdp.js"></script>
@@ -37,6 +38,7 @@
 			  	Layout:
 			  	<select id="layoutSelect" onchange="set_layout()">
 				  <option value="1">Dot</option>
+				  <option value="5">Dot (no cluster)</option>
 				  <option value="2">Force-Directed</option>
 				  <option value="3">Radial</option>
 				  <option value="4">Circular</option>
@@ -83,6 +85,10 @@
 					}else {
 						if (lay == "4"){
 							data = data_circo;
+						}else {
+							if (lay == "5"){
+								data = data_dot_unclustered;
+							}
 						}
 					}
 				}

@@ -461,7 +461,7 @@ def circle_mania():
 
 
 data_to_graph()
-new_dot("twopi") #dot,circo,twopi,fdp #TODO: find optimal root node for twopi
+new_dot("dot") #dot,circo,twopi,fdp #TODO: find optimal root node for twopi
 same_edge_collection()
 collect_statistic()
 # circle_mania()

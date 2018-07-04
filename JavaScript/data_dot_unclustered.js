@@ -1,4 +1,4 @@
-var data =[
+let data_dot_unclustered=[
     {
         "links_to": [], 
         "links_to_mod": [], 
@@ -10225,7 +10225,7 @@ var data =[
         "is_ode": false
     }
 ]
-var links =[
+let links_dot_unclustered=[
     {
         "target_alt": "dR_ref", 
         "symbol": "none", 
@@ -15458,7 +15458,7 @@ var links =[
         "source": "4"
     }
 ]
-var compartments ={
+let compartments_dot_unclustered={
     "parameter_compartment": {
         "spread": [
             120.42, 
