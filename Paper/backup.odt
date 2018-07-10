@@ -1,0 +1,8 @@
+7.2. Highlighting
+A different technique to focus on only parts of a graph is to highlight or downplay certain nodes and edges. Different to pan and zoom the part of the graph that can be put into or out of focus is not limited to the proximity of the elements in the graph layout.
+Highlighting an element is usually achieved by enlarging the element, changing its color, adding an additional graphical element (e.g. an arrow glyph or a label) to it or any combination thereof.
+Meaningful highlights for this project include but are not limited to the neighborhood of a selected node and interface points between different modules.
+Neighborhood highlighting is included in the prototype as are options to omit specific nodes or entire modules form display.
+
+7.3. Search
+As the graph includes nearly 400 nodes if a certain species, reaction or algebraic species is of interest manually searching all nodes for the one of interest is tedious. To facilitate finding a node a feature should be provided that allows to search for a node by name or annotation. The search result should than be highlighted in the visualization. 
