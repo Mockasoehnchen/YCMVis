@@ -8,6 +8,7 @@ Data Structur:
    all files in JavaScribt.  
    Prototype.html is the visualization, other files are dependencies and data.  
    compartment_functions.js handles displaying compartment clusters which are at the moment only used for the dot layout.  
+   GuideToPrototype descirbes the functions used in Prototype.html
    
 + Mockup
 
