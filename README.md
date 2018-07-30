@@ -17,5 +17,6 @@ Data Structur:
    
 + Python
 
-   all files in python. preprocessing.py turns the datafiles in YCM_Data into a graph using GraphViz
+   all files in python. preprocessing.py turns the datafiles in YCM_Data into a graph using GraphViz.
+   For more information see GuideToPreprocessing.md
    
