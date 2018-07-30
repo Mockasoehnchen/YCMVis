@@ -19,4 +19,6 @@ There are two obvious bugs left in the visualization:
     in case annotations are provided this display of information includes opening a page referenced by one annotation
   1.5 change_color(), get_distinct_color(),get_distinct_color_kelly() and get_distinct_color_boynton()
     these functions are used to apply the appropriate color palette (kelly or boynton) when selected by the user
+  1.6 myChart.setOption(option)
+    ECharts function that draws the graph based on the information provided in options.
     
