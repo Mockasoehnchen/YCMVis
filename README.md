@@ -5,7 +5,7 @@ Project to visualize the YCM
 Data Structur:
 + JavaScript
 
-   all files in javaScribt.  
+   all files in JavaScribt.  
    Prototype.html is the visualization, other files are dependencies and data.  
    compartment_functions.js handles displaying compartment clusters which are at the moment only used for the dot layout.  
    
