@@ -11,7 +11,7 @@ Data Structur:
    GuideToPrototype descirbes the functions used in Prototype.html  
    echarts.min.js is the basic framework used for graph visualization in this project.
    The authors are Deqing Li, Honghui Mei, Yi Shen, Shuang Su, Wenli Zhang, Junting Wang, Ming Zu and Wei Chen.
-   The version of echarts is the same used when this project was officially ended and provided here in case downloaded
+   The version of echarts is the same used when this project was officially ended and provided here in case download
    link or newer echarts versions break.
    
 + Mockup
